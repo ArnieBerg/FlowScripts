@@ -19,7 +19,7 @@
       "SequenceDBPath": null,
       "SamplesFromLocalDevice": null,
       "SamplesToTransform": null,
-      "IsLinux": false,
+      "IsLinux": true,
       "CanRunInLinux": false,
       "DockerBaseImage": null,
       "Parameters": "",
