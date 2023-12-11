@@ -8,7 +8,7 @@
       "DataSourceType": 0,
       "SerializeDataSteps": false,
       "SampleList": {
-        "barcode13": "1[S]/mnt/e/data/Dreamer/BCV_WGS/BCV_ARTIC_10Feb2022_DT/BCV_amplicons_10Feb2022/20220210_1137_X1_FAR84250_237d768c/fastq_pass/barcode13/"
+        "barcode13": "0[S]/mnt/e/data/Dreamer/BCV_WGS/BCV_ARTIC_10Feb2022_DT/BCV_amplicons_10Feb2022/20220210_1137_X1_FAR84250_237d768c/fastq_pass/barcode13/"
       },
       "SequenceList": [],
       "SequenceListChecked": [],
