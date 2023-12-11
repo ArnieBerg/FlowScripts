@@ -4,7 +4,7 @@
       "FlowScriptName": "ArticFlow",
       "SubmissionTimeStamp": null,
       "LockUsername": null,
-      "Comment": null,
+      "Comment": "This is a comment",
       "DataSourceType": 0,
       "SerializeDataSteps": false,
       "SampleList": {
