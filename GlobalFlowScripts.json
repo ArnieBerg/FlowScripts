@@ -12230,7 +12230,7 @@
           "TestSuccess": false
         }
       },
-      "SubmissionTimeStamp": "1226040348",
+      "SubmissionTimeStamp": "1226041001",
       "LockUsername": null,
       "Comment": "",
       "DataSourceType": 0,
@@ -12246,12 +12246,12 @@
       "ParameterFoldersToUpload": {},
       "SequenceDBPathLinux": "[S]/mnt/e/data/database/SSuis_Ruwani",
       "SequenceDBPath": "[S]E:\\data\\database\\SSuis_Ruwani\\SSuis_Ruwani.fasta",
-      "SamplesFromLocalDevice": {},
-      "SamplesToTransform": {},
+      "SamplesFromLocalDevice": null,
+      "SamplesToTransform": null,
       "IsLinux": true,
       "CanRunInLinux": true,
       "DockerBaseImage": "bioseqenv.0.3",
-      "Parameters": "TestWSLBash@[OmitStep=False]\r\nTestWSLBash@[PublishOutput=False]\r\nTestWSLBash@[IgnoreError=False]\r\nTestWSLBash@[IncludeOutput=True]\r\nTestWSLBash@[Primer=[S]/mnt/e/data/primers//crispr_primers.txt]\r\nTestWSLBash@[IsDocker=False]\r\nTestWSLBash@[IsSlurm=True]\r\nTestWSLBash@[\u003CIsSLURM\u003E=1]\r\n",
+      "Parameters": "TestWSLBash@[\u003CIsSLURM\u003E=1]\r\nTestWSLBash@[Primer=[S]/mnt/e/data/primers//crispr_primers.txt]\r\n",
       "OutputPath": "[S]E:\\data\\Arnie\\TestWSLBash_Results\\",
       "StartWithScript": "Data",
       "ScriptModulesInFlowScript": {
@@ -12261,7 +12261,7 @@
             "LockUsername": null,
             "Comment": "",
             "WslCommand": {
-              "CommandToken": "D2C1",
+              "CommandToken": "",
               "FlowScriptToken": null,
               "Command": "echo \u0022IsSLURM=@[\u003CIsSLURM\u003E=]\u0022\r\nnextflow -version\r\nmkdir $[O.]$[D.[SampleName]]\r\ncp $[D.[SamplePath]] $[O.]$[D.[SampleName]]\r\ncp @[Primer=[S]/mnt/r/PDS-BioSeqDB/isPCR/AAFC//20230503_Pbrassicae-PCRproducts.txt] $[O.]primer.txt\r\n#conda run -n busco busco --list-datasets",
               "IsNoop": false,
@@ -12292,10 +12292,10 @@
             },
             "PublishOutput": false,
             "ConsolidateInput": false,
-            "ConsolidatedCmdToken": "",
+            "ConsolidatedCmdToken": null,
             "ExpectSamplesHeader": false,
             "RunAfterALLPrereqs": false,
-            "RunAfterALLCmdToken": "",
+            "RunAfterALLCmdToken": null,
             "OmitStep": false,
             "LastUpdate": "2023-04-22T11:47:58.7859189-06:00",
             "LastAuthor": "AGB465",
@@ -12458,133 +12458,19 @@
               "MemoryGB": 0,
               "Hours": 0
             },
-            "WDL_Task": "task TestWSLBash {\r\n  input {\r\n    String SampleName\r\n    String SamplePath\r\n }\r\n  command \u003C\u003C\u003C\r\n  echo \u0022IsSLURM=@[\u003CIsSLURM\u003E=]\u0022\r\nnextflow -version\r\nmkdir ~{SampleName}\r\ncp ~{SamplePath} ~{SampleName}\r\ncp @[Primer=[S]/mnt/r/PDS-BioSeqDB/isPCR/AAFC//20230503_Pbrassicae-PCRproducts.txt] primer.txt\r\n#conda run -n busco busco --list-datasets \u003E\u003E\u003E\r\n  output {\r\n    }\r\n}\r\n",
-            "WDL_Task_Inputs": [
-              "String SampleName",
-              "String SamplePath"
-            ],
-            "WDL_Task_Outputs": [],
-            "CaseNumberList_JSON": "",
-            "CaseNumberList_csv": ""
+            "WDL_Task": null,
+            "WDL_Task_Inputs": null,
+            "WDL_Task_Outputs": null,
+            "CaseNumberList_JSON": null,
+            "CaseNumberList_csv": null
           }
         ]
       },
-      "LastUpdate": "2023-12-26T16:09:34.4051907-06:00",
+      "LastUpdate": "2023-12-26T16:44:57.9479921-06:00",
       "LastAuthor": "AGB465",
       "FindFolders": false,
       "InterfaceAdaptive": false,
-      "CommandList": [
-        {
-          "CommandToken": "D1C1",
-          "FlowScriptToken": "TestWSLBash",
-          "Command": "echo \u0022IsSLURM=1\u0022\nnextflow -version\nmkdir /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/TestWSLBash_1226040348/D1C1/1704824-4EDrive\ncp /mnt/e/data/Arnie/1704824-4_contig_1.fasta /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/TestWSLBash_1226040348/D1C1/1704824-4EDrive\ncp /mnt/e/data/primers//crispr_primers.txt /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/TestWSLBash_1226040348/D1C1/primer.txt\n#conda run -n busco busco --list-datasets\n",
-          "IsNoop": false,
-          "CondaPrefix": "",
-          "Parms": [],
-          "IncludeStandardOutput": true,
-          "IsParallel": true,
-          "IsSlurm": true,
-          "IsDocker": false,
-          "IsLinux": true,
-          "LinuxJobRunning": false,
-          "SlurmJobID": null,
-          "SlurmParms": null,
-          "WindowsWorkPath": "",
-          "IgnoreExitCode": false,
-          "WSLResponse": {
-            "ExitCode": 0,
-            "StandardOutput": null,
-            "StandardError": null,
-            "LastCommand": null,
-            "RestartCount": 0
-          },
-          "ConditionRun": null,
-          "ExitCodeConditionGoto": "",
-          "Preprocess": null,
-          "StandardOutputConditionGoto": "",
-          "HDF_Command": {
-            "Command": 0,
-            "DBFileName": null,
-            "DBPath": null,
-            "Dataset": {
-              "SequenceList": [],
-              "Standard_Reference_Sequence": "",
-              "Standard_Reference_Name": ""
-            },
-            "DatasetName": "",
-            "FindIn": "",
-            "FindOut": "",
-            "Sample": {
-              "SampleName": "",
-              "SampleDetail": null,
-              "LIMSCaseNumber": null,
-              "LIMSTestID": null,
-              "LIMSSampleID": null,
-              "Sequence": null,
-              "SampleFileName": null
-            }
-          },
-          "Prereqs": [],
-          "Thread": 0,
-          "StandardOutputBypass": "",
-          "WDL": "  call TestWSLBash as D1C1 {\r\n    input:\r\n      SampleName = \u00221704824-4EDrive\u0022,\r\n      SamplePath = \u0022/mnt/e/data/Arnie/1704824-4_contig_1.fasta\u0022\r\n   }\r\n"
-        },
-        {
-          "CommandToken": "D2C1",
-          "FlowScriptToken": "TestWSLBash",
-          "Command": "echo \u0022IsSLURM=1\u0022\nnextflow -version\nmkdir /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/TestWSLBash_1226040348/D2C1/AAFC\ncp /mnt/r/incoming/Quick/AAFC/R1_A3_barcode15_contigs.fasta /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/TestWSLBash_1226040348/D2C1/AAFC\ncp /mnt/e/data/primers//crispr_primers.txt /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/TestWSLBash_1226040348/D2C1/primer.txt\n#conda run -n busco busco --list-datasets\n",
-          "IsNoop": false,
-          "CondaPrefix": "",
-          "Parms": [],
-          "IncludeStandardOutput": true,
-          "IsParallel": true,
-          "IsSlurm": true,
-          "IsDocker": false,
-          "IsLinux": true,
-          "LinuxJobRunning": false,
-          "SlurmJobID": null,
-          "SlurmParms": null,
-          "WindowsWorkPath": "",
-          "IgnoreExitCode": false,
-          "WSLResponse": {
-            "ExitCode": 0,
-            "StandardOutput": null,
-            "StandardError": null,
-            "LastCommand": null,
-            "RestartCount": 0
-          },
-          "ConditionRun": null,
-          "ExitCodeConditionGoto": "",
-          "Preprocess": null,
-          "StandardOutputConditionGoto": "",
-          "HDF_Command": {
-            "Command": 0,
-            "DBFileName": null,
-            "DBPath": null,
-            "Dataset": {
-              "SequenceList": [],
-              "Standard_Reference_Sequence": "",
-              "Standard_Reference_Name": ""
-            },
-            "DatasetName": "",
-            "FindIn": "",
-            "FindOut": "",
-            "Sample": {
-              "SampleName": "",
-              "SampleDetail": null,
-              "LIMSCaseNumber": null,
-              "LIMSTestID": null,
-              "LIMSSampleID": null,
-              "Sequence": null,
-              "SampleFileName": null
-            }
-          },
-          "Prereqs": [],
-          "Thread": 0,
-          "StandardOutputBypass": "",
-          "WDL": "  call TestWSLBash as D2C1 {\r\n    input:\r\n      SampleName = \u0022AAFC\u0022,\r\n      SamplePath = \u0022/mnt/r/incoming/Quick/AAFC/R1_A3_barcode15_contigs.fasta\u0022\r\n   }\r\n"
-        }
-      ],
+      "CommandList": null,
       "RemoveReads": false
     }
   ]
