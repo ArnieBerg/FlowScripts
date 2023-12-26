@@ -12253,7 +12253,7 @@
       "IsLinux": true,
       "CanRunInLinux": true,
       "DockerBaseImage": "bioseqenv.0.3",
-      "Parameters": "TestWSLBash@[OmitStep=]\r\nTestWSLBash@[PublishOutput=]\r\nTestWSLBash@[IgnoreError=]\r\nTestWSLBash@[IncludeOutput=]\r\nTestWSLBash@[Primer=[S]/mnt/r/PDS-BioSeqDB/isPCR/AAFC//20230503_Pbrassicae-PCRproducts.txt]\r\nTestWSLBash@[IsDocker=]\r\nTestWSLBash@[IsSlurm=]\r\nTestWSLBash@[\u003CIsSLURM\u003E=1]\r\n",
+      "Parameters": "TestWSLBash@[\u003CIsSLURM\u003E=1]\r\nTestWSLBash@[Primer=[S]/mnt/r/PDS-BioSeqDB/isPCR/AAFC//20230503_Pbrassicae-PCRproducts.txt]\r\n",
       "OutputPath": "[S]E:\\data\\Arnie\\TestWSLBash_Results\\",
       "StartWithScript": "Data",
       "ScriptModulesInFlowScript": {
@@ -12468,7 +12468,7 @@
           }
         ]
       },
-      "LastUpdate": "2023-12-26T15:41:24.2128392-06:00",
+      "LastUpdate": "2023-12-26T16:03:39.7023088-06:00",
       "LastAuthor": "AGB465",
       "FindFolders": false,
       "InterfaceAdaptive": false,
