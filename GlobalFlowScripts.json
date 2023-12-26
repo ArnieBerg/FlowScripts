@@ -12221,7 +12221,15 @@
     },
     {
       "FlowScriptName": "TestWSLBash",
-      "TestConfig": {},
+      "TestConfig": {
+        "1": {
+          "TestSelect": true,
+          "TestNumber": 1,
+          "TestMachine": "WSL2 - This machine",
+          "TestOutputPath": "[S]E:\\data\\Arnie\\TestWSLBash_Results_WSL2\\",
+          "TestSuccess": false
+        }
+      },
       "SubmissionTimeStamp": "1226104028",
       "LockUsername": null,
       "Comment": "",
@@ -12245,7 +12253,7 @@
       "IsLinux": true,
       "CanRunInLinux": true,
       "DockerBaseImage": "bioseqenv.0.3",
-      "Parameters": "TestWSLBash@[\u003CIsSLURM\u003E=1]\r\nTestWSLBash@[Primer=[S]/mnt/e/data/primers//crispr_primers.txt]\r\n",
+      "Parameters": "TestWSLBash@[OmitStep=]\r\nTestWSLBash@[PublishOutput=]\r\nTestWSLBash@[IgnoreError=]\r\nTestWSLBash@[IncludeOutput=]\r\nTestWSLBash@[Primer=[S]/mnt/r/PDS-BioSeqDB/isPCR/AAFC//20230503_Pbrassicae-PCRproducts.txt]\r\nTestWSLBash@[IsDocker=]\r\nTestWSLBash@[IsSlurm=]\r\nTestWSLBash@[\u003CIsSLURM\u003E=1]\r\n",
       "OutputPath": "[S]E:\\data\\Arnie\\TestWSLBash_Results\\",
       "StartWithScript": "Data",
       "ScriptModulesInFlowScript": {
@@ -12460,7 +12468,7 @@
           }
         ]
       },
-      "LastUpdate": "2023-12-26T15:37:27.7180418-06:00",
+      "LastUpdate": "2023-12-26T15:41:24.2128392-06:00",
       "LastAuthor": "AGB465",
       "FindFolders": false,
       "InterfaceAdaptive": false,

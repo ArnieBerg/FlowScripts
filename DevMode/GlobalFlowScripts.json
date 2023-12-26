@@ -11616,7 +11616,15 @@
     },
     {
       "FlowScriptName": "TestWSLBash",
-      "TestConfig": {},
+      "TestConfig": {
+        "1": {
+          "TestSelect": true,
+          "TestNumber": 1,
+          "TestMachine": "WSL2 - This machine",
+          "TestOutputPath": "[S]E:\\data\\Arnie\\TestWSLBash_Results_WSL2\\",
+          "TestSuccess": false
+        }
+      },
       "SubmissionTimeStamp": "1206041806",
       "LockUsername": null,
       "Comment": "",
