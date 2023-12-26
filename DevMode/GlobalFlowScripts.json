@@ -11657,7 +11657,7 @@
             "WslCommand": {
               "CommandToken": "",
               "FlowScriptToken": null,
-              "Command": "echo \u0022IsSLURM=@[\u003CIsSLURM\u003E=]\u0022\r\n\r\nnextflow -version\r\n\r\n\r\nmkdir $[O.]$[D.[SampleName]]\r\ncp $[D.[SamplePath]] $[O.]$[D.[SampleName]]\r\ncp @[Primer=[S]/mnt/r/PDS-BioSeqDB/isPCR/AAFC//20230503_Pbrassicae-PCRproducts.txt] $[O.]primer.txt\r\n\r\n#conda run -n busco busco --list-datasets",
+              "Command": "echo \u0022IsSLURM=@[\u003CIsSLURM\u003E=]\u0022\r\nnextflow -version\r\nmkdir $[O.]$[D.[SampleName]]\r\ncp $[D.[SamplePath]] $[O.]$[D.[SampleName]]\r\ncp @[Primer=[S]/mnt/r/PDS-BioSeqDB/isPCR/AAFC//20230503_Pbrassicae-PCRproducts.txt] $[O.]primer.txt\r\n#conda run -n busco busco --list-datasets",
               "IsNoop": false,
               "CondaPrefix": "",
               "Parms": [],
