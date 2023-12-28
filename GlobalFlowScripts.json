@@ -12177,7 +12177,7 @@
           "TestSuccess": false
         },
         "2": {
-          "TestSelect": true,
+          "TestSelect": false,
           "TestNumber": 2,
           "TestMachine": "Linux - Monod",
           "TestOutputPath": "[S]E:\\data\\Arnie\\TestWSLBash_Results_Linux\\",
@@ -12207,7 +12207,7 @@
       "IsLinux": false,
       "CanRunInLinux": true,
       "DockerBaseImage": "bioseqenv.0.3",
-      "Parameters": "TestWSLBash@[\u003CIsSLURM\u003E=0]\r\nTestWSLBash@[Primer=[S]/mnt/e/data/primers//crispr_primers.txt]\r\n",
+      "Parameters": "TestWSLBash@[OmitStep=]\r\nTestWSLBash@[PublishOutput=]\r\nTestWSLBash@[IgnoreError=]\r\nTestWSLBash@[IncludeOutput=]\r\nTestWSLBash@[Primer=[S]/mnt/r/PDS-BioSeqDB/isPCR/AAFC//20230503_Pbrassicae-PCRproducts.txt]\r\nTestWSLBash@[IsDocker=]\r\nTestWSLBash@[IsSlurm=]\r\nTestWSLBash@[\u003CIsSLURM\u003E=0]\r\n",
       "OutputPath": "[S]E:\\data\\Arnie\\TestWSLBash_Results\\",
       "StartWithScript": "Data",
       "ScriptModulesInFlowScript": {
@@ -12422,7 +12422,7 @@
           }
         ]
       },
-      "LastUpdate": "2023-12-28T11:52:13.0340076-06:00",
+      "LastUpdate": "2023-12-28T11:55:51.6492765-06:00",
       "LastAuthor": "AGB465",
       "FindFolders": false,
       "InterfaceAdaptive": false,
