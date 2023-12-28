@@ -12173,30 +12173,32 @@
           "TestSelect": true,
           "TestNumber": 1,
           "TestMachine": "WSL2 - This machine",
-          "TestOutputPath": "[S]E:\\data\\Arnie\\TestWSLBash_Results_WSL2\\",
+          "TestOutputPath": null,
           "TestSuccess": false
         },
         "2": {
-          "TestSelect": true,
+          "TestSelect": false,
           "TestNumber": 2,
           "TestMachine": "Linux - Monod",
-          "TestOutputPath": "[S]E:\\data\\Arnie\\TestWSLBash_Results_Linux\\",
+          "TestOutputPath": null,
           "TestSuccess": false
         }
       },
-      "SubmissionTimeStamp": "1227115854",
+      "SubmissionTimeStamp": "1228105513",
       "LockUsername": null,
       "Comment": "",
       "DataSourceType": 0,
       "SerializeDataSteps": false,
       "SampleList": {
         "1704824-4EDrive": "1[S]/mnt/e/data/Arnie/1704824-4_contig_1.fasta",
-        "AAFC": "1[S]/mnt/r/incoming/Quick/AAFC/R1_A3_barcode15_contigs.fasta"
+        "AAFC": "0[S]/mnt/r/incoming/Quick/AAFC/R1_A3_barcode15_contigs.fasta"
       },
       "SequenceList": [],
       "SequenceListChecked": [],
       "SequenceDatabaseName": "SSuis_Ruwani",
-      "ParameterFilesToUpload": {},
+      "ParameterFilesToUpload": {
+        "[S]/mnt/e/data/primers//crispr_primers.txt": null
+      },
       "ParameterFoldersToUpload": {},
       "SequenceDBPathLinux": "[S]/mnt/e/data/database/SSuis_Ruwani",
       "SequenceDBPath": "[S]E:\\data\\database\\SSuis_Ruwani\\SSuis_Ruwani.fasta",
@@ -12420,7 +12422,7 @@
           }
         ]
       },
-      "LastUpdate": "2023-12-28T06:02:52.5526366-06:00",
+      "LastUpdate": "2023-12-28T10:58:25.1695929-06:00",
       "LastAuthor": "AGB465",
       "FindFolders": false,
       "InterfaceAdaptive": false,

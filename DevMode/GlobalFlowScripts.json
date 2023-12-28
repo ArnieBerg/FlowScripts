@@ -11621,14 +11621,14 @@
           "TestSelect": true,
           "TestNumber": 1,
           "TestMachine": "WSL2 - This machine",
-          "TestOutputPath": "[S]E:\\data\\Arnie\\TestWSLBash_Results_WSL2\\",
+          "TestOutputPath": null,
           "TestSuccess": false
         },
         "2": {
-          "TestSelect": true,
+          "TestSelect": false,
           "TestNumber": 2,
           "TestMachine": "Linux - Monod",
-          "TestOutputPath": "[S]E:\\data\\Arnie\\TestWSLBash_Results_Linux\\",
+          "TestOutputPath": null,
           "TestSuccess": false
         }
       },
@@ -11649,7 +11649,7 @@
       "SequenceDBPath": "[S]E:\\data\\database\\SSuis_Ruwani\\SSuis_Ruwani.fasta",
       "SamplesFromLocalDevice": null,
       "SamplesToTransform": null,
-      "IsLinux": true,
+      "IsLinux": false,
       "CanRunInLinux": true,
       "DockerBaseImage": "bioseqenv.0.3",
       "Parameters": "TestWSLBash@[OmitStep=False]\r\nTestWSLBash@[PublishOutput=False]\r\nTestWSLBash@[IgnoreError=False]\r\nTestWSLBash@[IncludeOutput=True]\r\nTestWSLBash@[Primer=[S]/mnt/x/PDS-BioSeqDB/isPCR/Primers//p_MVP_Gvg.txt]\r\nTestWSLBash@[IsDocker=True]\r\nTestWSLBash@[IsSlurm=True]\r\nTestWSLBash@[\u003CIsSLURM\u003E=]\r\n",
