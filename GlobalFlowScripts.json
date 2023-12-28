@@ -12173,18 +12173,18 @@
           "TestSelect": true,
           "TestNumber": 1,
           "TestMachine": "WSL2 - This machine",
-          "TestOutputPath": null,
+          "TestOutputPath": "[S]E:\\data\\Arnie\\TestWSLBash_Results_WSL2\\",
           "TestSuccess": false
         },
         "2": {
-          "TestSelect": false,
+          "TestSelect": true,
           "TestNumber": 2,
           "TestMachine": "Linux - Monod",
-          "TestOutputPath": null,
+          "TestOutputPath": "[S]E:\\data\\Arnie\\TestWSLBash_Results_Linux\\",
           "TestSuccess": false
         }
       },
-      "SubmissionTimeStamp": "1228105513",
+      "SubmissionTimeStamp": "1228115114",
       "LockUsername": null,
       "Comment": "",
       "DataSourceType": 0,
@@ -12422,7 +12422,7 @@
           }
         ]
       },
-      "LastUpdate": "2023-12-28T10:58:25.1695929-06:00",
+      "LastUpdate": "2023-12-28T11:52:13.0340076-06:00",
       "LastAuthor": "AGB465",
       "FindFolders": false,
       "InterfaceAdaptive": false,
