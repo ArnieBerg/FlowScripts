@@ -13546,14 +13546,14 @@
           "TestSelect": true,
           "TestNumber": 1,
           "TestMachine": "WSL2 - This machine",
-          "TestOutputPath": null,
+          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\DragonFlye Assembly_1230101908_754e017",
           "TestSuccess": false
         },
         "2": {
           "TestSelect": true,
           "TestNumber": 2,
           "TestMachine": "Linux - Monod",
-          "TestOutputPath": null,
+          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\DragonFlye Assembly_0101070249_754e017",
           "TestSuccess": false
         }
       },
@@ -13577,7 +13577,7 @@
       "SequenceDBPath": "/mnt/e/data/database/hpsuis/hpsuis.fasta",
       "SamplesFromLocalDevice": {},
       "SamplesToTransform": null,
-      "IsLinux": true,
+      "IsLinux": false,
       "CanRunInLinux": true,
       "DockerBaseImage": "bioseqenv.0.3",
       "Parameters": "SeqTK@[OmitStep=]\r\nSeqTK@[PublishOutput=]\r\nSeqTK@[IgnoreError=]\r\nSeqTK@[IncludeOutput=]\r\nSeqTK@[IsDocker=]\r\nSeqTK@[IgnoreExitCode=]\r\nSeqTK@[IncludeStandardOutput=]\r\nSeqTK@[IsSlurm=]\r\nBBMap@[OmitStep=]\r\nBBMap@[PublishOutput=]\r\nBBMap@[IgnoreError=]\r\nBBMap@[IncludeOutput=]\r\nBBMap@[IsDocker=]\r\nBBMap@[IgnoreExitCode=]\r\nBBMap@[IncludeStandardOutput=]\r\nBBMap@[IsSlurm=]\r\nRename_Contigs@[OmitStep=]\r\nRename_Contigs@[PublishOutput=]\r\nRename_Contigs@[IgnoreError=]\r\nRename_Contigs@[IncludeOutput=]\r\nRename_Contigs@[IsDocker=]\r\nRename_Contigs@[IgnoreExitCode=]\r\nRename_Contigs@[IncludeStandardOutput=]\r\nRename_Contigs@[IsSlurm=]\r\nCompress@[OmitStep=]\r\nCompress@[PublishOutput=]\r\nCompress@[IgnoreExitCode=]\r\nCompress@[IncludeStandardOutput=]\r\nCompress@[IsDocker=]\r\nCompress@[IgnoreError=]\r\nCompress@[IncludeOutput=]\r\nCompress@[IsSlurm=]\r\nnanoq@[OmitStep=]\r\nnanoq@[PublishOutput=]\r\nnanoq@[IgnoreError=]\r\nnanoq@[IncludeOutput=]\r\nnanoq@[IsDocker=]\r\nnanoq@[IgnoreExitCode=]\r\nnanoq@[IncludeStandardOutput=]\r\nnanoq@[IsSlurm=]\r\nBusco@[lineage=bacteria_odb10]\r\nBusco@[OmitStep=]\r\nBusco@[PublishOutput=]\r\nBusco@[IgnoreError=]\r\nBusco@[IncludeOutput=]\r\nBusco@[IsDocker=]\r\nBusco@[IgnoreExitCode=]\r\nBusco@[IncludeStandardOutput=]\r\nBusco@[IsSlurm=]\r\nQuast@[OmitStep=]\r\nQuast@[PublishOutput=]\r\nQuast@[IgnoreError=]\r\nQuast@[IncludeOutput=]\r\nQuast@[IsDocker=]\r\nQuast@[IgnoreExitCode=]\r\nQuast@[IncludeStandardOutput=]\r\nQuast@[IsSlurm=]\r\nRefseq_Masher@[OmitStep=]\r\nRefseq_Masher@[PublishOutput=]\r\nRefseq_Masher@[IgnoreExitCode=]\r\nRefseq_Masher@[IncludeStandardOutput=]\r\nRefseq_Masher@[IsDocker=]\r\nRefseq_Masher@[IgnoreError=]\r\nRefseq_Masher@[IncludeOutput=]\r\nRefseq_Masher@[IsSlurm=]\r\nKraken2@[threads=20]\r\nKraken2@[db=/mnt/e/data/reference/databases/minikraken2_v1_8GB/]\r\nKraken2@[OmitStep=]\r\nKraken2@[PublishOutput=]\r\nKraken2@[IgnoreError=]\r\nKraken2@[IncludeOutput=]\r\nKraken2@[IsDocker=]\r\nKraken2@[IgnoreExitCode=]\r\nKraken2@[IncludeStandardOutput=]\r\nKraken2@[IsSlurm=]\r\nDragonFlye@[trim=--trim]\r\nDragonFlye@[gsizeParm=--gsize @[gsize=]]\r\nDragonFlye@[gsize=]\r\nDragonFlye@[raconRounds=1]\r\nDragonFlye@[racon=--racon @[raconRounds=1]]\r\nDragonFlye@[medakaModel=r941_min_hac_g507]\r\nDragonFlye@[medakaRounds=1]\r\nDragonFlye@[medaka=--medaka @[medakaRounds=1] @[medakaModelParm=--model @[medakaModel=r941_min_hac_g507]]]\r\nDragonFlye@[assembler=flye]\r\nDragonFlye@[cpus=20]\r\nDragonFlye@[medakaModelParm=--model @[medakaModel=r941_min_hac_g507]]\r\nDragonFlye@[nano-hq=--nanohq]\r\nDragonFlye@[nopolish=--nopolish]\r\nDragonFlye@[OmitStep=]\r\nDragonFlye@[PublishOutput=]\r\nDragonFlye@[IgnoreError=]\r\nDragonFlye@[IncludeOutput=]\r\nDragonFlye@[IsDocker=]\r\nDragonFlye@[IsSlurm=]\r\nDragonFlye Sink@[OmitStep=]\r\nDragonFlye Sink@[PublishOutput=]\r\nDragonFlye Sink@[IgnoreError=]\r\nDragonFlye Sink@[IncludeOutput=]\r\nDragonFlye Sink@[IsDocker=]\r\nDragonFlye Sink@[IgnoreExitCode=]\r\nDragonFlye Sink@[IncludeStandardOutput=]\r\nDragonFlye Sink@[IsSlurm=]\r\nAbricate@[db=ncbi]\r\nAbricate@[OmitStep=]\r\nAbricate@[PublishOutput=]\r\nAbricate@[IgnoreError=]\r\nAbricate@[IncludeOutput=]\r\nAbricate@[IsDocker=]\r\nAbricate@[IgnoreExitCode=]\r\nAbricate@[IncludeStandardOutput=]\r\nAbricate@[IsSlurm=]\r\n",
@@ -13590,9 +13590,9 @@
             "LockUsername": null,
             "Comment": "",
             "WslCommand": {
-              "CommandToken": "D1C3",
+              "CommandToken": "D2C6",
               "FlowScriptToken": null,
-              "Command": "count=\u0060ls -1 $[I.]$[V.[SampleName]]*.fastq 2\u003E/dev/null | wc -l\u0060\r\nif [ $count != 0 ]\r\nthen \r\nconda run -n seqtk seqtk seq -A $[I.]$[V.[SampleName]]*.fastq \u003E $[O.]sample.fasta\r\nfi \r\n\r\ncount=\u0060ls -1 $[I.]$[V.[SampleName]]*.fastq.gz 2\u003E/dev/null | wc -l\u0060\r\nif [ $count != 0 ]\r\nthen \r\nconda run -n seqtk seqtk seq -A $[I.]$[V.[SampleName]]*.fastq.gz \u003E $[O.]sample.fasta\r\nfi\r\n",
+              "Command": "count=\u0060ls -1 $[I.]$[V.[SampleName]]*.fastq 2\u003E/dev/null | wc -l\u0060\r\nif [ $count != 0 ]\r\nthen \r\nconda run -n seqtk seqtk seq -A $[I.]$[V.[SampleName]]*.fastq \u003E $[O.]sample.fasta\r\nfi \r\ncount=\u0060ls -1 $[I.]$[V.[SampleName]]*.fastq.gz 2\u003E/dev/null | wc -l\u0060\r\nif [ $count != 0 ]\r\nthen \r\nconda run -n seqtk seqtk seq -A $[I.]$[V.[SampleName]]*.fastq.gz \u003E $[O.]sample.fasta\r\nfi",
               "IsNoop": false,
               "CondaPrefix": "",
               "Parms": [],
@@ -13624,7 +13624,7 @@
             "ConsolidatedCmdToken": "",
             "ExpectSamplesHeader": false,
             "RunAfterALLPrereqs": false,
-            "RunAfterALLCmdToken": null,
+            "RunAfterALLCmdToken": "",
             "OmitStep": false,
             "LastUpdate": "2022-04-06T07:28:04.3954504-06:00",
             "LastAuthor": "AGB465",
@@ -13792,15 +13792,15 @@
             "WDL_Task": null,
             "WDL_Task_Inputs": null,
             "WDL_Task_Outputs": null,
-            "CaseNumberList_JSON": null,
-            "CaseNumberList_csv": null
+            "CaseNumberList_JSON": "",
+            "CaseNumberList_csv": ""
           },
           {
             "ModuleName": "BBMap",
             "LockUsername": null,
             "Comment": "",
             "WslCommand": {
-              "CommandToken": "",
+              "CommandToken": "D2C7",
               "FlowScriptToken": null,
               "Command": "mkdir $[O.]$[V.[SampleName]]\r\nconda run -n seqdb bbmap.sh nodisk=f threads=6 ref=$[I.]sample.fasta in=$[I.]sample.fasta  covstats=$[O.]$[V.[SampleName]]/covstats.txt covhist=$[O.]$[V.[SampleName]]/covhist.txt bincov=$[O.]$[V.[SampleName]]/bincov.txt ",
               "IsNoop": false,
@@ -13831,10 +13831,10 @@
             },
             "PublishOutput": true,
             "ConsolidateInput": false,
-            "ConsolidatedCmdToken": null,
+            "ConsolidatedCmdToken": "",
             "ExpectSamplesHeader": false,
             "RunAfterALLPrereqs": false,
-            "RunAfterALLCmdToken": null,
+            "RunAfterALLCmdToken": "",
             "OmitStep": false,
             "LastUpdate": "2022-06-26T05:20:01.3379975-06:00",
             "LastAuthor": "AGB465",
@@ -14002,17 +14002,17 @@
             "WDL_Task": null,
             "WDL_Task_Inputs": null,
             "WDL_Task_Outputs": null,
-            "CaseNumberList_JSON": null,
-            "CaseNumberList_csv": null
+            "CaseNumberList_JSON": "",
+            "CaseNumberList_csv": ""
           },
           {
             "ModuleName": "Rename_Contigs",
             "LockUsername": null,
             "Comment": "",
             "WslCommand": {
-              "CommandToken": "D1C5",
+              "CommandToken": "D2C11",
               "FlowScriptToken": null,
-              "Command": "mkdir $[O{DragonFlye}.]$[V.[SampleName]]\r\ncp $[I{DragonFlye}.]contigs.fa $[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_contigs.fasta\r\ncp $[I{DragonFlye}.]flye.fasta $[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_flye.fa\r\ncp $[I{DragonFlye}.]flye-info.txt $[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_flye-info.txt\r\ncp $[I{DragonFlye}.]dragonflye.log $[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_dragonflye.log\r\ncp $[I{Abricate}.]$[V.[SampleName]]_Abricate_Output.tsv $[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_Abricate_Output.tsv\r\n\r\n# Create a temporary file for writing the modified content\r\ntempfile=$[O.]tmp_$[V.[SampleName]]\r\ntouch \u0022$tempfile\u0022\r\n\r\n# This script changes the text of a file for each line that starts with \u0027\u003E\u0027\r\n# Replace the word that follows the \u0027\u003E\u0027 with \u0027SAMPLE\u0027, followed by space and then everything that was originally on the line after the \u0027\u003E\u0027\r\n\r\nfilename=$[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_contigs.fasta\r\n\r\n# Loop through each line of the file\r\nwhile read -r line; do\r\n  # Check if the line starts with \u0027\u003E\u0027\r\n  if [[ $line == \u0027\u003E\u0027* ]]; then\r\n    # Extract the word that follows the \u0027\u003E\u0027\r\n    word=$(echo $line | cut -d\u0027 \u0027 -f1 | cut -c2-)\r\n    # Replace the word with SAMPLENAME\r\n    line=${line/$word/$[V.[SampleName]] $word}\r\n    echo $line\r\n  fi\r\n  # Print the modified line\r\n  echo \u0022$line\u0022 \u003E\u003E \u0022$tempfile\u0022\r\ndone \u003C $filename\r\n\r\n# Replace the original file with the modified content\r\nmv \u0022$tempfile\u0022 $filename\r\ntouch \u0022$tempfile\u0022\r\n\r\n# Do the same with the second file.\r\nfilename=$[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_flye.fa\r\n\r\n# Loop through each line of the file\r\nwhile read -r line; do\r\n  # Check if the line starts with \u0027\u003E\u0027\r\n  if [[ $line == \u0027\u003E\u0027* ]]; then\r\n    # Extract the word that follows the \u0027\u003E\u0027\r\n    word=$(echo $line | cut -d\u0027 \u0027 -f1 | cut -c2-)\r\n    # Replace the word with SAMPLENAME\r\n    line=${line/$word/$[V.[SampleName]] $word}\r\n    echo $line\r\n  fi\r\n  # Print the modified line\r\n  echo \u0022$line\u0022 \u003E\u003E \u0022$tempfile\u0022\r\ndone \u003C $filename\r\n\r\n# Replace the original file with the modified content\r\nmv \u0022$tempfile\u0022 $filename\r\n\r\n# Copy fasta files but add \u0027 sample_id=\u0027\u003CsampleID\u003E\u0027 to headers\r\ncp $[I{DragonFlye}.]contigs.fa $[O{DragonFlye}.]$[V.[SampleName]]/contigs.fasta\r\ntouch \u0022$tempfile\u0022\r\nawk \u0027/^\u003E/ {print $0\u0022 sample_id=$[V.[SampleName]]\u0022} !/^\u003E/ {print $0}\u0027 $[O{DragonFlye}.]$[V.[SampleName]]/contigs.fasta \u003E \u0022$tempfile\u0022\r\nmv \u0022$tempfile\u0022 $[O{DragonFlye}.]$[V.[SampleName]]/contigs.fasta\r\n\r\ncp $[I{DragonFlye}.]flye.fasta $[O{DragonFlye}.]$[V.[SampleName]]/flye.fa\r\ntouch \u0022$tempfile\u0022\r\nawk \u0027/^\u003E/ {print $0\u0022 sample_id=$[V.[SampleName]]\u0022} !/^\u003E/ {print $0}\u0027 $[O{DragonFlye}.]$[V.[SampleName]]/flye.fa \u003E \u0022$tempfile\u0022\r\nmv \u0022$tempfile\u0022 $[O{DragonFlye}.]$[V.[SampleName]]/flye.fa\r\n",
+              "Command": "mkdir $[O{DragonFlye}.]$[V.[SampleName]]\r\ncp $[I{DragonFlye}.]contigs.fa $[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_contigs.fasta\r\ncp $[I{DragonFlye}.]flye.fasta $[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_flye.fa\r\ncp $[I{DragonFlye}.]flye-info.txt $[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_flye-info.txt\r\ncp $[I{DragonFlye}.]dragonflye.log $[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_dragonflye.log\r\ncp $[I{Abricate}.]$[V.[SampleName]]_Abricate_Output.tsv $[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_Abricate_Output.tsv\r\n# Create a temporary file for writing the modified content\r\ntempfile=$[O.]tmp_$[V.[SampleName]]\r\ntouch \u0022$tempfile\u0022\r\n# This script changes the text of a file for each line that starts with \u0027\u003E\u0027\r\n# Replace the word that follows the \u0027\u003E\u0027 with \u0027SAMPLE\u0027, followed by space and then everything that was originally on the line after the \u0027\u003E\u0027\r\nfilename=$[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_contigs.fasta\r\n# Loop through each line of the file\r\nwhile read -r line; do\r\n  # Check if the line starts with \u0027\u003E\u0027\r\n  if [[ $line == \u0027\u003E\u0027* ]]; then\r\n    # Extract the word that follows the \u0027\u003E\u0027\r\n    word=$(echo $line | cut -d\u0027 \u0027 -f1 | cut -c2-)\r\n    # Replace the word with SAMPLENAME\r\n    line=${line/$word/$[V.[SampleName]] $word}\r\n    echo $line\r\n  fi\r\n  # Print the modified line\r\n  echo \u0022$line\u0022 \u003E\u003E \u0022$tempfile\u0022\r\ndone \u003C $filename\r\n# Replace the original file with the modified content\r\nmv \u0022$tempfile\u0022 $filename\r\ntouch \u0022$tempfile\u0022\r\n# Do the same with the second file.\r\nfilename=$[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_flye.fa\r\n# Loop through each line of the file\r\nwhile read -r line; do\r\n  # Check if the line starts with \u0027\u003E\u0027\r\n  if [[ $line == \u0027\u003E\u0027* ]]; then\r\n    # Extract the word that follows the \u0027\u003E\u0027\r\n    word=$(echo $line | cut -d\u0027 \u0027 -f1 | cut -c2-)\r\n    # Replace the word with SAMPLENAME\r\n    line=${line/$word/$[V.[SampleName]] $word}\r\n    echo $line\r\n  fi\r\n  # Print the modified line\r\n  echo \u0022$line\u0022 \u003E\u003E \u0022$tempfile\u0022\r\ndone \u003C $filename\r\n# Replace the original file with the modified content\r\nmv \u0022$tempfile\u0022 $filename\r\n# Copy fasta files but add \u0027 sample_id=\u0027\u003CsampleID\u003E\u0027 to headers\r\ncp $[I{DragonFlye}.]contigs.fa $[O{DragonFlye}.]$[V.[SampleName]]/contigs.fasta\r\ntouch \u0022$tempfile\u0022\r\nawk \u0027/^\u003E/ {print $0\u0022 sample_id=$[V.[SampleName]]\u0022} !/^\u003E/ {print $0}\u0027 $[O{DragonFlye}.]$[V.[SampleName]]/contigs.fasta \u003E \u0022$tempfile\u0022\r\nmv \u0022$tempfile\u0022 $[O{DragonFlye}.]$[V.[SampleName]]/contigs.fasta\r\ncp $[I{DragonFlye}.]flye.fasta $[O{DragonFlye}.]$[V.[SampleName]]/flye.fa\r\ntouch \u0022$tempfile\u0022\r\nawk \u0027/^\u003E/ {print $0\u0022 sample_id=$[V.[SampleName]]\u0022} !/^\u003E/ {print $0}\u0027 $[O{DragonFlye}.]$[V.[SampleName]]/flye.fa \u003E \u0022$tempfile\u0022\r\nmv \u0022$tempfile\u0022 $[O{DragonFlye}.]$[V.[SampleName]]/flye.fa",
               "IsNoop": false,
               "CondaPrefix": "",
               "Parms": [],
@@ -14048,7 +14048,7 @@
             "ConsolidatedCmdToken": "",
             "ExpectSamplesHeader": false,
             "RunAfterALLPrereqs": false,
-            "RunAfterALLCmdToken": null,
+            "RunAfterALLCmdToken": "",
             "OmitStep": false,
             "LastUpdate": "2022-04-06T06:32:38.7403952-06:00",
             "LastAuthor": "AGB465",
@@ -14214,17 +14214,17 @@
             "WDL_Task": null,
             "WDL_Task_Inputs": null,
             "WDL_Task_Outputs": null,
-            "CaseNumberList_JSON": null,
-            "CaseNumberList_csv": null
+            "CaseNumberList_JSON": "",
+            "CaseNumberList_csv": ""
           },
           {
             "ModuleName": "Compress",
             "LockUsername": null,
             "Comment": "",
             "WslCommand": {
-              "CommandToken": "D1C1",
+              "CommandToken": "D2C1",
               "FlowScriptToken": null,
-              "Command": "count=\u0060ls -1 $[D.[SamplePath]]*.fastq 2\u003E/dev/null | wc -l\u0060\r\nif [ $count != 0 ]\r\nthen \r\ncat $[D.[SamplePath]]*.fastq \u003E $[O.]$[V.[SampleName]].fastq\r\ngzip -f $[O.]$[V.[SampleName]].fastq 2\u003E\u00261 \u003E /dev/null;\r\nfi \r\n\r\ncount=\u0060ls -1 $[D.[SamplePath]]*.fastq.gz 2\u003E/dev/null | wc -l\u0060\r\nif [ $count != 0 ]\r\nthen \r\ncat $[D.[SamplePath]]*.fastq.gz \u003E $[O.]$[V.[SampleName]].fastq.gz\r\nfi\r\n",
+              "Command": "count=\u0060ls -1 $[D.[SamplePath]]*.fastq 2\u003E/dev/null | wc -l\u0060\r\nif [ $count != 0 ]\r\nthen \r\ncat $[D.[SamplePath]]*.fastq \u003E $[O.]$[V.[SampleName]].fastq\r\ngzip -f $[O.]$[V.[SampleName]].fastq 2\u003E\u00261 \u003E /dev/null;\r\nfi \r\ncount=\u0060ls -1 $[D.[SamplePath]]*.fastq.gz 2\u003E/dev/null | wc -l\u0060\r\nif [ $count != 0 ]\r\nthen \r\ncat $[D.[SamplePath]]*.fastq.gz \u003E $[O.]$[V.[SampleName]].fastq.gz\r\nfi",
               "IsNoop": false,
               "CondaPrefix": "",
               "Parms": [],
@@ -14256,7 +14256,7 @@
             "ConsolidatedCmdToken": "",
             "ExpectSamplesHeader": false,
             "RunAfterALLPrereqs": false,
-            "RunAfterALLCmdToken": null,
+            "RunAfterALLCmdToken": "",
             "OmitStep": false,
             "LastUpdate": "2022-04-06T06:45:00.6544378-06:00",
             "LastAuthor": "AGB465",
@@ -14422,17 +14422,17 @@
             "WDL_Task": null,
             "WDL_Task_Inputs": null,
             "WDL_Task_Outputs": null,
-            "CaseNumberList_JSON": null,
-            "CaseNumberList_csv": null
+            "CaseNumberList_JSON": "",
+            "CaseNumberList_csv": ""
           },
           {
             "ModuleName": "nanoq",
             "LockUsername": null,
             "Comment": "",
             "WslCommand": {
-              "CommandToken": "D1C2",
+              "CommandToken": "D2C2",
               "FlowScriptToken": null,
-              "Command": "conda run -n dragonflye nanoq --min-len 1000 -r $[O.]nanoq_report.csv -H --input $[I.]*.fastq* --min-qual 0  1\u003E $[O.]READS.filt.fq \r\nrm $[O.]READS.filt.fq\r\nsed -i -e \u0027s/ /,/g\u0027 $[O.]nanoq_report.csv\r\n\r\n#FS IsDocker\r\n# Add write mode because if run in Docker, we need to be able to delete this file from WSL2.\r\nchmod a\u002Bw $[O.]nanoq_report.csv\r\n#FS End\r\n",
+              "Command": "conda run -n dragonflye nanoq --min-len 1000 -r $[O.]nanoq_report.csv -H --input $[I.]*.fastq* --min-qual 0  1\u003E $[O.]READS.filt.fq \r\nrm $[O.]READS.filt.fq\r\nsed -i -e \u0027s/ /,/g\u0027 $[O.]nanoq_report.csv\r\n#FS IsDocker\r\n# Add write mode because if run in Docker, we need to be able to delete this file from WSL2.\r\nchmod a\u002Bw $[O.]nanoq_report.csv\r\n#FS End",
               "IsNoop": false,
               "CondaPrefix": "",
               "Parms": [],
@@ -14464,7 +14464,7 @@
             "ConsolidatedCmdToken": "",
             "ExpectSamplesHeader": false,
             "RunAfterALLPrereqs": false,
-            "RunAfterALLCmdToken": null,
+            "RunAfterALLCmdToken": "",
             "OmitStep": false,
             "LastUpdate": "2022-07-08T10:26:56.6894226-06:00",
             "LastAuthor": "AGB465",
@@ -14632,17 +14632,17 @@
             "WDL_Task": null,
             "WDL_Task_Inputs": null,
             "WDL_Task_Outputs": null,
-            "CaseNumberList_JSON": null,
-            "CaseNumberList_csv": null
+            "CaseNumberList_JSON": "",
+            "CaseNumberList_csv": ""
           },
           {
             "ModuleName": "Busco",
             "LockUsername": null,
             "Comment": "",
             "WslCommand": {
-              "CommandToken": "D1C4",
+              "CommandToken": "D2C8",
               "FlowScriptToken": null,
-              "Command": "conda run -n busco busco -m genome -f -i $[I.]contigs.fa --out_path $[O.] -o $[V.[SampleName]] -l @[lineage=bacteria_odb10]\r\nrm -rf $[O.]$[V.[SampleName]]/logs\r\nrm -rf $[O.]$[V.[SampleName]]/prodigal_output\r\nrm -rf $[O.]$[V.[SampleName]]/run_@[lineage=bacteria_odb10]\r\nrm -rf $[o.]/busco_downloads\r\n",
+              "Command": "conda run -n busco busco -m genome -f -i $[I.]contigs.fa --out_path $[O.] -o $[V.[SampleName]] -l @[lineage=bacteria_odb10]\r\nrm -rf $[O.]$[V.[SampleName]]/logs\r\nrm -rf $[O.]$[V.[SampleName]]/prodigal_output\r\nrm -rf $[O.]$[V.[SampleName]]/run_@[lineage=bacteria_odb10]\r\nrm -rf $[o.]/busco_downloads",
               "IsNoop": false,
               "CondaPrefix": "busco",
               "Parms": [],
@@ -14674,7 +14674,7 @@
             "ConsolidatedCmdToken": "",
             "ExpectSamplesHeader": false,
             "RunAfterALLPrereqs": false,
-            "RunAfterALLCmdToken": null,
+            "RunAfterALLCmdToken": "",
             "OmitStep": false,
             "LastUpdate": "2022-04-29T06:08:19.4067173-06:00",
             "LastAuthor": "AGB465",
@@ -14859,17 +14859,17 @@
             "WDL_Task": null,
             "WDL_Task_Inputs": null,
             "WDL_Task_Outputs": null,
-            "CaseNumberList_JSON": null,
-            "CaseNumberList_csv": null
+            "CaseNumberList_JSON": "",
+            "CaseNumberList_csv": ""
           },
           {
             "ModuleName": "Quast",
             "LockUsername": null,
             "Comment": "",
             "WslCommand": {
-              "CommandToken": "D1C7",
+              "CommandToken": "D2C9",
               "FlowScriptToken": null,
-              "Command": "cmd=\u0027/usr/local/quast-5.0.2/quast.py -o $[O.]$[V.[SampleName]]/Quast/ --glimmer $[I.]contigs.fa\u0027\r\n\r\n#FS IsDocker\r\ncmd=\u0027conda run -n quast quast.py -o $[O.]$[V.[SampleName]]/Quast/ --glimmer $[I.]contigs.fa\u0027\r\n#FS End\r\n\r\neval \u0022$cmd\u0022",
+              "Command": "cmd=\u0027/usr/local/quast-5.0.2/quast.py -o $[O.]$[V.[SampleName]]/Quast/ --glimmer $[I.]contigs.fa\u0027\r\n#FS IsDocker\r\ncmd=\u0027conda run -n quast quast.py -o $[O.]$[V.[SampleName]]/Quast/ --glimmer $[I.]contigs.fa\u0027\r\n#FS End\r\neval \u0022$cmd\u0022",
               "IsNoop": false,
               "CondaPrefix": "phame",
               "Parms": [],
@@ -14901,7 +14901,7 @@
             "ConsolidatedCmdToken": "",
             "ExpectSamplesHeader": false,
             "RunAfterALLPrereqs": false,
-            "RunAfterALLCmdToken": null,
+            "RunAfterALLCmdToken": "",
             "OmitStep": false,
             "LastUpdate": "2022-02-13T17:16:37.7814819-06:00",
             "LastAuthor": "AGB465",
@@ -15069,17 +15069,17 @@
             "WDL_Task": null,
             "WDL_Task_Inputs": null,
             "WDL_Task_Outputs": null,
-            "CaseNumberList_JSON": null,
-            "CaseNumberList_csv": null
+            "CaseNumberList_JSON": "",
+            "CaseNumberList_csv": ""
           },
           {
             "ModuleName": "Refseq_Masher",
             "LockUsername": null,
             "Comment": "",
             "WslCommand": {
-              "CommandToken": "D1C8",
+              "CommandToken": "D2C12",
               "FlowScriptToken": null,
-              "Command": "# Refseq_masher does not play well with the raven assembler. Recommend use flye.\r\n\r\nmkdir $[O.]$[V.[SampleName]]\r\n\r\n@\u003Cconda=refseq_masher-0.1.2\u003E\r\n#FS IsDocker\r\n@\u003Cconda=refseq_masher\u003E\r\n#FS End\r\n\r\nconda run -n @\u003Cconda\u003E refseq_masher matches --output-type csv -o $[O.]$[V.[SampleName]]/RefseqIdent.csv $[I.]$[V.[SampleName]]/",
+              "Command": "# Refseq_masher does not play well with the raven assembler. Recommend use flye.\r\nmkdir $[O.]$[V.[SampleName]]\r\n#FS IsDocker\r\n#FS End\r\nconda run -n refseq_masher refseq_masher matches --output-type csv -o $[O.]$[V.[SampleName]]/RefseqIdent.csv $[I.]$[V.[SampleName]]/",
               "IsNoop": false,
               "CondaPrefix": "",
               "Parms": [],
@@ -15111,7 +15111,7 @@
             "ConsolidatedCmdToken": "",
             "ExpectSamplesHeader": false,
             "RunAfterALLPrereqs": false,
-            "RunAfterALLCmdToken": null,
+            "RunAfterALLCmdToken": "",
             "OmitStep": false,
             "LastUpdate": "2022-04-03T05:52:48.250547-06:00",
             "LastAuthor": "AGB465",
@@ -15279,17 +15279,17 @@
             "WDL_Task": null,
             "WDL_Task_Inputs": null,
             "WDL_Task_Outputs": null,
-            "CaseNumberList_JSON": null,
-            "CaseNumberList_csv": null
+            "CaseNumberList_JSON": "",
+            "CaseNumberList_csv": ""
           },
           {
             "ModuleName": "Kraken2",
             "LockUsername": null,
             "Comment": "",
             "WslCommand": {
-              "CommandToken": "D1C6",
+              "CommandToken": "D2C10",
               "FlowScriptToken": null,
-              "Command": "mkdir $[O.]$[V.[SampleName]]\r\n\r\ncmd=\u0027/usr/local/kraken2/kraken2 --db @[db=/mnt/e/data/reference/databases/minikraken2_v1_8GB/] --threads @[threads=20] --report $[O.]$[V.[SampleName]]/kraken.aggregates.txt --use-names --output $[O.]$[V.[SampleName]]/kraken.txt $[I.]/contigs.fa\u0027\r\n\r\n#FS IsDocker\r\n#FS DockerMap /mnt/e/data/reference/databases/\n\r\ncmd=\u0027conda run -n kraken2 kraken2 --db @[db=/mnt/e/data/reference/databases/minikraken2_v1_8GB/] --threads @[threads=20] --report $[O.]$[V.[SampleName]]/kraken.aggregates.txt --use-names --output $[O.]$[V.[SampleName]]/kraken.txt $[I.]/contigs.fa\u0027\r\n#FS End\r\n\r\neval \u0022$cmd\u0022",
+              "Command": "mkdir $[O.]$[V.[SampleName]]\r\ncmd=\u0027/usr/local/kraken2/kraken2 --db @[db=/mnt/e/data/reference/databases/minikraken2_v1_8GB/] --threads @[threads=20] --report $[O.]$[V.[SampleName]]/kraken.aggregates.txt --use-names --output $[O.]$[V.[SampleName]]/kraken.txt $[I.]/contigs.fa\u0027\r\n#FS IsDocker\r\n#FS DockerMap /mnt/e/data/reference/databases/\r\ncmd=\u0027conda run -n kraken2 kraken2 --db @[db=/mnt/e/data/reference/databases/minikraken2_v1_8GB/] --threads @[threads=20] --report $[O.]$[V.[SampleName]]/kraken.aggregates.txt --use-names --output $[O.]$[V.[SampleName]]/kraken.txt $[I.]/contigs.fa\u0027\r\n#FS End\r\neval \u0022$cmd\u0022",
               "IsNoop": false,
               "CondaPrefix": "phame",
               "Parms": [],
@@ -15321,7 +15321,7 @@
             "ConsolidatedCmdToken": "",
             "ExpectSamplesHeader": false,
             "RunAfterALLPrereqs": false,
-            "RunAfterALLCmdToken": null,
+            "RunAfterALLCmdToken": "",
             "OmitStep": false,
             "LastUpdate": "2022-04-05T09:39:03.0925066-06:00",
             "LastAuthor": "AGB465",
@@ -15498,7 +15498,8 @@
               }
             ],
             "DockerMountMap": [
-              "/mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/"
+              "/mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/",
+              "/mnt/e/data/reference/databases/"
             ],
             "DockerImage": null,
             "UserVariableList": {},
@@ -15523,15 +15524,15 @@
             "WDL_Task": null,
             "WDL_Task_Inputs": null,
             "WDL_Task_Outputs": null,
-            "CaseNumberList_JSON": null,
-            "CaseNumberList_csv": null
+            "CaseNumberList_JSON": "",
+            "CaseNumberList_csv": ""
           },
           {
             "ModuleName": "DragonFlye",
             "LockUsername": null,
             "Comment": "",
             "WslCommand": {
-              "CommandToken": "D1C3",
+              "CommandToken": "D2C3",
               "FlowScriptToken": null,
               "Command": "conda run -n dragonflye dragonflye --force  --cpus @[cpus=20] --assembler @[assembler=flye] @[nopolish=--nopolish] @[nano-hq=--nanohq] @[medaka=--medaka @[medakaRounds=1] @[medakaModelParm=--model @[medakaModel=r941_min_hac_g507]]] @[racon=--racon @[raconRounds=1]] --reads $[I.]$[V.[SampleName]].fastq* --outdir $[O.] @[gsizeParm=--gsize @[gsize=]] @[trim=--trim]",
               "IsNoop": false,
@@ -15566,7 +15567,7 @@
             "ConsolidatedCmdToken": "",
             "ExpectSamplesHeader": false,
             "RunAfterALLPrereqs": false,
-            "RunAfterALLCmdToken": null,
+            "RunAfterALLCmdToken": "",
             "OmitStep": false,
             "LastUpdate": "2022-06-23T14:00:52.2250869-06:00",
             "LastAuthor": "DHP565",
@@ -15921,17 +15922,17 @@
             "WDL_Task": null,
             "WDL_Task_Inputs": null,
             "WDL_Task_Outputs": null,
-            "CaseNumberList_JSON": null,
-            "CaseNumberList_csv": null
+            "CaseNumberList_JSON": "",
+            "CaseNumberList_csv": ""
           },
           {
             "ModuleName": "DragonFlye Sink",
             "LockUsername": null,
             "Comment": "2022-09-22 12:25 AGB465: The awk command has the effect of concatenting all the nanoq reports and retaining just one copy of the header.",
             "WslCommand": {
-              "CommandToken": "",
+              "CommandToken": "D2C4",
               "FlowScriptToken": null,
-              "Command": "echo \u0022DragonFlye Sink $[I{nanoq}.] $[O.] runs to consolidate all nanoq reports.\u0022\r\n\r\n#FS ForEachPrereq\r\ncp $[I{nanoq}.]nanoq_report.csv $[O.]$[V.[SampleName]]nanoq_report.csv\r\nrm $[I{nanoq}.]nanoq_report.csv\r\n#FS End\r\n\r\nawk \u0027FNR==1 \u0026\u0026 NR!=1{next;}{print}\u0027 $[O.]*.csv \u003E $[O.]master_nanoq_report.csv\r\n\r\n#FS ForEachPrereq\r\nrm $[O.]$[V.[SampleName]]nanoq_report.csv\r\n#FS End\r\n",
+              "Command": "echo \u0022DragonFlye Sink $[I{nanoq}.] $[O.] runs to consolidate all nanoq reports.\u0022\r\n#FS ForEachPrereq\r\ncp $[I{nanoq}.]nanoq_report.csv $[O.]$[V.[SampleName]]nanoq_report.csv\r\nrm $[I{nanoq}.]nanoq_report.csv\r\n#FS End\r\nawk \u0027FNR==1 \u0026\u0026 NR!=1{next;}{print}\u0027 $[O.]*.csv \u003E $[O.]master_nanoq_report.csv\r\n#FS ForEachPrereq\r\nrm $[O.]$[V.[SampleName]]nanoq_report.csv\r\n#FS End",
               "IsNoop": false,
               "CondaPrefix": "",
               "Parms": [],
@@ -15960,10 +15961,10 @@
             },
             "PublishOutput": true,
             "ConsolidateInput": false,
-            "ConsolidatedCmdToken": null,
+            "ConsolidatedCmdToken": "",
             "ExpectSamplesHeader": false,
             "RunAfterALLPrereqs": true,
-            "RunAfterALLCmdToken": null,
+            "RunAfterALLCmdToken": "D1C4",
             "OmitStep": false,
             "LastUpdate": "2022-07-18T07:37:27.5485521-06:00",
             "LastAuthor": "AGB465",
@@ -16129,15 +16130,15 @@
             "WDL_Task": null,
             "WDL_Task_Inputs": null,
             "WDL_Task_Outputs": null,
-            "CaseNumberList_JSON": null,
-            "CaseNumberList_csv": null
+            "CaseNumberList_JSON": "",
+            "CaseNumberList_csv": ""
           },
           {
             "ModuleName": "Abricate",
             "LockUsername": null,
             "Comment": "",
             "WslCommand": {
-              "CommandToken": "",
+              "CommandToken": "D2C5",
               "FlowScriptToken": null,
               "Command": "conda run -n abricate abricate --db @[db=ncbi] $[I.]contigs.fa \u003E $[O.]$[V.[SampleName]]_Abricate_Output.tsv",
               "IsNoop": false,
@@ -16168,10 +16169,10 @@
             },
             "PublishOutput": false,
             "ConsolidateInput": false,
-            "ConsolidatedCmdToken": null,
+            "ConsolidatedCmdToken": "",
             "ExpectSamplesHeader": false,
             "RunAfterALLPrereqs": false,
-            "RunAfterALLCmdToken": null,
+            "RunAfterALLCmdToken": "",
             "OmitStep": true,
             "LastUpdate": "2023-06-27T10:09:20.4439538-06:00",
             "LastAuthor": "AGB465",
@@ -16356,8 +16357,8 @@
             "WDL_Task": null,
             "WDL_Task_Inputs": null,
             "WDL_Task_Outputs": null,
-            "CaseNumberList_JSON": null,
-            "CaseNumberList_csv": null
+            "CaseNumberList_JSON": "",
+            "CaseNumberList_csv": ""
           }
         ]
       },
