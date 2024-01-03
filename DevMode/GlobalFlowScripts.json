@@ -11659,14 +11659,14 @@
           "TestSelect": true,
           "TestNumber": 1,
           "TestMachine": "WSL2 - This machine",
-          "TestOutputPath": "[S]E:\\data\\Arnie\\TestWSLBash_Results_WSL2\\",
+          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\TestWSLBash_1230091321_0205599",
           "TestSuccess": false
         },
         "2": {
           "TestSelect": true,
           "TestNumber": 2,
           "TestMachine": "Linux - Monod",
-          "TestOutputPath": "[S]E:\\data\\Arnie\\TestWSLBash_Results_Linux\\",
+          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\TestWSLBash_0103064111_0205599",
           "TestSuccess": false
         }
       },
@@ -11700,7 +11700,7 @@
             "LockUsername": null,
             "Comment": "",
             "WslCommand": {
-              "CommandToken": "",
+              "CommandToken": "D2C2",
               "FlowScriptToken": null,
               "Command": "echo \u0022IsSLURM=@[\u003CIsSLURM\u003E=]\u0022\r\nnextflow -version\r\nmkdir $[O.]$[I.[SampleName]]\r\ncp $[I.[SamplePath]] $[O.]$[I.[SampleName]]\r\ncp @[Primer=[S]/mnt/r/PDS-BioSeqDB/isPCR/AAFC//20230503_Pbrassicae-PCRproducts.txt] $[O.]primer.txt\r\n#conda run -n busco busco --list-datasets",
               "IsNoop": false,
@@ -11731,10 +11731,10 @@
             },
             "PublishOutput": true,
             "ConsolidateInput": false,
-            "ConsolidatedCmdToken": null,
+            "ConsolidatedCmdToken": "",
             "ExpectSamplesHeader": false,
             "RunAfterALLPrereqs": true,
-            "RunAfterALLCmdToken": null,
+            "RunAfterALLCmdToken": "D1C2",
             "OmitStep": false,
             "LastUpdate": "2023-04-22T11:47:58.7859189-06:00",
             "LastAuthor": "AGB465",
@@ -11900,15 +11900,15 @@
             "WDL_Task": null,
             "WDL_Task_Inputs": null,
             "WDL_Task_Outputs": null,
-            "CaseNumberList_JSON": null,
-            "CaseNumberList_csv": null
+            "CaseNumberList_JSON": "",
+            "CaseNumberList_csv": ""
           },
           {
             "ModuleName": "Compress",
             "LockUsername": null,
             "Comment": null,
             "WslCommand": {
-              "CommandToken": "",
+              "CommandToken": "D2C1",
               "FlowScriptToken": null,
               "Command": "count=\u0060ls -1 $[D.[SamplePath]]*.fastq 2\u003E/dev/null | wc -l\u0060\r\nif [ $count != 0 ]\r\nthen \r\ncat $[D.[SamplePath]]*.fastq \u003E $[O.]$[V.[SampleName]].fastq\r\ngzip -f $[O.]$[V.[SampleName]].fastq 2\u003E\u00261 \u003E /dev/null;\r\nfi \r\ncount=\u0060ls -1 $[D.[SamplePath]]*.fastq.gz 2\u003E/dev/null | wc -l\u0060\r\nif [ $count != 0 ]\r\nthen \r\ncat $[D.[SamplePath]]*.fastq.gz \u003E $[O.]$[V.[SampleName]].fastq.gz\r\nfi",
               "IsNoop": false,
@@ -11939,10 +11939,10 @@
             },
             "PublishOutput": false,
             "ConsolidateInput": false,
-            "ConsolidatedCmdToken": null,
+            "ConsolidatedCmdToken": "",
             "ExpectSamplesHeader": false,
             "RunAfterALLPrereqs": false,
-            "RunAfterALLCmdToken": null,
+            "RunAfterALLCmdToken": "",
             "OmitStep": false,
             "LastUpdate": "2022-04-06T06:45:00.6544378-06:00",
             "LastAuthor": "AGB465",
@@ -11971,8 +11971,8 @@
             "WDL_Task": null,
             "WDL_Task_Inputs": null,
             "WDL_Task_Outputs": null,
-            "CaseNumberList_JSON": null,
-            "CaseNumberList_csv": null
+            "CaseNumberList_JSON": "",
+            "CaseNumberList_csv": ""
           }
         ]
       },
