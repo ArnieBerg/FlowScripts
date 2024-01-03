@@ -10862,14 +10862,14 @@
           "TestSelect": true,
           "TestNumber": 1,
           "TestMachine": "WSL2 - This machine",
-          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\Salmonella__293730c",
+          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\Salmonella_0102020153_5992e6f",
           "TestSuccess": false
         },
         "2": {
           "TestSelect": true,
           "TestNumber": 2,
           "TestMachine": "Linux - Monod",
-          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\Salmonella_0102020153_293730c",
+          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\Salmonella_0103064512_5992e6f",
           "TestSuccess": false
         }
       },
@@ -10888,7 +10888,7 @@
       "SequenceDBPath": "/mnt/e/data/database/hpsuis/hpsuis.fasta",
       "SamplesFromLocalDevice": {},
       "SamplesToTransform": {},
-      "IsLinux": false,
+      "IsLinux": true,
       "CanRunInLinux": true,
       "DockerBaseImage": "bioseqenv.0.3",
       "Parameters": "BuscoConsolidate@[lineage=bacteria_odb10]\r\nBuscoConsolidate@[OmitStep=False]\r\nBuscoConsolidate@[PublishOutput=True]\r\nBuscoConsolidate@[IgnoreError=False]\r\nBuscoConsolidate@[IncludeOutput=True]\r\nBuscoConsolidate@[IsDocker=True]\r\nSamnSero@[OmitStep=False]\r\nSamnSero@[PublishOutput=False]\r\nSamnSero@[IgnoreError=False]\r\nSamnSero@[IncludeOutput=True]\r\nSamnSero@[IsDocker=False]\r\nSamnSero_Publish@[OmitStep=False]\r\nSamnSero_Publish@[PublishOutput=True]\r\nSamnSero_Publish@[IgnoreError=False]\r\nSamnSero_Publish@[IncludeOutput=False]\r\nSamnSero_Publish@[IsDocker=False]\r\nBuscoConsolidate@[IsSlurm=True]\r\nSamnSero@[IsSlurm=True]\r\n",
@@ -10911,7 +10911,7 @@
               "IsParallel": false,
               "IsSlurm": true,
               "IsDocker": true,
-              "IsLinux": false,
+              "IsLinux": true,
               "LinuxJobRunning": false,
               "SlurmJobID": null,
               "SlurmParms": null,
@@ -11105,7 +11105,7 @@
               "IsParallel": false,
               "IsSlurm": true,
               "IsDocker": false,
-              "IsLinux": false,
+              "IsLinux": true,
               "LinuxJobRunning": false,
               "SlurmJobID": null,
               "SlurmParms": null,
@@ -11426,8 +11426,8 @@
               {
                 "ModuleName": "SamnSero",
                 "ParmName": "\u003CIsSlurm\u003E",
-                "DefaultValue": "0",
-                "UserValue": "0",
+                "DefaultValue": "1",
+                "UserValue": "1",
                 "Description": null,
                 "ComboValues": null,
                 "Optional": false,
@@ -11443,8 +11443,8 @@
               {
                 "ModuleName": "SamnSero",
                 "ParmName": "\u003CisSLURM\u003E",
-                "DefaultValue": "0",
-                "UserValue": "0",
+                "DefaultValue": "1",
+                "UserValue": "1",
                 "Description": null,
                 "ComboValues": null,
                 "Optional": false,
@@ -11463,14 +11463,14 @@
             "UserVariableList": {},
             "IsDocker": false,
             "IsSLURM": true,
-            "Slurm_Resource_Request": 2,
+            "Slurm_Resource_Request": 3,
             "Slurm_Min_Resources": {
               "CPUs": 2,
               "MemoryGB": 4,
               "Hours": 0.300000012
             },
             "Slurm_Moderate_Resources": {
-              "CPUs": 6,
+              "CPUs": 8,
               "MemoryGB": 16,
               "Hours": 0.75
             },
@@ -11500,7 +11500,7 @@
               "IsParallel": false,
               "IsSlurm": false,
               "IsDocker": false,
-              "IsLinux": false,
+              "IsLinux": true,
               "LinuxJobRunning": false,
               "SlurmJobID": null,
               "SlurmParms": null,

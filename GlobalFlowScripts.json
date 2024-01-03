@@ -11757,18 +11757,18 @@
           "TestSelect": true,
           "TestNumber": 1,
           "TestMachine": "WSL2 - This machine",
-          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\Salmonella__293730c",
+          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\Salmonella_0102020153_5992e6f",
           "TestSuccess": false
         },
         "2": {
           "TestSelect": true,
           "TestNumber": 2,
           "TestMachine": "Linux - Monod",
-          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\Salmonella_0102020153_293730c",
+          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\Salmonella_0103064512_5992e6f",
           "TestSuccess": false
         }
       },
-      "SubmissionTimeStamp": "0102020153",
+      "SubmissionTimeStamp": "0103103954",
       "LockUsername": null,
       "Comment": "The Salmonella FlowScript functions to predict Salmonella serotypes from raw Nanopore sequencing data. The pipeline uses flye to assemble the long reads, medaka for genome polishing, and SISTR for in-silico serotyping. When complete, the pipeline produces a single \u0027sistr_res_aggregate\u0027 file that aggregates the results from all the included samples.",
       "DataSourceType": 1,
@@ -11785,11 +11785,11 @@
       "SequenceDBPath": "/c/data/database/hpsuis/hpsuis.fasta",
       "SamplesFromLocalDevice": {},
       "SamplesToTransform": {},
-      "IsLinux": false,
+      "IsLinux": true,
       "CanRunInLinux": true,
       "DockerBaseImage": "bioseqenv.0.3",
-      "Parameters": "BuscoConsolidate@[lineage=bacteria_odb10]\r\nSamnSero@[\u003CIsSlurm\u003E=0]\r\nSamnSero@[\u003CisSLURM\u003E=0]\r\nSamnSero@[Annot=]\r\nSamnSero@[QC=--qc]\r\nSamnSero@[Trim=]\r\nSamnSero@[NanoHQ=]\r\nSamnSero@[NoReport=]\r\nSamnSero@[GPU=]\r\nSamnSero@[TaxonName=Salmonella enterica]\r\nSamnSero@[TaxonLevel=species]\r\nSamnSero@[Resume=]\r\nSamnSero@[Metagenomics=off]\r\nSamnSero@[Platform=nanopore]\r\n",
-      "OutputPath": "E:\\data\\FlowScript_Test_Output_Results\\Salmonella__293730c",
+      "Parameters": "BuscoConsolidate@[lineage=bacteria_odb10]\r\nSamnSero@[\u003CIsSlurm\u003E=1]\r\nSamnSero@[\u003CisSLURM\u003E=1]\r\nSamnSero@[Annot=]\r\nSamnSero@[QC=--qc]\r\nSamnSero@[Trim=]\r\nSamnSero@[NanoHQ=]\r\nSamnSero@[NoReport=]\r\nSamnSero@[GPU=]\r\nSamnSero@[TaxonName=Salmonella enterica]\r\nSamnSero@[TaxonLevel=species]\r\nSamnSero@[Resume=]\r\nSamnSero@[Metagenomics=off]\r\nSamnSero@[Platform=nanopore]\r\n",
+      "OutputPath": "[S]E:\\data\\FlowScript_Test_Output_Results\\Salmonella_0102020153_5992e6f",
       "StartWithScript": "Data",
       "ScriptModulesInFlowScript": {
         "GlobalScriptModules": [
@@ -11808,7 +11808,7 @@
               "IsParallel": false,
               "IsSlurm": true,
               "IsDocker": true,
-              "IsLinux": false,
+              "IsLinux": true,
               "LinuxJobRunning": false,
               "SlurmJobID": null,
               "SlurmParms": null,
@@ -12002,7 +12002,7 @@
               "IsParallel": false,
               "IsSlurm": true,
               "IsDocker": false,
-              "IsLinux": false,
+              "IsLinux": true,
               "LinuxJobRunning": false,
               "SlurmJobID": null,
               "SlurmParms": null,
@@ -12323,8 +12323,8 @@
               {
                 "ModuleName": "SamnSero",
                 "ParmName": "\u003CIsSlurm\u003E",
-                "DefaultValue": "0",
-                "UserValue": "0",
+                "DefaultValue": "1",
+                "UserValue": "1",
                 "Description": null,
                 "ComboValues": null,
                 "Optional": false,
@@ -12340,8 +12340,8 @@
               {
                 "ModuleName": "SamnSero",
                 "ParmName": "\u003CisSLURM\u003E",
-                "DefaultValue": "0",
-                "UserValue": "0",
+                "DefaultValue": "1",
+                "UserValue": "1",
                 "Description": null,
                 "ComboValues": null,
                 "Optional": false,
@@ -12360,14 +12360,14 @@
             "UserVariableList": {},
             "IsDocker": false,
             "IsSLURM": true,
-            "Slurm_Resource_Request": 2,
+            "Slurm_Resource_Request": 3,
             "Slurm_Min_Resources": {
               "CPUs": 2,
               "MemoryGB": 4,
               "Hours": 0.300000012
             },
             "Slurm_Moderate_Resources": {
-              "CPUs": 6,
+              "CPUs": 8,
               "MemoryGB": 16,
               "Hours": 0.75
             },
@@ -12397,7 +12397,7 @@
               "IsParallel": false,
               "IsSlurm": false,
               "IsDocker": false,
-              "IsLinux": false,
+              "IsLinux": true,
               "LinuxJobRunning": false,
               "SlurmJobID": null,
               "SlurmParms": null,
@@ -12542,7 +12542,7 @@
           }
         ]
       },
-      "LastUpdate": "2024-01-03T06:44:59.250589-06:00",
+      "LastUpdate": "2024-01-03T10:49:39.6709026-06:00",
       "LastAuthor": "AGB465",
       "FindFolders": true,
       "InterfaceAdaptive": false,
