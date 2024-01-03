@@ -10862,14 +10862,14 @@
           "TestSelect": true,
           "TestNumber": 1,
           "TestMachine": "WSL2 - This machine",
-          "TestOutputPath": null,
+          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\Salmonella__293730c",
           "TestSuccess": false
         },
         "2": {
           "TestSelect": true,
           "TestNumber": 2,
           "TestMachine": "Linux - Monod",
-          "TestOutputPath": null,
+          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\Salmonella_0102020153_293730c",
           "TestSuccess": false
         }
       },
@@ -10903,7 +10903,7 @@
             "WslCommand": {
               "CommandToken": "D1C2",
               "FlowScriptToken": null,
-              "Command": "# create an input directory of assembly symlinks\r\nmkdir -p $[O.]busco_input\r\nfind $[I{SamnSero}.]assembly/ -type f -name \u0027*.fasta\u0027 -exec sh -c \u0027ln -s {} $[O.]busco_input/\u0022$(basename {})\u0022\u0027 \\;\r\n\r\n# run busco\r\nconda run -n busco busco -m genome -f -i $[O.]busco_input/ --out_path $[O.] -o BuscoSummary -l @[lineage=bacteria_odb10]\r\n\r\nwhile read -r line\r\ndo \r\n   IFS=\u0027,\u0027 read -ra my_array \u003C\u003C\u003C \u0022$line\u0022\r\n   echo \u0022Remove ${my_array[0]} subfolders.\u0022\r\n   rm -rf $[O.]BuscoSummary/\u0022${my_array[0]}\u0022.fasta/logs\r\n   rm -rf $[O.]BuscoSummary/\u0022${my_array[0]}\u0022.fasta/prodigal_output\r\n   rm -rf $[O.]BuscoSummary/\u0022${my_array[0]}\u0022.fasta/run_@[lineage=bacteria_odb10]\r\ndone \u003C $[O.]SampleList.csv",
+              "Command": "# create an input directory of assembly symlinks\r\nmkdir -p $[O.]busco_input\r\nfind $[I{SamnSero}.]assembly/ -type f -name \u0027*.fasta\u0027 -exec sh -c \u0027ln -s {} $[O.]busco_input/\u0022$(basename {})\u0022\u0027 \\;\r\n# run busco\r\nconda run -n busco busco -m genome -f -i $[O.]busco_input/ --out_path $[O.] -o BuscoSummary -l @[lineage=bacteria_odb10]\r\nwhile read -r line\r\ndo \r\n   IFS=\u0027,\u0027 read -ra my_array \u003C\u003C\u003C \u0022$line\u0022\r\n   echo \u0022Remove ${my_array[0]} subfolders.\u0022\r\n   rm -rf $[O.]BuscoSummary/\u0022${my_array[0]}\u0022.fasta/logs\r\n   rm -rf $[O.]BuscoSummary/\u0022${my_array[0]}\u0022.fasta/prodigal_output\r\n   rm -rf $[O.]BuscoSummary/\u0022${my_array[0]}\u0022.fasta/run_@[lineage=bacteria_odb10]\r\ndone \u003C $[O.]SampleList.csv",
               "IsNoop": false,
               "CondaPrefix": "",
               "Parms": [],
@@ -10933,7 +10933,7 @@
             },
             "PublishOutput": true,
             "ConsolidateInput": true,
-            "ConsolidatedCmdToken": "",
+            "ConsolidatedCmdToken": "D1C2",
             "ExpectSamplesHeader": false,
             "RunAfterALLPrereqs": false,
             "RunAfterALLCmdToken": "",
@@ -11062,7 +11062,7 @@
               }
             ],
             "DockerMountMap": [
-              "/mnt/c/BioSeqDB/WSLProxyRoot/SQA032/Work/"
+              "/mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/"
             ],
             "DockerImage": "bioseqenv.0.3",
             "UserVariableList": {},
@@ -11087,8 +11087,8 @@
             "WDL_Task": null,
             "WDL_Task_Inputs": null,
             "WDL_Task_Outputs": null,
-            "CaseNumberList_JSON": null,
-            "CaseNumberList_csv": null
+            "CaseNumberList_JSON": "",
+            "CaseNumberList_csv": ""
           },
           {
             "ModuleName": "SamnSero",
@@ -11126,7 +11126,7 @@
             },
             "PublishOutput": false,
             "ConsolidateInput": true,
-            "ConsolidatedCmdToken": "",
+            "ConsolidatedCmdToken": "D1C1",
             "ExpectSamplesHeader": false,
             "RunAfterALLPrereqs": false,
             "RunAfterALLCmdToken": "",
@@ -11640,8 +11640,8 @@
             "WDL_Task": null,
             "WDL_Task_Inputs": null,
             "WDL_Task_Outputs": null,
-            "CaseNumberList_JSON": null,
-            "CaseNumberList_csv": null
+            "CaseNumberList_JSON": "",
+            "CaseNumberList_csv": ""
           }
         ]
       },
@@ -11663,7 +11663,7 @@
           "TestSuccess": false
         },
         "2": {
-          "TestSelect": false,
+          "TestSelect": true,
           "TestNumber": 2,
           "TestMachine": "Linux - Monod",
           "TestOutputPath": "[S]E:\\data\\Arnie\\TestWSLBash_Results_Linux\\",
