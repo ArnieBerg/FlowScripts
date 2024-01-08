@@ -2924,16 +2924,22 @@
         "1": {
           "TestSelect": true,
           "TestNumber": 1,
+          "TestFlowScript": null,
           "TestMachine": "WSL2 - This machine",
-          "TestOutputPath": null,
-          "TestSuccess": false
+          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\CANSFlow__bc81aeb",
+          "TestSuccess": false,
+          "TestSuccessLabel": null,
+          "TestIsRunning": false
         },
         "2": {
           "TestSelect": true,
           "TestNumber": 2,
+          "TestFlowScript": null,
           "TestMachine": "Linux - Monod",
-          "TestOutputPath": null,
-          "TestSuccess": false
+          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\CANSFlow_0103114849_bc81aeb",
+          "TestSuccess": false,
+          "TestSuccessLabel": null,
+          "TestIsRunning": false
         }
       },
       "SubmissionTimeStamp": "0707112741",
@@ -2974,7 +2980,7 @@
       "SequenceDBPath": "/mnt/e/data/database/hpsuis/hpsuis.fasta",
       "SamplesFromLocalDevice": {},
       "SamplesToTransform": {},
-      "IsLinux": false,
+      "IsLinux": true,
       "CanRunInLinux": true,
       "DockerBaseImage": "jimmyliu1326/cans",
       "Parameters": "CANS@[targetCoverage=100]\r\nCANS@[sequenceLength=1720]\r\nCANS@[mode=dynamic]\r\nCANS@[notrim=--notrim]\r\nCANS@[deviation=50]\r\nCANS@[model=r10]\r\nCANS@[primers=]\r\nCANS@[cpus=20]\r\nCANS@[OmitStep=False]\r\nCANS@[PublishOutput=True]\r\nCANS@[IgnoreError=False]\r\nCANS@[IncludeOutput=True]\r\nCANS@[IsDocker=True]\r\nCANS@[host=]\r\n",
@@ -2987,15 +2993,15 @@
             "LockUsername": null,
             "Comment": "",
             "WslCommand": {
-              "CommandToken": "D1C1",
+              "CommandToken": "D2C1",
               "FlowScriptToken": null,
-              "Command": "# check primers input\r\nprimers=@[primers=]\r\nif ! test -z $primers; then primers_args=\u0022--primers $primers\u0022; fi\r\n\r\n# check host input\r\nhost=@[host=]\r\nif ! test -z $host; then host_args=\u0022--host $host\u0022; fi \r\n\r\nCANS.sh  -t @[cpus=4] $host_args $primers_args -m @[model=r9] -s @[targetCoverage=1000] -d @[deviation=50] @[notrim=--notrim]  --mode @[mode=dynamic] -i $[O.]samplelist.csv -o $[O.] -e @[sequenceLength=1750]\r\n\r\nrm -rf $[O.].snakemake",
+              "Command": "# check primers input\r\nprimers=@[primers=]\r\nif ! test -z $primers; then primers_args=\u0022--primers $primers\u0022; fi\r\n# check host input\r\nhost=@[host=]\r\nif ! test -z $host; then host_args=\u0022--host $host\u0022; fi \r\nCANS.sh  -t @[cpus=4] $host_args $primers_args -m @[model=r9] -s @[targetCoverage=1000] -d @[deviation=50] @[notrim=--notrim]  --mode @[mode=dynamic] -i $[O.]samplelist.csv -o $[O.] -e @[sequenceLength=1750]\r\nrm -rf $[O.].snakemake",
               "IsNoop": false,
               "CondaPrefix": "",
               "Parms": [],
               "IncludeStandardOutput": true,
               "IsParallel": false,
-              "IsSlurm": false,
+              "IsSlurm": true,
               "IsDocker": true,
               "IsLinux": false,
               "LinuxJobRunning": false,
@@ -3018,7 +3024,7 @@
             },
             "PublishOutput": true,
             "ConsolidateInput": true,
-            "ConsolidatedCmdToken": "",
+            "ConsolidatedCmdToken": "D1C1",
             "ExpectSamplesHeader": false,
             "RunAfterALLPrereqs": false,
             "RunAfterALLCmdToken": "",
@@ -3263,6 +3269,23 @@
                 "Extensions": null,
                 "MissingValue": null,
                 "Public": true
+              },
+              {
+                "ModuleName": "CANS",
+                "ParmName": "IsSlurm",
+                "DefaultValue": null,
+                "UserValue": "True",
+                "Description": null,
+                "ComboValues": "True|False",
+                "Optional": false,
+                "ReadOnly": false,
+                "Hidden": false,
+                "DeleteFlag": false,
+                "DataType": 1,
+                "Validator": null,
+                "Extensions": null,
+                "MissingValue": null,
+                "Public": true
               }
             ],
             "DockerMountMap": [
@@ -3272,15 +3295,27 @@
             "UserVariableList": {},
             "IsDocker": true,
             "IsSLURM": true,
-            "Slurm_Resource_Request": 0,
-            "Slurm_Min_Resources": null,
-            "Slurm_Moderate_Resources": null,
-            "Slurm_Max_Resources": null,
+            "Slurm_Resource_Request": 2,
+            "Slurm_Min_Resources": {
+              "CPUs": 2,
+              "MemoryGB": 4,
+              "Hours": 0.300000012
+            },
+            "Slurm_Moderate_Resources": {
+              "CPUs": 6,
+              "MemoryGB": 16,
+              "Hours": 0.75
+            },
+            "Slurm_Max_Resources": {
+              "CPUs": 16,
+              "MemoryGB": 64,
+              "Hours": 2
+            },
             "WDL_Task": null,
             "WDL_Task_Inputs": null,
             "WDL_Task_Outputs": null,
-            "CaseNumberList_JSON": null,
-            "CaseNumberList_csv": null
+            "CaseNumberList_JSON": "",
+            "CaseNumberList_csv": ""
           }
         ]
       },
@@ -8451,9 +8486,12 @@
         "1": {
           "TestSelect": true,
           "TestNumber": 1,
+          "TestFlowScript": null,
           "TestMachine": "WSL2 - This machine",
           "TestOutputPath": null,
-          "TestSuccess": false
+          "TestSuccess": false,
+          "TestSuccessLabel": null,
+          "TestIsRunning": false
         }
       },
       "SubmissionTimeStamp": "1107124835",
@@ -10119,16 +10157,22 @@
         "1": {
           "TestSelect": true,
           "TestNumber": 1,
+          "TestFlowScript": null,
           "TestMachine": "WSL2 - This machine",
           "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\StrepSuisFlow_0102125653_cead39e",
-          "TestSuccess": false
+          "TestSuccess": false,
+          "TestSuccessLabel": null,
+          "TestIsRunning": false
         },
         "2": {
           "TestSelect": true,
           "TestNumber": 2,
+          "TestFlowScript": null,
           "TestMachine": "Linux - Monod",
           "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\StrepSuisFlow_0103110040_cead39e",
-          "TestSuccess": false
+          "TestSuccess": false,
+          "TestSuccessLabel": null,
+          "TestIsRunning": false
         }
       },
       "SubmissionTimeStamp": "1204040818",
@@ -10876,16 +10920,22 @@
         "1": {
           "TestSelect": true,
           "TestNumber": 1,
+          "TestFlowScript": null,
           "TestMachine": "WSL2 - This machine",
           "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\Salmonella_0103103954_30371ec",
-          "TestSuccess": false
+          "TestSuccess": false,
+          "TestSuccessLabel": null,
+          "TestIsRunning": false
         },
         "2": {
           "TestSelect": true,
           "TestNumber": 2,
+          "TestFlowScript": null,
           "TestMachine": "Linux - Monod",
           "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\Salmonella_0103104948_30371ec",
-          "TestSuccess": false
+          "TestSuccess": false,
+          "TestSuccessLabel": null,
+          "TestIsRunning": false
         }
       },
       "SubmissionTimeStamp": "1205081236",
@@ -10903,7 +10953,7 @@
       "SequenceDBPath": "/mnt/e/data/database/hpsuis/hpsuis.fasta",
       "SamplesFromLocalDevice": {},
       "SamplesToTransform": {},
-      "IsLinux": false,
+      "IsLinux": true,
       "CanRunInLinux": true,
       "DockerBaseImage": "bioseqenv.0.3",
       "Parameters": "BuscoConsolidate@[lineage=bacteria_odb10]\r\nBuscoConsolidate@[OmitStep=False]\r\nBuscoConsolidate@[PublishOutput=True]\r\nBuscoConsolidate@[IgnoreError=False]\r\nBuscoConsolidate@[IncludeOutput=True]\r\nBuscoConsolidate@[IsDocker=True]\r\nSamnSero@[OmitStep=False]\r\nSamnSero@[PublishOutput=False]\r\nSamnSero@[IgnoreError=False]\r\nSamnSero@[IncludeOutput=True]\r\nSamnSero@[IsDocker=False]\r\nSamnSero_Publish@[OmitStep=False]\r\nSamnSero_Publish@[PublishOutput=True]\r\nSamnSero_Publish@[IgnoreError=False]\r\nSamnSero_Publish@[IncludeOutput=False]\r\nSamnSero_Publish@[IsDocker=False]\r\nBuscoConsolidate@[IsSlurm=True]\r\nSamnSero@[IsSlurm=True]\r\n",
@@ -10926,7 +10976,7 @@
               "IsParallel": false,
               "IsSlurm": true,
               "IsDocker": true,
-              "IsLinux": true,
+              "IsLinux": false,
               "LinuxJobRunning": false,
               "SlurmJobID": null,
               "SlurmParms": null,
@@ -11077,7 +11127,7 @@
               }
             ],
             "DockerMountMap": [
-              "/mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/"
+              "/mnt/c/BioSeqDB/WSLProxyRoot/SQA032/Work/"
             ],
             "DockerImage": "bioseqenv.0.3",
             "UserVariableList": {},
@@ -11120,7 +11170,7 @@
               "IsParallel": false,
               "IsSlurm": true,
               "IsDocker": false,
-              "IsLinux": true,
+              "IsLinux": false,
               "LinuxJobRunning": false,
               "SlurmJobID": null,
               "SlurmParms": null,
@@ -11153,7 +11203,7 @@
                 "ModuleName": "SamnSero",
                 "ParmName": "Resume",
                 "DefaultValue": "-resume",
-                "UserValue": "",
+                "UserValue": "-resume",
                 "Description": "Resume from the previous run.",
                 "ComboValues": "-resume",
                 "Optional": true,
@@ -11440,7 +11490,7 @@
               },
               {
                 "ModuleName": "SamnSero",
-                "ParmName": "\u003CIsSlurm\u003E",
+                "ParmName": "\u003CisSLURM\u003E",
                 "DefaultValue": "1",
                 "UserValue": "1",
                 "Description": null,
@@ -11457,7 +11507,7 @@
               },
               {
                 "ModuleName": "SamnSero",
-                "ParmName": "\u003CisSLURM\u003E",
+                "ParmName": "\u003CIsSlurm\u003E",
                 "DefaultValue": "1",
                 "UserValue": "1",
                 "Description": null,
@@ -11515,7 +11565,7 @@
               "IsParallel": false,
               "IsSlurm": false,
               "IsDocker": false,
-              "IsLinux": true,
+              "IsLinux": false,
               "LinuxJobRunning": false,
               "SlurmJobID": null,
               "SlurmParms": null,
@@ -11673,16 +11723,22 @@
         "1": {
           "TestSelect": true,
           "TestNumber": 1,
+          "TestFlowScript": null,
           "TestMachine": "WSL2 - This machine",
           "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\TestWSLBash_1230091321_0205599",
-          "TestSuccess": false
+          "TestSuccess": false,
+          "TestSuccessLabel": null,
+          "TestIsRunning": false
         },
         "2": {
           "TestSelect": true,
           "TestNumber": 2,
+          "TestFlowScript": null,
           "TestMachine": "Linux - Monod",
           "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\TestWSLBash_0103064111_0205599",
-          "TestSuccess": false
+          "TestSuccess": false,
+          "TestSuccessLabel": null,
+          "TestIsRunning": false
         }
       },
       "SubmissionTimeStamp": "1206041806",
@@ -12588,16 +12644,22 @@
         "1": {
           "TestSelect": true,
           "TestNumber": 1,
+          "TestFlowScript": null,
           "TestMachine": "Linux - Monod",
           "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\In-silico PCR__a99ea88",
-          "TestSuccess": false
+          "TestSuccess": false,
+          "TestSuccessLabel": null,
+          "TestIsRunning": false
         },
         "2": {
           "TestSelect": true,
           "TestNumber": 2,
+          "TestFlowScript": null,
           "TestMachine": "WSL2 - This machine",
           "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\In-silico PCR_0103114323_a99ea88",
-          "TestSuccess": false
+          "TestSuccess": false,
+          "TestSuccessLabel": null,
+          "TestIsRunning": false
         }
       },
       "SubmissionTimeStamp": "1213073647",
@@ -13143,16 +13205,22 @@
         "1": {
           "TestSelect": true,
           "TestNumber": 1,
+          "TestFlowScript": null,
           "TestMachine": "WSL2 - This machine",
           "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\InfluenzaA Flow__102331d",
-          "TestSuccess": false
+          "TestSuccess": false,
+          "TestSuccessLabel": null,
+          "TestIsRunning": false
         },
         "2": {
           "TestSelect": true,
           "TestNumber": 2,
+          "TestFlowScript": null,
           "TestMachine": "Linux - Monod",
           "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\InfluenzaA Flow_0103112702_102331d",
-          "TestSuccess": false
+          "TestSuccess": false,
+          "TestSuccessLabel": null,
+          "TestIsRunning": false
         }
       },
       "SubmissionTimeStamp": "1218023827",
@@ -13628,16 +13696,22 @@
         "1": {
           "TestSelect": true,
           "TestNumber": 1,
+          "TestFlowScript": null,
           "TestMachine": "WSL2 - This machine",
           "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\DragonFlye Assembly_0101070257_7685c86",
-          "TestSuccess": false
+          "TestSuccess": false,
+          "TestSuccessLabel": null,
+          "TestIsRunning": false
         },
         "2": {
           "TestSelect": true,
           "TestNumber": 2,
+          "TestFlowScript": null,
           "TestMachine": "Linux - Monod",
           "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\DragonFlye Assembly_0102120122_7685c86",
-          "TestSuccess": false
+          "TestSuccess": false,
+          "TestSuccessLabel": null,
+          "TestIsRunning": false
         }
       },
       "SubmissionTimeStamp": "1220051423",
