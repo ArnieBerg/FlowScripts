@@ -12320,7 +12320,7 @@
           "TestIsRunning": false
         }
       },
-      "SubmissionTimeStamp": "0108113420",
+      "SubmissionTimeStamp": "0109021230",
       "LockUsername": null,
       "Comment": "",
       "DataSourceType": 1,
@@ -12344,7 +12344,7 @@
       "SequenceDBPath": "[S]\\mnt\\e\\data\\database\\InfA_18Jan21_Seg4\\InfA_18Jan21_Seg4.fasta",
       "SamplesFromLocalDevice": {},
       "SamplesToTransform": {},
-      "IsLinux": true,
+      "IsLinux": false,
       "CanRunInLinux": true,
       "DockerBaseImage": "jimmyliu1326/cans",
       "Parameters": "CANS@[primers=[S]/mnt/e/data/primers/primers.tsv]\r\nCANS@[host=]\r\nCANS@[cpus=4]\r\nCANS@[model=r9]\r\nCANS@[targetCoverage=1000]\r\nCANS@[deviation=50]\r\nCANS@[notrim=--notrim]\r\nCANS@[mode=dynamic]\r\nCANS@[sequenceLength=1750]\r\n",
@@ -12359,7 +12359,7 @@
             "WslCommand": {
               "CommandToken": "D2C1",
               "FlowScriptToken": null,
-              "Command": "# check primers input\r\nprimers=@[primers=]\r\nif ! test -z $primers; then primers_args=\u0022--primers $primers\u0022; fi\r\n# check host input\r\nhost=@[host=]\r\nif ! test -z $host; then host_args=\u0022--host $host\u0022; fi \r\nCANS.sh  -t @[cpus=4] $host_args $primers_args -m @[model=r9] -s @[targetCoverage=1000] -d @[deviation=50] @[notrim=--notrim]  --mode @[mode=dynamic] -i $[O.]samplelist.csv -o $[O.] -e @[sequenceLength=1750]\r\nrm -rf $[O.].snakemake",
+              "Command": "# check primers input\r\nprimers=@[primers=]\r\nif ! test -z $primers; then primers_args=\u0022--primers $primers\u0022; fi\r\n# check host input\r\nhost=@[host=]\r\nif ! test -z $host; then host_args=\u0022--host $host\u0022; fi \r\n\r\nCANS.sh  -t @[cpus=4] $host_args $primers_args -m @[model=r9] -s @[targetCoverage=1000] -d @[deviation=50] @[notrim=--notrim]  --mode @[mode=dynamic] -i $[O.]SampleList.csv -o $[O.] -e @[sequenceLength=1750]\r\nrm -rf $[O.].snakemake",
               "IsNoop": false,
               "CondaPrefix": "",
               "Parms": [],
@@ -12367,7 +12367,7 @@
               "IsParallel": false,
               "IsSlurm": true,
               "IsDocker": true,
-              "IsLinux": true,
+              "IsLinux": false,
               "LinuxJobRunning": false,
               "SlurmJobID": null,
               "SlurmParms": null,
@@ -12659,21 +12659,21 @@
             "UserVariableList": {},
             "IsDocker": true,
             "IsSLURM": true,
-            "Slurm_Resource_Request": 2,
+            "Slurm_Resource_Request": 0,
             "Slurm_Min_Resources": {
-              "CPUs": 2,
-              "MemoryGB": 4,
-              "Hours": 0.300000012
+              "CPUs": 0,
+              "MemoryGB": 0,
+              "Hours": 0
             },
             "Slurm_Moderate_Resources": {
-              "CPUs": 6,
-              "MemoryGB": 16,
-              "Hours": 0.75
+              "CPUs": 0,
+              "MemoryGB": 0,
+              "Hours": 0
             },
             "Slurm_Max_Resources": {
-              "CPUs": 16,
-              "MemoryGB": 64,
-              "Hours": 2
+              "CPUs": 0,
+              "MemoryGB": 0,
+              "Hours": 0
             },
             "WDL_Task": null,
             "WDL_Task_Inputs": null,
@@ -12683,7 +12683,7 @@
           }
         ]
       },
-      "LastUpdate": "2024-01-08T12:52:43.7239328-06:00",
+      "LastUpdate": "2024-01-09T14:18:38.6849024-06:00",
       "LastAuthor": "AGB465",
       "FindFolders": true,
       "InterfaceAdaptive": false,
