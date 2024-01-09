@@ -2926,7 +2926,7 @@
           "TestNumber": 1,
           "TestFlowScript": null,
           "TestMachine": "WSL2 - This machine",
-          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\CANSFlow__bc81aeb",
+          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\CANSFlow_0109021230_3029f6b",
           "TestSuccess": false,
           "TestSuccessLabel": null,
           "TestIsRunning": false
@@ -2936,7 +2936,7 @@
           "TestNumber": 2,
           "TestFlowScript": null,
           "TestMachine": "Linux - Monod",
-          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\CANSFlow_0103114849_bc81aeb",
+          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\CANSFlow_0109021847_3029f6b",
           "TestSuccess": false,
           "TestSuccessLabel": null,
           "TestIsRunning": false
@@ -2995,7 +2995,7 @@
             "WslCommand": {
               "CommandToken": "D2C1",
               "FlowScriptToken": null,
-              "Command": "# check primers input\r\nprimers=@[primers=]\r\nif ! test -z $primers; then primers_args=\u0022--primers $primers\u0022; fi\r\n# check host input\r\nhost=@[host=]\r\nif ! test -z $host; then host_args=\u0022--host $host\u0022; fi \r\n\r\nCANS.sh  -t @[cpus=4] $host_args $primers_args -m @[model=r9] -s @[targetCoverage=1000] -d @[deviation=50] @[notrim=--notrim]  --mode @[mode=dynamic] -i $[O.]SampleList.csv -o $[O.] -e @[sequenceLength=1750]\r\nrm -rf $[O.].snakemake",
+              "Command": "# check primers input\r\nprimers=@[primers=]\r\nif ! test -z $primers; then primers_args=\u0022--primers $primers\u0022; fi\r\n# check host input\r\nhost=@[host=]\r\nif ! test -z $host; then host_args=\u0022--host $host\u0022; fi \r\nCANS.sh  -t @[cpus=4] $host_args $primers_args -m @[model=r9] -s @[targetCoverage=1000] -d @[deviation=50] @[notrim=--notrim]  --mode @[mode=dynamic] -i $[O.]SampleList.csv -o $[O.] -e @[sequenceLength=1750]\r\nrm -rf $[O.].snakemake",
               "IsNoop": false,
               "CondaPrefix": "",
               "Parms": [],
@@ -3003,7 +3003,7 @@
               "IsParallel": false,
               "IsSlurm": true,
               "IsDocker": true,
-              "IsLinux": true,
+              "IsLinux": false,
               "LinuxJobRunning": false,
               "SlurmJobID": null,
               "SlurmParms": null,
