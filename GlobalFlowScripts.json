@@ -12358,7 +12358,7 @@
           "TestNumber": 1,
           "TestFlowScript": null,
           "TestMachine": "WSL2 - This machine",
-          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\TestWSLBash_1230091321_0205599",
+          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\TestWSLBash_0110062551_f83871b",
           "TestSuccess": false,
           "TestSuccessLabel": null,
           "TestIsRunning": false
@@ -12368,13 +12368,13 @@
           "TestNumber": 2,
           "TestFlowScript": null,
           "TestMachine": "Linux - Monod",
-          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\TestWSLBash_0103064111_0205599",
+          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\TestWSLBash_0110062701_f83871b",
           "TestSuccess": false,
           "TestSuccessLabel": null,
           "TestIsRunning": false
         }
       },
-      "SubmissionTimeStamp": "0110062551",
+      "SubmissionTimeStamp": "0110062701",
       "LockUsername": null,
       "Comment": "",
       "DataSourceType": 0,
@@ -12386,9 +12386,7 @@
       "SequenceList": [],
       "SequenceListChecked": [],
       "SequenceDatabaseName": "SSuis_Ruwani",
-      "ParameterFilesToUpload": {
-        "[S]/mnt/e/data/primers//crispr_primers.txt": null
-      },
+      "ParameterFilesToUpload": {},
       "ParameterFoldersToUpload": {},
       "SequenceDBPathLinux": "[S]/mnt/e/data/database/SSuis_Ruwani",
       "SequenceDBPath": "[S]E:\\data\\database\\SSuis_Ruwani\\SSuis_Ruwani.fasta",
@@ -12683,7 +12681,7 @@
           }
         ]
       },
-      "LastUpdate": "2024-01-10T06:26:52.4122623-06:00",
+      "LastUpdate": "2024-01-10T06:35:50.0847773-06:00",
       "LastAuthor": "AGB465",
       "FindFolders": false,
       "InterfaceAdaptive": false,

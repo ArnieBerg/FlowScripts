@@ -11725,7 +11725,7 @@
           "TestNumber": 1,
           "TestFlowScript": null,
           "TestMachine": "WSL2 - This machine",
-          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\TestWSLBash_1230091321_0205599",
+          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\TestWSLBash_0110062551_f83871b",
           "TestSuccess": false,
           "TestSuccessLabel": null,
           "TestIsRunning": false
@@ -11735,7 +11735,7 @@
           "TestNumber": 2,
           "TestFlowScript": null,
           "TestMachine": "Linux - Monod",
-          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\TestWSLBash_0103064111_0205599",
+          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\TestWSLBash_0110062701_f83871b",
           "TestSuccess": false,
           "TestSuccessLabel": null,
           "TestIsRunning": false
@@ -11781,7 +11781,7 @@
               "IsParallel": false,
               "IsSlurm": true,
               "IsDocker": false,
-              "IsLinux": true,
+              "IsLinux": false,
               "LinuxJobRunning": false,
               "SlurmJobID": null,
               "SlurmParms": null,
