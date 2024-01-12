@@ -12124,7 +12124,28 @@
     },
     {
       "FlowScriptName": "tCANSFlow",
-      "TestConfig": {},
+      "TestConfig": {
+        "1": {
+          "TestSelect": true,
+          "TestNumber": 1,
+          "TestFlowScript": null,
+          "TestMachine": "WSL2 - This machine",
+          "TestOutputPath": null,
+          "TestSuccess": false,
+          "TestSuccessLabel": null,
+          "TestIsRunning": false
+        },
+        "2": {
+          "TestSelect": true,
+          "TestNumber": 2,
+          "TestFlowScript": null,
+          "TestMachine": "Linux - Monod",
+          "TestOutputPath": null,
+          "TestSuccess": false,
+          "TestSuccessLabel": null,
+          "TestIsRunning": false
+        }
+      },
       "SubmissionTimeStamp": "0112065206",
       "LockUsername": null,
       "Comment": "",
@@ -12585,7 +12606,7 @@
           }
         ]
       },
-      "LastUpdate": "2024-01-12T08:56:49.0763137-06:00",
+      "LastUpdate": "2024-01-12T08:57:38.0529361-06:00",
       "LastAuthor": "AGB465",
       "FindFolders": true,
       "InterfaceAdaptive": false,
