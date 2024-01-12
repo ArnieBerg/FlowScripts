@@ -2980,7 +2980,7 @@
       "SequenceDBPath": "/mnt/e/data/database/hpsuis/hpsuis.fasta",
       "SamplesFromLocalDevice": {},
       "SamplesToTransform": {},
-      "IsLinux": false,
+      "IsLinux": true,
       "CanRunInLinux": true,
       "DockerBaseImage": "jimmyliu1326/cans",
       "Parameters": "CANS@[targetCoverage=100]\r\nCANS@[sequenceLength=1720]\r\nCANS@[mode=dynamic]\r\nCANS@[notrim=--notrim]\r\nCANS@[deviation=50]\r\nCANS@[model=r10]\r\nCANS@[primers=]\r\nCANS@[cpus=20]\r\nCANS@[OmitStep=False]\r\nCANS@[PublishOutput=True]\r\nCANS@[IgnoreError=False]\r\nCANS@[IncludeOutput=True]\r\nCANS@[IsDocker=True]\r\nCANS@[host=]\r\n",
@@ -3003,7 +3003,7 @@
               "IsParallel": false,
               "IsSlurm": true,
               "IsDocker": true,
-              "IsLinux": false,
+              "IsLinux": true,
               "LinuxJobRunning": false,
               "SlurmJobID": null,
               "SlurmParms": null,
@@ -3295,21 +3295,21 @@
             "UserVariableList": {},
             "IsDocker": true,
             "IsSLURM": true,
-            "Slurm_Resource_Request": 0,
+            "Slurm_Resource_Request": 2,
             "Slurm_Min_Resources": {
-              "CPUs": 0,
-              "MemoryGB": 0,
-              "Hours": 0
+              "CPUs": 2,
+              "MemoryGB": 4,
+              "Hours": 0.300000012
             },
             "Slurm_Moderate_Resources": {
-              "CPUs": 0,
-              "MemoryGB": 0,
-              "Hours": 0
+              "CPUs": 6,
+              "MemoryGB": 16,
+              "Hours": 0.75
             },
             "Slurm_Max_Resources": {
-              "CPUs": 0,
-              "MemoryGB": 0,
-              "Hours": 0
+              "CPUs": 16,
+              "MemoryGB": 64,
+              "Hours": 2
             },
             "WDL_Task": null,
             "WDL_Task_Inputs": null,
@@ -12692,7 +12692,7 @@
       "SequenceDBPath": "/mnt/e/data/database/hpsuis/hpsuis.fasta",
       "SamplesFromLocalDevice": {},
       "SamplesToTransform": {},
-      "IsLinux": false,
+      "IsLinux": true,
       "CanRunInLinux": true,
       "DockerBaseImage": "bioseqenv.0.3",
       "Parameters": "tnBLAST_Publish@[OmitStep=False]\r\ntnBLAST_Publish@[PublishOutput=True]\r\ntnBLAST_Publish@[IgnoreError=False]\r\ntnBLAST_Publish@[IncludeOutput=True]\r\ntnBLAST_Publish@[IsDocker=False]\r\ntnBLAST@[OmitStep=False]\r\ntnBLAST@[PublishOutput=False]\r\ntnBLAST@[IgnoreError=False]\r\ntnBLAST@[IncludeOutput=True]\r\ntnBLAST@[IsDocker=False]\r\ntnBLAST_Publish@[IsSlurm=True]\r\n",
@@ -12707,13 +12707,13 @@
             "WslCommand": {
               "CommandToken": "D1C1",
               "FlowScriptToken": null,
-              "Command": "nextflow run jimmyliu1326/isPCR \\\r\n   -latest \\\r\n   --input $[O.]SampleList.csv \\\r\n   --outdir $[O.] \\\r\n   --primer @[Primer=] \\\r\n   --input_format @[sequence_format=fasta] \\\r\n   @[Multiplex=--multiplex] \\\r\n   --primer_min_tm @[Min_Primer_Tm=40] \\\r\n   --probe_min_tm @[Min_Probe_Tm=40] \\\r\n   --max_length @[max_amplicon_length=1000] \\\r\n   -with-tower",
+              "Command": "# check for slurm support\r\n# script variables\r\nargs=\u0022\u0022\r\n# check if slurm is available in env\r\nif [[ @[\u003CIsSlurm\u003E=] -eq 1 ]]; then \r\nargs=\u0022-profile slurm,standard --account pds_monod\u0022\r\nfi\r\necho \u0022isSLURM=@[\u003CisSLURM\u003E=]\u0022\r\n\r\nnextflow run jimmyliu1326/isPCR \\\r\n   -latest \\\r\n   --input $[O.]SampleList.csv \\\r\n   --outdir $[O.] \\\r\n   --primer @[Primer=] \\\r\n   --input_format @[sequence_format=fasta] \\\r\n   @[Multiplex=--multiplex] \\\r\n   --primer_min_tm @[Min_Primer_Tm=40] \\\r\n   --probe_min_tm @[Min_Probe_Tm=40] \\\r\n   --max_length @[max_amplicon_length=1000] \\\r\n   -with-tower \\\r\n   $args",
               "IsNoop": false,
               "CondaPrefix": "",
               "Parms": [],
               "IncludeStandardOutput": true,
               "IsParallel": false,
-              "IsSlurm": false,
+              "IsSlurm": true,
               "IsDocker": false,
               "IsLinux": true,
               "LinuxJobRunning": false,
@@ -12744,6 +12744,57 @@
             "LastUpdate": "2022-11-20T16:07:21.3027096-06:00",
             "LastAuthor": "SQA032",
             "ScriptParmsList": [
+              {
+                "ModuleName": "tnBLAST",
+                "ParmName": "\u003CIsSlurm\u003E",
+                "DefaultValue": "1",
+                "UserValue": "1",
+                "Description": null,
+                "ComboValues": null,
+                "Optional": false,
+                "ReadOnly": true,
+                "Hidden": true,
+                "DeleteFlag": false,
+                "DataType": 0,
+                "Validator": null,
+                "Extensions": null,
+                "MissingValue": null,
+                "Public": false
+              },
+              {
+                "ModuleName": "tnBLAST",
+                "ParmName": "\u003CisSLURM\u003E",
+                "DefaultValue": "1",
+                "UserValue": "1",
+                "Description": null,
+                "ComboValues": null,
+                "Optional": false,
+                "ReadOnly": true,
+                "Hidden": true,
+                "DeleteFlag": false,
+                "DataType": 0,
+                "Validator": null,
+                "Extensions": null,
+                "MissingValue": null,
+                "Public": false
+              },
+              {
+                "ModuleName": "tnBLAST",
+                "ParmName": "IsSlurm",
+                "DefaultValue": null,
+                "UserValue": "True",
+                "Description": null,
+                "ComboValues": "True|False",
+                "Optional": false,
+                "ReadOnly": false,
+                "Hidden": false,
+                "DeleteFlag": false,
+                "DataType": 1,
+                "Validator": null,
+                "Extensions": null,
+                "MissingValue": null,
+                "Public": true
+              },
               {
                 "ModuleName": "tnBLAST",
                 "ParmName": "Primer",
@@ -12937,21 +12988,21 @@
             "UserVariableList": {},
             "IsDocker": false,
             "IsSLURM": true,
-            "Slurm_Resource_Request": 2,
+            "Slurm_Resource_Request": 0,
             "Slurm_Min_Resources": {
-              "CPUs": 2,
-              "MemoryGB": 4,
-              "Hours": 0.300000012
+              "CPUs": 0,
+              "MemoryGB": 0,
+              "Hours": 0
             },
             "Slurm_Moderate_Resources": {
-              "CPUs": 6,
-              "MemoryGB": 16,
-              "Hours": 0.75
+              "CPUs": 0,
+              "MemoryGB": 0,
+              "Hours": 0
             },
             "Slurm_Max_Resources": {
-              "CPUs": 16,
-              "MemoryGB": 64,
-              "Hours": 2
+              "CPUs": 0,
+              "MemoryGB": 0,
+              "Hours": 0
             },
             "WDL_Task": null,
             "WDL_Task_Inputs": null,
@@ -13698,7 +13749,7 @@
           "TestNumber": 1,
           "TestFlowScript": null,
           "TestMachine": "WSL2 - This machine",
-          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\DragonFlye Assembly_0101070257_7685c86",
+          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\DragonFlye Assembly_1230101908_754e017",
           "TestSuccess": false,
           "TestSuccessLabel": null,
           "TestIsRunning": false
@@ -13708,13 +13759,13 @@
           "TestNumber": 2,
           "TestFlowScript": null,
           "TestMachine": "Linux - Monod",
-          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\DragonFlye Assembly_0102120122_7685c86",
+          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\DragonFlye Assembly_0101070249_754e017",
           "TestSuccess": false,
           "TestSuccessLabel": null,
           "TestIsRunning": false
         }
       },
-      "SubmissionTimeStamp": "1220051423",
+      "SubmissionTimeStamp": "0102120131",
       "LockUsername": null,
       "Comment": "",
       "DataSourceType": 1,
@@ -13722,23 +13773,23 @@
       "SampleList": {
         "PDS2335216-2_Gpara": "1[S]/mnt/e/data/Dreamer/PDS_Diagnostics_2023/Ssuis_gpara_PDS2335216_17_27Nov23_PC/Ssuis_gpara_PDS2335216_27Nov23_PC/20231127_1652_X3_FAY05715_5beebebd/fastq_pass/PDS2335216-2_Gpara/",
         "PDS2335216-2_Ssuis": "1[S]/mnt/e/data/Dreamer/PDS_Diagnostics_2023/Ssuis_gpara_PDS2335216_17_27Nov23_PC/Ssuis_gpara_PDS2335216_27Nov23_PC/20231127_1652_X3_FAY05715_5beebebd/fastq_pass/PDS2335216-2_Ssuis/",
-        "PDS2335217-2_Gpara": "1[S]/mnt/e/data/Dreamer/PDS_Diagnostics_2023/Ssuis_gpara_PDS2335216_17_27Nov23_PC/Ssuis_gpara_PDS2335216_27Nov23_PC/20231127_1652_X3_FAY05715_5beebebd/fastq_pass/PDS2335217-2_Gpara/",
-        "PDS2335217-2_Ssuis": "1[S]/mnt/e/data/Dreamer/PDS_Diagnostics_2023/Ssuis_gpara_PDS2335216_17_27Nov23_PC/Ssuis_gpara_PDS2335216_27Nov23_PC/20231127_1652_X3_FAY05715_5beebebd/fastq_pass/PDS2335217-2_Ssuis/"
+        "PDS2335217-2_Gpara": "0[S]/mnt/e/data/Dreamer/PDS_Diagnostics_2023/Ssuis_gpara_PDS2335216_17_27Nov23_PC/Ssuis_gpara_PDS2335216_27Nov23_PC/20231127_1652_X3_FAY05715_5beebebd/fastq_pass/PDS2335217-2_Gpara/",
+        "PDS2335217-2_Ssuis": "0[S]/mnt/e/data/Dreamer/PDS_Diagnostics_2023/Ssuis_gpara_PDS2335216_17_27Nov23_PC/Ssuis_gpara_PDS2335216_27Nov23_PC/20231127_1652_X3_FAY05715_5beebebd/fastq_pass/PDS2335217-2_Ssuis/"
       },
       "SequenceList": [],
       "SequenceListChecked": [],
       "SequenceDatabaseName": "hpsuis",
       "ParameterFilesToUpload": {},
       "ParameterFoldersToUpload": {},
-      "SequenceDBPathLinux": "/mnt/e/data/database/hpsuis",
-      "SequenceDBPath": "/mnt/e/data/database/hpsuis/hpsuis.fasta",
+      "SequenceDBPathLinux": "/c/data/database/hpsuis",
+      "SequenceDBPath": "/c/data/database/hpsuis/hpsuis.fasta",
       "SamplesFromLocalDevice": {},
       "SamplesToTransform": null,
-      "IsLinux": false,
+      "IsLinux": true,
       "CanRunInLinux": true,
       "DockerBaseImage": "bioseqenv.0.3",
-      "Parameters": "SeqTK@[OmitStep=]\r\nSeqTK@[PublishOutput=]\r\nSeqTK@[IgnoreError=]\r\nSeqTK@[IncludeOutput=]\r\nSeqTK@[IsDocker=]\r\nSeqTK@[IgnoreExitCode=]\r\nSeqTK@[IncludeStandardOutput=]\r\nSeqTK@[IsSlurm=]\r\nBBMap@[OmitStep=]\r\nBBMap@[PublishOutput=]\r\nBBMap@[IgnoreError=]\r\nBBMap@[IncludeOutput=]\r\nBBMap@[IsDocker=]\r\nBBMap@[IgnoreExitCode=]\r\nBBMap@[IncludeStandardOutput=]\r\nBBMap@[IsSlurm=]\r\nRename_Contigs@[OmitStep=]\r\nRename_Contigs@[PublishOutput=]\r\nRename_Contigs@[IgnoreError=]\r\nRename_Contigs@[IncludeOutput=]\r\nRename_Contigs@[IsDocker=]\r\nRename_Contigs@[IgnoreExitCode=]\r\nRename_Contigs@[IncludeStandardOutput=]\r\nRename_Contigs@[IsSlurm=]\r\nCompress@[OmitStep=]\r\nCompress@[PublishOutput=]\r\nCompress@[IgnoreExitCode=]\r\nCompress@[IncludeStandardOutput=]\r\nCompress@[IsDocker=]\r\nCompress@[IgnoreError=]\r\nCompress@[IncludeOutput=]\r\nCompress@[IsSlurm=]\r\nnanoq@[OmitStep=]\r\nnanoq@[PublishOutput=]\r\nnanoq@[IgnoreError=]\r\nnanoq@[IncludeOutput=]\r\nnanoq@[IsDocker=]\r\nnanoq@[IgnoreExitCode=]\r\nnanoq@[IncludeStandardOutput=]\r\nnanoq@[IsSlurm=]\r\nBusco@[lineage=bacteria_odb10]\r\nBusco@[OmitStep=]\r\nBusco@[PublishOutput=]\r\nBusco@[IgnoreError=]\r\nBusco@[IncludeOutput=]\r\nBusco@[IsDocker=]\r\nBusco@[IgnoreExitCode=]\r\nBusco@[IncludeStandardOutput=]\r\nBusco@[IsSlurm=]\r\nQuast@[OmitStep=]\r\nQuast@[PublishOutput=]\r\nQuast@[IgnoreError=]\r\nQuast@[IncludeOutput=]\r\nQuast@[IsDocker=]\r\nQuast@[IgnoreExitCode=]\r\nQuast@[IncludeStandardOutput=]\r\nQuast@[IsSlurm=]\r\nRefseq_Masher@[OmitStep=]\r\nRefseq_Masher@[PublishOutput=]\r\nRefseq_Masher@[IgnoreExitCode=]\r\nRefseq_Masher@[IncludeStandardOutput=]\r\nRefseq_Masher@[IsDocker=]\r\nRefseq_Masher@[IgnoreError=]\r\nRefseq_Masher@[IncludeOutput=]\r\nRefseq_Masher@[IsSlurm=]\r\nKraken2@[threads=20]\r\nKraken2@[db=/mnt/e/data/reference/databases/minikraken2_v1_8GB/]\r\nKraken2@[OmitStep=]\r\nKraken2@[PublishOutput=]\r\nKraken2@[IgnoreError=]\r\nKraken2@[IncludeOutput=]\r\nKraken2@[IsDocker=]\r\nKraken2@[IgnoreExitCode=]\r\nKraken2@[IncludeStandardOutput=]\r\nKraken2@[IsSlurm=]\r\nDragonFlye@[trim=--trim]\r\nDragonFlye@[gsizeParm=--gsize @[gsize=]]\r\nDragonFlye@[gsize=]\r\nDragonFlye@[raconRounds=1]\r\nDragonFlye@[racon=--racon @[raconRounds=1]]\r\nDragonFlye@[medakaModel=r941_min_hac_g507]\r\nDragonFlye@[medakaRounds=1]\r\nDragonFlye@[medaka=--medaka @[medakaRounds=1] @[medakaModelParm=--model @[medakaModel=r941_min_hac_g507]]]\r\nDragonFlye@[assembler=flye]\r\nDragonFlye@[cpus=20]\r\nDragonFlye@[medakaModelParm=--model @[medakaModel=r941_min_hac_g507]]\r\nDragonFlye@[nano-hq=--nanohq]\r\nDragonFlye@[nopolish=--nopolish]\r\nDragonFlye@[OmitStep=]\r\nDragonFlye@[PublishOutput=]\r\nDragonFlye@[IgnoreError=]\r\nDragonFlye@[IncludeOutput=]\r\nDragonFlye@[IsDocker=]\r\nDragonFlye@[IsSlurm=]\r\nDragonFlye Sink@[OmitStep=]\r\nDragonFlye Sink@[PublishOutput=]\r\nDragonFlye Sink@[IgnoreError=]\r\nDragonFlye Sink@[IncludeOutput=]\r\nDragonFlye Sink@[IsDocker=]\r\nDragonFlye Sink@[IgnoreExitCode=]\r\nDragonFlye Sink@[IncludeStandardOutput=]\r\nDragonFlye Sink@[IsSlurm=]\r\nAbricate@[db=ncbi]\r\nAbricate@[OmitStep=]\r\nAbricate@[PublishOutput=]\r\nAbricate@[IgnoreError=]\r\nAbricate@[IncludeOutput=]\r\nAbricate@[IsDocker=]\r\nAbricate@[IgnoreExitCode=]\r\nAbricate@[IncludeStandardOutput=]\r\nAbricate@[IsSlurm=]\r\n",
-      "OutputPath": "[S]E:\\data\\Dhinesh\\30nov23_ssuis\\",
+      "Parameters": "SeqTK@[OmitStep=False]\r\nSeqTK@[PublishOutput=False]\r\nSeqTK@[IgnoreError=False]\r\nSeqTK@[IncludeOutput=True]\r\nSeqTK@[IsDocker=True]\r\nSeqTK@[IgnoreExitCode=true]\r\nSeqTK@[IncludeStandardOutput=true]\r\nSeqTK@[IsSlurm=true]\r\nBBMap@[OmitStep=False]\r\nBBMap@[PublishOutput=True]\r\nBBMap@[IgnoreError=True]\r\nBBMap@[IncludeOutput=True]\r\nBBMap@[IsDocker=True]\r\nBBMap@[IgnoreExitCode=true]\r\nBBMap@[IncludeStandardOutput=true]\r\nBBMap@[IsSlurm=true]\r\nRename_Contigs@[OmitStep=False]\r\nRename_Contigs@[PublishOutput=True]\r\nRename_Contigs@[IgnoreError=False]\r\nRename_Contigs@[IncludeOutput=True]\r\nRename_Contigs@[IsDocker=False]\r\nRename_Contigs@[IgnoreExitCode=true]\r\nRename_Contigs@[IncludeStandardOutput=true]\r\nRename_Contigs@[IsSlurm=true]\r\nCompress@[OmitStep=]\r\nCompress@[PublishOutput=]\r\nCompress@[IgnoreExitCode=true]\r\nCompress@[IncludeStandardOutput=true]\r\nCompress@[IsDocker=]\r\nCompress@[IgnoreError=]\r\nCompress@[IncludeOutput=]\r\nCompress@[IsSlurm=]\r\nnanoq@[OmitStep=False]\r\nnanoq@[PublishOutput=False]\r\nnanoq@[IgnoreError=False]\r\nnanoq@[IncludeOutput=True]\r\nnanoq@[IsDocker=True]\r\nnanoq@[IgnoreExitCode=true]\r\nnanoq@[IncludeStandardOutput=true]\r\nnanoq@[IsSlurm=]\r\nBusco@[lineage=bacteria_odb10]\r\nBusco@[OmitStep=False]\r\nBusco@[PublishOutput=True]\r\nBusco@[IgnoreError=False]\r\nBusco@[IncludeOutput=True]\r\nBusco@[IsDocker=True]\r\nBusco@[IgnoreExitCode=true]\r\nBusco@[IncludeStandardOutput=true]\r\nBusco@[IsSlurm=true]\r\nQuast@[OmitStep=False]\r\nQuast@[PublishOutput=True]\r\nQuast@[IgnoreError=False]\r\nQuast@[IncludeOutput=True]\r\nQuast@[IsDocker=True]\r\nQuast@[IgnoreExitCode=true]\r\nQuast@[IncludeStandardOutput=true]\r\nQuast@[IsSlurm=true]\r\nRefseq_Masher@[OmitStep=]\r\nRefseq_Masher@[PublishOutput=]\r\nRefseq_Masher@[IgnoreExitCode=true]\r\nRefseq_Masher@[IncludeStandardOutput=true]\r\nRefseq_Masher@[IsDocker=true]\r\nRefseq_Masher@[IgnoreError=]\r\nRefseq_Masher@[IncludeOutput=]\r\nRefseq_Masher@[IsSlurm=true]\r\nKraken2@[threads=20]\r\nKraken2@[db=/mnt/e/data/reference/databases/minikraken2_v1_8GB/]\r\nKraken2@[OmitStep=False]\r\nKraken2@[PublishOutput=True]\r\nKraken2@[IgnoreError=False]\r\nKraken2@[IncludeOutput=True]\r\nKraken2@[IsDocker=True]\r\nKraken2@[IgnoreExitCode=true]\r\nKraken2@[IncludeStandardOutput=true]\r\nKraken2@[IsSlurm=true]\r\nDragonFlye@[trim=]\r\nDragonFlye@[gsizeParm=--gsize @[gsize=]]\r\nDragonFlye@[gsize=2M]\r\nDragonFlye@[raconRounds=1]\r\nDragonFlye@[racon=--racon @[raconRounds=1]]\r\nDragonFlye@[medakaModel=r941_min_hac_g507]\r\nDragonFlye@[medakaRounds=1]\r\nDragonFlye@[medaka=--medaka @[medakaRounds=1] @[medakaModelParm=--model @[medakaModel=r941_min_hac_g507]]]\r\nDragonFlye@[assembler=flye]\r\nDragonFlye@[cpus=20]\r\nDragonFlye@[medakaModelParm=--model @[medakaModel=r941_min_hac_g507]]\r\nDragonFlye@[nano-hq=--nanohq]\r\nDragonFlye@[nopolish=--nopolish]\r\nDragonFlye@[OmitStep=False]\r\nDragonFlye@[PublishOutput=False]\r\nDragonFlye@[IgnoreError=False]\r\nDragonFlye@[IncludeOutput=True]\r\nDragonFlye@[IsDocker=True]\r\nDragonFlye@[IsSlurm=true]\r\nDragonFlye Sink@[OmitStep=False]\r\nDragonFlye Sink@[PublishOutput=True]\r\nDragonFlye Sink@[IgnoreError=False]\r\nDragonFlye Sink@[IncludeOutput=True]\r\nDragonFlye Sink@[IsDocker=False]\r\nDragonFlye Sink@[IgnoreExitCode=true]\r\nDragonFlye Sink@[IncludeStandardOutput=true]\r\nDragonFlye Sink@[IsSlurm=]\r\nAbricate@[db=ncbi]\r\nAbricate@[OmitStep=False]\r\nAbricate@[PublishOutput=False]\r\nAbricate@[IgnoreError=False]\r\nAbricate@[IncludeOutput=False]\r\nAbricate@[IsDocker=True]\r\nAbricate@[IgnoreExitCode=]\r\nAbricate@[IncludeStandardOutput=]\r\nAbricate@[IsSlurm=true]\r\n",
+      "OutputPath": "[S]E:\\data\\FlowScript_Test_Output_Results\\DragonFlye Assembly_0101070257_7685c86",
       "StartWithScript": "Data",
       "ScriptModulesInFlowScript": {
         "GlobalScriptModules": [
@@ -14559,7 +14610,7 @@
             "DockerImage": null,
             "UserVariableList": {},
             "IsDocker": false,
-            "IsSLURM": true,
+            "IsSLURM": false,
             "Slurm_Resource_Request": 2,
             "Slurm_Min_Resources": {
               "CPUs": 2,
@@ -14595,7 +14646,7 @@
               "Parms": [],
               "IncludeStandardOutput": true,
               "IsParallel": false,
-              "IsSlurm": false,
+              "IsSlurm": true,
               "IsDocker": true,
               "IsLinux": true,
               "LinuxJobRunning": false,
@@ -14749,7 +14800,7 @@
                 "ModuleName": "nanoq",
                 "ParmName": "IsSlurm",
                 "DefaultValue": null,
-                "UserValue": "",
+                "UserValue": "True",
                 "Description": "IsSlurm",
                 "ComboValues": "true|",
                 "Optional": false,
@@ -14769,7 +14820,7 @@
             "DockerImage": null,
             "UserVariableList": {},
             "IsDocker": true,
-            "IsSLURM": true,
+            "IsSLURM": false,
             "Slurm_Resource_Request": 2,
             "Slurm_Min_Resources": {
               "CPUs": 2,
@@ -15655,8 +15706,7 @@
               }
             ],
             "DockerMountMap": [
-              "/mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/",
-              "/mnt/e/data/reference/databases/"
+              "/mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/"
             ],
             "DockerImage": null,
             "UserVariableList": {},
@@ -16095,7 +16145,7 @@
               "Parms": [],
               "IncludeStandardOutput": true,
               "IsParallel": false,
-              "IsSlurm": false,
+              "IsSlurm": true,
               "IsDocker": false,
               "IsLinux": true,
               "LinuxJobRunning": false,
@@ -16249,7 +16299,7 @@
                 "ModuleName": "DragonFlye Sink",
                 "ParmName": "IsSlurm",
                 "DefaultValue": null,
-                "UserValue": "",
+                "UserValue": "True",
                 "Description": "IsSlurm",
                 "ComboValues": "true|",
                 "Optional": false,
@@ -16267,7 +16317,7 @@
             "DockerImage": null,
             "UserVariableList": {},
             "IsDocker": false,
-            "IsSLURM": true,
+            "IsSLURM": false,
             "Slurm_Resource_Request": 0,
             "Slurm_Min_Resources": {
               "CPUs": 0,
@@ -16330,7 +16380,7 @@
             "ExpectSamplesHeader": false,
             "RunAfterALLPrereqs": false,
             "RunAfterALLCmdToken": "",
-            "OmitStep": true,
+            "OmitStep": false,
             "LastUpdate": "2023-06-27T10:09:20.4439538-06:00",
             "LastAuthor": "AGB465",
             "ScriptParmsList": [
@@ -16493,7 +16543,7 @@
             ],
             "DockerImage": "megashipper/abricateenv",
             "UserVariableList": {},
-            "IsDocker": false,
+            "IsDocker": true,
             "IsSLURM": true,
             "Slurm_Resource_Request": 2,
             "Slurm_Min_Resources": {
@@ -16519,8 +16569,8 @@
           }
         ]
       },
-      "LastUpdate": "2023-12-20T17:14:20.8236062-06:00",
-      "LastAuthor": "DHP565",
+      "LastUpdate": "2024-01-11T10:00:52.8845266-06:00",
+      "LastAuthor": "AGB465",
       "FindFolders": true,
       "InterfaceAdaptive": false,
       "CommandList": [
