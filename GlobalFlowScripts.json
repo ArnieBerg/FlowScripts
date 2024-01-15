@@ -12240,7 +12240,7 @@
               "Parms": [],
               "IncludeStandardOutput": true,
               "IsParallel": false,
-              "IsSlurm": false,
+              "IsSlurm": true,
               "IsDocker": false,
               "IsLinux": false,
               "LinuxJobRunning": false,
@@ -12649,7 +12649,7 @@
                 "ModuleName": "tCANS",
                 "ParmName": "IsSlurm",
                 "DefaultValue": null,
-                "UserValue": "False",
+                "UserValue": "True",
                 "Description": null,
                 "ComboValues": "True|False",
                 "Optional": false,
@@ -12667,22 +12667,22 @@
             "DockerImage": null,
             "UserVariableList": {},
             "IsDocker": false,
-            "IsSLURM": false,
-            "Slurm_Resource_Request": 0,
+            "IsSLURM": true,
+            "Slurm_Resource_Request": 2,
             "Slurm_Min_Resources": {
-              "CPUs": 0,
-              "MemoryGB": 0,
-              "Hours": 0
+              "CPUs": 2,
+              "MemoryGB": 4,
+              "Hours": 0.300000012
             },
             "Slurm_Moderate_Resources": {
-              "CPUs": 0,
-              "MemoryGB": 0,
-              "Hours": 0
+              "CPUs": 6,
+              "MemoryGB": 16,
+              "Hours": 0.75
             },
             "Slurm_Max_Resources": {
-              "CPUs": 0,
-              "MemoryGB": 0,
-              "Hours": 0
+              "CPUs": 16,
+              "MemoryGB": 64,
+              "Hours": 2
             },
             "WDL_Task": null,
             "WDL_Task_Inputs": null,
@@ -12692,7 +12692,7 @@
           }
         ]
       },
-      "LastUpdate": "2024-01-14T21:32:05.4377349-06:00",
+      "LastUpdate": "2024-01-14T21:33:40.624382-06:00",
       "LastAuthor": "SQA032",
       "FindFolders": true,
       "InterfaceAdaptive": false,
