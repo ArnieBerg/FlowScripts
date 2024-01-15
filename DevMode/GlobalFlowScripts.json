@@ -10922,7 +10922,7 @@
           "TestNumber": 1,
           "TestFlowScript": null,
           "TestMachine": "WSL2 - This machine",
-          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\Salmonella_0103103954_30371ec",
+          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\Salmonella_0114091412_0c13ad8",
           "TestSuccess": false,
           "TestSuccessLabel": null,
           "TestIsRunning": false
@@ -10932,7 +10932,7 @@
           "TestNumber": 2,
           "TestFlowScript": null,
           "TestMachine": "Linux - Monod",
-          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\Salmonella_0103104948_30371ec",
+          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\Salmonella_0114093004_0c13ad8",
           "TestSuccess": false,
           "TestSuccessLabel": null,
           "TestIsRunning": false
@@ -10966,7 +10966,7 @@
             "LockUsername": null,
             "Comment": "",
             "WslCommand": {
-              "CommandToken": "D1C2",
+              "CommandToken": "D2C2",
               "FlowScriptToken": null,
               "Command": "# create an input directory of assembly symlinks\r\nmkdir -p $[O.]busco_input\r\nfind $[I{SamnSero}.]assembly/ -type f -name \u0027*.fasta\u0027 -exec sh -c \u0027ln -s {} $[O.]busco_input/\u0022$(basename {})\u0022\u0027 \\;\r\n# run busco\r\nconda run -n busco busco -m genome -f -i $[O.]busco_input/ --out_path $[O.] -o BuscoSummary -l @[lineage=bacteria_odb10]\r\nwhile read -r line\r\ndo \r\n   IFS=\u0027,\u0027 read -ra my_array \u003C\u003C\u003C \u0022$line\u0022\r\n   echo \u0022Remove ${my_array[0]} subfolders.\u0022\r\n   rm -rf $[O.]BuscoSummary/\u0022${my_array[0]}\u0022.fasta/logs\r\n   rm -rf $[O.]BuscoSummary/\u0022${my_array[0]}\u0022.fasta/prodigal_output\r\n   rm -rf $[O.]BuscoSummary/\u0022${my_array[0]}\u0022.fasta/run_@[lineage=bacteria_odb10]\r\ndone \u003C $[O.]SampleList.csv",
               "IsNoop": false,
@@ -11160,7 +11160,7 @@
             "LockUsername": null,
             "Comment": "",
             "WslCommand": {
-              "CommandToken": "D1C1",
+              "CommandToken": "D2C1",
               "FlowScriptToken": null,
               "Command": "# check for slurm support\r\n# script variables\r\nargs=\u0022\u0022\r\n# check if slurm is available in env\r\nif [[ @[\u003CIsSlurm\u003E=] -eq 1 ]]; then \r\nargs=\u0022-profile slurm,standard --account pds_monod\u0022\r\nfi\r\necho \u0022isSLURM=@[\u003CisSLURM\u003E=]\u0022\r\n# run pipeline\r\nnextflow run jimmyliu1326/SamnSero_Nextflow -r main -latest --input $[O.]SampleList.csv --out_dir $[O.] @[Annot=--annot] @[QC=--qc] @[Trim=--trim] @[NanoHQ=--nanohq] @[NoReport=--noreport] @[GPU=--gpu] --taxon_name \u0022@[TaxonName=Salmonella enterica]\u0022 --taxon_level @[TaxonLevel=species] @[Resume=-resume] --meta @[Metagenomics=off] -with-tower --medaka_batchsize 50 --seq_platform @[Platform=nanopore] --centrifuge /mnt/e/data/reference/centrifuge",
               "IsNoop": false,
@@ -11555,7 +11555,7 @@
             "LockUsername": null,
             "Comment": "",
             "WslCommand": {
-              "CommandToken": "D1C3",
+              "CommandToken": "D2C3",
               "FlowScriptToken": null,
               "Command": "cp -r $[I{SamnSero}.]analysis_results.csv $[O.]\r\nif test -d $[I{SamnSero}.]annotations; then cp -r $[I{SamnSero}.]annotations $[O.]; fi\r\nif test -d $[I{SamnSero}.]qc; then cp -r $[I{SamnSero}.]qc $[O.]; fi\r\nif test -d $[I{SamnSero}.]reports; then cp -r $[I{SamnSero}.]reports $[O.]; fi\r\ncp -r $[I{SamnSero}.]pipeline_info $[O.]\r\ncp -r $[I{SamnSero}.]assembly $[O.]\r\n#cp -r $[I{BuscoConsolidate}.]BuscoSummary  $[O.].",
               "IsNoop": false,
