@@ -12206,7 +12206,7 @@
       "FlowScriptName": "In-silico PCR",
       "TestConfig": {
         "1": {
-          "TestSelect": false,
+          "TestSelect": true,
           "TestNumber": 1,
           "TestFlowScript": null,
           "TestMachine": "Linux - Monod",
@@ -12220,13 +12220,13 @@
           "TestNumber": 2,
           "TestFlowScript": null,
           "TestMachine": "WSL2 - This machine",
-          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\In-silico PCR_0117121633_2517928",
+          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\In-silico PCR_0117010310_c93a60f",
           "TestSuccess": false,
           "TestSuccessLabel": null,
           "TestIsRunning": false
         }
       },
-      "SubmissionTimeStamp": "0117010310",
+      "SubmissionTimeStamp": "0117010521",
       "LockUsername": null,
       "Comment": "",
       "DataSourceType": 1,
@@ -12740,7 +12740,7 @@
           }
         ]
       },
-      "LastUpdate": "2024-01-17T13:05:12.0932658-06:00",
+      "LastUpdate": "2024-01-17T13:06:57.2038438-06:00",
       "LastAuthor": "AGB465",
       "FindFolders": true,
       "InterfaceAdaptive": false,
@@ -12748,13 +12748,13 @@
         {
           "CommandToken": "D1C1",
           "FlowScriptToken": "tnBLAST",
-          "Command": "touch /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010310/D1C1/SampleList.csv \u0026\u0026 rm /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010310/D1C1/SampleList.csv\ntouch /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010310/D1C1/SequenceList.csv \u0026\u0026 rm /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010310/D1C1/SequenceList.csv\necho sample_1,/mnt/e/data/std_testing/isPCR/input/sample_1/ \u003E\u003E /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010310/D1C1/SampleList.csv\n# check for slurm support\n# script variables\nargs=\u0022\u0022\n# check if slurm is available in env\nif [[ 0 -eq 1 ]]; then \nargs=\u0022-profile slurm,standard --account pds_monod\u0022\nfi\necho \u0022isSLURM=0\u0022\nnextflow run jimmyliu1326/isPCR \\\n   -latest \\\n   --input /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010310/D1C1/SampleList.csv \\\n   --outdir /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010310/D1C1/ \\\n   --primer /mnt/e/data/std_testing/isPCR/primers.txt \\\n   --input_format fasta \\\n    \\\n   --primer_min_tm 40 \\\n   --probe_min_tm 40 \\\n   --max_length 5000 \\\n   -with-tower \\\n   $args\n",
+          "Command": "touch /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010521/D1C1/SampleList.csv \u0026\u0026 rm /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010521/D1C1/SampleList.csv\ntouch /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010521/D1C1/SequenceList.csv \u0026\u0026 rm /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010521/D1C1/SequenceList.csv\necho sample_1,/mnt/e/data/std_testing/isPCR/input/sample_1/ \u003E\u003E /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010521/D1C1/SampleList.csv\n# check for slurm support\n# script variables\nargs=\u0022\u0022\n# check if slurm is available in env\nif [[ 0 -eq 1 ]]; then \nargs=\u0022-profile slurm,standard --account pds_monod\u0022\nfi\necho \u0022isSLURM=0\u0022\nnextflow run jimmyliu1326/isPCR \\\n   -latest \\\n   --input /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010521/D1C1/SampleList.csv \\\n   --outdir /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010521/D1C1/ \\\n   --primer /mnt/e/data/std_testing/isPCR/primers.txt \\\n   --input_format fasta \\\n    \\\n   --primer_min_tm 40 \\\n   --probe_min_tm 40 \\\n   --max_length 5000 \\\n   -with-tower \\\n   $args\n",
           "IsNoop": false,
           "CondaPrefix": "",
           "Parms": [],
           "IncludeStandardOutput": true,
           "IsParallel": true,
-          "IsSlurm": false,
+          "IsSlurm": true,
           "IsDocker": false,
           "IsLinux": true,
           "LinuxJobRunning": false,
@@ -12803,7 +12803,7 @@
         {
           "CommandToken": "D1C2",
           "FlowScriptToken": "tnBLAST_Publish",
-          "Command": "touch /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010310/D1C2/SampleList.csv \u0026\u0026 rm /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010310/D1C2/SampleList.csv\ntouch /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010310/D1C2/SequenceList.csv \u0026\u0026 rm /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010310/D1C2/SequenceList.csv\necho sample_1,/mnt/e/data/std_testing/isPCR/input/sample_1/ \u003E\u003E /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010310/D1C2/SampleList.csv\ncp -r /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010310/D1C1/pipeline_info  /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010310/D1C2/\ncp -r /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010310/D1C1/results /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010310/D1C2/\ncp /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010310/D1C1/analysis_results.tsv /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010310/D1C2/ || printf \u0022\\nAnalysis results file is missing - likely because no hits were detected. Check the run log file!\u0022\n",
+          "Command": "touch /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010521/D1C2/SampleList.csv \u0026\u0026 rm /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010521/D1C2/SampleList.csv\ntouch /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010521/D1C2/SequenceList.csv \u0026\u0026 rm /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010521/D1C2/SequenceList.csv\necho sample_1,/mnt/e/data/std_testing/isPCR/input/sample_1/ \u003E\u003E /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010521/D1C2/SampleList.csv\ncp -r /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010521/D1C1/pipeline_info  /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010521/D1C2/\ncp -r /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010521/D1C1/results /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010521/D1C2/\ncp /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010521/D1C1/analysis_results.tsv /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010521/D1C2/ || printf \u0022\\nAnalysis results file is missing - likely because no hits were detected. Check the run log file!\u0022\n",
           "IsNoop": false,
           "CondaPrefix": "",
           "Parms": [],
