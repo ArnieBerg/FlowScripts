@@ -11591,7 +11591,7 @@
       "FlowScriptName": "In-silico PCR",
       "TestConfig": {
         "1": {
-          "TestSelect": true,
+          "TestSelect": false,
           "TestNumber": 1,
           "TestFlowScript": null,
           "TestMachine": "Linux - Monod",
@@ -11601,7 +11601,7 @@
           "TestIsRunning": false
         },
         "2": {
-          "TestSelect": false,
+          "TestSelect": true,
           "TestNumber": 2,
           "TestFlowScript": null,
           "TestMachine": "WSL2 - This machine",
@@ -11872,8 +11872,8 @@
               {
                 "ModuleName": "tnBLAST",
                 "ParmName": "\u003CIsSlurm\u003E",
-                "DefaultValue": "1",
-                "UserValue": "1",
+                "DefaultValue": "0",
+                "UserValue": "0",
                 "Description": null,
                 "ComboValues": null,
                 "Optional": false,
@@ -11889,8 +11889,8 @@
               {
                 "ModuleName": "tnBLAST",
                 "ParmName": "\u003CisSLURM\u003E",
-                "DefaultValue": "1",
-                "UserValue": "1",
+                "DefaultValue": "0",
+                "UserValue": "0",
                 "Description": null,
                 "ComboValues": null,
                 "Optional": false,
