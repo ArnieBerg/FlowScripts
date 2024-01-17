@@ -2932,7 +2932,7 @@
           "TestIsRunning": false
         },
         "2": {
-          "TestSelect": true,
+          "TestSelect": false,
           "TestNumber": 2,
           "TestFlowScript": null,
           "TestMachine": "Linux - Monod",
@@ -3003,7 +3003,7 @@
               "IsParallel": false,
               "IsSlurm": true,
               "IsDocker": true,
-              "IsLinux": true,
+              "IsLinux": false,
               "LinuxJobRunning": false,
               "SlurmJobID": null,
               "SlurmParms": null,

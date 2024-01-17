@@ -12433,7 +12433,7 @@
           "TestIsRunning": false
         },
         "2": {
-          "TestSelect": true,
+          "TestSelect": false,
           "TestNumber": 2,
           "TestFlowScript": null,
           "TestMachine": "Linux - Monod",
@@ -12486,7 +12486,7 @@
               "IsParallel": false,
               "IsSlurm": true,
               "IsDocker": true,
-              "IsLinux": true,
+              "IsLinux": false,
               "LinuxJobRunning": false,
               "SlurmJobID": null,
               "SlurmParms": null,
@@ -12802,7 +12802,7 @@
           }
         ]
       },
-      "LastUpdate": "2024-01-17T10:05:02.0439093-06:00",
+      "LastUpdate": "2024-01-17T10:18:34.4396087-06:00",
       "LastAuthor": "AGB465",
       "FindFolders": true,
       "InterfaceAdaptive": false,
