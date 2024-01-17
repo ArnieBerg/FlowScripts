@@ -12423,7 +12423,7 @@
       "FlowScriptName": "CANSFlow",
       "TestConfig": {
         "1": {
-          "TestSelect": true,
+          "TestSelect": false,
           "TestNumber": 1,
           "TestFlowScript": null,
           "TestMachine": "WSL2 - This machine",
@@ -12792,130 +12792,19 @@
               "MemoryGB": 64,
               "Hours": 2
             },
-            "WDL_Task": "task CANS {\r\n  input {\r\n }\r\n  command \u003C\u003C\u003C\r\n  # check primers input\r\nprimers=@[primers=]\r\nif ! test -z $primers; then primers_args=\u0022--primers $primers\u0022; fi\r\n# check host input\r\nhost=@[host=]\r\nif ! test -z $host; then host_args=\u0022--host $host\u0022; fi \r\nCANS.sh  -t @[cpus=4] $host_args $primers_args -m @[model=r9] -s @[targetCoverage=1000] -d @[deviation=50] @[notrim=--notrim]  --mode @[mode=dynamic] -i SampleList.csv -o  -e @[sequenceLength=1750]\r\nrm -rf .snakemake \u003E\u003E\u003E\r\n  output {\r\n    }\r\n}\r\n",
-            "WDL_Task_Inputs": [],
-            "WDL_Task_Outputs": [],
+            "WDL_Task": null,
+            "WDL_Task_Inputs": null,
+            "WDL_Task_Outputs": null,
             "CaseNumberList_JSON": "",
             "CaseNumberList_csv": ""
           }
         ]
       },
-      "LastUpdate": "2024-01-17T10:19:56.3135818-06:00",
+      "LastUpdate": "2024-01-17T10:37:29.2872629-06:00",
       "LastAuthor": "AGB465",
       "FindFolders": true,
       "InterfaceAdaptive": false,
-      "CommandList": [
-        {
-          "CommandToken": "D1C1",
-          "FlowScriptToken": "CANS",
-          "Command": "touch /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/CANSFlow_0117101843/D1C1/SampleList.csv \u0026\u0026 rm /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/CANSFlow_0117101843/D1C1/SampleList.csv\ntouch /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/CANSFlow_0117101843/D1C1/SequenceList.csv \u0026\u0026 rm /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/CANSFlow_0117101843/D1C1/SequenceList.csv\necho 2036822-3,/mnt/e/data/std_testing/CANS/input/2036822-3/ \u003E\u003E /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/CANSFlow_0117101843/D1C1/SampleList.csv\necho 2039363,/mnt/e/data/std_testing/CANS/input/2039363/ \u003E\u003E /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/CANSFlow_0117101843/D1C1/SampleList.csv\n# check primers input\nprimers=/mnt/e/data/primers/primers.tsv\nif ! test -z $primers; then primers_args=\u0022--primers $primers\u0022; fi\n# check host input\nhost=\nif ! test -z $host; then host_args=\u0022--host $host\u0022; fi \nCANS.sh  -t 4 $host_args $primers_args -m r9 -s 1000 -d 50 --notrim  --mode dynamic -i /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/CANSFlow_0117101843/D1C1/SampleList.csv -o /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/CANSFlow_0117101843/D1C1/ -e 1750\nrm -rf /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/CANSFlow_0117101843/D1C1/.snakemake\n",
-          "IsNoop": false,
-          "CondaPrefix": "",
-          "Parms": [],
-          "IncludeStandardOutput": true,
-          "IsParallel": true,
-          "IsSlurm": false,
-          "IsDocker": true,
-          "IsLinux": false,
-          "LinuxJobRunning": false,
-          "SlurmJobID": null,
-          "SlurmParms": null,
-          "WindowsWorkPath": "",
-          "IgnoreExitCode": false,
-          "WSLResponse": {
-            "ExitCode": 0,
-            "StandardOutput": null,
-            "StandardError": null,
-            "LastCommand": null,
-            "RestartCount": 0
-          },
-          "ConditionRun": null,
-          "ExitCodeConditionGoto": "",
-          "Preprocess": null,
-          "StandardOutputConditionGoto": "",
-          "HDF_Command": {
-            "Command": 0,
-            "DBFileName": null,
-            "DBPath": null,
-            "Dataset": {
-              "SequenceList": [],
-              "Standard_Reference_Sequence": "",
-              "Standard_Reference_Name": ""
-            },
-            "DatasetName": "",
-            "FindIn": "",
-            "FindOut": "",
-            "Sample": {
-              "SampleName": "",
-              "SampleDetail": null,
-              "LIMSCaseNumber": null,
-              "LIMSTestID": null,
-              "LIMSSampleID": null,
-              "Sequence": null,
-              "SampleFileName": null
-            }
-          },
-          "Prereqs": [],
-          "Thread": 0,
-          "StandardOutputBypass": "",
-          "WDL": "  call CANS as D1C1 {\r\n    input\r\n   }\r\n"
-        },
-        {
-          "CommandToken": "D2C1",
-          "FlowScriptToken": "CANS",
-          "Command": "",
-          "IsNoop": true,
-          "CondaPrefix": "",
-          "Parms": [],
-          "IncludeStandardOutput": true,
-          "IsParallel": true,
-          "IsSlurm": false,
-          "IsDocker": true,
-          "IsLinux": false,
-          "LinuxJobRunning": false,
-          "SlurmJobID": null,
-          "SlurmParms": null,
-          "WindowsWorkPath": "",
-          "IgnoreExitCode": false,
-          "WSLResponse": {
-            "ExitCode": 0,
-            "StandardOutput": null,
-            "StandardError": null,
-            "LastCommand": null,
-            "RestartCount": 0
-          },
-          "ConditionRun": null,
-          "ExitCodeConditionGoto": "",
-          "Preprocess": null,
-          "StandardOutputConditionGoto": "",
-          "HDF_Command": {
-            "Command": 0,
-            "DBFileName": null,
-            "DBPath": null,
-            "Dataset": {
-              "SequenceList": [],
-              "Standard_Reference_Sequence": "",
-              "Standard_Reference_Name": ""
-            },
-            "DatasetName": "",
-            "FindIn": "",
-            "FindOut": "",
-            "Sample": {
-              "SampleName": "",
-              "SampleDetail": null,
-              "LIMSCaseNumber": null,
-              "LIMSTestID": null,
-              "LIMSSampleID": null,
-              "Sequence": null,
-              "SampleFileName": null
-            }
-          },
-          "Prereqs": [],
-          "Thread": 0,
-          "StandardOutputBypass": "",
-          "WDL": "  call CANS as D2C1 {\r\n    input\r\n   }\r\n"
-        }
-      ],
+      "CommandList": [],
       "RemoveReads": false
     }
   ]

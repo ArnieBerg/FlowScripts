@@ -2922,7 +2922,7 @@
       "FlowScriptName": "CANSFlow",
       "TestConfig": {
         "1": {
-          "TestSelect": true,
+          "TestSelect": false,
           "TestNumber": 1,
           "TestFlowScript": null,
           "TestMachine": "WSL2 - This machine",
