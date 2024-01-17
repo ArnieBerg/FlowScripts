@@ -12555,9 +12555,9 @@
               "MemoryGB": 64,
               "Hours": 2
             },
-            "WDL_Task": "task tnBLAST {\r\n  input {\r\n }\r\n  command \u003C\u003C\u003C\r\n  # check for slurm support\r\n# script variables\r\nargs=\u0022\u0022\r\n# check if slurm is available in env\r\nif [[ @[\u003CIsSlurm\u003E=] -eq 1 ]]; then \r\nargs=\u0022-profile slurm,standard --account pds_monod\u0022\r\nfi\r\necho \u0022isSLURM=@[\u003CisSLURM\u003E=]\u0022\r\nnextflow run jimmyliu1326/isPCR \\\r\n   -latest \\\r\n   --input SampleList.csv \\\r\n   --outdir  \\\r\n   --primer @[Primer=] \\\r\n   --input_format @[sequence_format=fasta] \\\r\n   @[Multiplex=--multiplex] \\\r\n   --primer_min_tm @[Min_Primer_Tm=40] \\\r\n   --probe_min_tm @[Min_Probe_Tm=40] \\\r\n   --max_length @[max_amplicon_length=1000] \\\r\n   -with-tower \\\r\n   $args \u003E\u003E\u003E\r\n  output {\r\n    }\r\n}\r\n",
-            "WDL_Task_Inputs": [],
-            "WDL_Task_Outputs": [],
+            "WDL_Task": null,
+            "WDL_Task_Inputs": null,
+            "WDL_Task_Outputs": null,
             "CaseNumberList_JSON": "",
             "CaseNumberList_csv": ""
           },
@@ -12730,17 +12730,15 @@
               "MemoryGB": 64,
               "Hours": 2
             },
-            "WDL_Task": "task tnBLAST_Publish {\r\n  input {\r\n    File tnBLAST\r\n }\r\n  command \u003C\u003C\u003C\r\n  cp -r ~{tnBLAST}pipeline_info  \r\ncp -r ~{tnBLAST}results \r\ncp ~{tnBLAST}analysis_results.tsv  || printf \u0022\\nAnalysis results file is missing - likely because no hits were detected. Check the run log file!\u0022 \u003E\u003E\u003E\r\n  output {\r\n    }\r\n}\r\n",
-            "WDL_Task_Inputs": [
-              "File tnBLAST"
-            ],
-            "WDL_Task_Outputs": [],
+            "WDL_Task": null,
+            "WDL_Task_Inputs": null,
+            "WDL_Task_Outputs": null,
             "CaseNumberList_JSON": "",
             "CaseNumberList_csv": ""
           }
         ]
       },
-      "LastUpdate": "2024-01-17T13:10:08.1566477-06:00",
+      "LastUpdate": "2024-01-17T14:30:34.7396706-06:00",
       "LastAuthor": "AGB465",
       "FindFolders": true,
       "InterfaceAdaptive": false,
@@ -12748,19 +12746,19 @@
         {
           "CommandToken": "D1C1",
           "FlowScriptToken": "tnBLAST",
-          "Command": "touch /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010715/D1C1/SampleList.csv \u0026\u0026 rm /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010715/D1C1/SampleList.csv\ntouch /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010715/D1C1/SequenceList.csv \u0026\u0026 rm /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010715/D1C1/SequenceList.csv\necho sample_1,/mnt/e/data/std_testing/isPCR/input/sample_1/ \u003E\u003E /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010715/D1C1/SampleList.csv\n# check for slurm support\n# script variables\nargs=\u0022\u0022\n# check if slurm is available in env\nif [[ 0 -eq 1 ]]; then \nargs=\u0022-profile slurm,standard --account pds_monod\u0022\nfi\necho \u0022isSLURM=0\u0022\nnextflow run jimmyliu1326/isPCR \\\n   -latest \\\n   --input /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010715/D1C1/SampleList.csv \\\n   --outdir /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010715/D1C1/ \\\n   --primer /mnt/e/data/std_testing/isPCR/primers.txt \\\n   --input_format fasta \\\n    \\\n   --primer_min_tm 40 \\\n   --probe_min_tm 40 \\\n   --max_length 5000 \\\n   -with-tower \\\n   $args\n",
+          "Command": "touch /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0423062438/D1C1/SampleList.csv \u0026\u0026 rm /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0423062438/D1C1/SampleList.csv\ntouch /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0423062438/D1C1/SequenceList.csv \u0026\u0026 rm /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0423062438/D1C1/SequenceList.csv\necho barcode07,/mnt/r/incoming/OPAL/20220711_120_21-22/12July2022_BRDvirus_L5/20220712_2147_2-E1-H1_PAI88784_03c82d1e/fastq_pass/barcode07/ \u003E\u003E /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0423062438/D1C1/SampleList.csv\necho barcode08,/mnt/r/incoming/OPAL/20220711_120_21-22/12July2022_BRDvirus_L5/20220712_2147_2-E1-H1_PAI88784_03c82d1e/fastq_pass/barcode08/ \u003E\u003E /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0423062438/D1C1/SampleList.csv\nwhoami\npwd\n#cd /home/pds_monod\n#export JAVA_CMD=/home/pds_monod/.sdkman/candidates/java/current/bin/java\n#export TOWER_ACCESS_TOKEN=eyJ0aWQiOiA1MTQzfS40OTA3Yzg2Y2ZiNGUwNjA4YjFmYWRhZWJjZmUwZGE4ZDE0NzYxNjhh\n# \u0027source .bashrc\u0027 does not actually run .bashrc, the exports need to be done explicitly.\nwhereis java\necho \u0022JAVA_CMD=$JAVA_CMD\u0022\nwhich java\nnextflow run jimmyliu1326/isPCR \\\n   --input /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0423062438/D1C1/SampleList.csv \\\n   --outdir /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0423062438/D1C1/ \\\n   --primer /mnt/x/PDS-BioSeqDB/isPCR/Primers//20230413_viral_primers.txt \\\n   --input_format fastq \\\n    \\\n   --primer_min_tm 40 \\\n   --probe_min_tm 40 \\\n   --max_length 1100 \\\n   -with-tower\n",
           "IsNoop": false,
           "CondaPrefix": "",
           "Parms": [],
           "IncludeStandardOutput": true,
           "IsParallel": true,
-          "IsSlurm": true,
+          "IsSlurm": false,
           "IsDocker": false,
-          "IsLinux": true,
+          "IsLinux": false,
           "LinuxJobRunning": false,
           "SlurmJobID": null,
           "SlurmParms": null,
-          "WindowsWorkPath": "",
+          "WindowsWorkPath": null,
           "IgnoreExitCode": false,
           "WSLResponse": {
             "ExitCode": 0,
@@ -12798,64 +12796,7 @@
           "Prereqs": [],
           "Thread": 0,
           "StandardOutputBypass": "",
-          "WDL": "  call tnBLAST as D1C1 {\r\n    input\r\n   }\r\n"
-        },
-        {
-          "CommandToken": "D1C2",
-          "FlowScriptToken": "tnBLAST_Publish",
-          "Command": "touch /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010715/D1C2/SampleList.csv \u0026\u0026 rm /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010715/D1C2/SampleList.csv\ntouch /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010715/D1C2/SequenceList.csv \u0026\u0026 rm /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010715/D1C2/SequenceList.csv\necho sample_1,/mnt/e/data/std_testing/isPCR/input/sample_1/ \u003E\u003E /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010715/D1C2/SampleList.csv\ncp -r /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010715/D1C1/pipeline_info  /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010715/D1C2/\ncp -r /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010715/D1C1/results /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010715/D1C2/\ncp /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010715/D1C1/analysis_results.tsv /mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/In-silico_PCR_0117010715/D1C2/ || printf \u0022\\nAnalysis results file is missing - likely because no hits were detected. Check the run log file!\u0022\n",
-          "IsNoop": false,
-          "CondaPrefix": "",
-          "Parms": [],
-          "IncludeStandardOutput": true,
-          "IsParallel": true,
-          "IsSlurm": false,
-          "IsDocker": false,
-          "IsLinux": true,
-          "LinuxJobRunning": false,
-          "SlurmJobID": null,
-          "SlurmParms": null,
-          "WindowsWorkPath": "",
-          "IgnoreExitCode": false,
-          "WSLResponse": {
-            "ExitCode": 0,
-            "StandardOutput": null,
-            "StandardError": null,
-            "LastCommand": null,
-            "RestartCount": 0
-          },
-          "ConditionRun": null,
-          "ExitCodeConditionGoto": "",
-          "Preprocess": null,
-          "StandardOutputConditionGoto": "",
-          "HDF_Command": {
-            "Command": 0,
-            "DBFileName": null,
-            "DBPath": null,
-            "Dataset": {
-              "SequenceList": [],
-              "Standard_Reference_Sequence": "",
-              "Standard_Reference_Name": ""
-            },
-            "DatasetName": "",
-            "FindIn": "",
-            "FindOut": "",
-            "Sample": {
-              "SampleName": "",
-              "SampleDetail": null,
-              "LIMSCaseNumber": null,
-              "LIMSTestID": null,
-              "LIMSSampleID": null,
-              "Sequence": null,
-              "SampleFileName": null
-            }
-          },
-          "Prereqs": [
-            "D1C1"
-          ],
-          "Thread": 0,
-          "StandardOutputBypass": "",
-          "WDL": "  call tnBLAST_Publish as D1C2 {\r\n    input:\r\n      tnBLAST = D1C1.tnBLAST\r\n   }\r\n"
+          "WDL": null
         }
       ],
       "RemoveReads": false
