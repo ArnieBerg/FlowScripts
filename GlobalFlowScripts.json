@@ -12216,7 +12216,7 @@
           "TestIsRunning": false
         },
         "2": {
-          "TestSelect": true,
+          "TestSelect": false,
           "TestNumber": 2,
           "TestFlowScript": null,
           "TestMachine": "WSL2 - This machine",
@@ -12576,7 +12576,7 @@
               "Parms": [],
               "IncludeStandardOutput": true,
               "IsParallel": false,
-              "IsSlurm": true,
+              "IsSlurm": false,
               "IsDocker": false,
               "IsLinux": true,
               "LinuxJobRunning": false,
@@ -12697,7 +12697,7 @@
                 "ModuleName": "tnBLAST_Publish",
                 "ParmName": "IsSlurm",
                 "DefaultValue": null,
-                "UserValue": "True",
+                "UserValue": "False",
                 "Description": null,
                 "ComboValues": "True|False",
                 "Optional": false,
@@ -12715,7 +12715,7 @@
             "DockerImage": null,
             "UserVariableList": {},
             "IsDocker": false,
-            "IsSLURM": true,
+            "IsSLURM": false,
             "Slurm_Resource_Request": 2,
             "Slurm_Min_Resources": {
               "CPUs": 2,
@@ -12740,7 +12740,7 @@
           }
         ]
       },
-      "LastUpdate": "2024-01-17T11:14:22.4198845-06:00",
+      "LastUpdate": "2024-01-17T12:16:21.647106-06:00",
       "LastAuthor": "AGB465",
       "FindFolders": true,
       "InterfaceAdaptive": false,
