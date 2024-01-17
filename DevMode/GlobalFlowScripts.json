@@ -12196,7 +12196,7 @@
           "TestNumber": 1,
           "TestFlowScript": null,
           "TestMachine": "WSL2 - This machine",
-          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\InfluenzaA Flow__102331d",
+          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\InfluenzaA Flow_0115012042_7edfbe1",
           "TestSuccess": false,
           "TestSuccessLabel": null,
           "TestIsRunning": false
@@ -12206,7 +12206,7 @@
           "TestNumber": 2,
           "TestFlowScript": null,
           "TestMachine": "Linux - Monod",
-          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\InfluenzaA Flow_0103112702_102331d",
+          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\InfluenzaA Flow_0117034245_7edfbe1",
           "TestSuccess": false,
           "TestSuccessLabel": null,
           "TestIsRunning": false
@@ -12253,7 +12253,7 @@
               "IsParallel": false,
               "IsSlurm": true,
               "IsDocker": true,
-              "IsLinux": true,
+              "IsLinux": false,
               "LinuxJobRunning": false,
               "SlurmJobID": null,
               "SlurmParms": null,
@@ -12477,21 +12477,21 @@
             "UserVariableList": {},
             "IsDocker": true,
             "IsSLURM": true,
-            "Slurm_Resource_Request": 0,
+            "Slurm_Resource_Request": 2,
             "Slurm_Min_Resources": {
-              "CPUs": 0,
-              "MemoryGB": 0,
-              "Hours": 0
+              "CPUs": 2,
+              "MemoryGB": 4,
+              "Hours": 0.300000012
             },
             "Slurm_Moderate_Resources": {
-              "CPUs": 0,
-              "MemoryGB": 0,
-              "Hours": 0
+              "CPUs": 6,
+              "MemoryGB": 16,
+              "Hours": 0.75
             },
             "Slurm_Max_Resources": {
-              "CPUs": 0,
-              "MemoryGB": 0,
-              "Hours": 0
+              "CPUs": 16,
+              "MemoryGB": 64,
+              "Hours": 2
             },
             "WDL_Task": null,
             "WDL_Task_Inputs": null,
@@ -12504,17 +12504,17 @@
             "LockUsername": null,
             "Comment": "",
             "WslCommand": {
-              "CommandToken": "",
+              "CommandToken": "D2C2",
               "FlowScriptToken": null,
-              "Command": "count=\u0060ls -1 $[D.[SamplePath]]*.fastq 2\u003E/dev/null | wc -l\u0060\r\nif [ $count != 0 ]\r\nthen \r\ncat $[D.[SamplePath]]*.fastq \u003E $[O.]$[V.[SampleName]].fastq\r\ngzip -f $[O.]$[V.[SampleName]].fastq 2\u003E\u00261 \u003E /dev/null;\r\nfi \r\n\r\ncount=\u0060ls -1 $[D.[SamplePath]]*.fastq.gz 2\u003E/dev/null | wc -l\u0060\r\nif [ $count != 0 ]\r\nthen \r\ncat $[D.[SamplePath]]*.fastq.gz \u003E $[O.]$[V.[SampleName]].fastq.gz\r\nfi\r\n",
+              "Command": "count=\u0060ls -1 $[D.[SamplePath]]*.fastq 2\u003E/dev/null | wc -l\u0060\r\nif [ $count != 0 ]\r\nthen \r\ncat $[D.[SamplePath]]*.fastq \u003E $[O.]$[V.[SampleName]].fastq\r\ngzip -f $[O.]$[V.[SampleName]].fastq 2\u003E\u00261 \u003E /dev/null;\r\nfi \r\ncount=\u0060ls -1 $[D.[SamplePath]]*.fastq.gz 2\u003E/dev/null | wc -l\u0060\r\nif [ $count != 0 ]\r\nthen \r\ncat $[D.[SamplePath]]*.fastq.gz \u003E $[O.]$[V.[SampleName]].fastq.gz\r\nfi",
               "IsNoop": false,
               "CondaPrefix": "",
               "Parms": [],
               "IncludeStandardOutput": false,
               "IsParallel": false,
-              "IsSlurm": false,
+              "IsSlurm": true,
               "IsDocker": false,
-              "IsLinux": true,
+              "IsLinux": false,
               "LinuxJobRunning": false,
               "SlurmJobID": null,
               "SlurmParms": null,
@@ -12535,10 +12535,10 @@
             },
             "PublishOutput": false,
             "ConsolidateInput": false,
-            "ConsolidatedCmdToken": null,
+            "ConsolidatedCmdToken": "",
             "ExpectSamplesHeader": false,
             "RunAfterALLPrereqs": false,
-            "RunAfterALLCmdToken": null,
+            "RunAfterALLCmdToken": "",
             "OmitStep": false,
             "LastUpdate": "2022-04-06T06:45:00.6544378-06:00",
             "LastAuthor": "AGB465",
@@ -12627,6 +12627,23 @@
                 "Extensions": null,
                 "MissingValue": null,
                 "Public": true
+              },
+              {
+                "ModuleName": "Compress",
+                "ParmName": "IsSlurm",
+                "DefaultValue": null,
+                "UserValue": "True",
+                "Description": "IsSlurm",
+                "ComboValues": null,
+                "Optional": false,
+                "ReadOnly": false,
+                "Hidden": false,
+                "DeleteFlag": false,
+                "DataType": 1,
+                "Validator": null,
+                "Extensions": null,
+                "MissingValue": null,
+                "Public": true
               }
             ],
             "DockerMountMap": [],
@@ -12653,8 +12670,8 @@
             "WDL_Task": null,
             "WDL_Task_Inputs": null,
             "WDL_Task_Outputs": null,
-            "CaseNumberList_JSON": null,
-            "CaseNumberList_csv": null
+            "CaseNumberList_JSON": "",
+            "CaseNumberList_csv": ""
           }
         ]
       },
