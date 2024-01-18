@@ -12059,7 +12059,7 @@
       "FlowScriptName": "StrepSuisFlow",
       "TestConfig": {
         "1": {
-          "TestSelect": true,
+          "TestSelect": false,
           "TestNumber": 1,
           "TestFlowScript": null,
           "TestMachine": "WSL2 - This machine",
@@ -12069,7 +12069,7 @@
           "TestIsRunning": false
         },
         "2": {
-          "TestSelect": false,
+          "TestSelect": true,
           "TestNumber": 2,
           "TestFlowScript": null,
           "TestMachine": "Linux - Monod",
@@ -12879,7 +12879,7 @@
           }
         ]
       },
-      "LastUpdate": "2024-01-18T09:58:41.5921669-06:00",
+      "LastUpdate": "2024-01-18T09:59:22.8328551-06:00",
       "LastAuthor": "AGB465",
       "FindFolders": true,
       "InterfaceAdaptive": false,
