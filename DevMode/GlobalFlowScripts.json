@@ -11872,8 +11872,8 @@
               {
                 "ModuleName": "tnBLAST",
                 "ParmName": "\u003CIsSlurm\u003E",
-                "DefaultValue": "0",
-                "UserValue": "0",
+                "DefaultValue": "1",
+                "UserValue": "1",
                 "Description": null,
                 "ComboValues": null,
                 "Optional": false,
@@ -11889,8 +11889,8 @@
               {
                 "ModuleName": "tnBLAST",
                 "ParmName": "\u003CisSLURM\u003E",
-                "DefaultValue": "0",
-                "UserValue": "0",
+                "DefaultValue": "1",
+                "UserValue": "1",
                 "Description": null,
                 "ComboValues": null,
                 "Optional": false,
