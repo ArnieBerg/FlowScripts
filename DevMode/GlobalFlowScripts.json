@@ -9800,7 +9800,7 @@
           "TestNumber": 2,
           "TestFlowScript": null,
           "TestMachine": "Linux - Monod",
-          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\StrepSuisFlow_0103110040_cead39e",
+          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\StrepSuisFlow_0117072016_Linux_b3d3fbd",
           "TestSuccess": false,
           "TestSuccessLabel": null,
           "TestIsRunning": false
@@ -9824,7 +9824,7 @@
       "SequenceDBPath": "/mnt/e/data/database/hpsuis/hpsuis.fasta",
       "SamplesFromLocalDevice": null,
       "SamplesToTransform": null,
-      "IsLinux": false,
+      "IsLinux": true,
       "CanRunInLinux": true,
       "DockerBaseImage": "bioseqenv.0.3",
       "Parameters": "DragonFlye@[nano-hq=--nanohq]\r\nDragonFlye@[cpus=32]\r\nDragonFlye@[nopolish=]\r\nDragonFlye@[medakaRounds=1]\r\nDragonFlye@[medakaModel=r1041_e82_400bps_sup_g615]\r\nDragonFlye@[raconRounds=1]\r\nDragonFlye@[gsize=2200000]\r\nStrepSuis@[OmitStep=False]\r\nStrepSuis@[PublishOutput=False]\r\nStrepSuis@[IgnoreError=False]\r\nStrepSuis@[IncludeOutput=True]\r\nStrepSuis@[IsDocker=True]\r\nCompress@[OmitStep=False]\r\nCompress@[PublishOutput=False]\r\nCompress@[IgnoreError=False]\r\nCompress@[IncludeOutput=False]\r\nCompress@[IsDocker=False]\r\nDragonFlye@[OmitStep=False]\r\nDragonFlye@[PublishOutput=False]\r\nDragonFlye@[IgnoreError=False]\r\nDragonFlye@[IncludeOutput=True]\r\nDragonFlye@[IsDocker=True]\r\nSsuis_Publish@[OmitStep=False]\r\nSsuis_Publish@[PublishOutput=True]\r\nSsuis_Publish@[IgnoreError=False]\r\nSsuis_Publish@[IncludeOutput=False]\r\nSsuis_Publish@[IsDocker=False]\r\n",
