@@ -9786,7 +9786,7 @@
       "FlowScriptName": "StrepSuisFlow",
       "TestConfig": {
         "1": {
-          "TestSelect": false,
+          "TestSelect": true,
           "TestNumber": 1,
           "TestFlowScript": null,
           "TestMachine": "WSL2 - This machine",
@@ -9796,11 +9796,11 @@
           "TestIsRunning": false
         },
         "2": {
-          "TestSelect": true,
+          "TestSelect": false,
           "TestNumber": 2,
           "TestFlowScript": null,
           "TestMachine": "Linux - Monod",
-          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\StrepSuisFlow_0117072016_Linux_b3d3fbd",
+          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\StrepSuisFlow_0118100217_Linux_ca94bd4",
           "TestSuccess": false,
           "TestSuccessLabel": null,
           "TestIsRunning": false
@@ -9847,7 +9847,7 @@
               "IsParallel": false,
               "IsSlurm": true,
               "IsDocker": true,
-              "IsLinux": false,
+              "IsLinux": true,
               "LinuxJobRunning": false,
               "SlurmJobID": null,
               "SlurmParms": null,
@@ -10011,7 +10011,7 @@
               "IsParallel": false,
               "IsSlurm": true,
               "IsDocker": false,
-              "IsLinux": false,
+              "IsLinux": true,
               "LinuxJobRunning": false,
               "SlurmJobID": null,
               "SlurmParms": null,
@@ -10173,7 +10173,7 @@
               "IsParallel": false,
               "IsSlurm": true,
               "IsDocker": true,
-              "IsLinux": false,
+              "IsLinux": true,
               "LinuxJobRunning": false,
               "SlurmJobID": null,
               "SlurmParms": null,
@@ -10456,7 +10456,7 @@
               "IsParallel": false,
               "IsSlurm": true,
               "IsDocker": false,
-              "IsLinux": false,
+              "IsLinux": true,
               "LinuxJobRunning": false,
               "SlurmJobID": null,
               "SlurmParms": null,
