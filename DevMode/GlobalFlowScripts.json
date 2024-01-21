@@ -10627,7 +10627,7 @@
           "TestIsRunning": false
         },
         "2": {
-          "TestSelect": true,
+          "TestSelect": false,
           "TestNumber": 2,
           "TestFlowScript": null,
           "TestMachine": "Linux - Monod",
@@ -10778,7 +10778,7 @@
                 "ModuleName": "TestWSLBash",
                 "ParmName": "Primer",
                 "DefaultValue": "[S]/mnt/r/PDS-BioSeqDB/isPCR/AAFC//20230503_Pbrassicae-PCRproducts.txt",
-                "UserValue": "[S]/mnt/e/data/primers//crispr_primers.txt",
+                "UserValue": "[S]/mnt/e/data/primers/crispr_primers.txt",
                 "Description": "",
                 "ComboValues": null,
                 "Optional": false,
