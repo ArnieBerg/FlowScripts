@@ -34,7 +34,8 @@
       "FindFolders": true,
       "InterfaceAdaptive": false,
       "CommandList": null,
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     },
     {
       "FlowScriptName": "SRST2GenerateFlow",
@@ -275,7 +276,8 @@
       "FindFolders": false,
       "InterfaceAdaptive": false,
       "CommandList": null,
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     },
     {
       "FlowScriptName": "ExportHDF5",
@@ -388,7 +390,8 @@
       "FindFolders": false,
       "InterfaceAdaptive": false,
       "CommandList": null,
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     },
     {
       "FlowScriptName": "Trinity Flow",
@@ -634,7 +637,8 @@
           "WDL": null
         }
       ],
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     },
     {
       "FlowScriptName": "ReadCSVFlow",
@@ -730,7 +734,8 @@
       "FindFolders": false,
       "InterfaceAdaptive": false,
       "CommandList": [],
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     },
     {
       "FlowScriptName": "MultiQC Flow",
@@ -886,7 +891,8 @@
       "FindFolders": true,
       "InterfaceAdaptive": false,
       "CommandList": [],
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     },
     {
       "FlowScriptName": "Search Flow",
@@ -1047,7 +1053,8 @@
       "FindFolders": false,
       "InterfaceAdaptive": false,
       "CommandList": [],
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     },
     {
       "FlowScriptName": "QuastFlow",
@@ -1141,7 +1148,8 @@
       "FindFolders": false,
       "InterfaceAdaptive": false,
       "CommandList": [],
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     },
     {
       "FlowScriptName": "Mummer Flow",
@@ -1257,7 +1265,8 @@
       "FindFolders": false,
       "InterfaceAdaptive": false,
       "CommandList": null,
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     },
     {
       "FlowScriptName": "DragonFlye Mini",
@@ -1831,7 +1840,8 @@
           "WDL": null
         }
       ],
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     },
     {
       "FlowScriptName": "Blastn",
@@ -1927,7 +1937,8 @@
       "FindFolders": false,
       "InterfaceAdaptive": false,
       "CommandList": null,
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     },
     {
       "FlowScriptName": "AbricateFlow",
@@ -2128,7 +2139,8 @@
       "FindFolders": false,
       "InterfaceAdaptive": false,
       "CommandList": null,
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     },
     {
       "FlowScriptName": "DashingFlow",
@@ -2543,7 +2555,8 @@
           "WDL": null
         }
       ],
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     },
     {
       "FlowScriptName": "SRST2Flow",
@@ -2916,7 +2929,8 @@
           "WDL": null
         }
       ],
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     },
     {
       "FlowScriptName": "CANSFlow",
@@ -3324,7 +3338,8 @@
       "FindFolders": true,
       "InterfaceAdaptive": false,
       "CommandList": [],
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     },
     {
       "FlowScriptName": "CoverageCalculator",
@@ -4154,7 +4169,8 @@
           "WDL": "  call CovCalc_Annot as D1C1 {\r\n    input\r\n   }\r\n"
         }
       ],
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     },
     {
       "FlowScriptName": "miniBusco Flow",
@@ -4355,7 +4371,8 @@
       "FindFolders": false,
       "InterfaceAdaptive": false,
       "CommandList": null,
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     },
     {
       "FlowScriptName": "BuscoFlow",
@@ -4554,7 +4571,8 @@
       "FindFolders": false,
       "InterfaceAdaptive": false,
       "CommandList": [],
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     },
     {
       "FlowScriptName": "ONT-Flu",
@@ -5098,7 +5116,8 @@
           "WDL": null
         }
       ],
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     },
     {
       "FlowScriptName": "GetLIMSInfo Flow",
@@ -5348,7 +5367,8 @@
       "FindFolders": true,
       "InterfaceAdaptive": false,
       "CommandList": [],
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     },
     {
       "FlowScriptName": "Bovine_Flow",
@@ -5613,7 +5633,8 @@
       "FindFolders": true,
       "InterfaceAdaptive": false,
       "CommandList": [],
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     },
     {
       "FlowScriptName": "FastANI Flow",
@@ -5978,7 +5999,8 @@
       "FindFolders": false,
       "InterfaceAdaptive": false,
       "CommandList": null,
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     },
     {
       "FlowScriptName": "HaemophilusSuisFlow",
@@ -6133,7 +6155,8 @@
       "FindFolders": true,
       "InterfaceAdaptive": false,
       "CommandList": null,
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     },
     {
       "FlowScriptName": "KrakenFlow",
@@ -6810,7 +6833,8 @@
           "WDL": "  call Kraken2 as D1C2 {\r\n    input:\r\n      SampleName = D1C1.SampleName\r\n   }\r\n"
         }
       ],
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     },
     {
       "FlowScriptName": "KronaFlow",
@@ -7209,7 +7233,8 @@
       "FindFolders": false,
       "InterfaceAdaptive": false,
       "CommandList": null,
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     },
     {
       "FlowScriptName": "NanoPlot Flow",
@@ -7433,7 +7458,8 @@
       "FindFolders": true,
       "InterfaceAdaptive": false,
       "CommandList": null,
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     },
     {
       "FlowScriptName": "FastQC Flow",
@@ -7724,7 +7750,8 @@
           "WDL": null
         }
       ],
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     },
     {
       "FlowScriptName": "BuildTree Phantom Flow",
@@ -8069,7 +8096,8 @@
       "FindFolders": false,
       "InterfaceAdaptive": false,
       "CommandList": null,
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     },
     {
       "FlowScriptName": "BuscoFlowConsolidated",
@@ -8478,7 +8506,8 @@
           "WDL": "  call BuscoPrep as D7C1 {\r\n    input\r\n   }\r\n"
         }
       ],
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     },
     {
       "FlowScriptName": "CentrifugeFlow",
@@ -8916,7 +8945,8 @@
       "FindFolders": true,
       "InterfaceAdaptive": false,
       "CommandList": null,
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     },
     {
       "FlowScriptName": "FlowSeq",
@@ -9359,7 +9389,8 @@
           "WDL": null
         }
       ],
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     },
     {
       "FlowScriptName": "Kover Flow",
@@ -9780,7 +9811,8 @@
       "FindFolders": false,
       "InterfaceAdaptive": false,
       "CommandList": [],
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     },
     {
       "FlowScriptName": "StrepSuisFlow",
@@ -10611,7 +10643,8 @@
       "FindFolders": true,
       "InterfaceAdaptive": false,
       "CommandList": null,
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     },
     {
       "FlowScriptName": "TestWSLBash",
@@ -10669,7 +10702,7 @@
             "WslCommand": {
               "CommandToken": "D2C2",
               "FlowScriptToken": null,
-              "Command": "echo \u0022IsSLURM=@[\u003CIsSLURM\u003E=]\u0022\r\nnextflow -version\r\nmkdir $[O.]$[I.[SampleName]]\r\ncp $[I.[SamplePath]] $[O.]$[I.[SampleName]]\r\ncp @[Primer=[S]/mnt/r/PDS-BioSeqDB/isPCR/AAFC//20230503_Pbrassicae-PCRproducts.txt] $[O.]primer.txt\r\n#conda run -n busco busco --list-datasets",
+              "Command": "echo \u0022IsSLURM=@[\u003CIsSLURM\u003E=]\u0022\r\nnextflow -version\r\n# mkdir $[O.]$[I.[SampleName]]\r\n# cp $[I.[SamplePath]] $[O.]$[I.[SampleName]]\r\n# cp @[Primer=[S]/mnt/r/PDS-BioSeqDB/isPCR/AAFC//20230503_Pbrassicae-PCRproducts.txt] $[O.]primer.txt\r\nll @[Primer=[S]/mnt/r/PDS-BioSeqDB/isPCR/AAFC//20230503_Pbrassicae-PCRproducts.txt]\r\n#conda run -n busco busco --list-datasets",
               "IsNoop": false,
               "CondaPrefix": "",
               "Parms": [],
@@ -10700,7 +10733,7 @@
             "ConsolidateInput": false,
             "ConsolidatedCmdToken": "",
             "ExpectSamplesHeader": false,
-            "RunAfterALLPrereqs": true,
+            "RunAfterALLPrereqs": false,
             "RunAfterALLCmdToken": "D1C2",
             "OmitStep": false,
             "LastUpdate": "2023-04-22T11:47:58.7859189-06:00",
@@ -10778,7 +10811,7 @@
                 "ModuleName": "TestWSLBash",
                 "ParmName": "Primer",
                 "DefaultValue": "[S]/mnt/r/PDS-BioSeqDB/isPCR/AAFC//20230503_Pbrassicae-PCRproducts.txt",
-                "UserValue": "[S]/mnt/e/data/primers/crispr_primers.txt",
+                "UserValue": "[S]/mnt/e/data/std_testing/isPCR/primers.txt",
                 "Description": "",
                 "ComboValues": null,
                 "Optional": false,
@@ -10848,21 +10881,21 @@
             "UserVariableList": {},
             "IsDocker": false,
             "IsSLURM": true,
-            "Slurm_Resource_Request": 2,
+            "Slurm_Resource_Request": 0,
             "Slurm_Min_Resources": {
-              "CPUs": 2,
-              "MemoryGB": 4,
-              "Hours": 0.300000012
+              "CPUs": 0,
+              "MemoryGB": 0,
+              "Hours": 0
             },
             "Slurm_Moderate_Resources": {
-              "CPUs": 6,
-              "MemoryGB": 16,
-              "Hours": 0.75
+              "CPUs": 0,
+              "MemoryGB": 0,
+              "Hours": 0
             },
             "Slurm_Max_Resources": {
-              "CPUs": 16,
-              "MemoryGB": 64,
-              "Hours": 2
+              "CPUs": 0,
+              "MemoryGB": 0,
+              "Hours": 0
             },
             "WDL_Task": null,
             "WDL_Task_Inputs": null,
@@ -10948,7 +10981,8 @@
       "FindFolders": false,
       "InterfaceAdaptive": false,
       "CommandList": null,
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     },
     {
       "FlowScriptName": "tCANSFlow",
@@ -11585,13 +11619,14 @@
           "WDL": null
         }
       ],
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     },
     {
       "FlowScriptName": "In-silico PCR",
       "TestConfig": {
         "1": {
-          "TestSelect": false,
+          "TestSelect": true,
           "TestNumber": 1,
           "TestFlowScript": null,
           "TestMachine": "Linux - Monod",
@@ -11645,7 +11680,7 @@
             "WslCommand": {
               "CommandToken": "D1C1",
               "FlowScriptToken": null,
-              "Command": "# check for slurm support\r\n# script variables\r\nargs=\u0022\u0022\r\n# check if slurm is available in env\r\nif [[ @[\u003CIsSlurm\u003E=] -eq 1 ]]; then \r\nargs=\u0022-profile slurm,standard --account pds_monod\u0022\r\nfi\r\necho \u0022isSLURM=@[\u003CisSLURM\u003E=]\u0022\r\nnextflow run jimmyliu1326/isPCR \\\r\n   -latest \\\r\n   --input $[O.]SampleList.csv \\\r\n   --outdir $[O.] \\\r\n   --primer @[Primer=] \\\r\n   --input_format @[sequence_format=fasta] \\\r\n   @[Multiplex=--multiplex] \\\r\n   --primer_min_tm @[Min_Primer_Tm=40] \\\r\n   --probe_min_tm @[Min_Probe_Tm=40] \\\r\n   --max_length @[max_amplicon_length=1000] \\\r\n   -with-tower \\\r\n   $args",
+              "Command": "# check for slurm support\r\n# script variables\r\nargs=\u0022\u0022\r\n# check if slurm is available in env\r\nif [[ @[\u003CIsSlurm\u003E=] -eq 1 ]]; then \r\nargs=\u0022-profile slurm,standard --account pds_monod\u0022\r\nfi\r\n\r\necho \u0022isSLURM=@[\u003CisSLURM\u003E=]\u0022\r\nnextflow run jimmyliu1326/isPCR \\\r\n   -latest \\\r\n   --input $[O.]SampleList.csv \\\r\n   --outdir $[O.] \\\r\n   --primer @[Primer=] \\\r\n   --input_format @[sequence_format=fasta] \\\r\n   @[Multiplex=--multiplex] \\\r\n   --primer_min_tm @[Min_Primer_Tm=40] \\\r\n   --probe_min_tm @[Min_Probe_Tm=40] \\\r\n   --max_length @[max_amplicon_length=1000] \\\r\n   -with-tower \\\r\n   $args",
               "IsNoop": false,
               "CondaPrefix": "",
               "Parms": [],
@@ -11872,8 +11907,8 @@
               {
                 "ModuleName": "tnBLAST",
                 "ParmName": "\u003CIsSlurm\u003E",
-                "DefaultValue": "1",
-                "UserValue": "1",
+                "DefaultValue": "0",
+                "UserValue": "0",
                 "Description": null,
                 "ComboValues": null,
                 "Optional": false,
@@ -11889,8 +11924,8 @@
               {
                 "ModuleName": "tnBLAST",
                 "ParmName": "\u003CisSLURM\u003E",
-                "DefaultValue": "1",
-                "UserValue": "1",
+                "DefaultValue": "0",
+                "UserValue": "0",
                 "Description": null,
                 "ComboValues": null,
                 "Optional": false,
@@ -11926,21 +11961,21 @@
             "UserVariableList": {},
             "IsDocker": false,
             "IsSLURM": true,
-            "Slurm_Resource_Request": 2,
+            "Slurm_Resource_Request": 0,
             "Slurm_Min_Resources": {
-              "CPUs": 2,
-              "MemoryGB": 4,
-              "Hours": 0.300000012
+              "CPUs": 0,
+              "MemoryGB": 0,
+              "Hours": 0
             },
             "Slurm_Moderate_Resources": {
-              "CPUs": 6,
-              "MemoryGB": 16,
-              "Hours": 0.75
+              "CPUs": 0,
+              "MemoryGB": 0,
+              "Hours": 0
             },
             "Slurm_Max_Resources": {
-              "CPUs": 16,
-              "MemoryGB": 64,
-              "Hours": 2
+              "CPUs": 0,
+              "MemoryGB": 0,
+              "Hours": 0
             },
             "WDL_Task": null,
             "WDL_Task_Inputs": null,
@@ -12186,7 +12221,8 @@
           "WDL": null
         }
       ],
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     },
     {
       "FlowScriptName": "InfluenzaA Flow",
@@ -12680,7 +12716,8 @@
       "FindFolders": true,
       "InterfaceAdaptive": false,
       "CommandList": [],
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     },
     {
       "FlowScriptName": "DragonFlye Assembly",
@@ -15682,7 +15719,8 @@
           "WDL": null
         }
       ],
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     },
     {
       "FlowScriptName": "Salmonella",
@@ -16505,7 +16543,8 @@
       "FindFolders": true,
       "InterfaceAdaptive": false,
       "CommandList": [],
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     },
     {
       "FlowScriptName": "Tracy Flow",
@@ -17217,7 +17256,8 @@
           "WDL": null
         }
       ],
-      "RemoveReads": false
+      "RemoveReads": false,
+      "SLURM_IsAvailable": false
     }
   ]
 }
