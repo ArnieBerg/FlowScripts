@@ -9820,21 +9820,21 @@
         "1": {
           "TestSelect": true,
           "TestNumber": 1,
-          "TestFlowScript": null,
+          "TestFlowScript": "StrepSuisFlow",
           "TestMachine": "WSL2 - This machine",
-          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\StrepSuisFlow_0118100217_WSL2_411db27",
-          "TestSuccess": false,
-          "TestSuccessLabel": null,
+          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\StrepSuisFlow_0118100217_WSL2_",
+          "TestSuccess": true,
+          "TestSuccessLabel": "Success",
           "TestIsRunning": false
         },
         "2": {
           "TestSelect": true,
           "TestNumber": 2,
-          "TestFlowScript": null,
+          "TestFlowScript": "StrepSuisFlow",
           "TestMachine": "Linux - Monod",
-          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\StrepSuisFlow_0118100217_Linux_ca94bd4",
+          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\StrepSuisFlow_0118100217_Linux_eec36ce",
           "TestSuccess": false,
-          "TestSuccessLabel": null,
+          "TestSuccessLabel": "",
           "TestIsRunning": false
         }
       },
