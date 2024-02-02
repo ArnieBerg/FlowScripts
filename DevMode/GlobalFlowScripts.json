@@ -10996,21 +10996,21 @@
         "1": {
           "TestSelect": true,
           "TestNumber": 1,
-          "TestFlowScript": null,
+          "TestFlowScript": "TestWSLBash",
           "TestMachine": "WSL2 - This machine",
-          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\TestWSLBash_0110062701_6917aa3",
+          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\TestWSLBash_0202070852_WSL2_b3a37bf",
           "TestSuccess": false,
-          "TestSuccessLabel": null,
+          "TestSuccessLabel": "Failed",
           "TestIsRunning": false
         },
         "2": {
-          "TestSelect": false,
+          "TestSelect": true,
           "TestNumber": 2,
-          "TestFlowScript": null,
+          "TestFlowScript": "TestWSLBash",
           "TestMachine": "Linux - Monod",
-          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\TestWSLBash_0110063654_6917aa3",
-          "TestSuccess": false,
-          "TestSuccessLabel": null,
+          "TestOutputPath": "E:\\data\\FlowScript_Test_Output_Results\\TestWSLBash_0202070852_Linux_79fa76d",
+          "TestSuccess": true,
+          "TestSuccessLabel": "Success",
           "TestIsRunning": false
         }
       },
@@ -11031,7 +11031,7 @@
       "SequenceDBPath": "[S]E:\\data\\database\\SSuis_Ruwani\\SSuis_Ruwani.fasta",
       "SamplesFromLocalDevice": null,
       "SamplesToTransform": null,
-      "IsLinux": true,
+      "IsLinux": false,
       "CanRunInLinux": true,
       "DockerBaseImage": "bioseqenv.0.3",
       "Parameters": "TestWSLBash@[OmitStep=False]\r\nTestWSLBash@[PublishOutput=False]\r\nTestWSLBash@[IgnoreError=False]\r\nTestWSLBash@[IncludeOutput=True]\r\nTestWSLBash@[Primer=[S]/mnt/x/PDS-BioSeqDB/isPCR/Primers//p_MVP_Gvg.txt]\r\nTestWSLBash@[IsDocker=True]\r\nTestWSLBash@[IsSlurm=True]\r\nTestWSLBash@[\u003CIsSLURM\u003E=]\r\n",
@@ -11054,7 +11054,7 @@
               "IsParallel": false,
               "IsSlurm": true,
               "IsDocker": false,
-              "IsLinux": false,
+              "IsLinux": true,
               "LinuxJobRunning": false,
               "SlurmJobID": null,
               "SlurmParms": null,
@@ -11205,8 +11205,8 @@
               {
                 "ModuleName": "TestWSLBash",
                 "ParmName": "\u003CIsSLURM\u003E",
-                "DefaultValue": "1",
-                "UserValue": "1",
+                "DefaultValue": "0",
+                "UserValue": "0",
                 "Description": null,
                 "ComboValues": null,
                 "Optional": false,
@@ -11313,7 +11313,7 @@
               "IsParallel": false,
               "IsSlurm": true,
               "IsDocker": false,
-              "IsLinux": false,
+              "IsLinux": true,
               "LinuxJobRunning": false,
               "SlurmJobID": null,
               "SlurmParms": null,
@@ -11447,8 +11447,8 @@
               {
                 "ModuleName": "Compress",
                 "ParmName": "\u003CIsSLURM\u003E",
-                "DefaultValue": "1",
-                "UserValue": "1",
+                "DefaultValue": "0",
+                "UserValue": "0",
                 "Description": null,
                 "ComboValues": null,
                 "Optional": false,
@@ -17031,7 +17031,7 @@
               "Hours": 0.300000012
             },
             "Slurm_Moderate_Resources": {
-              "CPUs": 6,
+              "CPUs": 8,
               "MemoryGB": 16,
               "Hours": 0.75
             },
