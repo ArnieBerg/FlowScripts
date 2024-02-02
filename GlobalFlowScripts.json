@@ -13286,7 +13286,7 @@
             "UserVariableList": {},
             "IsDocker": false,
             "IsSLURM": true,
-            "Slurm_Resource_Request": 2,
+            "Slurm_Resource_Request": 3,
             "Slurm_Min_Resources": {
               "CPUs": 2,
               "MemoryGB": 4,
@@ -13468,7 +13468,7 @@
           }
         ]
       },
-      "LastUpdate": "2024-02-02T07:54:52.2699789-06:00",
+      "LastUpdate": "2024-02-02T08:23:37.6232203-06:00",
       "LastAuthor": "AGB465",
       "FindFolders": true,
       "InterfaceAdaptive": false,

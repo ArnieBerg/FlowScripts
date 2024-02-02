@@ -17024,7 +17024,7 @@
             "UserVariableList": {},
             "IsDocker": false,
             "IsSLURM": true,
-            "Slurm_Resource_Request": 2,
+            "Slurm_Resource_Request": 3,
             "Slurm_Min_Resources": {
               "CPUs": 2,
               "MemoryGB": 4,
