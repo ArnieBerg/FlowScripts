@@ -14167,7 +14167,7 @@
       "IsLinux": false,
       "CanRunInLinux": true,
       "DockerBaseImage": "bioseqenv.0.3",
-      "Parameters": "TestWSLBash@[OmitStep=False]\r\nTestWSLBash@[PublishOutput=True]\r\nTestWSLBash@[IgnoreError=False]\r\nTestWSLBash@[IncludeOutput=True]\r\nTestWSLBash@[Primer=[S]/mnt/x/data/Arnie/BioSeqDB_SystemMessage.txt]\r\nTestWSLBash@[IsDocker=False]\r\nTestWSLBash@[IsSlurm=True]\r\nTestWSLBash@[\u003CIsSLURM\u003E=0]\r\nTestWSLBash@[\u003CSLURM_CPUs\u003E=]\r\nTestWSLBash@[\u003CSLURM_GBs\u003E=]\r\nTestWSLBash@[\u003CSLURM_Minutes\u003E=45]\r\nCompress@[OmitStep=False]\r\nCompress@[PublishOutput=False]\r\nCompress@[IgnoreError=False]\r\nCompress@[IncludeOutput=False]\r\nCompress@[IsDocker=False]\r\nCompress@[IsSlurm=True]\r\nCompress@[\u003CIsSLURM\u003E=0]\r\nCompress@[\u003CSLURM_CPUs\u003E=2]\r\nCompress@[\u003CSLURM_GBs\u003E=4]\r\nCompress@[\u003CSLURM_Minutes\u003E=18]\r\n",
+      "Parameters": "TestWSLBash@[\u003CIsSLURM\u003E=0]\r\nTestWSLBash@[\u003CSLURM_CPUs\u003E=]\r\nTestWSLBash@[\u003CSLURM_GBs\u003E=]\r\nTestWSLBash@[Primer=[S]/mnt/x/data/Arnie/BioSeqDB_SystemMessage.txt]\r\n",
       "OutputPath": "[S]E:\\data\\Arnie\\TestWSLBash_Results\\",
       "StartWithScript": "Data",
       "ScriptModulesInFlowScript": {
@@ -14355,8 +14355,8 @@
               {
                 "ModuleName": "TestWSLBash",
                 "ParmName": "\u003CSLURM_CPUs\u003E",
-                "DefaultValue": "6",
-                "UserValue": "6",
+                "DefaultValue": "",
+                "UserValue": "",
                 "Description": null,
                 "ComboValues": null,
                 "Optional": false,
@@ -14372,8 +14372,8 @@
               {
                 "ModuleName": "TestWSLBash",
                 "ParmName": "\u003CSLURM_GBs\u003E",
-                "DefaultValue": "16",
-                "UserValue": "16",
+                "DefaultValue": "",
+                "UserValue": "",
                 "Description": null,
                 "ComboValues": null,
                 "Optional": false,
@@ -14675,7 +14675,7 @@
           }
         ]
       },
-      "LastUpdate": "2024-02-03T16:41:42.2241791-06:00",
+      "LastUpdate": "2024-02-03T16:50:21.9676759-06:00",
       "LastAuthor": "AGB465",
       "FindFolders": true,
       "InterfaceAdaptive": false,
