@@ -11377,7 +11377,7 @@
                 "ModuleName": "BBMap",
                 "ParmName": "IsSlurm",
                 "DefaultValue": null,
-                "UserValue": "true",
+                "UserValue": "True",
                 "Description": "IsSlurm",
                 "ComboValues": "true|",
                 "Optional": false,
@@ -11466,7 +11466,7 @@
             "UserVariableList": {},
             "IsDocker": true,
             "IsSLURM": true,
-            "Slurm_Resource_Request": 2,
+            "Slurm_Resource_Request": 3,
             "Slurm_Min_Resources": {
               "CPUs": 2,
               "MemoryGB": 4,
@@ -11746,21 +11746,21 @@
             "UserVariableList": {},
             "IsDocker": false,
             "IsSLURM": true,
-            "Slurm_Resource_Request": 0,
+            "Slurm_Resource_Request": 2,
             "Slurm_Min_Resources": {
-              "CPUs": 0,
-              "MemoryGB": 0,
-              "Hours": 0
+              "CPUs": 2,
+              "MemoryGB": 4,
+              "Hours": 0.300000012
             },
             "Slurm_Moderate_Resources": {
-              "CPUs": 0,
-              "MemoryGB": 0,
-              "Hours": 0
+              "CPUs": 6,
+              "MemoryGB": 16,
+              "Hours": 0.75
             },
             "Slurm_Max_Resources": {
-              "CPUs": 0,
-              "MemoryGB": 0,
-              "Hours": 0
+              "CPUs": 16,
+              "MemoryGB": 64,
+              "Hours": 2
             },
             "WDL_Task": null,
             "WDL_Task_Inputs": null,
@@ -13533,8 +13533,8 @@
               {
                 "ModuleName": "DragonFlye",
                 "ParmName": "\u003CSLURM_CPUs\u003E",
-                "DefaultValue": "16",
-                "UserValue": "16",
+                "DefaultValue": "",
+                "UserValue": "",
                 "Description": null,
                 "ComboValues": null,
                 "Optional": false,
@@ -13550,8 +13550,8 @@
               {
                 "ModuleName": "DragonFlye",
                 "ParmName": "\u003CSLURM_GBs\u003E",
-                "DefaultValue": "64",
-                "UserValue": "64",
+                "DefaultValue": "",
+                "UserValue": "",
                 "Description": null,
                 "ComboValues": null,
                 "Optional": false,
