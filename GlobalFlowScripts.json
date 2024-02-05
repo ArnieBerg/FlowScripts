@@ -11746,21 +11746,21 @@
             "UserVariableList": {},
             "IsDocker": false,
             "IsSLURM": true,
-            "Slurm_Resource_Request": 2,
+            "Slurm_Resource_Request": 0,
             "Slurm_Min_Resources": {
-              "CPUs": 2,
-              "MemoryGB": 4,
-              "Hours": 0.300000012
+              "CPUs": 0,
+              "MemoryGB": 0,
+              "Hours": 0
             },
             "Slurm_Moderate_Resources": {
-              "CPUs": 6,
-              "MemoryGB": 16,
-              "Hours": 0.75
+              "CPUs": 0,
+              "MemoryGB": 0,
+              "Hours": 0
             },
             "Slurm_Max_Resources": {
-              "CPUs": 16,
-              "MemoryGB": 64,
-              "Hours": 2
+              "CPUs": 0,
+              "MemoryGB": 0,
+              "Hours": 0
             },
             "WDL_Task": null,
             "WDL_Task_Inputs": null,
@@ -14505,7 +14505,7 @@
           }
         ]
       },
-      "LastUpdate": "2024-02-05T06:59:16.2652021-06:00",
+      "LastUpdate": "2024-02-05T07:05:46.7439379-06:00",
       "LastAuthor": "AGB465",
       "FindFolders": true,
       "InterfaceAdaptive": false,
