@@ -11495,7 +11495,7 @@
             "WslCommand": {
               "CommandToken": "D2C11",
               "FlowScriptToken": null,
-              "Command": "mkdir $[O{DragonFlye}.]$[V.[SampleName]]\r\ncp $[I{DragonFlye}.]contigs.fa $[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_contigs.fasta\r\ncp $[I{DragonFlye}.]flye.fasta $[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_flye.fa\r\ncp $[I{DragonFlye}.]flye-info.txt $[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_flye-info.txt\r\ncp $[I{DragonFlye}.]dragonflye.log $[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_dragonflye.log\r\ncp $[I{Abricate}.]$[V.[SampleName]]_Abricate_Output.tsv $[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_Abricate_Output.tsv\r\n# Create a temporary file for writing the modified content\r\ntempfile=$[O.]tmp_$[V.[SampleName]]\r\ntouch \u0022$tempfile\u0022\r\n# This script changes the text of a file for each line that starts with \u0027\u003E\u0027\r\n# Replace the word that follows the \u0027\u003E\u0027 with \u0027SAMPLE\u0027, followed by space and then everything that was originally on the line after the \u0027\u003E\u0027\r\nfilename=$[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_contigs.fasta\r\n# Loop through each line of the file\r\nwhile read -r line; do\r\n  # Check if the line starts with \u0027\u003E\u0027\r\n  if [[ $line == \u0027\u003E\u0027* ]]; then\r\n    # Extract the word that follows the \u0027\u003E\u0027\r\n    word=$(echo $line | cut -d\u0027 \u0027 -f1 | cut -c2-)\r\n    # Replace the word with SAMPLENAME\r\n    line=${line/$word/$[V.[SampleName]] $word}\r\n    echo $line\r\n  fi\r\n  # Print the modified line\r\n  echo \u0022$line\u0022 \u003E\u003E \u0022$tempfile\u0022\r\ndone \u003C $filename\r\n# Replace the original file with the modified content\r\nmv \u0022$tempfile\u0022 $filename\r\ntouch \u0022$tempfile\u0022\r\n# Do the same with the second file.\r\nfilename=$[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_flye.fa\r\n# Loop through each line of the file\r\nwhile read -r line; do\r\n  # Check if the line starts with \u0027\u003E\u0027\r\n  if [[ $line == \u0027\u003E\u0027* ]]; then\r\n    # Extract the word that follows the \u0027\u003E\u0027\r\n    word=$(echo $line | cut -d\u0027 \u0027 -f1 | cut -c2-)\r\n    # Replace the word with SAMPLENAME\r\n    line=${line/$word/$[V.[SampleName]] $word}\r\n    echo $line\r\n  fi\r\n  # Print the modified line\r\n  echo \u0022$line\u0022 \u003E\u003E \u0022$tempfile\u0022\r\ndone \u003C $filename\r\n# Replace the original file with the modified content\r\nmv \u0022$tempfile\u0022 $filename\r\n# Copy fasta files but add \u0027 sample_id=\u0027\u003CsampleID\u003E\u0027 to headers\r\ncp $[I{DragonFlye}.]contigs.fa $[O{DragonFlye}.]$[V.[SampleName]]/contigs.fasta\r\ntouch \u0022$tempfile\u0022\r\nawk \u0027/^\u003E/ {print $0\u0022 sample_id=$[V.[SampleName]]\u0022} !/^\u003E/ {print $0}\u0027 $[O{DragonFlye}.]$[V.[SampleName]]/contigs.fasta \u003E \u0022$tempfile\u0022\r\nmv \u0022$tempfile\u0022 $[O{DragonFlye}.]$[V.[SampleName]]/contigs.fasta\r\ncp $[I{DragonFlye}.]flye.fasta $[O{DragonFlye}.]$[V.[SampleName]]/flye.fa\r\ntouch \u0022$tempfile\u0022\r\nawk \u0027/^\u003E/ {print $0\u0022 sample_id=$[V.[SampleName]]\u0022} !/^\u003E/ {print $0}\u0027 $[O{DragonFlye}.]$[V.[SampleName]]/flye.fa \u003E \u0022$tempfile\u0022\r\nmv \u0022$tempfile\u0022 $[O{DragonFlye}.]$[V.[SampleName]]/flye.fa",
+              "Command": "mkdir $[O{DragonFlye}.]$[V.[SampleName]]\r\ncp $[I{DragonFlye}.]contigs.fa $[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_contigs.fasta\r\ncp $[I{DragonFlye}.]flye.fasta $[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_flye.fa\r\ncp $[I{DragonFlye}.]flye-info.txt $[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_flye-info.txt\r\ncp $[I{DragonFlye}.]dragonflye.log $[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_dragonflye.log\r\n\r\nif [ -f \u0022$[I{Abricate}.]$[V.[SampleName]]_Abricate_Output.tsv\u0022 ]; then\r\n   cp $[I{Abricate}.]$[V.[SampleName]]_Abricate_Output.tsv $[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_Abricate_Output.tsv\r\nfi\r\n\r\n# Create a temporary file for writing the modified content\r\ntempfile=$[O.]tmp_$[V.[SampleName]]\r\ntouch \u0022$tempfile\u0022\r\n# This script changes the text of a file for each line that starts with \u0027\u003E\u0027\r\n# Replace the word that follows the \u0027\u003E\u0027 with \u0027SAMPLE\u0027, followed by space and then everything that was originally on the line after the \u0027\u003E\u0027\r\nfilename=$[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_contigs.fasta\r\n# Loop through each line of the file\r\nwhile read -r line; do\r\n  # Check if the line starts with \u0027\u003E\u0027\r\n  if [[ $line == \u0027\u003E\u0027* ]]; then\r\n    # Extract the word that follows the \u0027\u003E\u0027\r\n    word=$(echo $line | cut -d\u0027 \u0027 -f1 | cut -c2-)\r\n    # Replace the word with SAMPLENAME\r\n    line=${line/$word/$[V.[SampleName]] $word}\r\n    echo $line\r\n  fi\r\n  # Print the modified line\r\n  echo \u0022$line\u0022 \u003E\u003E \u0022$tempfile\u0022\r\ndone \u003C $filename\r\n# Replace the original file with the modified content\r\nmv \u0022$tempfile\u0022 $filename\r\ntouch \u0022$tempfile\u0022\r\n# Do the same with the second file.\r\nfilename=$[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_flye.fa\r\n# Loop through each line of the file\r\nwhile read -r line; do\r\n  # Check if the line starts with \u0027\u003E\u0027\r\n  if [[ $line == \u0027\u003E\u0027* ]]; then\r\n    # Extract the word that follows the \u0027\u003E\u0027\r\n    word=$(echo $line | cut -d\u0027 \u0027 -f1 | cut -c2-)\r\n    # Replace the word with SAMPLENAME\r\n    line=${line/$word/$[V.[SampleName]] $word}\r\n    echo $line\r\n  fi\r\n  # Print the modified line\r\n  echo \u0022$line\u0022 \u003E\u003E \u0022$tempfile\u0022\r\ndone \u003C $filename\r\n# Replace the original file with the modified content\r\nmv \u0022$tempfile\u0022 $filename\r\n# Copy fasta files but add \u0027 sample_id=\u0027\u003CsampleID\u003E\u0027 to headers\r\ncp $[I{DragonFlye}.]contigs.fa $[O{DragonFlye}.]$[V.[SampleName]]/contigs.fasta\r\ntouch \u0022$tempfile\u0022\r\nawk \u0027/^\u003E/ {print $0\u0022 sample_id=$[V.[SampleName]]\u0022} !/^\u003E/ {print $0}\u0027 $[O{DragonFlye}.]$[V.[SampleName]]/contigs.fasta \u003E \u0022$tempfile\u0022\r\nmv \u0022$tempfile\u0022 $[O{DragonFlye}.]$[V.[SampleName]]/contigs.fasta\r\ncp $[I{DragonFlye}.]flye.fasta $[O{DragonFlye}.]$[V.[SampleName]]/flye.fa\r\ntouch \u0022$tempfile\u0022\r\nawk \u0027/^\u003E/ {print $0\u0022 sample_id=$[V.[SampleName]]\u0022} !/^\u003E/ {print $0}\u0027 $[O{DragonFlye}.]$[V.[SampleName]]/flye.fa \u003E \u0022$tempfile\u0022\r\nmv \u0022$tempfile\u0022 $[O{DragonFlye}.]$[V.[SampleName]]/flye.fa",
               "IsNoop": false,
               "CondaPrefix": "",
               "Parms": [],
@@ -11659,7 +11659,7 @@
                 "ModuleName": "Rename_Contigs",
                 "ParmName": "IsSlurm",
                 "DefaultValue": null,
-                "UserValue": "true",
+                "UserValue": "True",
                 "Description": "IsSlurm",
                 "ComboValues": "true|",
                 "Optional": false,
@@ -11746,21 +11746,21 @@
             "UserVariableList": {},
             "IsDocker": false,
             "IsSLURM": true,
-            "Slurm_Resource_Request": 2,
+            "Slurm_Resource_Request": 0,
             "Slurm_Min_Resources": {
-              "CPUs": 2,
-              "MemoryGB": 4,
-              "Hours": 0.300000012
+              "CPUs": 0,
+              "MemoryGB": 0,
+              "Hours": 0
             },
             "Slurm_Moderate_Resources": {
-              "CPUs": 6,
-              "MemoryGB": 16,
-              "Hours": 0.75
+              "CPUs": 0,
+              "MemoryGB": 0,
+              "Hours": 0
             },
             "Slurm_Max_Resources": {
-              "CPUs": 16,
-              "MemoryGB": 64,
-              "Hours": 2
+              "CPUs": 0,
+              "MemoryGB": 0,
+              "Hours": 0
             },
             "WDL_Task": null,
             "WDL_Task_Inputs": null,
@@ -13533,8 +13533,8 @@
               {
                 "ModuleName": "DragonFlye",
                 "ParmName": "\u003CSLURM_CPUs\u003E",
-                "DefaultValue": "6",
-                "UserValue": "6",
+                "DefaultValue": "",
+                "UserValue": "",
                 "Description": null,
                 "ComboValues": null,
                 "Optional": false,
@@ -13550,8 +13550,8 @@
               {
                 "ModuleName": "DragonFlye",
                 "ParmName": "\u003CSLURM_GBs\u003E",
-                "DefaultValue": "16",
-                "UserValue": "16",
+                "DefaultValue": "",
+                "UserValue": "",
                 "Description": null,
                 "ComboValues": null,
                 "Optional": false,
@@ -13857,7 +13857,7 @@
                 "ModuleName": "DragonFlye",
                 "ParmName": "IsSlurm",
                 "DefaultValue": null,
-                "UserValue": "True",
+                "UserValue": "true",
                 "Description": "IsSlurm",
                 "ComboValues": "true|",
                 "Optional": false,
@@ -13890,8 +13890,8 @@
               {
                 "ModuleName": "DragonFlye",
                 "ParmName": "\u003CSLURM_Minutes\u003E",
-                "DefaultValue": "45",
-                "UserValue": "45",
+                "DefaultValue": "120",
+                "UserValue": "120",
                 "Description": null,
                 "ComboValues": null,
                 "Optional": false,
@@ -13912,21 +13912,21 @@
             "UserVariableList": {},
             "IsDocker": true,
             "IsSLURM": true,
-            "Slurm_Resource_Request": 0,
+            "Slurm_Resource_Request": 3,
             "Slurm_Min_Resources": {
-              "CPUs": 0,
-              "MemoryGB": 0,
-              "Hours": 0
+              "CPUs": 2,
+              "MemoryGB": 4,
+              "Hours": 0.300000012
             },
             "Slurm_Moderate_Resources": {
-              "CPUs": 0,
-              "MemoryGB": 0,
-              "Hours": 0
+              "CPUs": 6,
+              "MemoryGB": 16,
+              "Hours": 0.75
             },
             "Slurm_Max_Resources": {
-              "CPUs": 0,
-              "MemoryGB": 0,
-              "Hours": 0
+              "CPUs": 16,
+              "MemoryGB": 64,
+              "Hours": 2
             },
             "WDL_Task": null,
             "WDL_Task_Inputs": null,
