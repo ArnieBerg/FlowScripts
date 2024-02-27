@@ -9281,7 +9281,7 @@
             "WslCommand": {
               "CommandToken": "D2C2",
               "FlowScriptToken": null,
-              "Command": "echo \u0022isSLURM=@[\u003CisSLURM\u003E=]\u0022\r\necho \u0022SLURM_CPUs=@[\u003CSLURM_CPUs\u003E=] --ram=@[\u003CSLURM_GBs\u003E=]\u0022\r\n\r\n\r\nnextflow -version\r\n# mkdir $[O.]$[I.[SampleName]]\r\n# cp $[I.[SamplePath]] $[O.]$[I.[SampleName]]\r\ncp @[Primer=[S]/mnt/r/PDS-BioSeqDB/isPCR/AAFC//20230503_Pbrassicae-PCRproducts.txt] $[O.]primer.txt\r\nll @[Primer=[S]/mnt/r/PDS-BioSeqDB/isPCR/AAFC//20230503_Pbrassicae-PCRproducts.txt]\r\n#conda run -n busco busco --list-datasets",
+              "Command": "echo \u0022isSLURM=@[\u003CisSLURM\u003E=]\u0022\r\necho \u0022SLURM_CPUs=@[\u003CSLURM_CPUs\u003E=] --ram=@[\u003CSLURM_GBs\u003E=]\u0022\r\n\r\nnextflow -version\r\n# mkdir $[O.]$[I.[SampleName]]\r\n# cp $[I.[SamplePath]] $[O.]$[I.[SampleName]]\r\ncp @[Primer=[S]/mnt/r/PDS-BioSeqDB/isPCR/AAFC//20230503_Pbrassicae-PCRproducts.txt] $[O.]primer.txt\r\nll @[Primer=[S]/mnt/r/PDS-BioSeqDB/isPCR/AAFC//20230503_Pbrassicae-PCRproducts.txt]\r\n#conda run -n busco busco --list-datasets",
               "IsNoop": false,
               "CondaPrefix": "",
               "Parms": [],
@@ -9289,7 +9289,7 @@
               "IsParallel": false,
               "IsSlurm": true,
               "IsDocker": false,
-              "IsLinux": false,
+              "IsLinux": true,
               "LinuxJobRunning": false,
               "SlurmJobID": null,
               "SlurmParms": null,
@@ -9528,21 +9528,21 @@
             "UserVariableList": {},
             "IsDocker": false,
             "IsSLURM": false,
-            "Slurm_Resource_Request": 2,
+            "Slurm_Resource_Request": 0,
             "Slurm_Min_Resources": {
-              "CPUs": 2,
-              "MemoryGB": 4,
-              "Hours": 0.300000012
+              "CPUs": 0,
+              "MemoryGB": 0,
+              "Hours": 0
             },
             "Slurm_Moderate_Resources": {
-              "CPUs": 6,
-              "MemoryGB": 16,
-              "Hours": 0.75
+              "CPUs": 0,
+              "MemoryGB": 0,
+              "Hours": 0
             },
             "Slurm_Max_Resources": {
-              "CPUs": 16,
-              "MemoryGB": 64,
-              "Hours": 2
+              "CPUs": 0,
+              "MemoryGB": 0,
+              "Hours": 0
             },
             "WDL_Task": null,
             "WDL_Task_Inputs": null,
@@ -9565,7 +9565,7 @@
               "IsParallel": false,
               "IsSlurm": true,
               "IsDocker": false,
-              "IsLinux": false,
+              "IsLinux": true,
               "LinuxJobRunning": false,
               "SlurmJobID": null,
               "SlurmParms": null,
@@ -14105,29 +14105,35 @@
           "TestIsRunning": false
         }
       },
-      "SubmissionTimeStamp": "0124110441",
+      "SubmissionTimeStamp": "0224114521",
       "LockUsername": null,
       "Comment": "The Salmonella FlowScript functions to predict Salmonella serotypes from raw Nanopore sequencing data. The pipeline uses flye to assemble the long reads, medaka for genome polishing, and SISTR for in-silico serotyping. When complete, the pipeline produces a single \u0027sistr_res_aggregate\u0027 file that aggregates the results from all the included samples.",
       "DataSourceType": 1,
       "SerializeDataSteps": false,
       "SampleList": {
-        "barcode1_2037151-1": "1[S]/mnt/e/data/std_testing/salmonella/input/barcode1_2037151-1/",
-        "barcode2_2037151-2": "1[S]/mnt/e/data/std_testing/salmonella/input/barcode2_2037151-2/"
+        "1737637-4": "1[S]/mnt/e/data/Dreamer/Salmonella_serotyping/2022/Salmonella_4May22_DT/Salmonella_4May22_DT/20220504_1241_X2_FAT45488_9bd75437/fastq_pass/1737637-4/",
+        "1741278-8": "1[S]/mnt/e/data/Dreamer/Salmonella_serotyping/2022/Salmonella_4May22_DT/Salmonella_4May22_DT/20220504_1241_X2_FAT45488_9bd75437/fastq_pass/1741278-8/",
+        "1835428-2": "1[S]/mnt/e/data/Dreamer/Salmonella_serotyping/2022/Salmonella_4May22_DT/Salmonella_4May22_DT/20220504_1241_X2_FAT45488_9bd75437/fastq_pass/1835428-2/",
+        "1842633-1": "1[S]/mnt/e/data/Dreamer/Salmonella_serotyping/2022/Salmonella_4May22_DT/Salmonella_4May22_DT/20220504_1241_X2_FAT45488_9bd75437/fastq_pass/1842633-1/",
+        "1927908-5": "1[S]/mnt/e/data/Dreamer/Salmonella_serotyping/2022/Salmonella_4May22_DT/Salmonella_4May22_DT/20220504_1241_X2_FAT45488_9bd75437/fastq_pass/1927908-5/",
+        "1938689-2": "1[S]/mnt/e/data/Dreamer/Salmonella_serotyping/2022/Salmonella_4May22_DT/Salmonella_4May22_DT/20220504_1241_X2_FAT45488_9bd75437/fastq_pass/1938689-2/",
+        "2001185-3": "1[S]/mnt/e/data/Dreamer/Salmonella_serotyping/2022/Salmonella_4May22_DT/Salmonella_4May22_DT/20220504_1241_X2_FAT45488_9bd75437/fastq_pass/2001185-3/",
+        "2002963-2": "1[S]/mnt/e/data/Dreamer/Salmonella_serotyping/2022/Salmonella_4May22_DT/Salmonella_4May22_DT/20220504_1241_X2_FAT45488_9bd75437/fastq_pass/2002963-2/"
       },
       "SequenceList": [],
       "SequenceListChecked": [],
       "SequenceDatabaseName": "hpsuis",
       "ParameterFilesToUpload": {},
       "ParameterFoldersToUpload": {},
-      "SequenceDBPathLinux": "/c/data/database/hpsuis",
-      "SequenceDBPath": "/c/data/database/hpsuis/hpsuis.fasta",
+      "SequenceDBPathLinux": "/mnt/e/data/database/hpsuis",
+      "SequenceDBPath": "/mnt/e/data/database/hpsuis/hpsuis.fasta",
       "SamplesFromLocalDevice": {},
       "SamplesToTransform": {},
       "IsLinux": true,
       "CanRunInLinux": true,
       "DockerBaseImage": "bioseqenv.0.3",
-      "Parameters": "BuscoConsolidate@[lineage=bacteria_odb10]\r\nBuscoConsolidate@[OmitStep=False]\r\nBuscoConsolidate@[PublishOutput=True]\r\nBuscoConsolidate@[IgnoreError=False]\r\nBuscoConsolidate@[IncludeOutput=True]\r\nBuscoConsolidate@[IsDocker=True]\r\nBuscoConsolidate@[IsSlurm=True]\r\nSamnSero@[DisableBinning=]\r\nSamnSero@[Resume=]\r\nSamnSero@[NoReport=]\r\nSamnSero@[Annot=--annot]\r\nSamnSero@[QC=--qc]\r\nSamnSero@[NanoHQ=]\r\nSamnSero@[TaxonName=Salmonella enterica]\r\nSamnSero@[TaxonLevel=species]\r\nSamnSero@[GPU=]\r\nSamnSero@[Metagenomics=off]\r\nSamnSero@[Trim=]\r\nSamnSero@[Platform=nanopore]\r\nSamnSero@[OmitStep=False]\r\nSamnSero@[PublishOutput=False]\r\nSamnSero@[IgnoreError=False]\r\nSamnSero@[IncludeOutput=True]\r\nSamnSero@[IsDocker=False]\r\nSamnSero@[IsSlurm=True]\r\nSamnSero@[\u003CisSLURM\u003E=0]\r\nSamnSero@[\u003CIsSlurm\u003E=0]\r\nSamnSero_Publish@[OmitStep=False]\r\nSamnSero_Publish@[PublishOutput=True]\r\nSamnSero_Publish@[IgnoreError=False]\r\nSamnSero_Publish@[IncludeOutput=False]\r\nSamnSero_Publish@[IsDocker=False]\r\n",
-      "OutputPath": "[S]E:\\data\\Arnie\\SamnseroTest_Results\\",
+      "Parameters": "BuscoConsolidate@[lineage=bacteria_odb10]\r\nBuscoConsolidate@[OmitStep=False]\r\nBuscoConsolidate@[PublishOutput=True]\r\nBuscoConsolidate@[IgnoreError=False]\r\nBuscoConsolidate@[IncludeOutput=True]\r\nBuscoConsolidate@[IsDocker=True]\r\nBuscoConsolidate@[IsSlurm=True]\r\nBuscoConsolidate@[\u003CIsSLURM\u003E=1]\r\nBuscoConsolidate@[\u003CSLURM_CPUs\u003E=6]\r\nBuscoConsolidate@[\u003CSLURM_GBs\u003E=16]\r\nBuscoConsolidate@[\u003CSLURM_Minutes\u003E=45]\r\nSamnSero@[DisableBinning=]\r\nSamnSero@[Resume=]\r\nSamnSero@[NoReport=]\r\nSamnSero@[Annot=--annot]\r\nSamnSero@[QC=--qc]\r\nSamnSero@[NanoHQ=]\r\nSamnSero@[TaxonName=Salmonella enterica]\r\nSamnSero@[TaxonLevel=species]\r\nSamnSero@[GPU=]\r\nSamnSero@[Metagenomics=off]\r\nSamnSero@[Trim=]\r\nSamnSero@[Platform=nanopore]\r\nSamnSero@[OmitStep=False]\r\nSamnSero@[PublishOutput=False]\r\nSamnSero@[IgnoreError=False]\r\nSamnSero@[IncludeOutput=True]\r\nSamnSero@[IsDocker=False]\r\nSamnSero@[IsSlurm=True]\r\nSamnSero@[\u003CIsSLURM\u003E=1]\r\nSamnSero@[\u003CSLURM_CPUs\u003E=16]\r\nSamnSero@[\u003CSLURM_GBs\u003E=32]\r\nSamnSero@[\u003CSLURM_Minutes\u003E=720]\r\nSamnSero_Publish@[OmitStep=False]\r\nSamnSero_Publish@[PublishOutput=True]\r\nSamnSero_Publish@[IgnoreError=False]\r\nSamnSero_Publish@[IncludeOutput=False]\r\nSamnSero_Publish@[IsDocker=False]\r\nSamnSero_Publish@[\u003CIsSLURM\u003E=1]\r\nSamnSero_Publish@[\u003CSLURM_CPUs\u003E=6]\r\nSamnSero_Publish@[\u003CSLURM_GBs\u003E=16]\r\nSamnSero_Publish@[\u003CSLURM_Minutes\u003E=45]\r\n",
+      "OutputPath": "[L]C:\\Temp\\Salmonella_test\\",
       "StartWithScript": "Data",
       "ScriptModulesInFlowScript": {
         "GlobalScriptModules": [
@@ -14365,7 +14371,7 @@
               }
             ],
             "DockerMountMap": [
-              "/mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/"
+              "/mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/"
             ],
             "DockerImage": "bioseqenv.0.3",
             "UserVariableList": {},
@@ -14400,7 +14406,7 @@
             "WslCommand": {
               "CommandToken": "D1C1",
               "FlowScriptToken": null,
-              "Command": "# check for slurm support\r\n# script variables\r\nargs=\u0022\u0022\r\n# check if slurm is available in env\r\nif [[ @[\u003CIsSlurm\u003E=] -eq 1 ]]; then \r\nargs=\u0022-profile slurm,standard --account pds_monod\u0022\r\nfi\r\necho \u0022IsSLURM=@[\u003CIsSLURM\u003E=]\u0022\r\n# run pipeline\r\nnextflow run jimmyliu1326/SamnSero_Nextflow -r main -latest --input $[O.]SampleList.csv --out_dir $[O.] @[Annot=--annot] @[QC=--qc] @[Trim=--trim] @[NanoHQ=--nanohq] @[NoReport=--noreport] @[GPU=--gpu] --taxon_name \u0022@[TaxonName=Salmonella enterica]\u0022 --taxon_level @[TaxonLevel=species] @[Resume=-resume] --meta @[Metagenomics=off] -with-tower --medaka_batchsize 50 --seq_platform @[Platform=nanopore] --centrifuge /mnt/e/data/reference/centrifuge @[DisableBinning=--disable_binning]",
+              "Command": "echo \u0022IsSLURM=@[\u003CIsSLURM\u003E=]\u0022\r\necho \u0022SLURM_CPUs=@[\u003CSLURM_CPUs\u003E=] --ram=@[\u003CSLURM_GBs\u003E=]\u0022\r\n\r\n# check for slurm support\r\n# script variables\r\nargs=\u0022\u0022\r\n# check if slurm is available in env\r\nif [[ @[\u003CIsSLURM\u003E=] -eq 1 ]]; then \r\nargs=\u0022-profile slurm,docker --account pds_monod --centrifuge /home/pds_monod/database/centrifuge\u0022\r\nelse\r\nargs=\u0022--centrifuge /mnt/e/data/reference/centrifuge\u0022\r\nfi\r\n\r\n# run pipeline\r\nnextflow run jimmyliu1326/SamnSero_Nextflow -r main -latest --input $[O.]SampleList.csv --out_dir $[O.] @[Annot=--annot] @[QC=--qc] @[Trim=--trim] @[NanoHQ=--nanohq] @[NoReport=--noreport] @[GPU=--gpu] --taxon_name \u0022@[TaxonName=Salmonella enterica]\u0022 --taxon_level @[TaxonLevel=species] @[Resume=-resume] --meta @[Metagenomics=off] -with-tower --medaka_batchsize 50 --seq_platform @[Platform=nanopore] @[DisableBinning=--disable_binning] $args",
               "IsNoop": false,
               "CondaPrefix": "",
               "Parms": [],
@@ -14492,7 +14498,7 @@
                 "ModuleName": "SamnSero",
                 "ParmName": "Annot",
                 "DefaultValue": "--annot",
-                "UserValue": "--annot",
+                "UserValue": "",
                 "Description": "Perform genome annotation after genome assembly.",
                 "ComboValues": "--annot",
                 "Optional": true,
@@ -14526,7 +14532,7 @@
                 "ModuleName": "SamnSero",
                 "ParmName": "NanoHQ",
                 "DefaultValue": "--nanohq",
-                "UserValue": "",
+                "UserValue": "--nanohq",
                 "Description": "Optimize genome assembly parameters for Nanopore data basecalled by Guppy v5 SUP models.",
                 "ComboValues": "--nanohq",
                 "Optional": true,
@@ -14746,8 +14752,8 @@
               {
                 "ModuleName": "SamnSero",
                 "ParmName": "\u003CIsSLURM\u003E",
-                "DefaultValue": "0",
-                "UserValue": "0",
+                "DefaultValue": "1",
+                "UserValue": "1",
                 "Description": null,
                 "ComboValues": null,
                 "Optional": false,
@@ -14762,31 +14768,14 @@
               },
               {
                 "ModuleName": "SamnSero",
-                "ParmName": "\u003CIsSlurm\u003E",
-                "DefaultValue": "0",
-                "UserValue": "0",
+                "ParmName": "\u003CSLURM_CPUs\u003E",
+                "DefaultValue": "3",
+                "UserValue": "3",
                 "Description": null,
                 "ComboValues": null,
                 "Optional": false,
                 "ReadOnly": true,
                 "Hidden": true,
-                "DeleteFlag": false,
-                "DataType": 0,
-                "Validator": null,
-                "Extensions": null,
-                "MissingValue": null,
-                "Public": false
-              },
-              {
-                "ModuleName": "SamnSero",
-                "ParmName": "\u003CSLURM_CPUs\u003E",
-                "DefaultValue": "6",
-                "UserValue": "6",
-                "Description": null,
-                "ComboValues": null,
-                "Optional": false,
-                "ReadOnly": false,
-                "Hidden": false,
                 "DeleteFlag": false,
                 "DataType": 2,
                 "Validator": null,
@@ -14797,13 +14786,13 @@
               {
                 "ModuleName": "SamnSero",
                 "ParmName": "\u003CSLURM_GBs\u003E",
-                "DefaultValue": "16",
-                "UserValue": "16",
+                "DefaultValue": "32",
+                "UserValue": "32",
                 "Description": null,
                 "ComboValues": null,
                 "Optional": false,
-                "ReadOnly": false,
-                "Hidden": false,
+                "ReadOnly": true,
+                "Hidden": true,
                 "DeleteFlag": false,
                 "DataType": 2,
                 "Validator": null,
@@ -14814,8 +14803,8 @@
               {
                 "ModuleName": "SamnSero",
                 "ParmName": "\u003CSLURM_Minutes\u003E",
-                "DefaultValue": "45",
-                "UserValue": "45",
+                "DefaultValue": "120",
+                "UserValue": "120",
                 "Description": null,
                 "ComboValues": null,
                 "Optional": false,
@@ -14846,8 +14835,8 @@
               "Hours": 0.75
             },
             "Slurm_Max_Resources": {
-              "CPUs": 16,
-              "MemoryGB": 96,
+              "CPUs": 3,
+              "MemoryGB": 32,
               "Hours": 2
             },
             "WDL_Task": null,
@@ -15084,7 +15073,7 @@
           }
         ]
       },
-      "LastUpdate": "2024-02-23T10:01:17.9954204-06:00",
+      "LastUpdate": "2024-02-26T07:23:10.9654912-06:00",
       "LastAuthor": "AGB465",
       "FindFolders": true,
       "InterfaceAdaptive": false,
