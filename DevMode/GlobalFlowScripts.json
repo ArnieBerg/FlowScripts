@@ -14371,7 +14371,7 @@
               }
             ],
             "DockerMountMap": [
-              "/mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/"
+              "/mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/"
             ],
             "DockerImage": "bioseqenv.0.3",
             "UserVariableList": {},
