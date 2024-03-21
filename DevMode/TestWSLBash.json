@@ -22,19 +22,19 @@
       "TestIsRunning": false
     }
   },
-  "SubmissionTimeStamp": "0203065153",
+  "SubmissionTimeStamp": "0311082108",
   "LockUsername": null,
   "Comment": "",
   "DataSourceType": 1,
   "SerializeDataSteps": false,
   "SampleList": {
-    "fastq_pass": "1[S]/mnt/x/PDS-BioSeqDB/NAS/NAS04_AT1P17/bos_taurus_depletion/20220624_1506_MN26243_FAT25659_defad8c3/fastq_pass/"
+    "barcode1_2037151-1": "1[S]/mnt/e/data/std_testing/Dragonflye/input/barcode1_2037151-1/"
   },
   "SequenceList": [],
   "SequenceListChecked": [],
   "SequenceDatabaseName": "SSuis_Ruwani",
   "ParameterFilesToUpload": {
-    "[S]/mnt/x/data/Arnie/BioSeqDB_SystemMessage.txt": null
+    "[S]/mnt/e/data/BioSeqDB_SystemMessage.txt": null
   },
   "ParameterFoldersToUpload": {},
   "SequenceDBPathLinux": "[S]/mnt/e/data/database/SSuis_Ruwani",
@@ -44,8 +44,8 @@
   "IsLinux": true,
   "CanRunInLinux": true,
   "DockerBaseImage": "bioseqenv.0.3",
-  "Parameters": "TestWSLBash@[\u003CIsSLURM\u003E=0]\r\nTestWSLBash@[\u003CSLURM_CPUs\u003E=]\r\nTestWSLBash@[\u003CSLURM_GBs\u003E=]\r\nTestWSLBash@[Primer=[S]/mnt/x/data/Arnie/BioSeqDB_SystemMessage.txt]\r\n",
-  "OutputPath": "[S]E:\\data\\Arnie\\TestWSLBash_Results\\",
+  "Parameters": "TestWSLBash@[OmitStep=False]\r\nTestWSLBash@[PublishOutput=True]\r\nTestWSLBash@[IgnoreError=False]\r\nTestWSLBash@[IncludeOutput=True]\r\nTestWSLBash@[Primer=[S]/mnt/e/data/BioSeqDB_SystemMessage.txt]\r\nTestWSLBash@[IsDocker=False]\r\nTestWSLBash@[IsSlurm=True]\r\nTestWSLBash@[\u003CIsSLURM\u003E=1]\r\nTestWSLBash@[\u003CSLURM_CPUs\u003E=]\r\nTestWSLBash@[\u003CSLURM_GBs\u003E=]\r\nTestWSLBash@[\u003CSLURM_Minutes\u003E=18]\r\nTestWSLBash@[\u003CisSLURM\u003E=0]\r\nCompress@[\u003CIsSLURM\u003E=0]\r\nCompress@[\u003CSLURM_CPUs\u003E=]\r\nCompress@[\u003CSLURM_GBs\u003E=]\r\nCompress@[OmitStep=False]\r\nCompress@[PublishOutput=False]\r\nCompress@[IgnoreError=False]\r\nCompress@[IncludeOutput=True]\r\nCompress@[IsDocker=False]\r\nCompress@[IsSlurm=True]\r\nCompress@[\u003CSLURM_Minutes\u003E=45]\r\n",
+  "OutputPath": "E:\\data\\results\\Arnie\\TestWSLBash_0311082108",
   "StartWithScript": "Data",
   "ScriptModulesInFlowScript": {
     "GlobalScriptModules": [
@@ -56,7 +56,7 @@
         "WslCommand": {
           "CommandToken": "D2C2",
           "FlowScriptToken": null,
-          "Command": "echo \u0022isSLURM=@[\u003CisSLURM\u003E=]\u0022\r\necho \u0022SLURM_CPUs=@[\u003CSLURM_CPUs\u003E=] --ram=@[\u003CSLURM_GBs\u003E=]\u0022\r\n\r\nnextflow -version\r\n# mkdir $[O.]$[I.[SampleName]]\r\n# cp $[I.[SamplePath]] $[O.]$[I.[SampleName]]\r\ncp @[Primer=[S]/mnt/r/PDS-BioSeqDB/isPCR/AAFC//20230503_Pbrassicae-PCRproducts.txt] $[O.]primer.txt\r\nll @[Primer=[S]/mnt/r/PDS-BioSeqDB/isPCR/AAFC//20230503_Pbrassicae-PCRproducts.txt]\r\n#conda run -n busco busco --list-datasets",
+          "Command": "echo \u0022isSLURM=@[\u003CisSLURM\u003E=]\u0022\r\necho \u0022SLURM_CPUs=@[\u003CSLURM_CPUs\u003E=] --ram=@[\u003CSLURM_GBs\u003E=]\u0022\r\n\r\nnextflow -version\r\n# mkdir $[O.]$[I.[SampleName]]\r\n# cp $[I.[SamplePath]] $[O.]$[I.[SampleName]]\r\ncp @[Primer=[S]/mnt/r/PDS-BioSeqDB/isPCR/AAFC//20230503_Pbrassicae-PCRproducts.txt] $[O.]primer.txt\r\nll @[Primer=[S]/mnt/r/PDS-BioSeqDB/isPCR/AAFC//20230503_Pbrassicae-PCRproducts.txt]\r\n#conda run -n busco busco --list-datasets\r\n\r\nsleep 100000",
           "IsNoop": false,
           "CondaPrefix": "",
           "Parms": [],
@@ -232,8 +232,8 @@
           {
             "ModuleName": "TestWSLBash",
             "ParmName": "\u003CSLURM_CPUs\u003E",
-            "DefaultValue": "2",
-            "UserValue": "2",
+            "DefaultValue": "6",
+            "UserValue": "6",
             "Description": null,
             "ComboValues": null,
             "Optional": false,
@@ -249,8 +249,8 @@
           {
             "ModuleName": "TestWSLBash",
             "ParmName": "\u003CSLURM_GBs\u003E",
-            "DefaultValue": "4",
-            "UserValue": "4",
+            "DefaultValue": "16",
+            "UserValue": "16",
             "Description": null,
             "ComboValues": null,
             "Optional": false,
@@ -283,8 +283,8 @@
           {
             "ModuleName": "TestWSLBash",
             "ParmName": "\u003CisSLURM\u003E",
-            "DefaultValue": "1",
-            "UserValue": "1",
+            "DefaultValue": "0",
+            "UserValue": "0",
             "Description": null,
             "ComboValues": null,
             "Optional": false,
@@ -302,22 +302,22 @@
         "DockerImage": null,
         "UserVariableList": {},
         "IsDocker": false,
-        "IsSLURM": false,
-        "Slurm_Resource_Request": 1,
+        "IsSLURM": true,
+        "Slurm_Resource_Request": 0,
         "Slurm_Min_Resources": {
-          "CPUs": 2,
-          "MemoryGB": 4,
-          "Hours": 0.300000012
+          "CPUs": 0,
+          "MemoryGB": 0,
+          "Hours": 0
         },
         "Slurm_Moderate_Resources": {
-          "CPUs": 6,
-          "MemoryGB": 16,
-          "Hours": 0.75
+          "CPUs": 0,
+          "MemoryGB": 0,
+          "Hours": 0
         },
         "Slurm_Max_Resources": {
-          "CPUs": 16,
-          "MemoryGB": 64,
-          "Hours": 2
+          "CPUs": 0,
+          "MemoryGB": 0,
+          "Hours": 0
         },
         "WDL_Task": null,
         "WDL_Task_Inputs": null,
@@ -372,8 +372,8 @@
           {
             "ModuleName": "Compress",
             "ParmName": "\u003CIsSLURM\u003E",
-            "DefaultValue": "1",
-            "UserValue": "1",
+            "DefaultValue": "0",
+            "UserValue": "0",
             "Description": "",
             "ComboValues": null,
             "Optional": false,
@@ -389,8 +389,8 @@
           {
             "ModuleName": "Compress",
             "ParmName": "\u003CSLURM_CPUs\u003E",
-            "DefaultValue": "6",
-            "UserValue": "6",
+            "DefaultValue": "",
+            "UserValue": "",
             "Description": "",
             "ComboValues": null,
             "Optional": false,
@@ -406,8 +406,8 @@
           {
             "ModuleName": "Compress",
             "ParmName": "\u003CSLURM_GBs\u003E",
-            "DefaultValue": "16",
-            "UserValue": "16",
+            "DefaultValue": "",
+            "UserValue": "",
             "Description": "",
             "ComboValues": null,
             "Optional": false,
@@ -544,7 +544,7 @@
         "DockerImage": null,
         "UserVariableList": {},
         "IsDocker": false,
-        "IsSLURM": false,
+        "IsSLURM": true,
         "Slurm_Resource_Request": 2,
         "Slurm_Min_Resources": {
           "CPUs": 2,
@@ -569,7 +569,7 @@
       }
     ]
   },
-  "LastUpdate": "2024-02-03T06:53:11.9046896-06:00",
+  "LastUpdate": "2024-03-21T06:14:32.4309977-06:00",
   "LastAuthor": "AGB465",
   "FindFolders": true,
   "InterfaceAdaptive": false,
