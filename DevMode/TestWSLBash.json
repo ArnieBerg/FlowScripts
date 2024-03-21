@@ -232,8 +232,8 @@
           {
             "ModuleName": "TestWSLBash",
             "ParmName": "\u003CSLURM_CPUs\u003E",
-            "DefaultValue": "6",
-            "UserValue": "6",
+            "DefaultValue": "2",
+            "UserValue": "2",
             "Description": null,
             "ComboValues": null,
             "Optional": false,
@@ -249,8 +249,8 @@
           {
             "ModuleName": "TestWSLBash",
             "ParmName": "\u003CSLURM_GBs\u003E",
-            "DefaultValue": "16",
-            "UserValue": "16",
+            "DefaultValue": "4",
+            "UserValue": "4",
             "Description": null,
             "ComboValues": null,
             "Optional": false,
@@ -303,21 +303,21 @@
         "UserVariableList": {},
         "IsDocker": false,
         "IsSLURM": true,
-        "Slurm_Resource_Request": 0,
+        "Slurm_Resource_Request": 1,
         "Slurm_Min_Resources": {
-          "CPUs": 0,
-          "MemoryGB": 0,
-          "Hours": 0
+          "CPUs": 2,
+          "MemoryGB": 4,
+          "Hours": 0.0199999996
         },
         "Slurm_Moderate_Resources": {
-          "CPUs": 0,
-          "MemoryGB": 0,
-          "Hours": 0
+          "CPUs": 6,
+          "MemoryGB": 16,
+          "Hours": 0.75
         },
         "Slurm_Max_Resources": {
-          "CPUs": 0,
-          "MemoryGB": 0,
-          "Hours": 0
+          "CPUs": 16,
+          "MemoryGB": 64,
+          "Hours": 2
         },
         "WDL_Task": null,
         "WDL_Task_Inputs": null,
@@ -569,7 +569,7 @@
       }
     ]
   },
-  "LastUpdate": "2024-03-21T06:14:32.4309977-06:00",
+  "LastUpdate": "2024-03-21T06:15:42.4373455-06:00",
   "LastAuthor": "AGB465",
   "FindFolders": true,
   "InterfaceAdaptive": false,
