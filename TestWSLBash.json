@@ -22,13 +22,13 @@
       "TestIsRunning": false
     }
   },
-  "SubmissionTimeStamp": "0223104232",
+  "SubmissionTimeStamp": "0326080455",
   "LockUsername": null,
   "Comment": "",
   "DataSourceType": 1,
   "SerializeDataSteps": false,
   "SampleList": {
-    "barcode1_2037151-1": "1[S]/mnt/e/data/std_testing/Dragonflye/input/barcode1_2037151-1/"
+    "barcode2_2037151-2": "1[S]/mnt/e/data/std_testing/Dragonflye/input/barcode2_2037151-2/"
   },
   "SequenceList": [],
   "SequenceListChecked": [],
@@ -44,8 +44,8 @@
   "IsLinux": true,
   "CanRunInLinux": true,
   "DockerBaseImage": "bioseqenv.0.3",
-  "Parameters": "TestWSLBash@[\u003CisSLURM\u003E=0]\r\nTestWSLBash@[\u003CSLURM_CPUs\u003E=]\r\nTestWSLBash@[\u003CSLURM_GBs\u003E=]\r\nTestWSLBash@[Primer=[S]/mnt/e/data/BioSeqDB_SystemMessage.txt]\r\nCompress@[\u003CIsSLURM\u003E=0]\r\nCompress@[\u003CSLURM_CPUs\u003E=]\r\nCompress@[\u003CSLURM_GBs\u003E=]\r\n",
-  "OutputPath": "[S]E:\\data\\Arnie\\TestWSLBash_Results\\",
+  "Parameters": "TestWSLBash@[OmitStep=False]\r\nTestWSLBash@[PublishOutput=True]\r\nTestWSLBash@[IgnoreError=False]\r\nTestWSLBash@[IncludeOutput=True]\r\nTestWSLBash@[Primer=[S]/mnt/e/data/BioSeqDB_SystemMessage.txt]\r\nTestWSLBash@[IsDocker=False]\r\nTestWSLBash@[IsSlurm=True]\r\nTestWSLBash@[\u003CIsSLURM\u003E=1]\r\nTestWSLBash@[\u003CSLURM_CPUs\u003E=]\r\nTestWSLBash@[\u003CSLURM_GBs\u003E=]\r\nTestWSLBash@[\u003CSLURM_Minutes\u003E=45]\r\nTestWSLBash@[\u003CisSLURM\u003E=0]\r\nCompress@[\u003CIsSLURM\u003E=0]\r\nCompress@[\u003CSLURM_CPUs\u003E=]\r\nCompress@[\u003CSLURM_GBs\u003E=]\r\nCompress@[OmitStep=False]\r\nCompress@[PublishOutput=False]\r\nCompress@[IgnoreError=False]\r\nCompress@[IncludeOutput=True]\r\nCompress@[IsDocker=False]\r\nCompress@[IsSlurm=True]\r\nCompress@[\u003CSLURM_Minutes\u003E=45]\r\n",
+  "OutputPath": "E:\\data\\results\\David\\TestWSLBash_0326080455",
   "StartWithScript": "Data",
   "ScriptModulesInFlowScript": {
     "GlobalScriptModules": [
@@ -569,8 +569,8 @@
       }
     ]
   },
-  "LastUpdate": "2024-02-23T10:53:14.9032803-06:00",
-  "LastAuthor": "AGB465",
+  "LastUpdate": "2024-03-26T08:04:54.0130811-06:00",
+  "LastAuthor": "DAT230",
   "FindFolders": true,
   "InterfaceAdaptive": false,
   "CommandList": null,
