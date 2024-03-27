@@ -1,9 +1,9 @@
 {
   "FlowScriptName": "BuildTree Phantom Flow",
   "TestConfig": {},
-  "SubmissionTimeStamp": "0327070550",
+  "SubmissionTimeStamp": "0327070646",
   "LockUsername": null,
-  "Comment": "Construct a cgSNP tree from closest genomic neighbours in the database.\r\n2022-05-14 15:57 AGB465: If the --fasttree parameter is specified, also insert this line:\r\n#fs filewatcher tree.nwk\r\nas BuildTree will generate tree.nwk into the output folder. FlowScript needs to know the name of the file to look for.",
+  "Comment": "Construct a cgSNP tree from closest genomic neighbours in the database.\r\n",
   "DataSourceType": 0,
   "SerializeDataSteps": false,
   "SampleList": {
@@ -33,7 +33,7 @@
   "CanRunInLinux": true,
   "DockerBaseImage": "bioseqenv.0.3",
   "Parameters": "BuildTree Phantom@[linkage=threshold]\r\nBuildTree Phantom@[cutoff=.001]\r\nBuildTree Phantom@[ref=]\r\nBuildTree Phantom@[threads=4]\r\nBuildTree Phantom@[fast_tree=--fast_tree]\r\nBuildTree Phantom@[includeAll=--include_all]\r\n",
-  "OutputPath": "E:\\data\\results\\Arnie\\BuildTree_Phantom_Flow_0327070550",
+  "OutputPath": "E:\\data\\results\\Arnie\\BuildTree_Phantom_Flow_0327070646",
   "StartWithScript": "Data",
   "ScriptModulesInFlowScript": {
     "GlobalScriptModules": [
@@ -288,8 +288,8 @@
           {
             "ModuleName": "BuildTree Phantom",
             "ParmName": "\u003CIsSLURM\u003E",
-            "DefaultValue": "1",
-            "UserValue": "1",
+            "DefaultValue": "0",
+            "UserValue": "0",
             "Description": null,
             "ComboValues": null,
             "Optional": false,
@@ -430,8 +430,8 @@
           {
             "ModuleName": "BuildTree_Publish",
             "ParmName": "\u003CIsSLURM\u003E",
-            "DefaultValue": "1",
-            "UserValue": "1",
+            "DefaultValue": "0",
+            "UserValue": "0",
             "Description": null,
             "ComboValues": null,
             "Optional": false,
@@ -525,11 +525,11 @@
       }
     ]
   },
-  "LastUpdate": "2024-03-27T07:05:50.2651219-06:00",
+  "LastUpdate": "2024-03-27T07:06:46.7297891-06:00",
   "LastAuthor": "AGB465",
   "FindFolders": false,
   "InterfaceAdaptive": false,
   "CommandList": null,
   "RemoveReads": false,
-  "SLURM_IsAvailable": true
+  "SLURM_IsAvailable": false
 }
