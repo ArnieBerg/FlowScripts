@@ -1,7 +1,7 @@
 {
   "FlowScriptName": "BuildTree Phantom Flow",
   "TestConfig": {},
-  "SubmissionTimeStamp": "0328074330",
+  "SubmissionTimeStamp": "0328132930",
   "LockUsername": null,
   "Comment": "Construct a cgSNP tree from closest genomic neighbours in the database.\r\n2022-05-14 15:57 AGB465: If the --fasttree parameter is specified, also insert this line:\r\n#fs filewatcher tree.nwk\r\nas BuildTree will generate tree.nwk into the output folder. FlowScript needs to know the name of the file to look for.",
   "DataSourceType": 0,
@@ -30,7 +30,7 @@
   "CanRunInLinux": true,
   "DockerBaseImage": "bioseqenv.0.3",
   "Parameters": "BuildTree Phantom@[includeAll=--include_all]\r\nBuildTree Phantom@[linkage=threshold]\r\nBuildTree Phantom@[cutoff=.001]\r\nBuildTree Phantom@[ref=]\r\nBuildTree Phantom@[threads=5]\r\nBuildTree Phantom@[fast_tree=--fast_tree]\r\nBuildTree Phantom@[OmitStep=False]\r\nBuildTree Phantom@[PublishOutput=False]\r\nBuildTree Phantom@[IgnoreError=False]\r\nBuildTree Phantom@[IncludeOutput=True]\r\nBuildTree Phantom@[IsDocker=True]\r\nBuildTree Phantom@[IsSlurm=True]\r\nBuildTree Phantom@[\u003CIsSLURM\u003E=1]\r\nBuildTree Phantom@[\u003CSLURM_CPUs\u003E=6]\r\nBuildTree Phantom@[\u003CSLURM_GBs\u003E=16]\r\nBuildTree Phantom@[\u003CSLURM_Minutes\u003E=45]\r\nBuildTree_Publish@[\u003CIsSLURM\u003E=1]\r\nBuildTree_Publish@[\u003CSLURM_CPUs\u003E=6]\r\nBuildTree_Publish@[\u003CSLURM_GBs\u003E=16]\r\nBuildTree_Publish@[\u003CSLURM_Minutes\u003E=45]\r\n",
-  "OutputPath": "E:\\data\\results\\David\\BuildTree_Phantom_Flow_0328074330",
+  "OutputPath": "E:\\data\\results\\David\\BuildTree_Phantom_Flow_0328132930",
   "StartWithScript": "Data",
   "ScriptModulesInFlowScript": {
     "GlobalScriptModules": [
@@ -49,7 +49,7 @@
           "IsParallel": false,
           "IsSlurm": true,
           "IsDocker": true,
-          "IsLinux": false,
+          "IsLinux": true,
           "LinuxJobRunning": false,
           "SlurmJobID": null,
           "SlurmParms": null,
@@ -395,7 +395,7 @@
           "IsParallel": false,
           "IsSlurm": false,
           "IsDocker": false,
-          "IsLinux": false,
+          "IsLinux": true,
           "LinuxJobRunning": false,
           "SlurmJobID": null,
           "SlurmParms": null,
@@ -522,7 +522,7 @@
       }
     ]
   },
-  "LastUpdate": "2024-03-28T07:43:35.258973-06:00",
+  "LastUpdate": "2024-03-28T13:29:29.1464176-06:00",
   "LastAuthor": "DAT230",
   "FindFolders": false,
   "InterfaceAdaptive": false,
