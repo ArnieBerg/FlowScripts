@@ -22,14 +22,14 @@
       "TestIsRunning": false
     }
   },
-  "SubmissionTimeStamp": "0117035920",
+  "SubmissionTimeStamp": "0328133421",
   "LockUsername": null,
   "Comment": "",
   "DataSourceType": 1,
   "SerializeDataSteps": false,
   "SampleList": {
     "PDS2100454-1": "1[S]/mnt/e/data/std_testing/influenza/input/PDS2100454-1/",
-    "PDS2100454-2": "1[S]/mnt/e/data/std_testing/influenza/input/PDS2100454-2/"
+    "PDS2100454-2": "0[S]/mnt/e/data/std_testing/influenza/input/PDS2100454-2/"
   },
   "SequenceList": [],
   "SequenceListChecked": [],
@@ -43,8 +43,8 @@
   "IsLinux": false,
   "CanRunInLinux": true,
   "DockerBaseImage": "jimmyliu1326/influenza_nanopore",
-  "Parameters": "InfluenzaA@[\u003CSLURM_CPUs\u003E=]\r\nInfluenzaA@[Disable Trimming=--notrim]\r\nInfluenzaA@[segments=4]\r\nInfluenzaA@[model=r103_fast_g507]\r\nInfluenzaA@[mode=dynamic]\r\n",
-  "OutputPath": "[S]E:\\data\\Arnie\\InfluenzaAResults\\",
+  "Parameters": "InfluenzaA@[\u003CSLURM_CPUs\u003E=]\r\nInfluenzaA@[Disable Trimming=--notrim]\r\nInfluenzaA@[mode=dynamic]\r\nInfluenzaA@[model=r103_fast_g507]\r\nInfluenzaA@[segments=4]\r\nInfluenzaA@[OmitStep=False]\r\nInfluenzaA@[PublishOutput=True]\r\nInfluenzaA@[IgnoreError=False]\r\nInfluenzaA@[IncludeOutput=True]\r\nInfluenzaA@[IsDocker=True]\r\nInfluenzaA@[IsSlurm=True]\r\nCompress@[OmitStep=False]\r\nCompress@[PublishOutput=False]\r\nCompress@[IgnoreError=False]\r\nCompress@[IncludeOutput=False]\r\nCompress@[IsDocker=False]\r\nCompress@[IsSlurm=True]\r\n",
+  "OutputPath": "E:\\data\\results\\David\\InfluenzaA_Flow_0328133421",
   "StartWithScript": "Data",
   "ScriptModulesInFlowScript": {
     "GlobalScriptModules": [
@@ -485,8 +485,8 @@
       }
     ]
   },
-  "LastUpdate": "2024-02-23T08:46:29.1246104-06:00",
-  "LastAuthor": "AGB465",
+  "LastUpdate": "2024-03-28T13:34:20.6100665-06:00",
+  "LastAuthor": "DAT230",
   "FindFolders": true,
   "InterfaceAdaptive": false,
   "CommandList": [],
