@@ -285,7 +285,7 @@
           }
         ],
         "DockerMountMap": [
-          "/mnt/c/BioSeqDB/WSLProxyRoot/SQA032/Work/"
+          "/mnt/c/BioSeqDB/WSLProxyRoot/RNK773/Work/"
         ],
         "DockerImage": "bioseqenv.0.3",
         "UserVariableList": {},
@@ -1004,7 +1004,7 @@
       }
     ]
   },
-  "LastUpdate": "2024-03-28T11:16:18.4175433-06:00",
+  "LastUpdate": "2024-03-28T11:16:46.1367609-06:00",
   "LastAuthor": "RNK773",
   "FindFolders": true,
   "InterfaceAdaptive": false,
