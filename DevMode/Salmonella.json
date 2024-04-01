@@ -22,7 +22,7 @@
       "TestIsRunning": false
     }
   },
-  "SubmissionTimeStamp": "0401085553",
+  "SubmissionTimeStamp": "0328143710",
   "LockUsername": null,
   "Comment": "The Salmonella FlowScript functions to predict Salmonella serotypes from raw Nanopore sequencing data. The pipeline uses flye to assemble the long reads, medaka for genome polishing, and SISTR for in-silico serotyping. When complete, the pipeline produces a single \u0027sistr_res_aggregate\u0027 file that aggregates the results from all the included samples.",
   "DataSourceType": 2,
@@ -1004,7 +1004,7 @@
       }
     ]
   },
-  "LastUpdate": "2024-04-01T08:55:53.3929813-06:00",
+  "LastUpdate": "2024-04-01T08:56:37.836219-06:00",
   "LastAuthor": "AGB465",
   "FindFolders": true,
   "InterfaceAdaptive": false,
