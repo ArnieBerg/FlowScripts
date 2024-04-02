@@ -34,9 +34,7 @@
   "SequenceList": [],
   "SequenceListChecked": [],
   "SequenceDatabaseName": "SSuis_Ruwani",
-  "ParameterFilesToUpload": {
-    "[S]/mnt/e/data/std_testing/CANS/primers.txt": null
-  },
+  "ParameterFilesToUpload": {},
   "ParameterFoldersToUpload": {},
   "SequenceDBPathLinux": "[S]/mnt/e/data/database/SSuis_Ruwani",
   "SequenceDBPath": "[S]E:\\data\\database\\\\SSuis_Ruwani\\SSuis_Ruwani.fasta",
@@ -570,7 +568,7 @@
       }
     ]
   },
-  "LastUpdate": "2024-04-02T06:39:09.6338786-06:00",
+  "LastUpdate": "2024-04-02T06:39:11.8917377-06:00",
   "LastAuthor": "DAT230",
   "FindFolders": true,
   "InterfaceAdaptive": false,
