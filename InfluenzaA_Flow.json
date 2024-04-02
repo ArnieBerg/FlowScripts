@@ -22,7 +22,7 @@
       "TestIsRunning": false
     }
   },
-  "SubmissionTimeStamp": "0402085957",
+  "SubmissionTimeStamp": "0402093146",
   "LockUsername": null,
   "Comment": "",
   "DataSourceType": 1,
@@ -44,7 +44,7 @@
   "CanRunInLinux": true,
   "DockerBaseImage": "jimmyliu1326/influenza_nanopore",
   "Parameters": "InfluenzaA@[\u003CSLURM_CPUs\u003E=6]\r\nInfluenzaA@[Disable Trimming=--notrim]\r\nInfluenzaA@[mode=dynamic]\r\nInfluenzaA@[model=r103_fast_g507]\r\nInfluenzaA@[segments=4]\r\nInfluenzaA@[OmitStep=False]\r\nInfluenzaA@[PublishOutput=True]\r\nInfluenzaA@[IgnoreError=False]\r\nInfluenzaA@[IncludeOutput=True]\r\nInfluenzaA@[IsDocker=True]\r\nInfluenzaA@[IsSlurm=True]\r\nInfluenzaA@[\u003CIsSLURM\u003E=0]\r\nInfluenzaA@[\u003CSLURM_GBs\u003E=16]\r\nInfluenzaA@[\u003CSLURM_Minutes\u003E=45]\r\nCompress@[OmitStep=False]\r\nCompress@[PublishOutput=False]\r\nCompress@[IgnoreError=False]\r\nCompress@[IncludeOutput=False]\r\nCompress@[IsDocker=False]\r\nCompress@[IsSlurm=True]\r\nCompress@[\u003CIsSLURM\u003E=0]\r\nCompress@[\u003CSLURM_CPUs\u003E=2]\r\nCompress@[\u003CSLURM_GBs\u003E=16]\r\nCompress@[\u003CSLURM_Minutes\u003E=45]\r\n",
-  "OutputPath": "E:\\data\\results\\Anatoliy\\InfluenzaA_Flow_0402085957",
+  "OutputPath": "E:\\data\\results\\Anatoliy\\InfluenzaA_Flow_0402093146",
   "StartWithScript": "Data",
   "ScriptModulesInFlowScript": {
     "GlobalScriptModules": [
@@ -608,7 +608,7 @@
       }
     ]
   },
-  "LastUpdate": "2024-04-02T09:00:02.8432868-06:00",
+  "LastUpdate": "2024-04-02T09:31:50.138386-06:00",
   "LastAuthor": "AMT222",
   "FindFolders": true,
   "InterfaceAdaptive": false,
