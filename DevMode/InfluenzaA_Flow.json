@@ -339,21 +339,21 @@
         "UserVariableList": {},
         "IsDocker": true,
         "IsSLURM": true,
-        "Slurm_Resource_Request": 0,
+        "Slurm_Resource_Request": 2,
         "Slurm_Min_Resources": {
-          "CPUs": 0,
-          "MemoryGB": 0,
-          "Hours": 0
+          "CPUs": 2,
+          "MemoryGB": 4,
+          "Hours": 0.300000012
         },
         "Slurm_Moderate_Resources": {
-          "CPUs": 0,
-          "MemoryGB": 0,
-          "Hours": 0
+          "CPUs": 6,
+          "MemoryGB": 16,
+          "Hours": 0.75
         },
         "Slurm_Max_Resources": {
-          "CPUs": 0,
-          "MemoryGB": 0,
-          "Hours": 0
+          "CPUs": 16,
+          "MemoryGB": 64,
+          "Hours": 2
         },
         "WDL_Task": null,
         "WDL_Task_Inputs": null,
@@ -494,7 +494,7 @@
             "ModuleName": "Compress",
             "ParmName": "IsSlurm",
             "DefaultValue": null,
-            "UserValue": "true",
+            "UserValue": "True",
             "Description": "IsSlurm",
             "ComboValues": "true|false",
             "Optional": false,
@@ -588,7 +588,7 @@
           "Hours": 0.300000012
         },
         "Slurm_Moderate_Resources": {
-          "CPUs": 6,
+          "CPUs": 2,
           "MemoryGB": 16,
           "Hours": 0.75
         },
@@ -605,7 +605,7 @@
       }
     ]
   },
-  "LastUpdate": "2024-04-02T06:17:11.7369658-06:00",
+  "LastUpdate": "2024-04-02T06:17:40.7364589-06:00",
   "LastAuthor": "AGB465",
   "FindFolders": true,
   "InterfaceAdaptive": false,
