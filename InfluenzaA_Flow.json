@@ -63,7 +63,7 @@
           "IsParallel": false,
           "IsSlurm": true,
           "IsDocker": true,
-          "IsLinux": false,
+          "IsLinux": true,
           "LinuxJobRunning": false,
           "SlurmJobID": null,
           "SlurmParms": null,
@@ -376,7 +376,7 @@
           "IsParallel": false,
           "IsSlurm": true,
           "IsDocker": false,
-          "IsLinux": false,
+          "IsLinux": true,
           "LinuxJobRunning": false,
           "SlurmJobID": null,
           "SlurmParms": null,
@@ -608,7 +608,7 @@
       }
     ]
   },
-  "LastUpdate": "2024-04-02T10:06:43.8055985-06:00",
+  "LastUpdate": "2024-04-02T10:06:49.5169148-06:00",
   "LastAuthor": "AMT222",
   "FindFolders": true,
   "InterfaceAdaptive": false,
