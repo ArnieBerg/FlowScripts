@@ -53,7 +53,7 @@
         "LockUsername": null,
         "Comment": "",
         "WslCommand": {
-          "CommandToken": "D2C1",
+          "CommandToken": "D2C2",
           "FlowScriptToken": null,
           "Command": "influenza_consensus.sh  -t @[\u003CSLURM_CPUs\u003E=] @[Disable Trimming=--notrim]  -s @[segments=4] -m @[model=r103_fast_g507] -i $[O.]SampleList.csv -o $[O.] --mode @[mode=dynamic]",
           "IsNoop": false,
@@ -85,7 +85,7 @@
         },
         "PublishOutput": true,
         "ConsolidateInput": true,
-        "ConsolidatedCmdToken": "D1C1",
+        "ConsolidatedCmdToken": "D1C2",
         "ExpectSamplesHeader": false,
         "RunAfterALLPrereqs": false,
         "RunAfterALLCmdToken": "",
@@ -355,9 +355,9 @@
           "MemoryGB": 64,
           "Hours": 2
         },
-        "WDL_Task": null,
-        "WDL_Task_Inputs": null,
-        "WDL_Task_Outputs": null,
+        "WDL_Task": "task InfluenzaA {\r\n  input {\r\n }\r\n  command \u003C\u003C\u003C\r\n  influenza_consensus.sh  -t @[\u003CSLURM_CPUs\u003E=] @[Disable Trimming=--notrim]  -s @[segments=4] -m @[model=r103_fast_g507] -i SampleList.csv -o  --mode @[mode=dynamic] \u003E\u003E\u003E\r\n  output {\r\n    }\r\n}\r\n",
+        "WDL_Task_Inputs": [],
+        "WDL_Task_Outputs": [],
         "CaseNumberList_JSON": "",
         "CaseNumberList_csv": ""
       },
@@ -366,7 +366,7 @@
         "LockUsername": null,
         "Comment": "",
         "WslCommand": {
-          "CommandToken": "D2C2",
+          "CommandToken": "D2C1",
           "FlowScriptToken": null,
           "Command": "count=\u0060ls -1 $[D.[SamplePath]]*.fastq 2\u003E/dev/null | wc -l\u0060\r\nif [ $count != 0 ]\r\nthen \r\ncat $[D.[SamplePath]]*.fastq \u003E $[O.]$[V.[SampleName]].fastq\r\ngzip -f $[O.]$[V.[SampleName]].fastq 2\u003E\u00261 \u003E /dev/null;\r\nfi \r\ncount=\u0060ls -1 $[D.[SamplePath]]*.fastq.gz 2\u003E/dev/null | wc -l\u0060\r\nif [ $count != 0 ]\r\nthen \r\ncat $[D.[SamplePath]]*.fastq.gz \u003E $[O.]$[V.[SampleName]].fastq.gz\r\nfi",
           "IsNoop": false,
@@ -597,19 +597,247 @@
           "MemoryGB": 64,
           "Hours": 2
         },
-        "WDL_Task": null,
-        "WDL_Task_Inputs": null,
-        "WDL_Task_Outputs": null,
+        "WDL_Task": "task Compress {\r\n  input {\r\n    String SamplePath\r\n    String SampleName\r\n }\r\n  command \u003C\u003C\u003C\r\n  count=\u0060ls -1 ~{SamplePath}*.fastq 2\u003E/dev/null | wc -l\u0060\r\nif [ $count != 0 ]\r\nthen \r\ncat ~{SamplePath}*.fastq \u003E ~{SampleName}.fastq\r\ngzip -f ~{SampleName}.fastq 2\u003E\u00261 \u003E /dev/null;\r\nfi \r\ncount=\u0060ls -1 ~{SamplePath}*.fastq.gz 2\u003E/dev/null | wc -l\u0060\r\nif [ $count != 0 ]\r\nthen \r\ncat ~{SamplePath}*.fastq.gz \u003E ~{SampleName}.fastq.gz\r\nfi \u003E\u003E\u003E\r\n  output {\r\n    }\r\n}\r\n",
+        "WDL_Task_Inputs": [
+          "String SamplePath",
+          "String SampleName"
+        ],
+        "WDL_Task_Outputs": [],
         "CaseNumberList_JSON": "",
         "CaseNumberList_csv": ""
       }
     ]
   },
-  "LastUpdate": "2024-04-02T07:50:43.3103764-06:00",
+  "LastUpdate": "2024-04-02T07:50:47.7893242-06:00",
   "LastAuthor": "AMT222",
   "FindFolders": true,
   "InterfaceAdaptive": false,
-  "CommandList": [],
+  "CommandList": [
+    {
+      "CommandToken": "D1C1",
+      "FlowScriptToken": "Compress",
+      "Command": "count=\u0060ls -1 /mnt/e/data/std_testing/influenza/input/PDS2100454-1/*.fastq 2\u003E/dev/null | wc -l\u0060\nif [ $count != 0 ]\nthen \ncat /mnt/e/data/std_testing/influenza/input/PDS2100454-1/*.fastq \u003E /mnt/c/BioSeqDB/WSLProxyRoot/AMT222/Work/InfluenzaA_Flow_0402075041/D1C1/PDS2100454-1.fastq\ngzip -f /mnt/c/BioSeqDB/WSLProxyRoot/AMT222/Work/InfluenzaA_Flow_0402075041/D1C1/PDS2100454-1.fastq 2\u003E\u00261 \u003E /dev/null;\nfi \ncount=\u0060ls -1 /mnt/e/data/std_testing/influenza/input/PDS2100454-1/*.fastq.gz 2\u003E/dev/null | wc -l\u0060\nif [ $count != 0 ]\nthen \ncat /mnt/e/data/std_testing/influenza/input/PDS2100454-1/*.fastq.gz \u003E /mnt/c/BioSeqDB/WSLProxyRoot/AMT222/Work/InfluenzaA_Flow_0402075041/D1C1/PDS2100454-1.fastq.gz\nfi\n",
+      "IsNoop": false,
+      "CondaPrefix": "",
+      "Parms": [],
+      "IncludeStandardOutput": false,
+      "IsParallel": true,
+      "IsSlurm": true,
+      "IsDocker": false,
+      "IsLinux": true,
+      "LinuxJobRunning": false,
+      "SlurmJobID": null,
+      "SlurmParms": null,
+      "WindowsWorkPath": "",
+      "IgnoreExitCode": false,
+      "WSLResponse": {
+        "ExitCode": 0,
+        "StandardOutput": null,
+        "StandardError": null,
+        "LastCommand": null,
+        "RestartCount": 0
+      },
+      "ConditionRun": null,
+      "ExitCodeConditionGoto": "",
+      "Preprocess": null,
+      "StandardOutputConditionGoto": "",
+      "HDF_Command": {
+        "Command": 0,
+        "DBFileName": null,
+        "DBPath": null,
+        "Dataset": {
+          "SequenceList": [],
+          "Standard_Reference_Sequence": "",
+          "Standard_Reference_Name": ""
+        },
+        "DatasetName": "",
+        "FindIn": "",
+        "FindOut": "",
+        "Sample": {
+          "SampleName": "",
+          "SampleDetail": null,
+          "LIMSCaseNumber": null,
+          "LIMSTestID": null,
+          "LIMSSampleID": null,
+          "Sequence": null,
+          "SampleFileName": null
+        }
+      },
+      "Prereqs": [],
+      "Thread": 0,
+      "StandardOutputBypass": "",
+      "WDL": "  call Compress as D1C1 {\r\n    input:\r\n      SamplePath = \u0022/mnt/e/data/std_testing/influenza/input/PDS2100454-1/\u0022,\r\n      SampleName = \u0022PDS2100454-1\u0022\r\n   }\r\n"
+    },
+    {
+      "CommandToken": "D1C2",
+      "FlowScriptToken": "InfluenzaA",
+      "Command": "touch /mnt/c/BioSeqDB/WSLProxyRoot/AMT222/Work/InfluenzaA_Flow_0402075041/D1C2/SampleList.csv \u0026\u0026 rm /mnt/c/BioSeqDB/WSLProxyRoot/AMT222/Work/InfluenzaA_Flow_0402075041/D1C2/SampleList.csv\ntouch /mnt/c/BioSeqDB/WSLProxyRoot/AMT222/Work/InfluenzaA_Flow_0402075041/D1C2/SequenceList.csv \u0026\u0026 rm /mnt/c/BioSeqDB/WSLProxyRoot/AMT222/Work/InfluenzaA_Flow_0402075041/D1C2/SequenceList.csv\necho PDS2100454-1,/mnt/e/data/std_testing/influenza/input/PDS2100454-1/ \u003E\u003E /mnt/c/BioSeqDB/WSLProxyRoot/AMT222/Work/InfluenzaA_Flow_0402075041/D1C2/SampleList.csv\necho PDS2100454-2,/mnt/e/data/std_testing/influenza/input/PDS2100454-2/ \u003E\u003E /mnt/c/BioSeqDB/WSLProxyRoot/AMT222/Work/InfluenzaA_Flow_0402075041/D1C2/SampleList.csv\ninfluenza_consensus.sh  -t 6 --notrim  -s 4 -m r103_fast_g507 -i /mnt/c/BioSeqDB/WSLProxyRoot/AMT222/Work/InfluenzaA_Flow_0402075041/D1C2/SampleList.csv -o /mnt/c/BioSeqDB/WSLProxyRoot/AMT222/Work/InfluenzaA_Flow_0402075041/D1C2/ --mode dynamic\n",
+      "IsNoop": false,
+      "CondaPrefix": "",
+      "Parms": [],
+      "IncludeStandardOutput": true,
+      "IsParallel": true,
+      "IsSlurm": true,
+      "IsDocker": true,
+      "IsLinux": true,
+      "LinuxJobRunning": false,
+      "SlurmJobID": null,
+      "SlurmParms": null,
+      "WindowsWorkPath": "",
+      "IgnoreExitCode": false,
+      "WSLResponse": {
+        "ExitCode": 0,
+        "StandardOutput": null,
+        "StandardError": null,
+        "LastCommand": null,
+        "RestartCount": 0
+      },
+      "ConditionRun": null,
+      "ExitCodeConditionGoto": "",
+      "Preprocess": null,
+      "StandardOutputConditionGoto": "",
+      "HDF_Command": {
+        "Command": 0,
+        "DBFileName": null,
+        "DBPath": null,
+        "Dataset": {
+          "SequenceList": [],
+          "Standard_Reference_Sequence": "",
+          "Standard_Reference_Name": ""
+        },
+        "DatasetName": "",
+        "FindIn": "",
+        "FindOut": "",
+        "Sample": {
+          "SampleName": "",
+          "SampleDetail": null,
+          "LIMSCaseNumber": null,
+          "LIMSTestID": null,
+          "LIMSSampleID": null,
+          "Sequence": null,
+          "SampleFileName": null
+        }
+      },
+      "Prereqs": [
+        "D1C1"
+      ],
+      "Thread": 0,
+      "StandardOutputBypass": "",
+      "WDL": "  call InfluenzaA as D1C2 {\r\n    input\r\n   }\r\n"
+    },
+    {
+      "CommandToken": "D2C1",
+      "FlowScriptToken": "Compress",
+      "Command": "count=\u0060ls -1 /mnt/e/data/std_testing/influenza/input/PDS2100454-2/*.fastq 2\u003E/dev/null | wc -l\u0060\nif [ $count != 0 ]\nthen \ncat /mnt/e/data/std_testing/influenza/input/PDS2100454-2/*.fastq \u003E /mnt/c/BioSeqDB/WSLProxyRoot/AMT222/Work/InfluenzaA_Flow_0402075041/D2C1/PDS2100454-2.fastq\ngzip -f /mnt/c/BioSeqDB/WSLProxyRoot/AMT222/Work/InfluenzaA_Flow_0402075041/D2C1/PDS2100454-2.fastq 2\u003E\u00261 \u003E /dev/null;\nfi \ncount=\u0060ls -1 /mnt/e/data/std_testing/influenza/input/PDS2100454-2/*.fastq.gz 2\u003E/dev/null | wc -l\u0060\nif [ $count != 0 ]\nthen \ncat /mnt/e/data/std_testing/influenza/input/PDS2100454-2/*.fastq.gz \u003E /mnt/c/BioSeqDB/WSLProxyRoot/AMT222/Work/InfluenzaA_Flow_0402075041/D2C1/PDS2100454-2.fastq.gz\nfi\n",
+      "IsNoop": false,
+      "CondaPrefix": "",
+      "Parms": [],
+      "IncludeStandardOutput": false,
+      "IsParallel": true,
+      "IsSlurm": true,
+      "IsDocker": false,
+      "IsLinux": true,
+      "LinuxJobRunning": false,
+      "SlurmJobID": null,
+      "SlurmParms": null,
+      "WindowsWorkPath": "",
+      "IgnoreExitCode": false,
+      "WSLResponse": {
+        "ExitCode": 0,
+        "StandardOutput": null,
+        "StandardError": null,
+        "LastCommand": null,
+        "RestartCount": 0
+      },
+      "ConditionRun": null,
+      "ExitCodeConditionGoto": "",
+      "Preprocess": null,
+      "StandardOutputConditionGoto": "",
+      "HDF_Command": {
+        "Command": 0,
+        "DBFileName": null,
+        "DBPath": null,
+        "Dataset": {
+          "SequenceList": [],
+          "Standard_Reference_Sequence": "",
+          "Standard_Reference_Name": ""
+        },
+        "DatasetName": "",
+        "FindIn": "",
+        "FindOut": "",
+        "Sample": {
+          "SampleName": "",
+          "SampleDetail": null,
+          "LIMSCaseNumber": null,
+          "LIMSTestID": null,
+          "LIMSSampleID": null,
+          "Sequence": null,
+          "SampleFileName": null
+        }
+      },
+      "Prereqs": [],
+      "Thread": 0,
+      "StandardOutputBypass": "",
+      "WDL": "  call Compress as D2C1 {\r\n    input:\r\n      SamplePath = \u0022/mnt/e/data/std_testing/influenza/input/PDS2100454-2/\u0022,\r\n      SampleName = \u0022PDS2100454-2\u0022\r\n   }\r\n"
+    },
+    {
+      "CommandToken": "D2C2",
+      "FlowScriptToken": "InfluenzaA",
+      "Command": "",
+      "IsNoop": true,
+      "CondaPrefix": "",
+      "Parms": [],
+      "IncludeStandardOutput": true,
+      "IsParallel": true,
+      "IsSlurm": true,
+      "IsDocker": true,
+      "IsLinux": true,
+      "LinuxJobRunning": false,
+      "SlurmJobID": null,
+      "SlurmParms": null,
+      "WindowsWorkPath": "",
+      "IgnoreExitCode": false,
+      "WSLResponse": {
+        "ExitCode": 0,
+        "StandardOutput": null,
+        "StandardError": null,
+        "LastCommand": null,
+        "RestartCount": 0
+      },
+      "ConditionRun": null,
+      "ExitCodeConditionGoto": "",
+      "Preprocess": null,
+      "StandardOutputConditionGoto": "",
+      "HDF_Command": {
+        "Command": 0,
+        "DBFileName": null,
+        "DBPath": null,
+        "Dataset": {
+          "SequenceList": [],
+          "Standard_Reference_Sequence": "",
+          "Standard_Reference_Name": ""
+        },
+        "DatasetName": "",
+        "FindIn": "",
+        "FindOut": "",
+        "Sample": {
+          "SampleName": "",
+          "SampleDetail": null,
+          "LIMSCaseNumber": null,
+          "LIMSTestID": null,
+          "LIMSSampleID": null,
+          "Sequence": null,
+          "SampleFileName": null
+        }
+      },
+      "Prereqs": [
+        "D2C1"
+      ],
+      "Thread": 0,
+      "StandardOutputBypass": "",
+      "WDL": "  call InfluenzaA as D2C2 {\r\n    input\r\n   }\r\n"
+    }
+  ],
   "RemoveReads": false,
   "SLURM_IsAvailable": false
 }
