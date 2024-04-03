@@ -333,7 +333,7 @@
           }
         ],
         "DockerMountMap": [
-          "/mnt/c/BioSeqDB/WSLProxyRoot/AMT222/Work/"
+          "/mnt/c/BioSeqDB/WSLProxyRoot/DAT230/Work/"
         ],
         "DockerImage": "jimmyliu1326/influenza_nanopore",
         "UserVariableList": {},
@@ -608,7 +608,7 @@
       }
     ]
   },
-  "LastUpdate": "2024-04-03T05:52:42.3194743-06:00",
+  "LastUpdate": "2024-04-03T05:52:47.5831968-06:00",
   "LastAuthor": "DAT230",
   "FindFolders": true,
   "InterfaceAdaptive": false,
