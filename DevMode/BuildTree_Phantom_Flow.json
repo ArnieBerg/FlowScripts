@@ -4,7 +4,7 @@
   "SubmissionTimeStamp": "0404095506",
   "LockUsername": null,
   "Comment": "Construct a cgSNP tree from closest genomic neighbours in the database.\r\n",
-  "DataSourceType": 0,
+  "DataSourceType": 2,
   "SerializeDataSteps": false,
   "SampleList": {},
   "SequenceList": [
@@ -201,7 +201,7 @@
           "IsParallel": false,
           "IsSlurm": true,
           "IsDocker": true,
-          "IsLinux": false,
+          "IsLinux": true,
           "LinuxJobRunning": false,
           "SlurmJobID": null,
           "SlurmParms": null,
@@ -547,7 +547,7 @@
           "IsParallel": false,
           "IsSlurm": false,
           "IsDocker": false,
-          "IsLinux": false,
+          "IsLinux": true,
           "LinuxJobRunning": false,
           "SlurmJobID": null,
           "SlurmParms": null,
@@ -674,7 +674,7 @@
       }
     ]
   },
-  "LastUpdate": "2024-04-04T09:55:05.4075212-06:00",
+  "LastUpdate": "2024-04-04T11:44:13.862215-06:00",
   "LastAuthor": "RNK773",
   "FindFolders": false,
   "InterfaceAdaptive": false,
