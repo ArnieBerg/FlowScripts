@@ -360,7 +360,7 @@
           }
         ],
         "DockerMountMap": [
-          "/mnt/c/BioSeqDB/WSLProxyRoot/DAT230/Work/"
+          "/mnt/c/BioSeqDB/WSLProxyRoot/RNK773/Work/"
         ],
         "DockerImage": "bioseqenv.0.3",
         "UserVariableList": {},
@@ -1079,7 +1079,7 @@
       }
     ]
   },
-  "LastUpdate": "2024-04-05T14:04:57.0851956-06:00",
+  "LastUpdate": "2024-04-05T14:06:31.1641078-06:00",
   "LastAuthor": "RNK773",
   "FindFolders": true,
   "InterfaceAdaptive": false,
