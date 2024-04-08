@@ -525,7 +525,7 @@
           {
             "ModuleName": "BBMap",
             "ParmName": "\u003CSLURM_CPUs\u003E",
-            "DefaultValue": "6",
+            "DefaultValue": "16",
             "UserValue": "16",
             "Description": null,
             "ComboValues": null,
@@ -542,7 +542,7 @@
           {
             "ModuleName": "BBMap",
             "ParmName": "\u003CSLURM_GBs\u003E",
-            "DefaultValue": "16",
+            "DefaultValue": "64",
             "UserValue": "64",
             "Description": null,
             "ComboValues": null,
@@ -559,7 +559,7 @@
           {
             "ModuleName": "BBMap",
             "ParmName": "\u003CSLURM_Minutes\u003E",
-            "DefaultValue": "45",
+            "DefaultValue": "120",
             "UserValue": "120",
             "Description": null,
             "ComboValues": null,
@@ -1704,7 +1704,7 @@
           }
         ],
         "DockerMountMap": [
-          "/mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/"
+          "/mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/"
         ],
         "DockerImage": null,
         "UserVariableList": {},
@@ -1982,7 +1982,7 @@
           }
         ],
         "DockerMountMap": [
-          "/mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/"
+          "/mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/"
         ],
         "DockerImage": null,
         "UserVariableList": {},
@@ -2260,7 +2260,7 @@
           }
         ],
         "DockerMountMap": [
-          "/mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/"
+          "/mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/"
         ],
         "DockerImage": null,
         "UserVariableList": {},
@@ -2572,7 +2572,7 @@
           }
         ],
         "DockerMountMap": [
-          "/mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/"
+          "/mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/"
         ],
         "DockerImage": null,
         "UserVariableList": {},
@@ -2648,7 +2648,7 @@
           {
             "ModuleName": "DragonFlye",
             "ParmName": "\u003CSLURM_CPUs\u003E",
-            "DefaultValue": "",
+            "DefaultValue": "16",
             "UserValue": "16",
             "Description": null,
             "ComboValues": null,
@@ -2665,7 +2665,7 @@
           {
             "ModuleName": "DragonFlye",
             "ParmName": "\u003CSLURM_GBs\u003E",
-            "DefaultValue": "",
+            "DefaultValue": "64",
             "UserValue": "64",
             "Description": null,
             "ComboValues": null,
@@ -3021,7 +3021,7 @@
           }
         ],
         "DockerMountMap": [
-          "/mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/"
+          "/mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/"
         ],
         "DockerImage": null,
         "UserVariableList": {},
@@ -3591,7 +3591,9 @@
             "Public": true
           }
         ],
-        "DockerMountMap": [],
+        "DockerMountMap": [
+          "/mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/"
+        ],
         "DockerImage": "megashipper/abricateenv",
         "UserVariableList": {},
         "IsDocker": true,
@@ -3620,7 +3622,7 @@
       }
     ]
   },
-  "LastUpdate": "2024-04-08T07:26:41.5776439-06:00",
+  "LastUpdate": "2024-04-08T07:27:06.0565531-06:00",
   "LastAuthor": "AMT870",
   "FindFolders": true,
   "InterfaceAdaptive": false,
@@ -3796,5 +3798,5 @@
     }
   ],
   "RemoveReads": false,
-  "SLURM_IsAvailable": false
+  "SLURM_IsAvailable": true
 }
