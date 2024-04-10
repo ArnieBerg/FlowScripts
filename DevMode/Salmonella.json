@@ -281,7 +281,7 @@
           }
         ],
         "DockerMountMap": [
-          "/mnt/c/BioSeqDB/WSLProxyRoot/DAT230/Work/"
+          "/mnt/c/BioSeqDB/WSLProxyRoot/SQA032/Work/"
         ],
         "DockerImage": "bioseqenv.0.3",
         "UserVariableList": {},
@@ -1000,7 +1000,7 @@
       }
     ]
   },
-  "LastUpdate": "2024-04-09T20:18:51.366745-06:00",
+  "LastUpdate": "2024-04-09T20:19:00.839779-06:00",
   "LastAuthor": "SQA032",
   "FindFolders": true,
   "InterfaceAdaptive": false,
