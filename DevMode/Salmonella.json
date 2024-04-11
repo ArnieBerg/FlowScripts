@@ -291,7 +291,7 @@
           }
         ],
         "DockerMountMap": [
-          "/mnt/c/BioSeqDB/WSLProxyRoot/RNK773/Work/"
+          "/mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/"
         ],
         "DockerImage": "bioseqenv.0.3",
         "UserVariableList": {},
@@ -1010,7 +1010,7 @@
       }
     ]
   },
-  "LastUpdate": "2024-04-11T16:57:19.4576289-06:00",
+  "LastUpdate": "2024-04-11T16:57:27.9269799-06:00",
   "LastAuthor": "AGB465",
   "FindFolders": true,
   "InterfaceAdaptive": false,
