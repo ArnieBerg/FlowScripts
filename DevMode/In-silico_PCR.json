@@ -34,7 +34,7 @@
   "SequenceListChecked": [],
   "SequenceDatabaseName": "hpsuis",
   "ParameterFilesToUpload": {
-    "[S]/mnt/r/PDS-BioSeqDB/isPCR/Primers/LEP//2010_Giblin.txt": null
+    "[S]/mnt/e/data/primers//crispr_primers.txt": null
   },
   "ParameterFoldersToUpload": {},
   "SequenceDBPathLinux": "/mnt/e/data/database/hpsuis",
@@ -44,7 +44,7 @@
   "IsLinux": true,
   "CanRunInLinux": true,
   "DockerBaseImage": "bioseqenv.0.3",
-  "Parameters": "tnBLAST@[Primer=[S]/mnt/e/data/primers//crispr_primers.txt]\r\ntnBLAST@[sequence_format=fastq]\r\ntnBLAST@[max_amplicon_length=5000]\r\ntnBLAST@[Min_Primer_Tm=40]\r\ntnBLAST@[Min_Probe_Tm=40]\r\ntnBLAST@[Multiplex=]\r\ntnBLAST@[OmitStep=False]\r\ntnBLAST@[PublishOutput=False]\r\ntnBLAST@[IgnoreError=False]\r\ntnBLAST@[IncludeOutput=True]\r\ntnBLAST@[IsDocker=False]\r\ntnBLAST@[IsSlurm=True]\r\ntnBLAST@[\u003CIsSLURM\u003E=0]\r\ntnBLAST@[\u003CSLURM_CPUs\u003E=16]\r\ntnBLAST@[\u003CSLURM_GBs\u003E=64]\r\ntnBLAST@[\u003CSLURM_Minutes\u003E=120]\r\ntnBLAST_Publish@[OmitStep=False]\r\ntnBLAST_Publish@[PublishOutput=True]\r\ntnBLAST_Publish@[IgnoreError=False]\r\ntnBLAST_Publish@[IncludeOutput=True]\r\ntnBLAST_Publish@[IsDocker=False]\r\ntnBLAST_Publish@[IsSlurm=True]\r\ntnBLAST_Publish@[\u003CIsSLURM\u003E=1]\r\ntnBLAST_Publish@[\u003CSLURM_CPUs\u003E=2]\r\ntnBLAST_Publish@[\u003CSLURM_GBs\u003E=4]\r\ntnBLAST_Publish@[\u003CSLURM_Minutes\u003E=18]\r\n",
+  "Parameters": "tnBLAST@[Primer=[S]/mnt/e/data/primers//crispr_primers.txt]\r\ntnBLAST@[sequence_format=fastq]\r\ntnBLAST@[max_amplicon_length=5000]\r\ntnBLAST@[Min_Primer_Tm=40]\r\ntnBLAST@[Min_Probe_Tm=40]\r\ntnBLAST@[Multiplex=]\r\ntnBLAST@[OmitStep=False]\r\ntnBLAST@[PublishOutput=False]\r\ntnBLAST@[IgnoreError=False]\r\ntnBLAST@[IncludeOutput=True]\r\ntnBLAST@[IsDocker=False]\r\ntnBLAST@[IsSlurm=True]\r\ntnBLAST@[\u003CIsSLURM\u003E=1]\r\ntnBLAST@[\u003CSLURM_CPUs\u003E=16]\r\ntnBLAST@[\u003CSLURM_GBs\u003E=64]\r\ntnBLAST@[\u003CSLURM_Minutes\u003E=120]\r\ntnBLAST_Publish@[OmitStep=False]\r\ntnBLAST_Publish@[PublishOutput=True]\r\ntnBLAST_Publish@[IgnoreError=False]\r\ntnBLAST_Publish@[IncludeOutput=True]\r\ntnBLAST_Publish@[IsDocker=False]\r\ntnBLAST_Publish@[IsSlurm=True]\r\ntnBLAST_Publish@[\u003CIsSLURM\u003E=1]\r\ntnBLAST_Publish@[\u003CSLURM_CPUs\u003E=2]\r\ntnBLAST_Publish@[\u003CSLURM_GBs\u003E=4]\r\ntnBLAST_Publish@[\u003CSLURM_Minutes\u003E=18]\r\n",
   "OutputPath": "E:\\data\\results\\AMT870\\In-silico_PCR_0411162727",
   "StartWithScript": "Data",
   "ScriptModulesInFlowScript": {
@@ -300,8 +300,8 @@
           {
             "ModuleName": "tnBLAST",
             "ParmName": "\u003CIsSLURM\u003E",
-            "DefaultValue": "0",
-            "UserValue": "0",
+            "DefaultValue": "1",
+            "UserValue": "1",
             "Description": null,
             "ComboValues": null,
             "Optional": false,
@@ -638,7 +638,7 @@
       }
     ]
   },
-  "LastUpdate": "2024-04-11T16:27:27.2847478-06:00",
+  "LastUpdate": "2024-04-11T16:28:20.4287707-06:00",
   "LastAuthor": "AMT870",
   "FindFolders": true,
   "InterfaceAdaptive": false,
@@ -700,5 +700,5 @@
     }
   ],
   "RemoveReads": false,
-  "SLURM_IsAvailable": false
+  "SLURM_IsAvailable": true
 }
