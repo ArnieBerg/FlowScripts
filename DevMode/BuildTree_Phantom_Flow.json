@@ -1,7 +1,7 @@
 {
   "FlowScriptName": "BuildTree Phantom Flow",
   "TestConfig": {},
-  "SubmissionTimeStamp": "0412062555",
+  "SubmissionTimeStamp": "0412064801",
   "LockUsername": null,
   "Comment": "Construct a cgSNP tree from closest genomic neighbours in the database.\r\n",
   "DataSourceType": 0,
@@ -9,11 +9,15 @@
   "SampleList": {},
   "SequenceList": [
     "1737637-4",
-    "1741278-8"
+    "1741278-8",
+    "1802921-7",
+    "1805577-5"
   ],
   "SequenceListChecked": [
     "1737637-4",
-    "1741278-8"
+    "1741278-8",
+    "1802921-7",
+    "1805577-5"
   ],
   "SequenceDatabaseName": "Samn_Orig130_Ruwani",
   "ParameterFilesToUpload": {
@@ -24,11 +28,11 @@
   "SequenceDBPath": "[S]E:\\data\\database\\\\Samn_Orig130_Ruwani\\Samn_Orig130_Ruwani.fasta",
   "SamplesFromLocalDevice": null,
   "SamplesToTransform": null,
-  "IsLinux": false,
+  "IsLinux": true,
   "CanRunInLinux": true,
   "DockerBaseImage": "bioseqenv.0.3",
   "Parameters": "BuildTree Phantom@[fast_tree=]\r\nBuildTree Phantom@[threads=4]\r\nBuildTree Phantom@[ref=[S]/mnt/e/data/Ruwani_Novel_Salmonella_Project_2022/Phylogenetictree_Ref/S.T_LT2_Ref/GCF_000006945.2_ASM694v2_genomic.fna]\r\nBuildTree Phantom@[cutoff=.001]\r\nBuildTree Phantom@[linkage=threshold]\r\nBuildTree Phantom@[includeAll=--include_all]\r\nBuildTree Phantom@[OmitStep=False]\r\nBuildTree Phantom@[PublishOutput=False]\r\nBuildTree Phantom@[IgnoreError=False]\r\nBuildTree Phantom@[IncludeOutput=True]\r\nBuildTree Phantom@[IsDocker=True]\r\nBuildTree Phantom@[IsSlurm=True]\r\nBuildTree Phantom@[\u003CIsSLURM\u003E=0]\r\nBuildTree Phantom@[\u003CSLURM_CPUs\u003E=6]\r\nBuildTree Phantom@[\u003CSLURM_GBs\u003E=16]\r\nBuildTree Phantom@[\u003CSLURM_Minutes\u003E=45]\r\nBuildTree_Publish@[\u003CIsSLURM\u003E=0]\r\nBuildTree_Publish@[\u003CSLURM_CPUs\u003E=6]\r\nBuildTree_Publish@[\u003CSLURM_GBs\u003E=16]\r\nBuildTree_Publish@[\u003CSLURM_Minutes\u003E=45]\r\n",
-  "OutputPath": "E:\\data\\results\\AGB465\\BuildTree_Phantom_Flow_0412062555",
+  "OutputPath": "E:\\data\\results\\AGB465\\BuildTree_Phantom_Flow_0412064801",
   "StartWithScript": "Data",
   "ScriptModulesInFlowScript": {
     "GlobalScriptModules": [
@@ -47,7 +51,7 @@
           "IsParallel": false,
           "IsSlurm": true,
           "IsDocker": true,
-          "IsLinux": true,
+          "IsLinux": false,
           "LinuxJobRunning": false,
           "SlurmJobID": null,
           "SlurmParms": null,
@@ -393,7 +397,7 @@
           "IsParallel": false,
           "IsSlurm": false,
           "IsDocker": false,
-          "IsLinux": true,
+          "IsLinux": false,
           "LinuxJobRunning": false,
           "SlurmJobID": null,
           "SlurmParms": null,
@@ -520,7 +524,7 @@
       }
     ]
   },
-  "LastUpdate": "2024-04-12T06:26:05.0136483-06:00",
+  "LastUpdate": "2024-04-12T06:48:01.7584595-06:00",
   "LastAuthor": "AGB465",
   "FindFolders": false,
   "InterfaceAdaptive": false,
