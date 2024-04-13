@@ -22,7 +22,7 @@
       "TestIsRunning": false
     }
   },
-  "SubmissionTimeStamp": "0413082537",
+  "SubmissionTimeStamp": "0413083455",
   "LockUsername": null,
   "Comment": "",
   "DataSourceType": 1,
@@ -43,8 +43,8 @@
   "IsLinux": true,
   "CanRunInLinux": true,
   "DockerBaseImage": "jimmyliu1326/influenza_nanopore",
-  "Parameters": "InfluenzaA@[\u003CSLURM_CPUs\u003E=6]\r\nInfluenzaA@[Disable Trimming=--notrim]\r\nInfluenzaA@[mode=dynamic]\r\nInfluenzaA@[model=r103_fast_g507]\r\nInfluenzaA@[segments=4]\r\nInfluenzaA@[OmitStep=False]\r\nInfluenzaA@[PublishOutput=True]\r\nInfluenzaA@[IgnoreError=False]\r\nInfluenzaA@[IncludeOutput=True]\r\nInfluenzaA@[IsDocker=True]\r\nInfluenzaA@[IsSlurm=True]\r\nInfluenzaA@[\u003CIsSLURM\u003E=1]\r\nInfluenzaA@[\u003CSLURM_GBs\u003E=16]\r\nInfluenzaA@[\u003CSLURM_Minutes\u003E=45]\r\nCompress@[OmitStep=False]\r\nCompress@[PublishOutput=False]\r\nCompress@[IgnoreError=False]\r\nCompress@[IncludeOutput=False]\r\nCompress@[IsDocker=False]\r\nCompress@[IsSlurm=true]\r\nCompress@[\u003CIsSLURM\u003E=1]\r\nCompress@[\u003CSLURM_CPUs\u003E=2]\r\nCompress@[\u003CSLURM_GBs\u003E=16]\r\nCompress@[\u003CSLURM_Minutes\u003E=45]\r\n",
-  "OutputPath": "E:\\data\\results\\AGB465\\InfluenzaA_Flow_0413082537",
+  "Parameters": "InfluenzaA@[\u003CSLURM_CPUs\u003E=4]\r\nInfluenzaA@[Disable Trimming=--notrim]\r\nInfluenzaA@[mode=dynamic]\r\nInfluenzaA@[model=r103_fast_g507]\r\nInfluenzaA@[segments=4]\r\nInfluenzaA@[OmitStep=False]\r\nInfluenzaA@[PublishOutput=True]\r\nInfluenzaA@[IgnoreError=False]\r\nInfluenzaA@[IncludeOutput=True]\r\nInfluenzaA@[IsDocker=True]\r\nInfluenzaA@[IsSlurm=True]\r\nInfluenzaA@[\u003CIsSLURM\u003E=1]\r\nInfluenzaA@[\u003CSLURM_GBs\u003E=16]\r\nInfluenzaA@[\u003CSLURM_Minutes\u003E=45]\r\nCompress@[OmitStep=False]\r\nCompress@[PublishOutput=False]\r\nCompress@[IgnoreError=False]\r\nCompress@[IncludeOutput=False]\r\nCompress@[IsDocker=False]\r\nCompress@[IsSlurm=true]\r\nCompress@[\u003CIsSLURM\u003E=1]\r\nCompress@[\u003CSLURM_CPUs\u003E=2]\r\nCompress@[\u003CSLURM_GBs\u003E=16]\r\nCompress@[\u003CSLURM_Minutes\u003E=45]\r\n",
+  "OutputPath": "E:\\data\\results\\AGB465\\InfluenzaA_Flow_0413083455",
   "StartWithScript": "Data",
   "ScriptModulesInFlowScript": {
     "GlobalScriptModules": [
@@ -605,7 +605,7 @@
       }
     ]
   },
-  "LastUpdate": "2024-04-13T08:31:16.9233503-06:00",
+  "LastUpdate": "2024-04-13T08:34:55.3555275-06:00",
   "LastAuthor": "AGB465",
   "FindFolders": true,
   "InterfaceAdaptive": false,
