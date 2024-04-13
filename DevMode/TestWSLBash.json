@@ -62,7 +62,7 @@
           "Parms": [],
           "IncludeStandardOutput": true,
           "IsParallel": false,
-          "IsSlurm": false,
+          "IsSlurm": true,
           "IsDocker": false,
           "IsLinux": true,
           "LinuxJobRunning": false,
@@ -199,7 +199,7 @@
             "ModuleName": "TestWSLBash",
             "ParmName": "IsSlurm",
             "DefaultValue": null,
-            "UserValue": "False",
+            "UserValue": "True",
             "Description": null,
             "ComboValues": "True|False",
             "Optional": false,
@@ -302,22 +302,22 @@
         "DockerImage": null,
         "UserVariableList": {},
         "IsDocker": false,
-        "IsSLURM": false,
-        "Slurm_Resource_Request": 0,
+        "IsSLURM": true,
+        "Slurm_Resource_Request": 2,
         "Slurm_Min_Resources": {
-          "CPUs": 0,
-          "MemoryGB": 0,
-          "Hours": 0
+          "CPUs": 2,
+          "MemoryGB": 4,
+          "Hours": 0.300000012
         },
         "Slurm_Moderate_Resources": {
-          "CPUs": 0,
-          "MemoryGB": 0,
-          "Hours": 0
+          "CPUs": 6,
+          "MemoryGB": 16,
+          "Hours": 0.75
         },
         "Slurm_Max_Resources": {
-          "CPUs": 0,
-          "MemoryGB": 0,
-          "Hours": 0
+          "CPUs": 16,
+          "MemoryGB": 64,
+          "Hours": 2
         },
         "WDL_Task": null,
         "WDL_Task_Inputs": null,
@@ -338,7 +338,7 @@
           "Parms": [],
           "IncludeStandardOutput": true,
           "IsParallel": false,
-          "IsSlurm": false,
+          "IsSlurm": true,
           "IsDocker": false,
           "IsLinux": true,
           "LinuxJobRunning": false,
@@ -509,7 +509,7 @@
             "ModuleName": "Compress",
             "ParmName": "IsSlurm",
             "DefaultValue": null,
-            "UserValue": "False",
+            "UserValue": "True",
             "Description": null,
             "ComboValues": "True|False",
             "Optional": false,
@@ -544,7 +544,7 @@
         "DockerImage": null,
         "UserVariableList": {},
         "IsDocker": false,
-        "IsSLURM": false,
+        "IsSLURM": true,
         "Slurm_Resource_Request": 2,
         "Slurm_Min_Resources": {
           "CPUs": 2,
@@ -569,7 +569,7 @@
       }
     ]
   },
-  "LastUpdate": "2024-04-13T08:03:59.9336368-06:00",
+  "LastUpdate": "2024-04-13T08:05:58.033669-06:00",
   "LastAuthor": "AGB465",
   "FindFolders": true,
   "InterfaceAdaptive": false,
