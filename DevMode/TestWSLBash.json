@@ -63,7 +63,7 @@
           "IncludeStandardOutput": true,
           "IsParallel": false,
           "IsSlurm": true,
-          "IsDocker": false,
+          "IsDocker": true,
           "IsLinux": true,
           "LinuxJobRunning": false,
           "SlurmJobID": null,
@@ -182,7 +182,7 @@
             "ModuleName": "TestWSLBash",
             "ParmName": "IsDocker",
             "DefaultValue": null,
-            "UserValue": "False",
+            "UserValue": "True",
             "Description": null,
             "ComboValues": "True|False",
             "Optional": false,
@@ -301,23 +301,23 @@
         "DockerMountMap": [],
         "DockerImage": null,
         "UserVariableList": {},
-        "IsDocker": false,
+        "IsDocker": true,
         "IsSLURM": true,
-        "Slurm_Resource_Request": 2,
+        "Slurm_Resource_Request": 0,
         "Slurm_Min_Resources": {
-          "CPUs": 2,
-          "MemoryGB": 4,
-          "Hours": 0.300000012
+          "CPUs": 0,
+          "MemoryGB": 0,
+          "Hours": 0
         },
         "Slurm_Moderate_Resources": {
-          "CPUs": 6,
-          "MemoryGB": 16,
-          "Hours": 0.75
+          "CPUs": 0,
+          "MemoryGB": 0,
+          "Hours": 0
         },
         "Slurm_Max_Resources": {
-          "CPUs": 16,
-          "MemoryGB": 64,
-          "Hours": 2
+          "CPUs": 0,
+          "MemoryGB": 0,
+          "Hours": 0
         },
         "WDL_Task": null,
         "WDL_Task_Inputs": null,
@@ -545,21 +545,21 @@
         "UserVariableList": {},
         "IsDocker": true,
         "IsSLURM": true,
-        "Slurm_Resource_Request": 0,
+        "Slurm_Resource_Request": 2,
         "Slurm_Min_Resources": {
-          "CPUs": 0,
-          "MemoryGB": 0,
-          "Hours": 0
+          "CPUs": 2,
+          "MemoryGB": 4,
+          "Hours": 0.300000012
         },
         "Slurm_Moderate_Resources": {
-          "CPUs": 0,
-          "MemoryGB": 0,
-          "Hours": 0
+          "CPUs": 6,
+          "MemoryGB": 16,
+          "Hours": 0.75
         },
         "Slurm_Max_Resources": {
-          "CPUs": 0,
-          "MemoryGB": 0,
-          "Hours": 0
+          "CPUs": 16,
+          "MemoryGB": 64,
+          "Hours": 2
         },
         "WDL_Task": null,
         "WDL_Task_Inputs": null,
@@ -569,7 +569,7 @@
       }
     ]
   },
-  "LastUpdate": "2024-04-13T06:00:27.5548258-06:00",
+  "LastUpdate": "2024-04-13T06:00:40.4760237-06:00",
   "LastAuthor": "AGB465",
   "FindFolders": true,
   "InterfaceAdaptive": false,
