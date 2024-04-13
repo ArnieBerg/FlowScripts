@@ -63,7 +63,7 @@
           "IsParallel": false,
           "IsSlurm": true,
           "IsDocker": true,
-          "IsLinux": false,
+          "IsLinux": true,
           "LinuxJobRunning": false,
           "SlurmJobID": null,
           "SlurmParms": null,
@@ -96,8 +96,8 @@
           {
             "ModuleName": "InfluenzaA",
             "ParmName": "\u003CSLURM_CPUs\u003E",
-            "DefaultValue": "6",
-            "UserValue": "6",
+            "DefaultValue": "4",
+            "UserValue": "4",
             "Description": null,
             "ComboValues": null,
             "Optional": false,
@@ -339,7 +339,7 @@
         "UserVariableList": {},
         "IsDocker": true,
         "IsSLURM": true,
-        "Slurm_Resource_Request": 2,
+        "Slurm_Resource_Request": 3,
         "Slurm_Min_Resources": {
           "CPUs": 2,
           "MemoryGB": 4,
@@ -351,7 +351,7 @@
           "Hours": 0.75
         },
         "Slurm_Max_Resources": {
-          "CPUs": 16,
+          "CPUs": 4,
           "MemoryGB": 64,
           "Hours": 2
         },
@@ -376,7 +376,7 @@
           "IsParallel": false,
           "IsSlurm": true,
           "IsDocker": false,
-          "IsLinux": false,
+          "IsLinux": true,
           "LinuxJobRunning": false,
           "SlurmJobID": null,
           "SlurmParms": null,
@@ -605,7 +605,7 @@
       }
     ]
   },
-  "LastUpdate": "2024-04-13T08:25:42.84162-06:00",
+  "LastUpdate": "2024-04-13T08:31:09.5127224-06:00",
   "LastAuthor": "AGB465",
   "FindFolders": true,
   "InterfaceAdaptive": false,
