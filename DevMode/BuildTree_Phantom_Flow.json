@@ -31,7 +31,7 @@
   "IsLinux": true,
   "CanRunInLinux": true,
   "DockerBaseImage": "bioseqenv.0.3",
-  "Parameters": "BuildTree Phantom@[fast_tree=--fast_tree]\r\nBuildTree Phantom@[threads=63]\r\nBuildTree Phantom@[ref=]\r\nBuildTree Phantom@[cutoff=.001]\r\nBuildTree Phantom@[linkage=threshold]\r\nBuildTree Phantom@[includeAll=--include_all]\r\nBuildTree Phantom@[OmitStep=False]\r\nBuildTree Phantom@[PublishOutput=False]\r\nBuildTree Phantom@[IgnoreError=False]\r\nBuildTree Phantom@[IncludeOutput=True]\r\nBuildTree Phantom@[IsDocker=True]\r\nBuildTree Phantom@[IsSlurm=True]\r\nBuildTree Phantom@[\u003CIsSLURM\u003E=1]\r\nBuildTree Phantom@[\u003CSLURM_CPUs\u003E=6]\r\nBuildTree Phantom@[\u003CSLURM_GBs\u003E=16]\r\nBuildTree Phantom@[\u003CSLURM_Minutes\u003E=45]\r\nBuildTree_Publish@[\u003CIsSLURM\u003E=1]\r\nBuildTree_Publish@[\u003CSLURM_CPUs\u003E=6]\r\nBuildTree_Publish@[\u003CSLURM_GBs\u003E=16]\r\nBuildTree_Publish@[\u003CSLURM_Minutes\u003E=45]\r\n",
+  "Parameters": "BuildTree Phantom@[fast_tree=]\r\nBuildTree Phantom@[threads=63]\r\nBuildTree Phantom@[ref=]\r\nBuildTree Phantom@[cutoff=.001]\r\nBuildTree Phantom@[linkage=threshold]\r\nBuildTree Phantom@[includeAll=--include_all]\r\nBuildTree Phantom@[OmitStep=False]\r\nBuildTree Phantom@[PublishOutput=False]\r\nBuildTree Phantom@[IgnoreError=False]\r\nBuildTree Phantom@[IncludeOutput=True]\r\nBuildTree Phantom@[IsDocker=True]\r\nBuildTree Phantom@[IsSlurm=True]\r\nBuildTree Phantom@[\u003CIsSLURM\u003E=1]\r\nBuildTree Phantom@[\u003CSLURM_CPUs\u003E=6]\r\nBuildTree Phantom@[\u003CSLURM_GBs\u003E=16]\r\nBuildTree Phantom@[\u003CSLURM_Minutes\u003E=45]\r\nBuildTree_Publish@[\u003CIsSLURM\u003E=1]\r\nBuildTree_Publish@[\u003CSLURM_CPUs\u003E=6]\r\nBuildTree_Publish@[\u003CSLURM_GBs\u003E=16]\r\nBuildTree_Publish@[\u003CSLURM_Minutes\u003E=45]\r\n",
   "OutputPath": "E:\\data\\results\\SQA032\\BuildTree_Phantom_Flow_0414071813",
   "StartWithScript": "Data",
   "ScriptModulesInFlowScript": {
@@ -84,7 +84,7 @@
             "ModuleName": "BuildTree Phantom",
             "ParmName": "fast_tree",
             "DefaultValue": "--fast_tree",
-            "UserValue": "--fast_tree",
+            "UserValue": "",
             "Description": "Use fast but inaccurate tree building method.",
             "ComboValues": "--fast_tree",
             "Optional": true,
@@ -524,7 +524,7 @@
       }
     ]
   },
-  "LastUpdate": "2024-04-14T07:18:13.6915172-06:00",
+  "LastUpdate": "2024-04-14T07:18:20.8384921-06:00",
   "LastAuthor": "SQA032",
   "FindFolders": false,
   "InterfaceAdaptive": false,
