@@ -22,49 +22,31 @@
       "TestIsRunning": false
     }
   },
-  "SubmissionTimeStamp": null,
+  "SubmissionTimeStamp": "0125122725",
   "LockUsername": null,
   "Comment": "",
   "DataSourceType": 1,
   "SerializeDataSteps": false,
   "SampleList": {
-    "PDS2309802-1_833.16_H1": "1[S]/mnt/e/data/Dreamer/FluA/2023/PDS2309802-InfA_HA_sequencing_6Apr23/PDS2309802-InfA_HA_sequencing_6Apr23/20230406_1345_X1_FAW72552_2b84ac87/trimmed/PDS2309802-1_833.16_H1/",
-    "PDS2309802-10_870.7_H1": "1[S]/mnt/e/data/Dreamer/FluA/2023/PDS2309802-InfA_HA_sequencing_6Apr23/PDS2309802-InfA_HA_sequencing_6Apr23/20230406_1345_X1_FAW72552_2b84ac87/trimmed/PDS2309802-10_870.7_H1/",
-    "PDS2309802-10_870.7_H3": "1[S]/mnt/e/data/Dreamer/FluA/2023/PDS2309802-InfA_HA_sequencing_6Apr23/PDS2309802-InfA_HA_sequencing_6Apr23/20230406_1345_X1_FAW72552_2b84ac87/trimmed/PDS2309802-10_870.7_H3/",
-    "PDS2309802-11_873.2_H1": "1[S]/mnt/e/data/Dreamer/FluA/2023/PDS2309802-InfA_HA_sequencing_6Apr23/PDS2309802-InfA_HA_sequencing_6Apr23/20230406_1345_X1_FAW72552_2b84ac87/trimmed/PDS2309802-11_873.2_H1/",
-    "PDS2309802-12_874.1_H3": "1[S]/mnt/e/data/Dreamer/FluA/2023/PDS2309802-InfA_HA_sequencing_6Apr23/PDS2309802-InfA_HA_sequencing_6Apr23/20230406_1345_X1_FAW72552_2b84ac87/trimmed/PDS2309802-12_874.1_H3/",
-    "PDS2309802-13_875.8_H3": "1[S]/mnt/e/data/Dreamer/FluA/2023/PDS2309802-InfA_HA_sequencing_6Apr23/PDS2309802-InfA_HA_sequencing_6Apr23/20230406_1345_X1_FAW72552_2b84ac87/trimmed/PDS2309802-13_875.8_H3/",
-    "PDS2309802-14_876.8_H1": "1[S]/mnt/e/data/Dreamer/FluA/2023/PDS2309802-InfA_HA_sequencing_6Apr23/PDS2309802-InfA_HA_sequencing_6Apr23/20230406_1345_X1_FAW72552_2b84ac87/trimmed/PDS2309802-14_876.8_H1/",
-    "PDS2309802-15_888.9_H3": "1[S]/mnt/e/data/Dreamer/FluA/2023/PDS2309802-InfA_HA_sequencing_6Apr23/PDS2309802-InfA_HA_sequencing_6Apr23/20230406_1345_X1_FAW72552_2b84ac87/trimmed/PDS2309802-15_888.9_H3/",
-    "PDS2309802-16_893.4_H1": "1[S]/mnt/e/data/Dreamer/FluA/2023/PDS2309802-InfA_HA_sequencing_6Apr23/PDS2309802-InfA_HA_sequencing_6Apr23/20230406_1345_X1_FAW72552_2b84ac87/trimmed/PDS2309802-16_893.4_H1/",
-    "PDS2309802-17_909.2_H1": "1[S]/mnt/e/data/Dreamer/FluA/2023/PDS2309802-InfA_HA_sequencing_6Apr23/PDS2309802-InfA_HA_sequencing_6Apr23/20230406_1345_X1_FAW72552_2b84ac87/trimmed/PDS2309802-17_909.2_H1/",
-    "PDS2309802-17_909.2_H3": "1[S]/mnt/e/data/Dreamer/FluA/2023/PDS2309802-InfA_HA_sequencing_6Apr23/PDS2309802-InfA_HA_sequencing_6Apr23/20230406_1345_X1_FAW72552_2b84ac87/trimmed/PDS2309802-17_909.2_H3/",
-    "PDS2309802-18_Pool910.5-8_H3": "1[S]/mnt/e/data/Dreamer/FluA/2023/PDS2309802-InfA_HA_sequencing_6Apr23/PDS2309802-InfA_HA_sequencing_6Apr23/20230406_1345_X1_FAW72552_2b84ac87/trimmed/PDS2309802-18_Pool910.5-8_H3/",
-    "PDS2309802-2_PDS22-02696-1_H1": "1[S]/mnt/e/data/Dreamer/FluA/2023/PDS2309802-InfA_HA_sequencing_6Apr23/PDS2309802-InfA_HA_sequencing_6Apr23/20230406_1345_X1_FAW72552_2b84ac87/trimmed/PDS2309802-2_PDS22-02696-1_H1/",
-    "PDS2309802-2_PDS22-02696-1_H3": "1[S]/mnt/e/data/Dreamer/FluA/2023/PDS2309802-InfA_HA_sequencing_6Apr23/PDS2309802-InfA_HA_sequencing_6Apr23/20230406_1345_X1_FAW72552_2b84ac87/trimmed/PDS2309802-2_PDS22-02696-1_H3/",
-    "PDS2309802-3_22-052591_H1": "1[S]/mnt/e/data/Dreamer/FluA/2023/PDS2309802-InfA_HA_sequencing_6Apr23/PDS2309802-InfA_HA_sequencing_6Apr23/20230406_1345_X1_FAW72552_2b84ac87/trimmed/PDS2309802-3_22-052591_H1/",
-    "PDS2309802-4_22-053860_H1": "1[S]/mnt/e/data/Dreamer/FluA/2023/PDS2309802-InfA_HA_sequencing_6Apr23/PDS2309802-InfA_HA_sequencing_6Apr23/20230406_1345_X1_FAW72552_2b84ac87/trimmed/PDS2309802-4_22-053860_H1/",
-    "PDS2309802-5_PDS22-11853-4_H1": "1[S]/mnt/e/data/Dreamer/FluA/2023/PDS2309802-InfA_HA_sequencing_6Apr23/PDS2309802-InfA_HA_sequencing_6Apr23/20230406_1345_X1_FAW72552_2b84ac87/trimmed/PDS2309802-5_PDS22-11853-4_H1/",
-    "PDS2309802-6_444545_H3": "1[S]/mnt/e/data/Dreamer/FluA/2023/PDS2309802-InfA_HA_sequencing_6Apr23/PDS2309802-InfA_HA_sequencing_6Apr23/20230406_1345_X1_FAW72552_2b84ac87/trimmed/PDS2309802-6_444545_H3/",
-    "PDS2309802-7_866.21_H3": "1[S]/mnt/e/data/Dreamer/FluA/2023/PDS2309802-InfA_HA_sequencing_6Apr23/PDS2309802-InfA_HA_sequencing_6Apr23/20230406_1345_X1_FAW72552_2b84ac87/trimmed/PDS2309802-7_866.21_H3/",
-    "PDS2309802-8_867.6_H1": "1[S]/mnt/e/data/Dreamer/FluA/2023/PDS2309802-InfA_HA_sequencing_6Apr23/PDS2309802-InfA_HA_sequencing_6Apr23/20230406_1345_X1_FAW72552_2b84ac87/trimmed/PDS2309802-8_867.6_H1/",
-    "PDS2309802-8_867.6_H3": "1[S]/mnt/e/data/Dreamer/FluA/2023/PDS2309802-InfA_HA_sequencing_6Apr23/PDS2309802-InfA_HA_sequencing_6Apr23/20230406_1345_X1_FAW72552_2b84ac87/trimmed/PDS2309802-8_867.6_H3/",
-    "PDS2309802-9_869.2_H3": "1[S]/mnt/e/data/Dreamer/FluA/2023/PDS2309802-InfA_HA_sequencing_6Apr23/PDS2309802-InfA_HA_sequencing_6Apr23/20230406_1345_X1_FAW72552_2b84ac87/trimmed/PDS2309802-9_869.2_H3/"
+    "2036822-3": "1[S]/mnt/e/data/std_testing/CANS/input/2036822-3/",
+    "2039363": "1[S]/mnt/e/data/std_testing/CANS/input/2039363/"
   },
   "SequenceList": [],
   "SequenceListChecked": [],
-  "SequenceDatabaseName": "hpsuis",
-  "ParameterFilesToUpload": {},
+  "SequenceDatabaseName": "InfA_18Jan21_Seg4",
+  "ParameterFilesToUpload": {
+    "[S]/mnt/e/data/primers/primers.tsv": null
+  },
   "ParameterFoldersToUpload": {},
-  "SequenceDBPathLinux": "/mnt/e/data/database/hpsuis",
-  "SequenceDBPath": "/mnt/e/data/database/hpsuis/hpsuis.fasta",
+  "SequenceDBPathLinux": "[S]/mnt/e/data/database/InfA_18Jan21_Seg4",
+  "SequenceDBPath": "[S]\\mnt\\e\\data\\database\\InfA_18Jan21_Seg4\\InfA_18Jan21_Seg4.fasta",
   "SamplesFromLocalDevice": {},
   "SamplesToTransform": {},
   "IsLinux": true,
   "CanRunInLinux": true,
   "DockerBaseImage": "jimmyliu1326/cans",
-  "Parameters": "CANS@[targetCoverage=100]\r\nCANS@[sequenceLength=1720]\r\nCANS@[mode=dynamic]\r\nCANS@[notrim=--notrim]\r\nCANS@[deviation=50]\r\nCANS@[model=r10]\r\nCANS@[primers=]\r\nCANS@[cpus=20]\r\nCANS@[OmitStep=False]\r\nCANS@[PublishOutput=True]\r\nCANS@[IgnoreError=False]\r\nCANS@[IncludeOutput=True]\r\nCANS@[IsDocker=True]\r\nCANS@[host=]",
-  "OutputPath": "[S]E:\\data\\Dhinesh\\19jun23_48\\CAN_BCV\\",
+  "Parameters": "CANS@[targetCoverage=1000]\r\nCANS@[sequenceLength=1750]\r\nCANS@[mode=dynamic]\r\nCANS@[notrim=--notrim]\r\nCANS@[deviation=50]\r\nCANS@[model=r9]\r\nCANS@[primers=[S]/mnt/e/data/primers/primers.tsv]\r\nCANS@[cpus=4]\r\nCANS@[host=]\r\nCANS@[OmitStep=False]\r\nCANS@[PublishOutput=True]\r\nCANS@[IgnoreError=False]\r\nCANS@[IncludeOutput=True]\r\nCANS@[IsDocker=True]\r\nCANS@[IsSlurm=True]\r\n",
+  "OutputPath": "[S]E:\\data\\Arnie\\CANSResults\\",
   "StartWithScript": "Data",
   "ScriptModulesInFlowScript": {
     "GlobalScriptModules": [
@@ -112,23 +94,6 @@
         "LastUpdate": "2022-07-05T08:30:05.7772726-06:00",
         "LastAuthor": "AGB465",
         "ScriptParmsList": [
-          {
-            "ModuleName": "CANS",
-            "ParmName": "\u003CSLURM_CPUs\u003E",
-            "DefaultValue": "6",
-            "UserValue": "6",
-            "Description": "",
-            "ComboValues": null,
-            "Optional": false,
-            "ReadOnly": true,
-            "Hidden": true,
-            "DeleteFlag": false,
-            "DataType": 2,
-            "Validator": "",
-            "Extensions": "",
-            "MissingValue": "",
-            "Public": true
-          },
           {
             "ModuleName": "CANS",
             "ParmName": "targetCoverage",
@@ -235,7 +200,7 @@
             "ModuleName": "CANS",
             "ParmName": "primers",
             "DefaultValue": "",
-            "UserValue": "[S]/mnt/e/data/std_testing/CANS/primers.txt",
+            "UserValue": "[S]/mnt/e/data/primers/primers.tsv",
             "Description": "Path to headerless .tsv file with fwd/rev primers to select PCR products for consensus building.",
             "ComboValues": null,
             "Optional": true,
@@ -244,7 +209,7 @@
             "DeleteFlag": false,
             "DataType": 5,
             "Validator": "",
-            "Extensions": "txt|",
+            "Extensions": "ANY|",
             "MissingValue": "",
             "Public": false
           },
@@ -253,7 +218,7 @@
             "ParmName": "host",
             "DefaultValue": "",
             "UserValue": "",
-            "Description": "",
+            "Description": "Path to reference sequence for dehosting (optional).",
             "ComboValues": null,
             "Optional": true,
             "ReadOnly": false,
@@ -261,7 +226,7 @@
             "DeleteFlag": false,
             "DataType": 5,
             "Validator": "",
-            "Extensions": "",
+            "Extensions": "fasta|",
             "MissingValue": "",
             "Public": false
           },
@@ -369,6 +334,23 @@
           },
           {
             "ModuleName": "CANS",
+            "ParmName": "\u003CSLURM_CPUs\u003E",
+            "DefaultValue": "12",
+            "UserValue": "12",
+            "Description": null,
+            "ComboValues": null,
+            "Optional": false,
+            "ReadOnly": true,
+            "Hidden": true,
+            "DeleteFlag": false,
+            "DataType": 2,
+            "Validator": null,
+            "Extensions": null,
+            "MissingValue": null,
+            "Public": true
+          },
+          {
+            "ModuleName": "CANS",
             "ParmName": "\u003CIsSLURM\u003E",
             "DefaultValue": "1",
             "UserValue": "1",
@@ -420,27 +402,27 @@
           }
         ],
         "DockerMountMap": [
-          "/mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/"
+          "/mnt/c/BioSeqDB/WSLProxyRoot/DAT230/Work/"
         ],
         "DockerImage": "jimmyliu1326/cans",
         "UserVariableList": {},
         "IsDocker": true,
         "IsSLURM": true,
-        "Slurm_Resource_Request": 0,
+        "Slurm_Resource_Request": 2,
         "Slurm_Min_Resources": {
-          "CPUs": 0,
-          "MemoryGB": 0,
-          "Hours": 0
+          "CPUs": 2,
+          "MemoryGB": 4,
+          "Hours": 0.300000012
         },
         "Slurm_Moderate_Resources": {
-          "CPUs": 0,
-          "MemoryGB": 0,
-          "Hours": 0
+          "CPUs": 12,
+          "MemoryGB": 16,
+          "Hours": 0.75
         },
         "Slurm_Max_Resources": {
-          "CPUs": 0,
-          "MemoryGB": 0,
-          "Hours": 0
+          "CPUs": 16,
+          "MemoryGB": 64,
+          "Hours": 2
         },
         "WDL_Task": null,
         "WDL_Task_Inputs": null,
@@ -450,7 +432,7 @@
       }
     ]
   },
-  "LastUpdate": "2024-02-14T06:05:00.9638373-06:00",
+  "LastUpdate": "2024-04-15T07:39:16.9284395-06:00",
   "LastAuthor": "AGB465",
   "FindFolders": true,
   "InterfaceAdaptive": false,
