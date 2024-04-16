@@ -99,11 +99,11 @@
       }
     ]
   },
-  "LastUpdate": "2024-04-16T10:06:35.529726-06:00",
+  "LastUpdate": "2024-04-16T10:06:37.4103946-06:00",
   "LastAuthor": "AGB465",
   "FindFolders": false,
   "InterfaceAdaptive": false,
   "CommandList": null,
   "RemoveReads": false,
-  "SLURM_IsAvailable": false
+  "SLURM_IsAvailable": true
 }
