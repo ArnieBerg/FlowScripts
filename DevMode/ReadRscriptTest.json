@@ -1,7 +1,7 @@
 {
   "FlowScriptName": "ReadRscriptTest",
   "TestConfig": {},
-  "SubmissionTimeStamp": "0416101453",
+  "SubmissionTimeStamp": "0416102614",
   "LockUsername": null,
   "Comment": "",
   "DataSourceType": 2,
@@ -22,7 +22,7 @@
   "CanRunInLinux": true,
   "DockerBaseImage": "bioseqenv.0.3",
   "Parameters": "ReadCSVTest@[OmitStep=]\r\nReadCSVTest@[PublishOutput=]\r\nReadCSVTest@[IgnoreError=]\r\nReadCSVTest@[IncludeOutput=]\r\nReadCSVTest@[IsDocker=]\r\nReadCSVTest@[IsSlurm=]\r\nReadCSVTest@[\u003CIsSLURM\u003E=]\r\nReadCSVTest@[\u003CSLURM_CPUs\u003E=]\r\nReadCSVTest@[\u003CSLURM_GBs\u003E=]\r\nReadCSVTest@[\u003CSLURM_Minutes\u003E=]\r\n",
-  "OutputPath": "E:\\data\\results\\AGB465\\ReadRscriptTest_0416101453",
+  "OutputPath": "E:\\data\\results\\AGB465\\ReadRscriptTest_0416102614",
   "StartWithScript": "Data",
   "ScriptModulesInFlowScript": {
     "GlobalScriptModules": [
@@ -270,7 +270,7 @@
       }
     ]
   },
-  "LastUpdate": "2024-04-16T10:26:09.398583-06:00",
+  "LastUpdate": "2024-04-16T10:26:14.6936056-06:00",
   "LastAuthor": "AGB465",
   "FindFolders": false,
   "InterfaceAdaptive": false,
