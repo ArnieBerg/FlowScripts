@@ -22,30 +22,30 @@
       "TestIsRunning": false
     }
   },
-  "SubmissionTimeStamp": "0411162727",
+  "SubmissionTimeStamp": "0418075428",
   "LockUsername": null,
   "Comment": "",
   "DataSourceType": 1,
   "SerializeDataSteps": false,
   "SampleList": {
-    "fastq_pass": "1[S]/mnt/r/incoming/Quick/MelfortPb1-4/no_sample/20230914_1015_X2_FAP77235_270480da/fastq_pass/"
+    "sample_1": "1[S]/mnt/e/data/std_testing/isPCR/input/sample_1/"
   },
   "SequenceList": [],
   "SequenceListChecked": [],
   "SequenceDatabaseName": "hpsuis",
   "ParameterFilesToUpload": {
-    "[S]/mnt/e/data/primers//crispr_primers.txt": null
+    "[S]/mnt/e/data/std_testing/isPCR/primers.txt": null
   },
   "ParameterFoldersToUpload": {},
-  "SequenceDBPathLinux": "/mnt/e/data/database/hpsuis",
-  "SequenceDBPath": "/mnt/e/data/database/hpsuis/hpsuis.fasta",
+  "SequenceDBPathLinux": "/c/data/database/hpsuis",
+  "SequenceDBPath": "/c/data/database/hpsuis/hpsuis.fasta",
   "SamplesFromLocalDevice": {},
   "SamplesToTransform": {},
   "IsLinux": true,
   "CanRunInLinux": true,
   "DockerBaseImage": "bioseqenv.0.3",
-  "Parameters": "tnBLAST@[Primer=[S]/mnt/e/data/primers//crispr_primers.txt]\r\ntnBLAST@[sequence_format=fastq]\r\ntnBLAST@[max_amplicon_length=5000]\r\ntnBLAST@[Min_Primer_Tm=40]\r\ntnBLAST@[Min_Probe_Tm=40]\r\ntnBLAST@[Multiplex=]\r\ntnBLAST@[OmitStep=False]\r\ntnBLAST@[PublishOutput=False]\r\ntnBLAST@[IgnoreError=False]\r\ntnBLAST@[IncludeOutput=True]\r\ntnBLAST@[IsDocker=False]\r\ntnBLAST@[IsSlurm=True]\r\ntnBLAST@[\u003CIsSLURM\u003E=1]\r\ntnBLAST@[\u003CSLURM_CPUs\u003E=16]\r\ntnBLAST@[\u003CSLURM_GBs\u003E=64]\r\ntnBLAST@[\u003CSLURM_Minutes\u003E=120]\r\ntnBLAST_Publish@[OmitStep=False]\r\ntnBLAST_Publish@[PublishOutput=True]\r\ntnBLAST_Publish@[IgnoreError=False]\r\ntnBLAST_Publish@[IncludeOutput=True]\r\ntnBLAST_Publish@[IsDocker=False]\r\ntnBLAST_Publish@[IsSlurm=True]\r\ntnBLAST_Publish@[\u003CIsSLURM\u003E=1]\r\ntnBLAST_Publish@[\u003CSLURM_CPUs\u003E=2]\r\ntnBLAST_Publish@[\u003CSLURM_GBs\u003E=4]\r\ntnBLAST_Publish@[\u003CSLURM_Minutes\u003E=18]\r\n",
-  "OutputPath": "E:\\data\\results\\AMT870\\In-silico_PCR_0411162727",
+  "Parameters": "tnBLAST@[Primer=[S]/mnt/e/data/std_testing/isPCR/primers.txt]\r\ntnBLAST@[sequence_format=fasta]\r\ntnBLAST@[max_amplicon_length=5000]\r\ntnBLAST@[Min_Primer_Tm=40]\r\ntnBLAST@[Min_Probe_Tm=40]\r\ntnBLAST@[Multiplex=]\r\ntnBLAST@[OmitStep=False]\r\ntnBLAST@[PublishOutput=False]\r\ntnBLAST@[IgnoreError=False]\r\ntnBLAST@[IncludeOutput=True]\r\ntnBLAST@[IsDocker=False]\r\ntnBLAST@[IsSlurm=True]\r\ntnBLAST@[\u003CIsSLURM\u003E=1]\r\ntnBLAST@[\u003CSLURM_CPUs\u003E=16]\r\ntnBLAST@[\u003CSLURM_GBs\u003E=64]\r\ntnBLAST@[\u003CSLURM_Minutes\u003E=120]\r\ntnBLAST_Publish@[OmitStep=False]\r\ntnBLAST_Publish@[PublishOutput=True]\r\ntnBLAST_Publish@[IgnoreError=False]\r\ntnBLAST_Publish@[IncludeOutput=True]\r\ntnBLAST_Publish@[IsDocker=False]\r\ntnBLAST_Publish@[IsSlurm=True]\r\ntnBLAST_Publish@[\u003CIsSLURM\u003E=1]\r\ntnBLAST_Publish@[\u003CSLURM_CPUs\u003E=2]\r\ntnBLAST_Publish@[\u003CSLURM_GBs\u003E=4]\r\ntnBLAST_Publish@[\u003CSLURM_Minutes\u003E=18]\r\n",
+  "OutputPath": "E:\\data\\results\\AGB465\\In-silico_PCR_0418075428",
   "StartWithScript": "Data",
   "ScriptModulesInFlowScript": {
     "GlobalScriptModules": [
@@ -97,7 +97,7 @@
             "ModuleName": "tnBLAST",
             "ParmName": "Primer",
             "DefaultValue": "",
-            "UserValue": "[S]/mnt/e/data/primers//crispr_primers.txt",
+            "UserValue": "[S]/mnt/e/data/std_testing/isPCR/primers.txt",
             "Description": "Path to primer sequences.",
             "ComboValues": null,
             "Optional": false,
@@ -114,7 +114,7 @@
             "ModuleName": "tnBLAST",
             "ParmName": "sequence_format",
             "DefaultValue": "fasta",
-            "UserValue": "fastq",
+            "UserValue": "fasta",
             "Description": "File format of input sequences to search against",
             "ComboValues": "fasta|fastq",
             "Optional": false,
@@ -300,7 +300,7 @@
           {
             "ModuleName": "tnBLAST",
             "ParmName": "\u003CIsSLURM\u003E",
-            "DefaultValue": "1",
+            "DefaultValue": "0",
             "UserValue": "1",
             "Description": null,
             "ComboValues": null,
@@ -638,8 +638,8 @@
       }
     ]
   },
-  "LastUpdate": "2024-04-11T16:28:20.4287707-06:00",
-  "LastAuthor": "AMT870",
+  "LastUpdate": "2024-04-18T07:54:28.4236688-06:00",
+  "LastAuthor": "AGB465",
   "FindFolders": true,
   "InterfaceAdaptive": false,
   "CommandList": [
@@ -700,5 +700,5 @@
     }
   ],
   "RemoveReads": false,
-  "SLURM_IsAvailable": true
+  "SLURM_IsAvailable": false
 }
