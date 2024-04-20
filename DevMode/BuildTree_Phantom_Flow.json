@@ -184,7 +184,7 @@
   "CanRunInLinux": true,
   "DockerBaseImage": "bioseqenv.0.3",
   "Parameters": "BuildTree Phantom@[linkage=threshold]\r\nBuildTree Phantom@[cutoff=.001]\r\nBuildTree Phantom@[ref=]\r\nBuildTree Phantom@[threads=5]\r\nBuildTree Phantom@[fast_tree=--fast_tree]\r\nBuildTree Phantom@[includeAll=--include_all]\r\n",
-  "OutputPath": "E:\\data\\results\\RNK773\\BuildTree_Phantom_Flow_0328133140",
+  "OutputPath": "E:\\data\\results\\AGB465\\BuildTree_Phantom_Flow_0328133140",
   "StartWithScript": "Data",
   "ScriptModulesInFlowScript": {
     "GlobalScriptModules": [
@@ -287,7 +287,7 @@
             "ModuleName": "BuildTree Phantom",
             "ParmName": "ref",
             "DefaultValue": "",
-            "UserValue": "[S]/mnt/e/data/Ruwani_Novel_Salmonella_Project_2022/Phylogenetictree_Ref/S.T_LT2_Ref/GCF_000006945.2_ASM694v2_genomic.fna",
+            "UserValue": "[S]/mnt/e/data/reference/SSuis/GCF_002961825.1_ASM296182v1_genomic.fna",
             "Description": "Reference sequence for variant calling. Required if using default tree building method.",
             "ComboValues": null,
             "Optional": true,
@@ -321,7 +321,7 @@
             "ModuleName": "BuildTree Phantom",
             "ParmName": "fast_tree",
             "DefaultValue": "--fast_tree",
-            "UserValue": "",
+            "UserValue": "--fast_tree",
             "Description": "Use fast but inaccurate tree building method.",
             "ComboValues": "--fast_tree",
             "Optional": true,
@@ -676,8 +676,8 @@
       }
     ]
   },
-  "LastUpdate": "2024-04-20T07:00:23.6455451-06:00",
-  "LastAuthor": "RNK773",
+  "LastUpdate": "2024-04-20T07:03:48.2428649-06:00",
+  "LastAuthor": "AGB465",
   "FindFolders": false,
   "InterfaceAdaptive": false,
   "CommandList": null,
