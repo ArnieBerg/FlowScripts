@@ -634,8 +634,8 @@
           {
             "ModuleName": "BuildTree_Publish",
             "ParmName": "\u003CSLURM_Minutes\u003E",
-            "DefaultValue": "18",
-            "UserValue": "18",
+            "DefaultValue": "60",
+            "UserValue": "60",
             "Description": null,
             "ComboValues": null,
             "Optional": false,
@@ -760,7 +760,7 @@
         "Slurm_Min_Resources": {
           "CPUs": 2,
           "MemoryGB": 4,
-          "Hours": 0.300000012
+          "Hours": 1
         },
         "Slurm_Moderate_Resources": {
           "CPUs": 6,
@@ -780,7 +780,7 @@
       }
     ]
   },
-  "LastUpdate": "2024-04-20T09:57:44.8311397-06:00",
+  "LastUpdate": "2024-04-20T09:58:06.5662788-06:00",
   "LastAuthor": "AGB465",
   "FindFolders": false,
   "InterfaceAdaptive": false,
