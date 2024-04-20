@@ -475,8 +475,8 @@
           {
             "ModuleName": "BuildTree Phantom",
             "ParmName": "\u003CSLURM_GBs\u003E",
-            "DefaultValue": "4",
-            "UserValue": "4",
+            "DefaultValue": "8",
+            "UserValue": "8",
             "Description": null,
             "ComboValues": null,
             "Optional": false,
@@ -517,7 +517,7 @@
         "Slurm_Resource_Request": 1,
         "Slurm_Min_Resources": {
           "CPUs": 2,
-          "MemoryGB": 4,
+          "MemoryGB": 8,
           "Hours": 3
         },
         "Slurm_Moderate_Resources": {
@@ -780,7 +780,7 @@
       }
     ]
   },
-  "LastUpdate": "2024-04-20T09:58:06.5662788-06:00",
+  "LastUpdate": "2024-04-20T09:58:24.2739576-06:00",
   "LastAuthor": "AGB465",
   "FindFolders": false,
   "InterfaceAdaptive": false,
