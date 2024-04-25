@@ -228,7 +228,7 @@
   ],
   "SequenceDatabaseName": "Samn_Orig130_Ruwani",
   "ParameterFilesToUpload": {
-    "[S]/mnt/e/data/Ruwani_Novel_Salmonella_Project_2022/Phylogenetictree_Ref/S.T_LT2_Ref/GCF_000006945.2_ASM694v2_genomic.fna": null
+    "[L]/mnt/c/temp/GCA_900475585.1_44087_H01_genomic.fna": null
   },
   "ParameterFoldersToUpload": {},
   "SequenceDBPathLinux": "[S]/mnt/e/data/database/Samn_Orig130_Ruwani",
@@ -238,7 +238,7 @@
   "IsLinux": true,
   "CanRunInLinux": true,
   "DockerBaseImage": "bioseqenv.0.3",
-  "Parameters": "BuildTree Phantom@[includeAll=--include_all]\r\nBuildTree Phantom@[linkage=threshold]\r\nBuildTree Phantom@[cutoff=.001]\r\nBuildTree Phantom@[ref=[S]/mnt/e/data/Ruwani_Novel_Salmonella_Project_2022/Phylogenetictree_Ref/S.T_LT2_Ref/GCF_000006945.2_ASM694v2_genomic.fna]\r\nBuildTree Phantom@[threads=4]\r\nBuildTree Phantom@[fast_tree=]\r\nBuildTree Phantom@[OmitStep=False]\r\nBuildTree Phantom@[PublishOutput=False]\r\nBuildTree Phantom@[IgnoreError=False]\r\nBuildTree Phantom@[IncludeOutput=True]\r\nBuildTree Phantom@[IsDocker=True]\r\nBuildTree Phantom@[IsSlurm=True]\r\nBuildTree Phantom@[\u003CIsSLURM\u003E=1]\r\nBuildTree Phantom@[\u003CSLURM_CPUs\u003E=2]\r\nBuildTree Phantom@[\u003CSLURM_GBs\u003E=8]\r\nBuildTree Phantom@[\u003CSLURM_Minutes\u003E=180]\r\nBuildTree_Publish@[\u003CIsSLURM\u003E=1]\r\nBuildTree_Publish@[\u003CSLURM_CPUs\u003E=2]\r\nBuildTree_Publish@[\u003CSLURM_GBs\u003E=4]\r\nBuildTree_Publish@[\u003CSLURM_Minutes\u003E=60]\r\nBuildTree_Publish@[OmitStep=false]\r\nBuildTree_Publish@[PublishOutput=true]\r\nBuildTree_Publish@[IgnoreError=false]\r\nBuildTree_Publish@[IncludeOutput=true]\r\nBuildTree_Publish@[IsDocker=false]\r\nBuildTree_Publish@[IsSlurm=true]\r\n",
+  "Parameters": "BuildTree Phantom@[includeAll=--include_all]\r\nBuildTree Phantom@[linkage=threshold]\r\nBuildTree Phantom@[cutoff=.001]\r\nBuildTree Phantom@[ref=[L]/mnt/c/temp/GCA_900475585.1_44087_H01_genomic.fna]\r\nBuildTree Phantom@[threads=4]\r\nBuildTree Phantom@[fast_tree=]\r\nBuildTree Phantom@[OmitStep=False]\r\nBuildTree Phantom@[PublishOutput=False]\r\nBuildTree Phantom@[IgnoreError=False]\r\nBuildTree Phantom@[IncludeOutput=True]\r\nBuildTree Phantom@[IsDocker=True]\r\nBuildTree Phantom@[IsSlurm=True]\r\nBuildTree Phantom@[\u003CIsSLURM\u003E=1]\r\nBuildTree Phantom@[\u003CSLURM_CPUs\u003E=2]\r\nBuildTree Phantom@[\u003CSLURM_GBs\u003E=8]\r\nBuildTree Phantom@[\u003CSLURM_Minutes\u003E=180]\r\nBuildTree_Publish@[\u003CIsSLURM\u003E=1]\r\nBuildTree_Publish@[\u003CSLURM_CPUs\u003E=2]\r\nBuildTree_Publish@[\u003CSLURM_GBs\u003E=4]\r\nBuildTree_Publish@[\u003CSLURM_Minutes\u003E=60]\r\nBuildTree_Publish@[OmitStep=false]\r\nBuildTree_Publish@[PublishOutput=true]\r\nBuildTree_Publish@[IgnoreError=false]\r\nBuildTree_Publish@[IncludeOutput=true]\r\nBuildTree_Publish@[IsDocker=false]\r\nBuildTree_Publish@[IsSlurm=true]\r\n",
   "OutputPath": "E:\\data\\results\\RNK773\\BuildTree_Phantom_Flow_0425093332",
   "StartWithScript": "Data",
   "ScriptModulesInFlowScript": {
@@ -342,7 +342,7 @@
             "ModuleName": "BuildTree Phantom",
             "ParmName": "ref",
             "DefaultValue": "",
-            "UserValue": "[S]/mnt/e/data/Ruwani_Novel_Salmonella_Project_2022/Phylogenetictree_Ref/S.T_LT2_Ref/GCF_000006945.2_ASM694v2_genomic.fna",
+            "UserValue": "[L]/mnt/c/temp/GCA_900475585.1_44087_H01_genomic.fna",
             "Description": "Reference sequence for variant calling. Required if using default tree building method.",
             "ComboValues": null,
             "Optional": true,
@@ -561,7 +561,7 @@
           }
         ],
         "DockerMountMap": [
-          "/mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/"
+          "/mnt/c/BioSeqDB/WSLProxyRoot/RNK773/Work/"
         ],
         "DockerImage": null,
         "UserVariableList": {},
@@ -833,7 +833,7 @@
       }
     ]
   },
-  "LastUpdate": "2024-04-25T09:33:30.75981-06:00",
+  "LastUpdate": "2024-04-25T10:06:40.5346096-06:00",
   "LastAuthor": "RNK773",
   "FindFolders": false,
   "InterfaceAdaptive": false,
