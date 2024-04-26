@@ -22,7 +22,7 @@
       "TestIsRunning": false
     }
   },
-  "SubmissionTimeStamp": "0426061224",
+  "SubmissionTimeStamp": "0426062059",
   "LockUsername": null,
   "Comment": "",
   "DataSourceType": 1,
@@ -45,7 +45,7 @@
   "CanRunInLinux": true,
   "DockerBaseImage": "bioseqenv.0.3",
   "Parameters": "tnBLAST@[Primer=[S]/mnt/e/data/std_testing/isPCR/primers.txt]\r\ntnBLAST@[sequence_format=fastq]\r\ntnBLAST@[max_amplicon_length=500]\r\ntnBLAST@[Min_Primer_Tm=40]\r\ntnBLAST@[Min_Probe_Tm=40]\r\ntnBLAST@[Multiplex=]\r\ntnBLAST@[OmitStep=False]\r\ntnBLAST@[PublishOutput=False]\r\ntnBLAST@[IgnoreError=False]\r\ntnBLAST@[IncludeOutput=True]\r\ntnBLAST@[IsDocker=False]\r\ntnBLAST@[IsSlurm=True]\r\ntnBLAST@[\u003CIsSLURM\u003E=1]\r\ntnBLAST@[\u003CSLURM_CPUs\u003E=16]\r\ntnBLAST@[\u003CSLURM_GBs\u003E=64]\r\ntnBLAST@[\u003CSLURM_Minutes\u003E=120]\r\ntnBLAST_Publish@[OmitStep=False]\r\ntnBLAST_Publish@[PublishOutput=True]\r\ntnBLAST_Publish@[IgnoreError=False]\r\ntnBLAST_Publish@[IncludeOutput=True]\r\ntnBLAST_Publish@[IsDocker=False]\r\ntnBLAST_Publish@[IsSlurm=True]\r\ntnBLAST_Publish@[\u003CIsSLURM\u003E=1]\r\ntnBLAST_Publish@[\u003CSLURM_CPUs\u003E=2]\r\ntnBLAST_Publish@[\u003CSLURM_GBs\u003E=4]\r\ntnBLAST_Publish@[\u003CSLURM_Minutes\u003E=18]\r\n",
-  "OutputPath": "E:\\data\\results\\AGB465\\In-silico_PCR_0426061224",
+  "OutputPath": "E:\\data\\results\\AGB465\\In-silico_PCR_0426062059",
   "StartWithScript": "Data",
   "ScriptModulesInFlowScript": {
     "GlobalScriptModules": [
@@ -638,7 +638,7 @@
       }
     ]
   },
-  "LastUpdate": "2024-04-26T06:13:28.70825-06:00",
+  "LastUpdate": "2024-04-26T06:20:59.3166451-06:00",
   "LastAuthor": "AGB465",
   "FindFolders": true,
   "InterfaceAdaptive": false,
