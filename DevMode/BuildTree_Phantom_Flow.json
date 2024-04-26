@@ -1,7 +1,7 @@
 {
   "FlowScriptName": "BuildTree Phantom Flow",
   "TestConfig": {},
-  "SubmissionTimeStamp": "0426093429",
+  "SubmissionTimeStamp": "0426093559",
   "LockUsername": null,
   "Comment": "Construct a cgSNP tree from closest genomic neighbours in the database.\r\n2022-05-14 15:57 AGB465: If the --fasttree parameter is specified, also insert this line:\r\n#fs filewatcher tree.nwk\r\nas BuildTree will generate tree.nwk into the output folder. FlowScript needs to know the name of the file to look for.",
   "DataSourceType": 0,
@@ -75,7 +75,7 @@
   "CanRunInLinux": true,
   "DockerBaseImage": "bioseqenv.0.3",
   "Parameters": "BuildTree Phantom@[includeAll=--include_all]\r\nBuildTree Phantom@[linkage=threshold]\r\nBuildTree Phantom@[cutoff=.001]\r\nBuildTree Phantom@[ref=[S]/mnt/e/data/Ruwani_Novel_Salmonella_Project_2022/S.suis_2024/S.suis_Reference.fna]\r\nBuildTree Phantom@[threads=4]\r\nBuildTree Phantom@[fast_tree=]\r\nBuildTree Phantom@[OmitStep=False]\r\nBuildTree Phantom@[PublishOutput=False]\r\nBuildTree Phantom@[IgnoreError=False]\r\nBuildTree Phantom@[IncludeOutput=True]\r\nBuildTree Phantom@[IsDocker=True]\r\nBuildTree Phantom@[IsSlurm=True]\r\nBuildTree Phantom@[\u003CIsSLURM\u003E=1]\r\nBuildTree Phantom@[\u003CSLURM_CPUs\u003E=6]\r\nBuildTree Phantom@[\u003CSLURM_GBs\u003E=16]\r\nBuildTree Phantom@[\u003CSLURM_Minutes\u003E=45]\r\nBuildTree_Publish@[\u003CIsSLURM\u003E=1]\r\nBuildTree_Publish@[\u003CSLURM_CPUs\u003E=6]\r\nBuildTree_Publish@[\u003CSLURM_GBs\u003E=16]\r\nBuildTree_Publish@[\u003CSLURM_Minutes\u003E=45]\r\n",
-  "OutputPath": "E:\\data\\results\\AGB465\\BuildTree_Phantom_Flow_0426093429",
+  "OutputPath": "E:\\data\\results\\AGB465\\BuildTree_Phantom_Flow_0426093559",
   "StartWithScript": "Data",
   "ScriptModulesInFlowScript": {
     "GlobalScriptModules": [
@@ -567,7 +567,7 @@
       }
     ]
   },
-  "LastUpdate": "2024-04-26T09:35:04.8730536-06:00",
+  "LastUpdate": "2024-04-26T09:35:59.4171209-06:00",
   "LastAuthor": "AGB465",
   "FindFolders": false,
   "InterfaceAdaptive": false,
