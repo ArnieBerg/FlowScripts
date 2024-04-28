@@ -60,12 +60,8 @@
     "Assembly000050": "1[S]/mnt/e/data/Dreamer/Genomic_Epidemiology/strepsuis_typing_analysis/output/Assembly/PDS2019484_flye.fasta",
     "Assembly000051": "1[S]/mnt/e/data/Dreamer/Genomic_Epidemiology/strepsuis_typing_analysis/output/Assembly/PDS2019485_flye.fasta"
   },
-  "SequenceList": [
-    "PDS1616822_flye"
-  ],
-  "SequenceListChecked": [
-    "PDS1616822_flye"
-  ],
+  "SequenceList": [],
+  "SequenceListChecked": [],
   "SequenceDatabaseName": "StrepSuis_Ruwani",
   "ParameterFilesToUpload": {
     "[S]/mnt/e/data/Ruwani_Novel_Salmonella_Project_2022/S.suis_2024/S.suis_Reference.fna": null
@@ -79,7 +75,7 @@
   "CanRunInLinux": true,
   "DockerBaseImage": "bioseqenv.0.3",
   "Parameters": "BuildTree Phantom@[includeAll=--include_all]\r\nBuildTree Phantom@[linkage=threshold]\r\nBuildTree Phantom@[cutoff=.001]\r\nBuildTree Phantom@[ref=[S]/mnt/e/data/Ruwani_Novel_Salmonella_Project_2022/S.suis_2024/S.suis_Reference.fna]\r\nBuildTree Phantom@[threads=4]\r\nBuildTree Phantom@[fast_tree=]\r\nBuildTree Phantom@[OmitStep=False]\r\nBuildTree Phantom@[PublishOutput=False]\r\nBuildTree Phantom@[IgnoreError=False]\r\nBuildTree Phantom@[IncludeOutput=True]\r\nBuildTree Phantom@[IsDocker=True]\r\nBuildTree Phantom@[IsSlurm=True]\r\nBuildTree Phantom@[\u003CIsSLURM\u003E=1]\r\nBuildTree Phantom@[\u003CSLURM_CPUs\u003E=6]\r\nBuildTree Phantom@[\u003CSLURM_GBs\u003E=16]\r\nBuildTree Phantom@[\u003CSLURM_Minutes\u003E=45]\r\nBuildTree_Publish@[\u003CIsSLURM\u003E=1]\r\nBuildTree_Publish@[\u003CSLURM_CPUs\u003E=6]\r\nBuildTree_Publish@[\u003CSLURM_GBs\u003E=16]\r\nBuildTree_Publish@[\u003CSLURM_Minutes\u003E=45]\r\n",
-  "OutputPath": "E:\\data\\results\\RNK773\\BuildTree_Phantom_Flow_0426101102",
+  "OutputPath": "E:\\data\\results\\AGB465\\BuildTree_Phantom_Flow_0426101102",
   "StartWithScript": "Data",
   "ScriptModulesInFlowScript": {
     "GlobalScriptModules": [
@@ -90,7 +86,7 @@
         "WslCommand": {
           "CommandToken": "",
           "FlowScriptToken": null,
-          "Command": "# Set up the phantom.fasta database from the samples from the sequence data source.\r\nif [ -f $[O.]phantom.fasta ]\r\nthen\r\n  rm $[O.]phantom.fasta\r\nfi\r\n\r\nif [ -f $[O.]SequenceList.csv ]\r\nthen\r\ncat $[O.]SequenceList.csv | \r\nwhile read line; do\r\n      cat \u0022${line#*,}\u0022 \u003E\u003E $[O.]phantom.fasta\r\ndone\r\nfi\r\n\r\n# Set up the querylist.txt from the samples from the normal data source.\r\nif [ -f $[O.]querylist.txt ]\r\nthen\r\n  rm $[O.]querylist.txt\r\nfi\r\n\r\nif [ -f $[O.]SampleList.csv ]\r\nthen\r\ncat $[O.]SampleList.csv |\r\nwhile read line; do\r\necho \u0022${line#*,}\u0022 \u003E\u003E $[O.]querylist.txt\r\ndone\r\nfi\r\n\r\nq=\u0022\u0022\r\nif [ -f $[O.]querylist.txt ]\r\nthen\r\n   q=\u0022-l $[O.]querylist.txt\u0022 \r\nfi\r\n\r\n@\u003Cconda=seqdb\u003E\r\n@\u003Ccmd=/home/pds_wimmer/JimmyFiles/seqdb/seqdb\u003E\r\n\r\n#FS IsDocker\r\n@\u003Cconda=seqdb\u003E\r\n@\u003Ccmd=/seqdb-1.0/seqdb\u003E\r\n#FS End\r\n\r\nconda run -n @\u003Cconda\u003E @\u003Ccmd\u003E build_tree --linkage @[linkage=threshold] -c @[cutoff=.001] ${q} -r @[ref=] -t @[threads=4] -d $[O.]phantom.fasta -o $[O.] @[fast_tree=--fast_tree] @[includeAll=--include_all]",
+          "Command": "# Set up the phantom.fasta database from the samples from the sequence data source.\r\nif [ -f $[O.]phantom.fasta ]\r\nthen\r\n  rm $[O.]phantom.fasta\r\nfi\r\ntouch $[O.]phantom.fasta\r\n\r\nif [ -f $[O.]SequenceList.csv ]\r\nthen\r\ncat $[O.]SequenceList.csv | \r\nwhile read line; do\r\n      cat \u0022${line#*,}\u0022 \u003E\u003E $[O.]phantom.fasta\r\ndone\r\nfi\r\n\r\n# Set up the querylist.txt from the samples from the normal data source.\r\nif [ -f $[O.]querylist.txt ]\r\nthen\r\n  rm $[O.]querylist.txt\r\nfi\r\n\r\nif [ -f $[O.]SampleList.csv ]\r\nthen\r\ncat $[O.]SampleList.csv |\r\nwhile read line; do\r\necho \u0022${line#*,}\u0022 \u003E\u003E $[O.]querylist.txt\r\ndone\r\nfi\r\n\r\nq=\u0022\u0022\r\nif [ -f $[O.]querylist.txt ]\r\nthen\r\n   q=\u0022-l $[O.]querylist.txt\u0022 \r\nfi\r\n\r\n@\u003Cconda=seqdb\u003E\r\n@\u003Ccmd=/home/pds_wimmer/JimmyFiles/seqdb/seqdb\u003E\r\n\r\n#FS IsDocker\r\n@\u003Cconda=seqdb\u003E\r\n@\u003Ccmd=/seqdb-1.0/seqdb\u003E\r\n#FS End\r\n\r\nconda run -n @\u003Cconda\u003E @\u003Ccmd\u003E build_tree --linkage @[linkage=threshold] -c @[cutoff=.001] ${q} -r @[ref=] -t @[threads=4] -d $[O.]phantom.fasta -o $[O.] @[fast_tree=--fast_tree] @[includeAll=--include_all]",
           "IsNoop": false,
           "CondaPrefix": "",
           "Parms": [],
@@ -409,19 +405,19 @@
         "IsSLURM": true,
         "Slurm_Resource_Request": 0,
         "Slurm_Min_Resources": {
-          "CPUs": 0,
-          "MemoryGB": 0,
-          "Hours": 0
+          "CPUs": 2,
+          "MemoryGB": 4,
+          "Hours": 0.300000012
         },
         "Slurm_Moderate_Resources": {
-          "CPUs": 0,
-          "MemoryGB": 0,
-          "Hours": 0
+          "CPUs": 6,
+          "MemoryGB": 16,
+          "Hours": 0.75
         },
         "Slurm_Max_Resources": {
-          "CPUs": 0,
-          "MemoryGB": 0,
-          "Hours": 0
+          "CPUs": 16,
+          "MemoryGB": 64,
+          "Hours": 2
         },
         "WDL_Task": null,
         "WDL_Task_Inputs": null,
@@ -571,8 +567,8 @@
       }
     ]
   },
-  "LastUpdate": "2024-04-26T10:11:26.3708885-06:00",
-  "LastAuthor": "RNK773",
+  "LastUpdate": "2024-04-28T06:08:03.5014214-06:00",
+  "LastAuthor": "AGB465",
   "FindFolders": false,
   "InterfaceAdaptive": false,
   "CommandList": null,
