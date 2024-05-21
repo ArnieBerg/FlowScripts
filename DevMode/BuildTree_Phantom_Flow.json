@@ -105,7 +105,7 @@
   "IsLinux": true,
   "CanRunInLinux": true,
   "DockerBaseImage": "bioseqenv.0.3",
-  "Parameters": "BuildTree Phantom@[linkage=threshold]\r\nBuildTree Phantom@[cutoff=.001]\r\nBuildTree Phantom@[ref=[S]/mnt/e/data/Ruwani_Novel_Salmonella_Project_2022/S.suis_2024/S.suis_Reference.fna]\r\nBuildTree Phantom@[threads=4]\r\nBuildTree Phantom@[fast_tree=]\r\nBuildTree Phantom@[includeAll=--include_all]\r\n",
+  "Parameters": "BuildTree Phantom@[includeAll=--include_all]\r\nBuildTree Phantom@[linkage=threshold]\r\nBuildTree Phantom@[cutoff=.001]\r\nBuildTree Phantom@[ref=[S]/mnt/e/data/Ruwani_Novel_Salmonella_Project_2022/S.suis_2024/S.suis_Reference.fna]\r\nBuildTree Phantom@[threads=4]\r\nBuildTree Phantom@[fast_tree=]\r\nBuildTree Phantom@[OmitStep=False]\r\nBuildTree Phantom@[PublishOutput=False]\r\nBuildTree Phantom@[IgnoreError=False]\r\nBuildTree Phantom@[IncludeOutput=True]\r\nBuildTree Phantom@[IsDocker=True]\r\nBuildTree Phantom@[IsSlurm=True]\r\nBuildTree Phantom@[\u003CIsSLURM\u003E=1]\r\nBuildTree Phantom@[\u003CSLURM_CPUs\u003E=6]\r\nBuildTree Phantom@[\u003CSLURM_GBs\u003E=16]\r\nBuildTree Phantom@[\u003CSLURM_Minutes\u003E=45]\r\nBuildTree_Publish@[\u003CIsSLURM\u003E=1]\r\nBuildTree_Publish@[\u003CSLURM_CPUs\u003E=6]\r\nBuildTree_Publish@[\u003CSLURM_GBs\u003E=16]\r\nBuildTree_Publish@[\u003CSLURM_Minutes\u003E=45]\r\n",
   "OutputPath": "E:\\data\\results\\RNK773\\BuildTree_Phantom_Flow_0521115627",
   "StartWithScript": "Data",
   "ScriptModulesInFlowScript": {
@@ -428,7 +428,7 @@
           }
         ],
         "DockerMountMap": [
-          "/mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/"
+          "/mnt/c/BioSeqDB/WSLProxyRoot/RNK773/Work/"
         ],
         "DockerImage": null,
         "UserVariableList": {},
@@ -598,7 +598,7 @@
       }
     ]
   },
-  "LastUpdate": "2024-05-21T11:56:25.3464222-06:00",
+  "LastUpdate": "2024-05-21T11:56:34.907264-06:00",
   "LastAuthor": "RNK773",
   "FindFolders": false,
   "InterfaceAdaptive": false,
