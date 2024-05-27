@@ -636,11 +636,11 @@
       }
     ]
   },
-  "LastUpdate": "2024-05-27T06:56:14.7357777-06:00",
+  "LastUpdate": "2024-05-27T06:56:21.7107549-06:00",
   "LastAuthor": "RNK773",
   "FindFolders": false,
   "InterfaceAdaptive": false,
   "CommandList": null,
   "RemoveReads": false,
-  "SLURM_IsAvailable": false
+  "SLURM_IsAvailable": true
 }
