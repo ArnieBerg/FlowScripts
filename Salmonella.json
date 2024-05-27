@@ -40,8 +40,8 @@
   "IsLinux": true,
   "CanRunInLinux": true,
   "DockerBaseImage": "bioseqenv.0.3",
-  "Parameters": "BuscoConsolidate@[lineage=bacteria_odb10]\r\nBuscoConsolidate@[OmitStep=False]\r\nBuscoConsolidate@[PublishOutput=True]\r\nBuscoConsolidate@[IgnoreError=False]\r\nBuscoConsolidate@[IncludeOutput=True]\r\nBuscoConsolidate@[IsDocker=True]\r\nBuscoConsolidate@[IsSlurm=True]\r\nBuscoConsolidate@[\u003CIsSLURM\u003E=1]\r\nBuscoConsolidate@[\u003CSLURM_CPUs\u003E=2]\r\nBuscoConsolidate@[\u003CSLURM_GBs\u003E=4]\r\nBuscoConsolidate@[\u003CSLURM_Minutes\u003E=18]\r\nSamnSero@[DisableBinning=--disable_binning]\r\nSamnSero@[Resume=-resume]\r\nSamnSero@[NoReport=]\r\nSamnSero@[Annot=]\r\nSamnSero@[QC=--qc]\r\nSamnSero@[NanoHQ=]\r\nSamnSero@[TaxonName=Salmonella enterica]\r\nSamnSero@[TaxonLevel=species]\r\nSamnSero@[GPU=]\r\nSamnSero@[Metagenomics=off]\r\nSamnSero@[Trim=]\r\nSamnSero@[Platform=nanopore]\r\nSamnSero@[OmitStep=False]\r\nSamnSero@[PublishOutput=False]\r\nSamnSero@[IgnoreError=False]\r\nSamnSero@[IncludeOutput=True]\r\nSamnSero@[IsDocker=False]\r\nSamnSero@[IsSlurm=True]\r\nSamnSero@[\u003CIsSLURM\u003E=1]\r\nSamnSero@[\u003CSLURM_CPUs\u003E=2]\r\nSamnSero@[\u003CSLURM_GBs\u003E=64]\r\nSamnSero@[\u003CSLURM_Minutes\u003E=360]\r\nSamnSero_Publish@[OmitStep=False]\r\nSamnSero_Publish@[PublishOutput=True]\r\nSamnSero_Publish@[IgnoreError=False]\r\nSamnSero_Publish@[IncludeOutput=False]\r\nSamnSero_Publish@[IsDocker=False]\r\nSamnSero_Publish@[\u003CIsSLURM\u003E=1]\r\nSamnSero_Publish@[\u003CSLURM_CPUs\u003E=6]\r\nSamnSero_Publish@[\u003CSLURM_GBs\u003E=16]\r\nSamnSero_Publish@[\u003CSLURM_Minutes\u003E=45]\r\nSamnSero_Publish@[IsSlurm=True]\r\n",
-  "OutputPath": "E:\\data\\results\\SAO345\\Salmonella_0418123859",
+  "Parameters": "BuscoConsolidate@[lineage=bacteria_odb10]\r\nBuscoConsolidate@[OmitStep=False]\r\nBuscoConsolidate@[PublishOutput=True]\r\nBuscoConsolidate@[IgnoreError=False]\r\nBuscoConsolidate@[IncludeOutput=True]\r\nBuscoConsolidate@[IsDocker=True]\r\nBuscoConsolidate@[IsSlurm=True]\r\nBuscoConsolidate@[\u003CIsSLURM\u003E=1]\r\nBuscoConsolidate@[\u003CSLURM_CPUs\u003E=2]\r\nBuscoConsolidate@[\u003CSLURM_GBs\u003E=4]\r\nBuscoConsolidate@[\u003CSLURM_Minutes\u003E=120]\r\nSamnSero@[DisableBinning=--disable_binning]\r\nSamnSero@[Resume=-resume]\r\nSamnSero@[NoReport=]\r\nSamnSero@[Annot=]\r\nSamnSero@[QC=--qc]\r\nSamnSero@[NanoHQ=]\r\nSamnSero@[TaxonName=Salmonella enterica]\r\nSamnSero@[TaxonLevel=species]\r\nSamnSero@[GPU=]\r\nSamnSero@[Metagenomics=off]\r\nSamnSero@[Trim=]\r\nSamnSero@[Platform=nanopore]\r\nSamnSero@[OmitStep=False]\r\nSamnSero@[PublishOutput=False]\r\nSamnSero@[IgnoreError=False]\r\nSamnSero@[IncludeOutput=True]\r\nSamnSero@[IsDocker=False]\r\nSamnSero@[IsSlurm=True]\r\nSamnSero@[\u003CIsSLURM\u003E=1]\r\nSamnSero@[\u003CSLURM_CPUs\u003E=2]\r\nSamnSero@[\u003CSLURM_GBs\u003E=64]\r\nSamnSero@[\u003CSLURM_Minutes\u003E=360]\r\nSamnSero_Publish@[OmitStep=False]\r\nSamnSero_Publish@[PublishOutput=True]\r\nSamnSero_Publish@[IgnoreError=False]\r\nSamnSero_Publish@[IncludeOutput=False]\r\nSamnSero_Publish@[IsDocker=False]\r\nSamnSero_Publish@[\u003CIsSLURM\u003E=1]\r\nSamnSero_Publish@[\u003CSLURM_CPUs\u003E=6]\r\nSamnSero_Publish@[\u003CSLURM_GBs\u003E=16]\r\nSamnSero_Publish@[\u003CSLURM_Minutes\u003E=45]\r\nSamnSero_Publish@[IsSlurm=True]\r\n",
+  "OutputPath": "E:\\data\\results\\SPK880\\Salmonella_0418123859",
   "StartWithScript": "Data",
   "ScriptModulesInFlowScript": {
     "GlobalScriptModules": [
@@ -234,8 +234,8 @@
             "Description": null,
             "ComboValues": null,
             "Optional": false,
-            "ReadOnly": false,
-            "Hidden": false,
+            "ReadOnly": true,
+            "Hidden": true,
             "DeleteFlag": false,
             "DataType": 2,
             "Validator": null,
@@ -251,8 +251,8 @@
             "Description": null,
             "ComboValues": null,
             "Optional": false,
-            "ReadOnly": false,
-            "Hidden": false,
+            "ReadOnly": true,
+            "Hidden": true,
             "DeleteFlag": false,
             "DataType": 2,
             "Validator": null,
@@ -263,13 +263,13 @@
           {
             "ModuleName": "BuscoConsolidate",
             "ParmName": "\u003CSLURM_Minutes\u003E",
-            "DefaultValue": "18",
-            "UserValue": "18",
+            "DefaultValue": "120",
+            "UserValue": "120",
             "Description": null,
             "ComboValues": null,
             "Optional": false,
-            "ReadOnly": false,
-            "Hidden": false,
+            "ReadOnly": true,
+            "Hidden": true,
             "DeleteFlag": false,
             "DataType": 2,
             "Validator": null,
@@ -289,7 +289,7 @@
         "Slurm_Min_Resources": {
           "CPUs": 2,
           "MemoryGB": 4,
-          "Hours": 0.300000012
+          "Hours": 2
         },
         "Slurm_Moderate_Resources": {
           "CPUs": 6,
@@ -974,21 +974,21 @@
         "UserVariableList": {},
         "IsDocker": false,
         "IsSLURM": true,
-        "Slurm_Resource_Request": 0,
+        "Slurm_Resource_Request": 2,
         "Slurm_Min_Resources": {
-          "CPUs": 0,
-          "MemoryGB": 0,
-          "Hours": 0
+          "CPUs": 2,
+          "MemoryGB": 4,
+          "Hours": 0.300000012
         },
         "Slurm_Moderate_Resources": {
-          "CPUs": 0,
-          "MemoryGB": 0,
-          "Hours": 0
+          "CPUs": 6,
+          "MemoryGB": 16,
+          "Hours": 0.75
         },
         "Slurm_Max_Resources": {
-          "CPUs": 0,
-          "MemoryGB": 0,
-          "Hours": 0
+          "CPUs": 16,
+          "MemoryGB": 64,
+          "Hours": 2
         },
         "WDL_Task": null,
         "WDL_Task_Inputs": null,
@@ -998,8 +998,8 @@
       }
     ]
   },
-  "LastUpdate": "2024-04-30T11:17:35.6142921-06:00",
-  "LastAuthor": "SAO345",
+  "LastUpdate": "2024-05-27T09:46:08.417627-06:00",
+  "LastAuthor": "SPK880",
   "FindFolders": true,
   "InterfaceAdaptive": false,
   "CommandList": [],
