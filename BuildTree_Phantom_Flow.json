@@ -88,7 +88,7 @@
   ],
   "SequenceDatabaseName": "SSuis",
   "ParameterFilesToUpload": {
-    "[S]/mnt/e/data/Ruwani_Novel_Salmonella_Project_2022/S.suis_2024/S.suis_Reference.fna": null
+    "[S]/mnt/e/data/reference/SSuis/GCF_002961825.1_ASM296182v1_genomic.fna": null
   },
   "ParameterFoldersToUpload": {},
   "SequenceDBPathLinux": "[S]/mnt/e/data/database/SSuis",
@@ -421,7 +421,7 @@
           }
         ],
         "DockerMountMap": [
-          "/mnt/c/BioSeqDB/WSLProxyRoot/RNK773/Work/"
+          "/mnt/c/BioSeqDB/WSLProxyRoot/DHP565/Work/"
         ],
         "DockerImage": null,
         "UserVariableList": {},
@@ -591,7 +591,7 @@
       }
     ]
   },
-  "LastUpdate": "2024-06-19T15:50:47.4350094-06:00",
+  "LastUpdate": "2024-06-19T15:51:53.2271438-06:00",
   "LastAuthor": "DHP565",
   "FindFolders": false,
   "InterfaceAdaptive": false,
