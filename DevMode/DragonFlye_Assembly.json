@@ -28,23 +28,22 @@
   "DataSourceType": 1,
   "SerializeDataSteps": false,
   "SampleList": {
-    "barcode1_2037151-1": "1[S]/mnt/e/data/std_testing/Dragonflye/input/barcode1_2037151-1/",
-    "barcode2_2037151-2": "1[S]/mnt/e/data/std_testing/Dragonflye/input/barcode2_2037151-2/"
+    "barcode01": "1[S]/mnt/r/incoming/OPAL/PDS/20230328_254_22-23/PDSFall2022_PDS2232028_PDS2233072/20230328_2049_2A_PAO27621_6513b971/fastq_pass/barcode01/"
   },
   "SequenceList": [],
   "SequenceListChecked": [],
   "SequenceDatabaseName": "hpsuis",
   "ParameterFilesToUpload": {},
   "ParameterFoldersToUpload": {},
-  "SequenceDBPathLinux": "/c/data/database/hpsuis",
-  "SequenceDBPath": "/c/data/database/hpsuis/hpsuis.fasta",
+  "SequenceDBPathLinux": "/mnt/e/data/database/hpsuis",
+  "SequenceDBPath": "/mnt/e/data/database/hpsuis/hpsuis.fasta",
   "SamplesFromLocalDevice": {},
-  "SamplesToTransform": null,
+  "SamplesToTransform": {},
   "IsLinux": true,
   "CanRunInLinux": true,
   "DockerBaseImage": "bioseqenv.0.3",
-  "Parameters": "SeqTK@[OmitStep=False]\r\nSeqTK@[PublishOutput=False]\r\nSeqTK@[IgnoreError=False]\r\nSeqTK@[IncludeOutput=True]\r\nSeqTK@[IsDocker=True]\r\nSeqTK@[IgnoreExitCode=true]\r\nSeqTK@[IncludeStandardOutput=true]\r\nSeqTK@[IsSlurm=true]\r\nSeqTK@[\u003CIsSLURM\u003E=1]\r\nSeqTK@[\u003CSLURM_CPUs\u003E=6]\r\nSeqTK@[\u003CSLURM_GBs\u003E=16]\r\nSeqTK@[\u003CSLURM_Minutes\u003E=45]\r\nBBMap@[OmitStep=False]\r\nBBMap@[PublishOutput=True]\r\nBBMap@[IgnoreError=True]\r\nBBMap@[IncludeOutput=True]\r\nBBMap@[IsDocker=True]\r\nBBMap@[IgnoreExitCode=true]\r\nBBMap@[IncludeStandardOutput=true]\r\nBBMap@[IsSlurm=True]\r\nBBMap@[\u003CIsSLURM\u003E=1]\r\nBBMap@[\u003CSLURM_CPUs\u003E=6]\r\nBBMap@[\u003CSLURM_GBs\u003E=16]\r\nBBMap@[\u003CSLURM_Minutes\u003E=45]\r\nRename_Contigs@[OmitStep=False]\r\nRename_Contigs@[PublishOutput=True]\r\nRename_Contigs@[IgnoreError=False]\r\nRename_Contigs@[IncludeOutput=True]\r\nRename_Contigs@[IsDocker=False]\r\nRename_Contigs@[IgnoreExitCode=true]\r\nRename_Contigs@[IncludeStandardOutput=true]\r\nRename_Contigs@[IsSlurm=true]\r\nRename_Contigs@[\u003CIsSLURM\u003E=1]\r\nRename_Contigs@[\u003CSLURM_CPUs\u003E=6]\r\nRename_Contigs@[\u003CSLURM_GBs\u003E=16]\r\nRename_Contigs@[\u003CSLURM_Minutes\u003E=45]\r\nCompress@[OmitStep=]\r\nCompress@[PublishOutput=]\r\nCompress@[IgnoreExitCode=true]\r\nCompress@[IncludeStandardOutput=true]\r\nCompress@[IsDocker=]\r\nCompress@[IgnoreError=]\r\nCompress@[IncludeOutput=]\r\nCompress@[IsSlurm=true]\r\nCompress@[\u003CIsSLURM\u003E=1]\r\nCompress@[\u003CSLURM_CPUs\u003E=6]\r\nCompress@[\u003CSLURM_GBs\u003E=16]\r\nCompress@[\u003CSLURM_Minutes\u003E=45]\r\nnanoq@[OmitStep=True]\r\nnanoq@[PublishOutput=False]\r\nnanoq@[IgnoreError=False]\r\nnanoq@[IncludeOutput=True]\r\nnanoq@[IsDocker=True]\r\nnanoq@[IgnoreExitCode=true]\r\nnanoq@[IncludeStandardOutput=true]\r\nnanoq@[IsSlurm=True]\r\nnanoq@[\u003CIsSLURM\u003E=1]\r\nnanoq@[\u003CSLURM_CPUs\u003E=6]\r\nnanoq@[\u003CSLURM_GBs\u003E=16]\r\nnanoq@[\u003CSLURM_Minutes\u003E=45]\r\nBusco@[lineage=bacteria_odb10]\r\nBusco@[OmitStep=False]\r\nBusco@[PublishOutput=True]\r\nBusco@[IgnoreError=False]\r\nBusco@[IncludeOutput=True]\r\nBusco@[IsDocker=True]\r\nBusco@[IgnoreExitCode=true]\r\nBusco@[IncludeStandardOutput=true]\r\nBusco@[IsSlurm=true]\r\nBusco@[\u003CIsSLURM\u003E=1]\r\nBusco@[\u003CSLURM_CPUs\u003E=6]\r\nBusco@[\u003CSLURM_GBs\u003E=16]\r\nBusco@[\u003CSLURM_Minutes\u003E=45]\r\nQuast@[OmitStep=False]\r\nQuast@[PublishOutput=True]\r\nQuast@[IgnoreError=False]\r\nQuast@[IncludeOutput=True]\r\nQuast@[IsDocker=True]\r\nQuast@[IgnoreExitCode=true]\r\nQuast@[IncludeStandardOutput=true]\r\nQuast@[IsSlurm=true]\r\nQuast@[\u003CIsSLURM\u003E=1]\r\nQuast@[\u003CSLURM_CPUs\u003E=6]\r\nQuast@[\u003CSLURM_GBs\u003E=16]\r\nQuast@[\u003CSLURM_Minutes\u003E=45]\r\nRefseq_Masher@[OmitStep=]\r\nRefseq_Masher@[PublishOutput=]\r\nRefseq_Masher@[IgnoreExitCode=true]\r\nRefseq_Masher@[IncludeStandardOutput=true]\r\nRefseq_Masher@[IsDocker=true]\r\nRefseq_Masher@[IgnoreError=]\r\nRefseq_Masher@[IncludeOutput=]\r\nRefseq_Masher@[IsSlurm=true]\r\nRefseq_Masher@[\u003CIsSLURM\u003E=1]\r\nRefseq_Masher@[\u003CSLURM_CPUs\u003E=6]\r\nRefseq_Masher@[\u003CSLURM_GBs\u003E=16]\r\nRefseq_Masher@[\u003CSLURM_Minutes\u003E=45]\r\nKraken2@[threads=20]\r\nKraken2@[db=/mnt/e/data/reference/databases/minikraken2_v1_8GB/]\r\nKraken2@[OmitStep=False]\r\nKraken2@[PublishOutput=True]\r\nKraken2@[IgnoreError=False]\r\nKraken2@[IncludeOutput=True]\r\nKraken2@[IsDocker=True]\r\nKraken2@[IgnoreExitCode=true]\r\nKraken2@[IncludeStandardOutput=true]\r\nKraken2@[IsSlurm=true]\r\nKraken2@[\u003CIsSLURM\u003E=1]\r\nKraken2@[\u003CSLURM_CPUs\u003E=6]\r\nKraken2@[\u003CSLURM_GBs\u003E=16]\r\nKraken2@[\u003CSLURM_Minutes\u003E=45]\r\nDragonFlye@[\u003CSLURM_CPUs\u003E=]\r\nDragonFlye@[\u003CSLURM_GBs\u003E=]\r\nDragonFlye@[trim=]\r\nDragonFlye@[gsizeParm=--gsize @[gsize=]]\r\nDragonFlye@[gsize=3M]\r\nDragonFlye@[raconRounds=1]\r\nDragonFlye@[racon=--racon @[raconRounds=1]]\r\nDragonFlye@[medakaModel=r941_e81_hac_g514]\r\nDragonFlye@[medakaRounds=1]\r\nDragonFlye@[medaka=--medaka @[medakaRounds=1] @[medakaModelParm=--model @[medakaModel=r941_min_hac_g507]]]\r\nDragonFlye@[assembler=flye]\r\nDragonFlye@[medakaModelParm=--model @[medakaModel=r941_min_hac_g507]]\r\nDragonFlye@[nano-hq=--nanohq]\r\nDragonFlye@[nopolish=--nopolish]\r\nDragonFlye@[OmitStep=False]\r\nDragonFlye@[PublishOutput=False]\r\nDragonFlye@[IgnoreError=False]\r\nDragonFlye@[IncludeOutput=True]\r\nDragonFlye@[IsDocker=True]\r\nDragonFlye@[IsSlurm=true]\r\nDragonFlye@[\u003CIsSLURM\u003E=1]\r\nDragonFlye@[\u003CSLURM_Minutes\u003E=120]\r\nDragonFlye Sink@[OmitStep=True]\r\nDragonFlye Sink@[PublishOutput=True]\r\nDragonFlye Sink@[IgnoreError=False]\r\nDragonFlye Sink@[IncludeOutput=True]\r\nDragonFlye Sink@[IsDocker=False]\r\nDragonFlye Sink@[IgnoreExitCode=true]\r\nDragonFlye Sink@[IncludeStandardOutput=true]\r\nDragonFlye Sink@[IsSlurm=True]\r\nDragonFlye Sink@[\u003CIsSLURM\u003E=1]\r\nDragonFlye Sink@[\u003CSLURM_CPUs\u003E=6]\r\nDragonFlye Sink@[\u003CSLURM_GBs\u003E=16]\r\nDragonFlye Sink@[\u003CSLURM_Minutes\u003E=45]\r\nAbricate@[db=ncbi]\r\nAbricate@[OmitStep=True]\r\nAbricate@[PublishOutput=True]\r\nAbricate@[IgnoreError=False]\r\nAbricate@[IncludeOutput=True]\r\nAbricate@[IsDocker=False]\r\nAbricate@[IgnoreExitCode=]\r\nAbricate@[IncludeStandardOutput=]\r\nAbricate@[IsSlurm=True]\r\nAbricate@[\u003CIsSLURM\u003E=1]\r\nAbricate@[\u003CSLURM_CPUs\u003E=6]\r\nAbricate@[\u003CSLURM_GBs\u003E=16]\r\nAbricate@[\u003CSLURM_Minutes\u003E=45]\r\n",
-  "OutputPath": "E:\\data\\results\\Arnie\\DragonFlye_Assembly_0205081210",
+  "Parameters": "SeqTK@[OmitStep=True]\r\nSeqTK@[PublishOutput=False]\r\nSeqTK@[IgnoreError=False]\r\nSeqTK@[IncludeOutput=True]\r\nSeqTK@[IsDocker=True]\r\nSeqTK@[IgnoreExitCode=true]\r\nSeqTK@[IncludeStandardOutput=true]\r\nSeqTK@[IsSlurm=true]\r\nSeqTK@[\u003CIsSLURM\u003E=1]\r\nSeqTK@[\u003CSLURM_CPUs\u003E=6]\r\nSeqTK@[\u003CSLURM_GBs\u003E=16]\r\nSeqTK@[\u003CSLURM_Minutes\u003E=45]\r\nBBMap@[OmitStep=True]\r\nBBMap@[PublishOutput=True]\r\nBBMap@[IgnoreError=True]\r\nBBMap@[IncludeOutput=True]\r\nBBMap@[IsDocker=True]\r\nBBMap@[IgnoreExitCode=true]\r\nBBMap@[IncludeStandardOutput=true]\r\nBBMap@[IsSlurm=true]\r\nBBMap@[\u003CIsSLURM\u003E=1]\r\nBBMap@[\u003CSLURM_CPUs\u003E=16]\r\nBBMap@[\u003CSLURM_GBs\u003E=64]\r\nBBMap@[\u003CSLURM_Minutes\u003E=120]\r\nRename_Contigs@[OmitStep=False]\r\nRename_Contigs@[PublishOutput=True]\r\nRename_Contigs@[IgnoreError=False]\r\nRename_Contigs@[IncludeOutput=False]\r\nRename_Contigs@[IsDocker=False]\r\nRename_Contigs@[IgnoreExitCode=true]\r\nRename_Contigs@[IncludeStandardOutput=true]\r\nRename_Contigs@[IsSlurm=true]\r\nRename_Contigs@[\u003CIsSLURM\u003E=1]\r\nRename_Contigs@[\u003CSLURM_CPUs\u003E=6]\r\nRename_Contigs@[\u003CSLURM_GBs\u003E=16]\r\nRename_Contigs@[\u003CSLURM_Minutes\u003E=45]\r\nCompress@[OmitStep=]\r\nCompress@[PublishOutput=]\r\nCompress@[IgnoreExitCode=true]\r\nCompress@[IncludeStandardOutput=true]\r\nCompress@[IsDocker=]\r\nCompress@[IgnoreError=]\r\nCompress@[IncludeOutput=]\r\nCompress@[IsSlurm=true]\r\nCompress@[\u003CIsSLURM\u003E=1]\r\nCompress@[\u003CSLURM_CPUs\u003E=6]\r\nCompress@[\u003CSLURM_GBs\u003E=16]\r\nCompress@[\u003CSLURM_Minutes\u003E=45]\r\nnanoq@[OmitStep=True]\r\nnanoq@[PublishOutput=False]\r\nnanoq@[IgnoreError=False]\r\nnanoq@[IncludeOutput=True]\r\nnanoq@[IsDocker=True]\r\nnanoq@[IgnoreExitCode=true]\r\nnanoq@[IncludeStandardOutput=true]\r\nnanoq@[IsSlurm=true]\r\nnanoq@[\u003CIsSLURM\u003E=1]\r\nnanoq@[\u003CSLURM_CPUs\u003E=6]\r\nnanoq@[\u003CSLURM_GBs\u003E=16]\r\nnanoq@[\u003CSLURM_Minutes\u003E=45]\r\nBusco@[lineage=bacteria_odb10]\r\nBusco@[OmitStep=False]\r\nBusco@[PublishOutput=True]\r\nBusco@[IgnoreError=False]\r\nBusco@[IncludeOutput=True]\r\nBusco@[IsDocker=True]\r\nBusco@[IgnoreExitCode=true]\r\nBusco@[IncludeStandardOutput=true]\r\nBusco@[IsSlurm=true]\r\nBusco@[\u003CIsSLURM\u003E=1]\r\nBusco@[\u003CSLURM_CPUs\u003E=6]\r\nBusco@[\u003CSLURM_GBs\u003E=16]\r\nBusco@[\u003CSLURM_Minutes\u003E=45]\r\nQuast@[OmitStep=False]\r\nQuast@[PublishOutput=True]\r\nQuast@[IgnoreError=False]\r\nQuast@[IncludeOutput=True]\r\nQuast@[IsDocker=True]\r\nQuast@[IgnoreExitCode=true]\r\nQuast@[IncludeStandardOutput=true]\r\nQuast@[IsSlurm=true]\r\nQuast@[\u003CIsSLURM\u003E=1]\r\nQuast@[\u003CSLURM_CPUs\u003E=6]\r\nQuast@[\u003CSLURM_GBs\u003E=16]\r\nQuast@[\u003CSLURM_Minutes\u003E=45]\r\nRefseq_Masher@[OmitStep=]\r\nRefseq_Masher@[PublishOutput=]\r\nRefseq_Masher@[IgnoreExitCode=true]\r\nRefseq_Masher@[IncludeStandardOutput=true]\r\nRefseq_Masher@[IsDocker=true]\r\nRefseq_Masher@[IgnoreError=]\r\nRefseq_Masher@[IncludeOutput=true]\r\nRefseq_Masher@[IsSlurm=true]\r\nRefseq_Masher@[\u003CIsSLURM\u003E=1]\r\nRefseq_Masher@[\u003CSLURM_CPUs\u003E=6]\r\nRefseq_Masher@[\u003CSLURM_GBs\u003E=16]\r\nRefseq_Masher@[\u003CSLURM_Minutes\u003E=45]\r\nKraken2@[threads=20]\r\nKraken2@[db=/mnt/e/data/reference/databases/minikraken2_v1_8GB/]\r\nKraken2@[OmitStep=False]\r\nKraken2@[PublishOutput=True]\r\nKraken2@[IgnoreError=False]\r\nKraken2@[IncludeOutput=True]\r\nKraken2@[IsDocker=True]\r\nKraken2@[IgnoreExitCode=true]\r\nKraken2@[IncludeStandardOutput=true]\r\nKraken2@[IsSlurm=true]\r\nKraken2@[\u003CIsSLURM\u003E=1]\r\nKraken2@[\u003CSLURM_CPUs\u003E=6]\r\nKraken2@[\u003CSLURM_GBs\u003E=16]\r\nKraken2@[\u003CSLURM_Minutes\u003E=45]\r\nDragonFlye@[\u003CSLURM_CPUs\u003E=16]\r\nDragonFlye@[\u003CSLURM_GBs\u003E=64]\r\nDragonFlye@[trim=]\r\nDragonFlye@[gsizeParm=]\r\nDragonFlye@[gsize=3.3M]\r\nDragonFlye@[raconRounds=1]\r\nDragonFlye@[racon=--racon @[raconRounds=1]]\r\nDragonFlye@[medakaModel=r103_min_high_g360]\r\nDragonFlye@[medakaRounds=10]\r\nDragonFlye@[medaka=--medaka @[medakaRounds=1] @[medakaModelParm=--model @[medakaModel=r941_min_hac_g507]]]\r\nDragonFlye@[assembler=flye]\r\nDragonFlye@[medakaModelParm=--model @[medakaModel=r941_min_hac_g507]]\r\nDragonFlye@[nano-hq=--nanohq]\r\nDragonFlye@[nopolish=]\r\nDragonFlye@[OmitStep=False]\r\nDragonFlye@[PublishOutput=False]\r\nDragonFlye@[IgnoreError=False]\r\nDragonFlye@[IncludeOutput=True]\r\nDragonFlye@[IsDocker=True]\r\nDragonFlye@[IsSlurm=true]\r\nDragonFlye@[\u003CIsSLURM\u003E=1]\r\nDragonFlye@[\u003CSLURM_Minutes\u003E=120]\r\nDragonFlye Sink@[OmitStep=True]\r\nDragonFlye Sink@[PublishOutput=True]\r\nDragonFlye Sink@[IgnoreError=False]\r\nDragonFlye Sink@[IncludeOutput=True]\r\nDragonFlye Sink@[IsDocker=False]\r\nDragonFlye Sink@[IgnoreExitCode=true]\r\nDragonFlye Sink@[IncludeStandardOutput=true]\r\nDragonFlye Sink@[IsSlurm=true]\r\nDragonFlye Sink@[\u003CIsSLURM\u003E=1]\r\nDragonFlye Sink@[\u003CSLURM_CPUs\u003E=6]\r\nDragonFlye Sink@[\u003CSLURM_GBs\u003E=16]\r\nDragonFlye Sink@[\u003CSLURM_Minutes\u003E=45]\r\nAbricate@[db=ncbi]\r\nAbricate@[OmitStep=False]\r\nAbricate@[PublishOutput=False]\r\nAbricate@[IgnoreError=False]\r\nAbricate@[IncludeOutput=True]\r\nAbricate@[IsDocker=True]\r\nAbricate@[IgnoreExitCode=true]\r\nAbricate@[IncludeStandardOutput=true]\r\nAbricate@[IsSlurm=true]\r\nAbricate@[\u003CIsSLURM\u003E=1]\r\nAbricate@[\u003CSLURM_CPUs\u003E=6]\r\nAbricate@[\u003CSLURM_GBs\u003E=16]\r\nAbricate@[\u003CSLURM_Minutes\u003E=45]\r\n",
+  "OutputPath": "E:\\data\\results\\AMT870\\DragonFlye_Assembly_0205081210",
   "StartWithScript": "Data",
   "ScriptModulesInFlowScript": {
     "GlobalScriptModules": [
@@ -88,7 +87,7 @@
         "ExpectSamplesHeader": false,
         "RunAfterALLPrereqs": false,
         "RunAfterALLCmdToken": "",
-        "OmitStep": false,
+        "OmitStep": true,
         "LastUpdate": "2022-04-06T07:28:04.3954504-06:00",
         "LastAuthor": "AGB465",
         "ScriptParmsList": [
@@ -96,7 +95,7 @@
             "ModuleName": "SeqTK",
             "ParmName": "OmitStep",
             "DefaultValue": null,
-            "UserValue": "False",
+            "UserValue": "True",
             "Description": null,
             "ComboValues": "True|False",
             "Optional": false,
@@ -215,7 +214,7 @@
             "ModuleName": "SeqTK",
             "ParmName": "IsSlurm",
             "DefaultValue": null,
-            "UserValue": "true",
+            "UserValue": "True",
             "Description": "IsSlurm",
             "ComboValues": "true|",
             "Optional": false,
@@ -366,7 +365,7 @@
         "ExpectSamplesHeader": false,
         "RunAfterALLPrereqs": false,
         "RunAfterALLCmdToken": "",
-        "OmitStep": false,
+        "OmitStep": true,
         "LastUpdate": "2022-06-26T05:20:01.3379975-06:00",
         "LastAuthor": "AGB465",
         "ScriptParmsList": [
@@ -374,7 +373,7 @@
             "ModuleName": "BBMap",
             "ParmName": "OmitStep",
             "DefaultValue": null,
-            "UserValue": "False",
+            "UserValue": "True",
             "Description": null,
             "ComboValues": "True|False",
             "Optional": false,
@@ -527,7 +526,7 @@
             "ModuleName": "BBMap",
             "ParmName": "\u003CSLURM_CPUs\u003E",
             "DefaultValue": "6",
-            "UserValue": "6",
+            "UserValue": "16",
             "Description": null,
             "ComboValues": null,
             "Optional": false,
@@ -544,7 +543,7 @@
             "ModuleName": "BBMap",
             "ParmName": "\u003CSLURM_GBs\u003E",
             "DefaultValue": "16",
-            "UserValue": "16",
+            "UserValue": "64",
             "Description": null,
             "ComboValues": null,
             "Optional": false,
@@ -561,7 +560,7 @@
             "ModuleName": "BBMap",
             "ParmName": "\u003CSLURM_Minutes\u003E",
             "DefaultValue": "45",
-            "UserValue": "45",
+            "UserValue": "120",
             "Description": null,
             "ComboValues": null,
             "Optional": false,
@@ -609,13 +608,13 @@
         "LockUsername": null,
         "Comment": "",
         "WslCommand": {
-          "CommandToken": "D2C11",
+          "CommandToken": "D1C7",
           "FlowScriptToken": null,
-          "Command": "mkdir $[O{DragonFlye}.]$[V.[SampleName]]\r\ncp $[I{DragonFlye}.]contigs.fa $[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_contigs.fasta\r\ncp $[I{DragonFlye}.]flye.fasta $[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_flye.fa\r\ncp $[I{DragonFlye}.]flye-info.txt $[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_flye-info.txt\r\ncp $[I{DragonFlye}.]dragonflye.log $[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_dragonflye.log\r\n\r\nif [ -f \u0022$[I{Abricate}.]$[V.[SampleName]]_Abricate_Output.tsv\u0022 ]; then\r\n   cp $[I{Abricate}.]$[V.[SampleName]]_Abricate_Output.tsv $[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_Abricate_Output.tsv\r\nfi\r\n\r\n# Create a temporary file for writing the modified content\r\ntempfile=$[O.]tmp_$[V.[SampleName]]\r\ntouch \u0022$tempfile\u0022\r\n# This script changes the text of a file for each line that starts with \u0027\u003E\u0027\r\n# Replace the word that follows the \u0027\u003E\u0027 with \u0027SAMPLE\u0027, followed by space and then everything that was originally on the line after the \u0027\u003E\u0027\r\nfilename=$[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_contigs.fasta\r\n# Loop through each line of the file\r\nwhile read -r line; do\r\n  # Check if the line starts with \u0027\u003E\u0027\r\n  if [[ $line == \u0027\u003E\u0027* ]]; then\r\n    # Extract the word that follows the \u0027\u003E\u0027\r\n    word=$(echo $line | cut -d\u0027 \u0027 -f1 | cut -c2-)\r\n    # Replace the word with SAMPLENAME\r\n    line=${line/$word/$[V.[SampleName]] $word}\r\n    echo $line\r\n  fi\r\n  # Print the modified line\r\n  echo \u0022$line\u0022 \u003E\u003E \u0022$tempfile\u0022\r\ndone \u003C $filename\r\n# Replace the original file with the modified content\r\nmv \u0022$tempfile\u0022 $filename\r\ntouch \u0022$tempfile\u0022\r\n# Do the same with the second file.\r\nfilename=$[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_flye.fa\r\n# Loop through each line of the file\r\nwhile read -r line; do\r\n  # Check if the line starts with \u0027\u003E\u0027\r\n  if [[ $line == \u0027\u003E\u0027* ]]; then\r\n    # Extract the word that follows the \u0027\u003E\u0027\r\n    word=$(echo $line | cut -d\u0027 \u0027 -f1 | cut -c2-)\r\n    # Replace the word with SAMPLENAME\r\n    line=${line/$word/$[V.[SampleName]] $word}\r\n    echo $line\r\n  fi\r\n  # Print the modified line\r\n  echo \u0022$line\u0022 \u003E\u003E \u0022$tempfile\u0022\r\ndone \u003C $filename\r\n# Replace the original file with the modified content\r\nmv \u0022$tempfile\u0022 $filename\r\n# Copy fasta files but add \u0027 sample_id=\u0027\u003CsampleID\u003E\u0027 to headers\r\ncp $[I{DragonFlye}.]contigs.fa $[O{DragonFlye}.]$[V.[SampleName]]/contigs.fasta\r\ntouch \u0022$tempfile\u0022\r\nawk \u0027/^\u003E/ {print $0\u0022 sample_id=$[V.[SampleName]]\u0022} !/^\u003E/ {print $0}\u0027 $[O{DragonFlye}.]$[V.[SampleName]]/contigs.fasta \u003E \u0022$tempfile\u0022\r\nmv \u0022$tempfile\u0022 $[O{DragonFlye}.]$[V.[SampleName]]/contigs.fasta\r\ncp $[I{DragonFlye}.]flye.fasta $[O{DragonFlye}.]$[V.[SampleName]]/flye.fa\r\ntouch \u0022$tempfile\u0022\r\nawk \u0027/^\u003E/ {print $0\u0022 sample_id=$[V.[SampleName]]\u0022} !/^\u003E/ {print $0}\u0027 $[O{DragonFlye}.]$[V.[SampleName]]/flye.fa \u003E \u0022$tempfile\u0022\r\nmv \u0022$tempfile\u0022 $[O{DragonFlye}.]$[V.[SampleName]]/flye.fa",
+          "Command": "mkdir $[O{DragonFlye}.]$[V.[SampleName]]\r\ncp $[I{DragonFlye}.]contigs.fa $[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_contigs.fasta\r\ncp $[I{DragonFlye}.]flye.fasta $[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_flye.fa\r\ncp $[I{DragonFlye}.]flye-info.txt $[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_flye-info.txt\r\ncp $[I{DragonFlye}.]dragonflye.log $[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_dragonflye.log\r\nif [ -f \u0022$[I{Abricate}.]$[V.[SampleName]]_Abricate_Output.tsv\u0022 ]; then\r\n   cp $[I{Abricate}.]$[V.[SampleName]]_Abricate_Output.tsv $[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_Abricate_Output.tsv\r\nfi\r\n# Create a temporary file for writing the modified content\r\ntempfile=$[O.]tmp_$[V.[SampleName]]\r\ntouch \u0022$tempfile\u0022\r\n# This script changes the text of a file for each line that starts with \u0027\u003E\u0027\r\n# Replace the word that follows the \u0027\u003E\u0027 with \u0027SAMPLE\u0027, followed by space and then everything that was originally on the line after the \u0027\u003E\u0027\r\nfilename=$[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_contigs.fasta\r\n# Loop through each line of the file\r\nwhile read -r line; do\r\n  # Check if the line starts with \u0027\u003E\u0027\r\n  if [[ $line == \u0027\u003E\u0027* ]]; then\r\n    # Extract the word that follows the \u0027\u003E\u0027\r\n    word=$(echo $line | cut -d\u0027 \u0027 -f1 | cut -c2-)\r\n    # Replace the word with SAMPLENAME\r\n    line=${line/$word/$[V.[SampleName]] $word}\r\n    echo $line\r\n  fi\r\n  # Print the modified line\r\n  echo \u0022$line\u0022 \u003E\u003E \u0022$tempfile\u0022\r\ndone \u003C $filename\r\n# Replace the original file with the modified content\r\nmv \u0022$tempfile\u0022 $filename\r\ntouch \u0022$tempfile\u0022\r\n# Do the same with the second file.\r\nfilename=$[O{DragonFlye}.]$[V.[SampleName]]/$[V.[SampleName]]_flye.fa\r\n# Loop through each line of the file\r\nwhile read -r line; do\r\n  # Check if the line starts with \u0027\u003E\u0027\r\n  if [[ $line == \u0027\u003E\u0027* ]]; then\r\n    # Extract the word that follows the \u0027\u003E\u0027\r\n    word=$(echo $line | cut -d\u0027 \u0027 -f1 | cut -c2-)\r\n    # Replace the word with SAMPLENAME\r\n    line=${line/$word/$[V.[SampleName]] $word}\r\n    echo $line\r\n  fi\r\n  # Print the modified line\r\n  echo \u0022$line\u0022 \u003E\u003E \u0022$tempfile\u0022\r\ndone \u003C $filename\r\n# Replace the original file with the modified content\r\nmv \u0022$tempfile\u0022 $filename\r\n# Copy fasta files but add \u0027 sample_id=\u0027\u003CsampleID\u003E\u0027 to headers\r\ncp $[I{DragonFlye}.]contigs.fa $[O{DragonFlye}.]$[V.[SampleName]]/contigs.fasta\r\ntouch \u0022$tempfile\u0022\r\nawk \u0027/^\u003E/ {print $0\u0022 sample_id=$[V.[SampleName]]\u0022} !/^\u003E/ {print $0}\u0027 $[O{DragonFlye}.]$[V.[SampleName]]/contigs.fasta \u003E \u0022$tempfile\u0022\r\nmv \u0022$tempfile\u0022 $[O{DragonFlye}.]$[V.[SampleName]]/contigs.fasta\r\ncp $[I{DragonFlye}.]flye.fasta $[O{DragonFlye}.]$[V.[SampleName]]/flye.fa\r\ntouch \u0022$tempfile\u0022\r\nawk \u0027/^\u003E/ {print $0\u0022 sample_id=$[V.[SampleName]]\u0022} !/^\u003E/ {print $0}\u0027 $[O{DragonFlye}.]$[V.[SampleName]]/flye.fa \u003E \u0022$tempfile\u0022\r\nmv \u0022$tempfile\u0022 $[O{DragonFlye}.]$[V.[SampleName]]/flye.fa",
           "IsNoop": false,
           "CondaPrefix": "",
           "Parms": [],
-          "IncludeStandardOutput": true,
+          "IncludeStandardOutput": false,
           "IsParallel": false,
           "IsSlurm": true,
           "IsDocker": false,
@@ -707,7 +706,7 @@
             "ModuleName": "Rename_Contigs",
             "ParmName": "IncludeOutput",
             "DefaultValue": null,
-            "UserValue": "True",
+            "UserValue": "False",
             "Description": null,
             "ComboValues": "True|False",
             "Optional": false,
@@ -775,7 +774,7 @@
             "ModuleName": "Rename_Contigs",
             "ParmName": "IsSlurm",
             "DefaultValue": null,
-            "UserValue": "true",
+            "UserValue": "True",
             "Description": "IsSlurm",
             "ComboValues": "true|",
             "Optional": false,
@@ -878,9 +877,13 @@
           "MemoryGB": 64,
           "Hours": 2
         },
-        "WDL_Task": null,
-        "WDL_Task_Inputs": null,
-        "WDL_Task_Outputs": null,
+        "WDL_Task": "task Rename_Contigs {\r\n  input {\r\n    String SampleName\r\n    File DragonFlye\r\n    File Abricate\r\n }\r\n  command \u003C\u003C\u003C\r\n  mkdir $[O{DragonFlye}.]~{SampleName}\r\ncp ~{DragonFlye}contigs.fa $[O{DragonFlye}.]~{SampleName}/~{SampleName}_contigs.fasta\r\ncp ~{DragonFlye}flye.fasta $[O{DragonFlye}.]~{SampleName}/~{SampleName}_flye.fa\r\ncp ~{DragonFlye}flye-info.txt $[O{DragonFlye}.]~{SampleName}/~{SampleName}_flye-info.txt\r\ncp ~{DragonFlye}dragonflye.log $[O{DragonFlye}.]~{SampleName}/~{SampleName}_dragonflye.log\r\nif [ -f \u0022~{Abricate}~{SampleName}_Abricate_Output.tsv\u0022 ]; then\r\n   cp ~{Abricate}~{SampleName}_Abricate_Output.tsv $[O{DragonFlye}.]~{SampleName}/~{SampleName}_Abricate_Output.tsv\r\nfi\r\n# Create a temporary file for writing the modified content\r\ntempfile=tmp_~{SampleName}\r\ntouch \u0022$tempfile\u0022\r\n# This script changes the text of a file for each line that starts with \u0027\u003E\u0027\r\n# Replace the word that follows the \u0027\u003E\u0027 with \u0027SAMPLE\u0027, followed by space and then everything that was originally on the line after the \u0027\u003E\u0027\r\nfilename=$[O{DragonFlye}.]~{SampleName}/~{SampleName}_contigs.fasta\r\n# Loop through each line of the file\r\nwhile read -r line; do\r\n  # Check if the line starts with \u0027\u003E\u0027\r\n  if [[ $line == \u0027\u003E\u0027* ]]; then\r\n    # Extract the word that follows the \u0027\u003E\u0027\r\n    word=$(echo $line | cut -d\u0027 \u0027 -f1 | cut -c2-)\r\n    # Replace the word with SAMPLENAME\r\n    line=${line/$word/~{SampleName} $word}\r\n    echo $line\r\n  fi\r\n  # Print the modified line\r\n  echo \u0022$line\u0022 \u003E\u003E \u0022$tempfile\u0022\r\ndone \u003C $filename\r\n# Replace the original file with the modified content\r\nmv \u0022$tempfile\u0022 $filename\r\ntouch \u0022$tempfile\u0022\r\n# Do the same with the second file.\r\nfilename=$[O{DragonFlye}.]~{SampleName}/~{SampleName}_flye.fa\r\n# Loop through each line of the file\r\nwhile read -r line; do\r\n  # Check if the line starts with \u0027\u003E\u0027\r\n  if [[ $line == \u0027\u003E\u0027* ]]; then\r\n    # Extract the word that follows the \u0027\u003E\u0027\r\n    word=$(echo $line | cut -d\u0027 \u0027 -f1 | cut -c2-)\r\n    # Replace the word with SAMPLENAME\r\n    line=${line/$word/~{SampleName} $word}\r\n    echo $line\r\n  fi\r\n  # Print the modified line\r\n  echo \u0022$line\u0022 \u003E\u003E \u0022$tempfile\u0022\r\ndone \u003C $filename\r\n# Replace the original file with the modified content\r\nmv \u0022$tempfile\u0022 $filename\r\n# Copy fasta files but add \u0027 sample_id=\u0027\u003CsampleID\u003E\u0027 to headers\r\ncp ~{DragonFlye}contigs.fa $[O{DragonFlye}.]~{SampleName}/contigs.fasta\r\ntouch \u0022$tempfile\u0022\r\nawk \u0027/^\u003E/ {print $0\u0022 sample_id=~{SampleName}\u0022} !/^\u003E/ {print $0}\u0027 $[O{DragonFlye}.]~{SampleName}/contigs.fasta \u003E \u0022$tempfile\u0022\r\nmv \u0022$tempfile\u0022 $[O{DragonFlye}.]~{SampleName}/contigs.fasta\r\ncp ~{DragonFlye}flye.fasta $[O{DragonFlye}.]~{SampleName}/flye.fa\r\ntouch \u0022$tempfile\u0022\r\nawk \u0027/^\u003E/ {print $0\u0022 sample_id=~{SampleName}\u0022} !/^\u003E/ {print $0}\u0027 $[O{DragonFlye}.]~{SampleName}/flye.fa \u003E \u0022$tempfile\u0022\r\nmv \u0022$tempfile\u0022 $[O{DragonFlye}.]~{SampleName}/flye.fa \u003E\u003E\u003E\r\n  output {\r\n    }\r\n}\r\n",
+        "WDL_Task_Inputs": [
+          "String SampleName",
+          "File DragonFlye",
+          "File Abricate"
+        ],
+        "WDL_Task_Outputs": [],
         "CaseNumberList_JSON": "",
         "CaseNumberList_csv": ""
       },
@@ -889,7 +892,7 @@
         "LockUsername": null,
         "Comment": "",
         "WslCommand": {
-          "CommandToken": "D2C1",
+          "CommandToken": "D1C1",
           "FlowScriptToken": null,
           "Command": "count=\u0060ls -1 $[D.[SamplePath]]*.fastq 2\u003E/dev/null | wc -l\u0060\r\nif [ $count != 0 ]\r\nthen \r\ncat $[D.[SamplePath]]*.fastq \u003E $[O.]$[V.[SampleName]].fastq\r\ngzip -f $[O.]$[V.[SampleName]].fastq 2\u003E\u00261 \u003E /dev/null;\r\nfi \r\ncount=\u0060ls -1 $[D.[SamplePath]]*.fastq.gz 2\u003E/dev/null | wc -l\u0060\r\nif [ $count != 0 ]\r\nthen \r\ncat $[D.[SamplePath]]*.fastq.gz \u003E $[O.]$[V.[SampleName]].fastq.gz\r\nfi",
           "IsNoop": false,
@@ -932,7 +935,7 @@
             "ModuleName": "Compress",
             "ParmName": "OmitStep",
             "DefaultValue": null,
-            "UserValue": "",
+            "UserValue": "False",
             "Description": "OmitStep",
             "ComboValues": "true|",
             "Optional": false,
@@ -949,7 +952,7 @@
             "ModuleName": "Compress",
             "ParmName": "PublishOutput",
             "DefaultValue": null,
-            "UserValue": "",
+            "UserValue": "False",
             "Description": "PublishOutput",
             "ComboValues": "true|",
             "Optional": false,
@@ -1000,7 +1003,7 @@
             "ModuleName": "Compress",
             "ParmName": "IsDocker",
             "DefaultValue": null,
-            "UserValue": "",
+            "UserValue": "False",
             "Description": "IsDocker",
             "ComboValues": "true|",
             "Optional": false,
@@ -1017,7 +1020,7 @@
             "ModuleName": "Compress",
             "ParmName": "IgnoreError",
             "DefaultValue": null,
-            "UserValue": "",
+            "UserValue": "False",
             "Description": "IgnoreError",
             "ComboValues": "true|",
             "Optional": false,
@@ -1034,7 +1037,7 @@
             "ModuleName": "Compress",
             "ParmName": "IncludeOutput",
             "DefaultValue": null,
-            "UserValue": "",
+            "UserValue": "False",
             "Description": "IncludeOutput",
             "ComboValues": "true|",
             "Optional": false,
@@ -1051,7 +1054,7 @@
             "ModuleName": "Compress",
             "ParmName": "IsSlurm",
             "DefaultValue": null,
-            "UserValue": "true",
+            "UserValue": "True",
             "Description": "IsSlurm",
             "ComboValues": "true|",
             "Optional": false,
@@ -1154,9 +1157,12 @@
           "MemoryGB": 64,
           "Hours": 2
         },
-        "WDL_Task": null,
-        "WDL_Task_Inputs": null,
-        "WDL_Task_Outputs": null,
+        "WDL_Task": "task Compress {\r\n  input {\r\n    String SamplePath\r\n    String SampleName\r\n }\r\n  command \u003C\u003C\u003C\r\n  count=\u0060ls -1 ~{SamplePath}*.fastq 2\u003E/dev/null | wc -l\u0060\r\nif [ $count != 0 ]\r\nthen \r\ncat ~{SamplePath}*.fastq \u003E ~{SampleName}.fastq\r\ngzip -f ~{SampleName}.fastq 2\u003E\u00261 \u003E /dev/null;\r\nfi \r\ncount=\u0060ls -1 ~{SamplePath}*.fastq.gz 2\u003E/dev/null | wc -l\u0060\r\nif [ $count != 0 ]\r\nthen \r\ncat ~{SamplePath}*.fastq.gz \u003E ~{SampleName}.fastq.gz\r\nfi \u003E\u003E\u003E\r\n  output {\r\n    }\r\n}\r\n",
+        "WDL_Task_Inputs": [
+          "String SamplePath",
+          "String SampleName"
+        ],
+        "WDL_Task_Outputs": [],
         "CaseNumberList_JSON": "",
         "CaseNumberList_csv": ""
       },
@@ -1443,7 +1449,7 @@
         "LockUsername": null,
         "Comment": "",
         "WslCommand": {
-          "CommandToken": "D2C8",
+          "CommandToken": "D1C4",
           "FlowScriptToken": null,
           "Command": "conda run -n busco busco -m genome -f -i $[I.]contigs.fa --out_path $[O.] -o $[V.[SampleName]] -l @[lineage=bacteria_odb10]\r\nrm -rf $[O.]$[V.[SampleName]]/logs\r\nrm -rf $[O.]$[V.[SampleName]]/prodigal_output\r\nrm -rf $[O.]$[V.[SampleName]]/run_@[lineage=bacteria_odb10]\r\nrm -rf $[o.]/busco_downloads",
           "IsNoop": false,
@@ -1622,7 +1628,7 @@
             "ModuleName": "Busco",
             "ParmName": "IsSlurm",
             "DefaultValue": null,
-            "UserValue": "true",
+            "UserValue": "True",
             "Description": "IsSlurm",
             "ComboValues": "true|",
             "Optional": false,
@@ -1705,7 +1711,9 @@
           }
         ],
         "DockerMountMap": [
-          "/mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/"
+          "/mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/",
+          "/mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C2/",
+          "/mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C4/"
         ],
         "DockerImage": null,
         "UserVariableList": {},
@@ -1727,9 +1735,12 @@
           "MemoryGB": 64,
           "Hours": 2
         },
-        "WDL_Task": null,
-        "WDL_Task_Inputs": null,
-        "WDL_Task_Outputs": null,
+        "WDL_Task": "task Busco {\r\n  input {\r\n    String SampleName\r\n    File DragonFlye\r\n }\r\n  command \u003C\u003C\u003C\r\n  conda run -n busco busco -m genome -f -i ~{DragonFlye}contigs.fa --out_path  -o ~{SampleName} -l @[lineage=bacteria_odb10]\r\nrm -rf ~{SampleName}/logs\r\nrm -rf ~{SampleName}/prodigal_output\r\nrm -rf ~{SampleName}/run_@[lineage=bacteria_odb10]\r\nrm -rf $[o.]/busco_downloads \u003E\u003E\u003E\r\n  output {\r\n    }\r\n}\r\n",
+        "WDL_Task_Inputs": [
+          "String SampleName",
+          "File DragonFlye"
+        ],
+        "WDL_Task_Outputs": [],
         "CaseNumberList_JSON": "",
         "CaseNumberList_csv": ""
       },
@@ -1738,7 +1749,7 @@
         "LockUsername": null,
         "Comment": "",
         "WslCommand": {
-          "CommandToken": "D2C9",
+          "CommandToken": "D1C5",
           "FlowScriptToken": null,
           "Command": "cmd=\u0027/usr/local/quast-5.0.2/quast.py -o $[O.]$[V.[SampleName]]/Quast/ --glimmer $[I.]contigs.fa\u0027\r\n#FS IsDocker\r\ncmd=\u0027conda run -n quast quast.py -o $[O.]$[V.[SampleName]]/Quast/ --glimmer $[I.]contigs.fa\u0027\r\n#FS End\r\neval \u0022$cmd\u0022",
           "IsNoop": false,
@@ -1900,7 +1911,7 @@
             "ModuleName": "Quast",
             "ParmName": "IsSlurm",
             "DefaultValue": null,
-            "UserValue": "true",
+            "UserValue": "True",
             "Description": "IsSlurm",
             "ComboValues": "true|",
             "Optional": false,
@@ -1983,7 +1994,9 @@
           }
         ],
         "DockerMountMap": [
-          "/mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/"
+          "/mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/",
+          "/mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C5/",
+          "/mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C2/"
         ],
         "DockerImage": null,
         "UserVariableList": {},
@@ -2005,9 +2018,12 @@
           "MemoryGB": 64,
           "Hours": 2
         },
-        "WDL_Task": null,
-        "WDL_Task_Inputs": null,
-        "WDL_Task_Outputs": null,
+        "WDL_Task": "task Quast {\r\n  input {\r\n    String SampleName\r\n    File DragonFlye\r\n }\r\n  command \u003C\u003C\u003C\r\n  cmd=\u0027/usr/local/quast-5.0.2/quast.py -o ~{SampleName}/Quast/ --glimmer ~{DragonFlye}contigs.fa\u0027\r\n#FS IsDocker\r\ncmd=\u0027conda run -n quast quast.py -o ~{SampleName}/Quast/ --glimmer ~{DragonFlye}contigs.fa\u0027\r\n#FS End\r\neval \u0022$cmd\u0022 \u003E\u003E\u003E\r\n  output {\r\n    }\r\n}\r\n",
+        "WDL_Task_Inputs": [
+          "String SampleName",
+          "File DragonFlye"
+        ],
+        "WDL_Task_Outputs": [],
         "CaseNumberList_JSON": "",
         "CaseNumberList_csv": ""
       },
@@ -2016,13 +2032,13 @@
         "LockUsername": null,
         "Comment": "",
         "WslCommand": {
-          "CommandToken": "D2C12",
+          "CommandToken": "D1C8",
           "FlowScriptToken": null,
           "Command": "# Refseq_masher does not play well with the raven assembler. Recommend use flye.\r\nmkdir $[O.]$[V.[SampleName]]\r\n#FS IsDocker\r\n#FS End\r\nconda run -n refseq_masher refseq_masher matches --output-type csv -o $[O.]$[V.[SampleName]]/RefseqIdent.csv $[I.]$[V.[SampleName]]/",
           "IsNoop": false,
           "CondaPrefix": "",
           "Parms": [],
-          "IncludeStandardOutput": false,
+          "IncludeStandardOutput": true,
           "IsParallel": false,
           "IsSlurm": true,
           "IsDocker": true,
@@ -2059,7 +2075,7 @@
             "ModuleName": "Refseq_Masher",
             "ParmName": "OmitStep",
             "DefaultValue": null,
-            "UserValue": "",
+            "UserValue": "False",
             "Description": "OmitStep",
             "ComboValues": "true|",
             "Optional": false,
@@ -2076,7 +2092,7 @@
             "ModuleName": "Refseq_Masher",
             "ParmName": "PublishOutput",
             "DefaultValue": null,
-            "UserValue": "",
+            "UserValue": "False",
             "Description": "PublishOutput",
             "ComboValues": "true|",
             "Optional": false,
@@ -2127,7 +2143,7 @@
             "ModuleName": "Refseq_Masher",
             "ParmName": "IsDocker",
             "DefaultValue": null,
-            "UserValue": "true",
+            "UserValue": "True",
             "Description": "IsDocker",
             "ComboValues": "true|",
             "Optional": false,
@@ -2144,7 +2160,7 @@
             "ModuleName": "Refseq_Masher",
             "ParmName": "IgnoreError",
             "DefaultValue": null,
-            "UserValue": "",
+            "UserValue": "False",
             "Description": "IgnoreError",
             "ComboValues": "true|",
             "Optional": false,
@@ -2161,7 +2177,7 @@
             "ModuleName": "Refseq_Masher",
             "ParmName": "IncludeOutput",
             "DefaultValue": null,
-            "UserValue": "",
+            "UserValue": "True",
             "Description": "IncludeOutput",
             "ComboValues": "true|",
             "Optional": false,
@@ -2178,7 +2194,7 @@
             "ModuleName": "Refseq_Masher",
             "ParmName": "IsSlurm",
             "DefaultValue": null,
-            "UserValue": "true",
+            "UserValue": "True",
             "Description": "IsSlurm",
             "ComboValues": "true|",
             "Optional": false,
@@ -2261,7 +2277,9 @@
           }
         ],
         "DockerMountMap": [
-          "/mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/"
+          "/mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/",
+          "/mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C8/",
+          "/mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C7/"
         ],
         "DockerImage": null,
         "UserVariableList": {},
@@ -2283,9 +2301,12 @@
           "MemoryGB": 64,
           "Hours": 2
         },
-        "WDL_Task": null,
-        "WDL_Task_Inputs": null,
-        "WDL_Task_Outputs": null,
+        "WDL_Task": "task Refseq_Masher {\r\n  input {\r\n    String SampleName\r\n    File Rename_Contigs\r\n }\r\n  command \u003C\u003C\u003C\r\n  # Refseq_masher does not play well with the raven assembler. Recommend use flye.\r\nmkdir ~{SampleName}\r\n#FS IsDocker\r\n#FS End\r\nconda run -n refseq_masher refseq_masher matches --output-type csv -o ~{SampleName}/RefseqIdent.csv ~{Rename_Contigs}~{SampleName}/ \u003E\u003E\u003E\r\n  output {\r\n    }\r\n}\r\n",
+        "WDL_Task_Inputs": [
+          "String SampleName",
+          "File Rename_Contigs"
+        ],
+        "WDL_Task_Outputs": [],
         "CaseNumberList_JSON": "",
         "CaseNumberList_csv": ""
       },
@@ -2294,7 +2315,7 @@
         "LockUsername": null,
         "Comment": "",
         "WslCommand": {
-          "CommandToken": "D2C10",
+          "CommandToken": "D1C6",
           "FlowScriptToken": null,
           "Command": "mkdir $[O.]$[V.[SampleName]]\r\ncmd=\u0027/usr/local/kraken2/kraken2 --db @[db=/mnt/e/data/reference/databases/minikraken2_v1_8GB/] --threads @[threads=20] --report $[O.]$[V.[SampleName]]/kraken.aggregates.txt --use-names --output $[O.]$[V.[SampleName]]/kraken.txt $[I.]/contigs.fa\u0027\r\n#FS IsDocker\r\n#FS DockerMap /mnt/e/data/reference/databases/\r\ncmd=\u0027conda run -n kraken2 kraken2 --db @[db=/mnt/e/data/reference/databases/minikraken2_v1_8GB/] --threads @[threads=20] --report $[O.]$[V.[SampleName]]/kraken.aggregates.txt --use-names --output $[O.]$[V.[SampleName]]/kraken.txt $[I.]/contigs.fa\u0027\r\n#FS End\r\neval \u0022$cmd\u0022",
           "IsNoop": false,
@@ -2490,7 +2511,7 @@
             "ModuleName": "Kraken2",
             "ParmName": "IsSlurm",
             "DefaultValue": null,
-            "UserValue": "true",
+            "UserValue": "True",
             "Description": "IsSlurm",
             "ComboValues": "true|",
             "Optional": false,
@@ -2573,7 +2594,10 @@
           }
         ],
         "DockerMountMap": [
-          "/mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/"
+          "/mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/",
+          "/mnt/e/data/reference/databases/",
+          "/mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C6/",
+          "/mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C2/"
         ],
         "DockerImage": null,
         "UserVariableList": {},
@@ -2595,9 +2619,12 @@
           "MemoryGB": 64,
           "Hours": 2
         },
-        "WDL_Task": null,
-        "WDL_Task_Inputs": null,
-        "WDL_Task_Outputs": null,
+        "WDL_Task": "task Kraken2 {\r\n  input {\r\n    String SampleName\r\n    File DragonFlye\r\n }\r\n  command \u003C\u003C\u003C\r\n  mkdir ~{SampleName}\r\ncmd=\u0027/usr/local/kraken2/kraken2 --db @[db=/mnt/e/data/reference/databases/minikraken2_v1_8GB/] --threads @[threads=20] --report ~{SampleName}/kraken.aggregates.txt --use-names --output ~{SampleName}/kraken.txt ~{DragonFlye}/contigs.fa\u0027\r\n#FS IsDocker\r\n#FS DockerMap /mnt/e/data/reference/databases/\r\ncmd=\u0027conda run -n kraken2 kraken2 --db @[db=/mnt/e/data/reference/databases/minikraken2_v1_8GB/] --threads @[threads=20] --report ~{SampleName}/kraken.aggregates.txt --use-names --output ~{SampleName}/kraken.txt ~{DragonFlye}/contigs.fa\u0027\r\n#FS End\r\neval \u0022$cmd\u0022 \u003E\u003E\u003E\r\n  output {\r\n    }\r\n}\r\n",
+        "WDL_Task_Inputs": [
+          "String SampleName",
+          "File DragonFlye"
+        ],
+        "WDL_Task_Outputs": [],
         "CaseNumberList_JSON": "",
         "CaseNumberList_csv": ""
       },
@@ -2606,7 +2633,7 @@
         "LockUsername": null,
         "Comment": "",
         "WslCommand": {
-          "CommandToken": "D2C3",
+          "CommandToken": "D1C2",
           "FlowScriptToken": null,
           "Command": "conda run -n dragonflye dragonflye --force  --cpus @[\u003CSLURM_CPUs\u003E=] --ram @[\u003CSLURM_GBs\u003E=]  --assembler @[assembler=flye] @[nopolish=--nopolish] @[nano-hq=--nanohq] @[medaka=--medaka @[medakaRounds=1] @[medakaModelParm=--model @[medakaModel=r941_min_hac_g507]]] @[racon=--racon @[raconRounds=1]] --reads $[I.]$[V.[SampleName]].fastq* --outdir $[O.] @[gsizeParm=--gsize @[gsize=]] @[trim=--trim]",
           "IsNoop": false,
@@ -2650,7 +2677,7 @@
             "ModuleName": "DragonFlye",
             "ParmName": "\u003CSLURM_CPUs\u003E",
             "DefaultValue": "",
-            "UserValue": "",
+            "UserValue": "16",
             "Description": null,
             "ComboValues": null,
             "Optional": false,
@@ -2667,7 +2694,7 @@
             "ModuleName": "DragonFlye",
             "ParmName": "\u003CSLURM_GBs\u003E",
             "DefaultValue": "",
-            "UserValue": "",
+            "UserValue": "64",
             "Description": null,
             "ComboValues": null,
             "Optional": false,
@@ -2701,7 +2728,7 @@
             "ModuleName": "DragonFlye",
             "ParmName": "gsizeParm",
             "DefaultValue": "--gsize @[gsize=]",
-            "UserValue": "--gsize @[gsize=]",
+            "UserValue": "",
             "Description": "Leave blank for DragonFlye to estimate based on kmers; otherwise use \u0027--gsize @[gsize=n]\u0027.",
             "ComboValues": null,
             "Optional": true,
@@ -2718,7 +2745,7 @@
             "ModuleName": "DragonFlye",
             "ParmName": "gsize",
             "DefaultValue": "",
-            "UserValue": "3M",
+            "UserValue": "3.3M",
             "Description": "Estimated genome size in number of bases, if gsizeParm is blank.",
             "ComboValues": null,
             "Optional": true,
@@ -2769,7 +2796,7 @@
             "ModuleName": "DragonFlye",
             "ParmName": "medakaModel",
             "DefaultValue": "r941_min_hac_g507",
-            "UserValue": "r941_e81_hac_g514",
+            "UserValue": "r103_min_high_g360",
             "Description": "Choose Medaka model from combo dropdown.",
             "ComboValues": null,
             "Optional": false,
@@ -2786,7 +2813,7 @@
             "ModuleName": "DragonFlye",
             "ParmName": "medakaRounds",
             "DefaultValue": "1",
-            "UserValue": "1",
+            "UserValue": "10",
             "Description": "Rounds of polishing by Medaka",
             "ComboValues": null,
             "Optional": false,
@@ -2871,7 +2898,7 @@
             "ModuleName": "DragonFlye",
             "ParmName": "nopolish",
             "DefaultValue": "--nopolish",
-            "UserValue": "--nopolish",
+            "UserValue": "",
             "Description": "",
             "ComboValues": "--nopolish|",
             "Optional": true,
@@ -2973,7 +3000,7 @@
             "ModuleName": "DragonFlye",
             "ParmName": "IsSlurm",
             "DefaultValue": null,
-            "UserValue": "true",
+            "UserValue": "True",
             "Description": "IsSlurm",
             "ComboValues": "true|",
             "Optional": false,
@@ -3022,7 +3049,9 @@
           }
         ],
         "DockerMountMap": [
-          "/mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/"
+          "/mnt/c/BioSeqDB/WSLProxyRoot/AGB465/Work/",
+          "/mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C1/",
+          "/mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C2/"
         ],
         "DockerImage": null,
         "UserVariableList": {},
@@ -3044,9 +3073,12 @@
           "MemoryGB": 64,
           "Hours": 2
         },
-        "WDL_Task": null,
-        "WDL_Task_Inputs": null,
-        "WDL_Task_Outputs": null,
+        "WDL_Task": "task DragonFlye {\r\n  input {\r\n    String SampleName\r\n    File Compress\r\n }\r\n  command \u003C\u003C\u003C\r\n  conda run -n dragonflye dragonflye --force  --cpus @[\u003CSLURM_CPUs\u003E=] --ram @[\u003CSLURM_GBs\u003E=]  --assembler @[assembler=flye] @[nopolish=--nopolish] @[nano-hq=--nanohq] @[medaka=--medaka @[medakaRounds=1] @[medakaModelParm=--model @[medakaModel=r941_min_hac_g507]]] @[racon=--racon @[raconRounds=1]] --reads ~{Compress}~{SampleName}.fastq* --outdir  @[gsizeParm=--gsize @[gsize=]] @[trim=--trim] \u003E\u003E\u003E\r\n  output {\r\n    }\r\n}\r\n",
+        "WDL_Task_Inputs": [
+          "String SampleName",
+          "File Compress"
+        ],
+        "WDL_Task_Outputs": [],
         "CaseNumberList_JSON": "",
         "CaseNumberList_csv": ""
       },
@@ -3304,21 +3336,21 @@
         "UserVariableList": {},
         "IsDocker": false,
         "IsSLURM": true,
-        "Slurm_Resource_Request": 0,
+        "Slurm_Resource_Request": 2,
         "Slurm_Min_Resources": {
-          "CPUs": 0,
-          "MemoryGB": 0,
-          "Hours": 0
+          "CPUs": 2,
+          "MemoryGB": 4,
+          "Hours": 0.300000012
         },
         "Slurm_Moderate_Resources": {
-          "CPUs": 0,
-          "MemoryGB": 0,
-          "Hours": 0
+          "CPUs": 6,
+          "MemoryGB": 16,
+          "Hours": 0.75
         },
         "Slurm_Max_Resources": {
-          "CPUs": 0,
-          "MemoryGB": 0,
-          "Hours": 0
+          "CPUs": 16,
+          "MemoryGB": 64,
+          "Hours": 2
         },
         "WDL_Task": null,
         "WDL_Task_Inputs": null,
@@ -3331,7 +3363,7 @@
         "LockUsername": null,
         "Comment": "",
         "WslCommand": {
-          "CommandToken": "D2C5",
+          "CommandToken": "D1C3",
           "FlowScriptToken": null,
           "Command": "conda run -n abricate abricate --db @[db=ncbi] $[I.]contigs.fa \u003E $[O.]$[V.[SampleName]]_Abricate_Output.tsv",
           "IsNoop": false,
@@ -3340,7 +3372,7 @@
           "IncludeStandardOutput": true,
           "IsParallel": false,
           "IsSlurm": true,
-          "IsDocker": false,
+          "IsDocker": true,
           "IsLinux": true,
           "LinuxJobRunning": false,
           "SlurmJobID": null,
@@ -3360,13 +3392,13 @@
           "StandardOutputBypass": "",
           "WDL": null
         },
-        "PublishOutput": true,
+        "PublishOutput": false,
         "ConsolidateInput": false,
         "ConsolidatedCmdToken": "",
         "ExpectSamplesHeader": false,
         "RunAfterALLPrereqs": false,
         "RunAfterALLCmdToken": "",
-        "OmitStep": true,
+        "OmitStep": false,
         "LastUpdate": "2023-06-27T10:09:20.4439538-06:00",
         "LastAuthor": "AGB465",
         "ScriptParmsList": [
@@ -3391,7 +3423,7 @@
             "ModuleName": "Abricate",
             "ParmName": "OmitStep",
             "DefaultValue": null,
-            "UserValue": "True",
+            "UserValue": "False",
             "Description": null,
             "ComboValues": "True|False",
             "Optional": false,
@@ -3408,7 +3440,7 @@
             "ModuleName": "Abricate",
             "ParmName": "PublishOutput",
             "DefaultValue": null,
-            "UserValue": "True",
+            "UserValue": "False",
             "Description": null,
             "ComboValues": "True|False",
             "Optional": false,
@@ -3459,7 +3491,7 @@
             "ModuleName": "Abricate",
             "ParmName": "IsDocker",
             "DefaultValue": null,
-            "UserValue": "False",
+            "UserValue": "True",
             "Description": null,
             "ComboValues": "True|False",
             "Optional": false,
@@ -3476,7 +3508,7 @@
             "ModuleName": "Abricate",
             "ParmName": "IgnoreExitCode",
             "DefaultValue": null,
-            "UserValue": "",
+            "UserValue": "true",
             "Description": "IgnoreExitCode",
             "ComboValues": "true|",
             "Optional": false,
@@ -3493,7 +3525,7 @@
             "ModuleName": "Abricate",
             "ParmName": "IncludeStandardOutput",
             "DefaultValue": null,
-            "UserValue": "",
+            "UserValue": "true",
             "Description": "IncludeStandardOutput",
             "ComboValues": "true|",
             "Optional": false,
@@ -3592,10 +3624,13 @@
             "Public": true
           }
         ],
-        "DockerMountMap": [],
+        "DockerMountMap": [
+          "/mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C2/",
+          "/mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C3/"
+        ],
         "DockerImage": "megashipper/abricateenv",
         "UserVariableList": {},
-        "IsDocker": false,
+        "IsDocker": true,
         "IsSLURM": true,
         "Slurm_Resource_Request": 2,
         "Slurm_Min_Resources": {
@@ -3613,35 +3648,38 @@
           "MemoryGB": 64,
           "Hours": 2
         },
-        "WDL_Task": null,
-        "WDL_Task_Inputs": null,
-        "WDL_Task_Outputs": null,
+        "WDL_Task": "task Abricate {\r\n  input {\r\n    String SampleName\r\n    File DragonFlye\r\n }\r\n  command \u003C\u003C\u003C\r\n  conda run -n abricate abricate --db @[db=ncbi] ~{DragonFlye}contigs.fa \u003E ~{SampleName}_Abricate_Output.tsv \u003E\u003E\u003E\r\n  output {\r\n    }\r\n}\r\n",
+        "WDL_Task_Inputs": [
+          "String SampleName",
+          "File DragonFlye"
+        ],
+        "WDL_Task_Outputs": [],
         "CaseNumberList_JSON": "",
         "CaseNumberList_csv": ""
       }
     ]
   },
-  "LastUpdate": "2024-04-17T06:34:57.589699-06:00",
-  "LastAuthor": "AGB465",
+  "LastUpdate": "2024-06-28T15:21:53.2829278-06:00",
+  "LastAuthor": "AMT870",
   "FindFolders": true,
   "InterfaceAdaptive": false,
   "CommandList": [
     {
       "CommandToken": "D1C1",
       "FlowScriptToken": "Compress",
-      "Command": "count=\u0060ls -1 /mnt/e/data/Dreamer/PDS_Diagnostics_2022/PDS2221084-2_Brucella_ovis_6Jul22_II/PDS2221084-2_Brucella_ovis_6Jul22_II/20220706_1235_X4_FAT43517_2f710a8b/fastq_pass/*.fastq 2\u003E/dev/null | wc -l\u0060\nif [ $count != 0 ]\nthen \ncat /mnt/e/data/Dreamer/PDS_Diagnostics_2022/PDS2221084-2_Brucella_ovis_6Jul22_II/PDS2221084-2_Brucella_ovis_6Jul22_II/20220706_1235_X4_FAT43517_2f710a8b/fastq_pass/*.fastq \u003E /mnt/c/BioSeqDB/WSLProxyRoot/DHP565/Work/DragonFlye_Assembly/D1C1/fastq_pass.fastq\ngzip -f /mnt/c/BioSeqDB/WSLProxyRoot/DHP565/Work/DragonFlye_Assembly/D1C1/fastq_pass.fastq 2\u003E\u00261 \u003E /dev/null;\nfi \n\ncount=\u0060ls -1 /mnt/e/data/Dreamer/PDS_Diagnostics_2022/PDS2221084-2_Brucella_ovis_6Jul22_II/PDS2221084-2_Brucella_ovis_6Jul22_II/20220706_1235_X4_FAT43517_2f710a8b/fastq_pass/*.fastq.gz 2\u003E/dev/null | wc -l\u0060\nif [ $count != 0 ]\nthen \ncat /mnt/e/data/Dreamer/PDS_Diagnostics_2022/PDS2221084-2_Brucella_ovis_6Jul22_II/PDS2221084-2_Brucella_ovis_6Jul22_II/20220706_1235_X4_FAT43517_2f710a8b/fastq_pass/*.fastq.gz \u003E /mnt/c/BioSeqDB/WSLProxyRoot/DHP565/Work/DragonFlye_Assembly/D1C1/fastq_pass.fastq.gz\nfi\n",
+      "Command": "count=\u0060ls -1 /mnt/r/incoming/OPAL/PDS/20230328_254_22-23/PDSFall2022_PDS2232028_PDS2233072/20230328_2049_2A_PAO27621_6513b971/fastq_pass/barcode01/*.fastq 2\u003E/dev/null | wc -l\u0060\nif [ $count != 0 ]\nthen \ncat /mnt/r/incoming/OPAL/PDS/20230328_254_22-23/PDSFall2022_PDS2232028_PDS2233072/20230328_2049_2A_PAO27621_6513b971/fastq_pass/barcode01/*.fastq \u003E /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C1/barcode01.fastq\ngzip -f /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C1/barcode01.fastq 2\u003E\u00261 \u003E /dev/null;\nfi \ncount=\u0060ls -1 /mnt/r/incoming/OPAL/PDS/20230328_254_22-23/PDSFall2022_PDS2232028_PDS2233072/20230328_2049_2A_PAO27621_6513b971/fastq_pass/barcode01/*.fastq.gz 2\u003E/dev/null | wc -l\u0060\nif [ $count != 0 ]\nthen \ncat /mnt/r/incoming/OPAL/PDS/20230328_254_22-23/PDSFall2022_PDS2232028_PDS2233072/20230328_2049_2A_PAO27621_6513b971/fastq_pass/barcode01/*.fastq.gz \u003E /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C1/barcode01.fastq.gz\nfi\n",
       "IsNoop": false,
       "CondaPrefix": "",
       "Parms": [],
       "IncludeStandardOutput": false,
       "IsParallel": true,
-      "IsSlurm": false,
+      "IsSlurm": true,
       "IsDocker": false,
-      "IsLinux": false,
+      "IsLinux": true,
       "LinuxJobRunning": false,
       "SlurmJobID": null,
       "SlurmParms": null,
-      "WindowsWorkPath": null,
+      "WindowsWorkPath": "",
       "IgnoreExitCode": false,
       "WSLResponse": {
         "ExitCode": 0,
@@ -3679,81 +3717,24 @@
       "Prereqs": [],
       "Thread": 0,
       "StandardOutputBypass": "",
-      "WDL": null
+      "WDL": "  call Compress as D1C1 {\r\n    input:\r\n      SamplePath = \u0022/mnt/r/incoming/OPAL/PDS/20230328_254_22-23/PDSFall2022_PDS2232028_PDS2233072/20230328_2049_2A_PAO27621_6513b971/fastq_pass/barcode01/\u0022,\r\n      SampleName = \u0022barcode01\u0022\r\n   }\r\n"
     },
     {
       "CommandToken": "D1C2",
-      "FlowScriptToken": "nanoq",
-      "Command": "conda run -n dragonflye nanoq --min-len 1000 -r /mnt/c/BioSeqDB/WSLProxyRoot/DHP565/Work/DragonFlye_Assembly/D1C2/nanoq_report.txt -H --input /mnt/c/BioSeqDB/WSLProxyRoot/DHP565/Work/DragonFlye_Assembly/D1C1/*.fastq* --min-qual 0  1\u003E /mnt/c/BioSeqDB/WSLProxyRoot/DHP565/Work/DragonFlye_Assembly/D1C2/READS.filt.fq \nrm /mnt/c/BioSeqDB/WSLProxyRoot/DHP565/Work/DragonFlye_Assembly/D1C2/READS.filt.fq\n",
-      "IsNoop": false,
-      "CondaPrefix": "",
-      "Parms": [],
-      "IncludeStandardOutput": false,
-      "IsParallel": true,
-      "IsSlurm": false,
-      "IsDocker": false,
-      "IsLinux": false,
-      "LinuxJobRunning": false,
-      "SlurmJobID": null,
-      "SlurmParms": null,
-      "WindowsWorkPath": null,
-      "IgnoreExitCode": false,
-      "WSLResponse": {
-        "ExitCode": 0,
-        "StandardOutput": null,
-        "StandardError": null,
-        "LastCommand": null,
-        "RestartCount": 0
-      },
-      "ConditionRun": null,
-      "ExitCodeConditionGoto": "",
-      "Preprocess": null,
-      "StandardOutputConditionGoto": "",
-      "HDF_Command": {
-        "Command": 0,
-        "DBFileName": null,
-        "DBPath": null,
-        "Dataset": {
-          "SequenceList": [],
-          "Standard_Reference_Sequence": "",
-          "Standard_Reference_Name": ""
-        },
-        "DatasetName": "",
-        "FindIn": "",
-        "FindOut": "",
-        "Sample": {
-          "SampleName": "",
-          "SampleDetail": null,
-          "LIMSCaseNumber": null,
-          "LIMSTestID": null,
-          "LIMSSampleID": null,
-          "Sequence": null,
-          "SampleFileName": null
-        }
-      },
-      "Prereqs": [
-        "D1C1"
-      ],
-      "Thread": 0,
-      "StandardOutputBypass": "",
-      "WDL": null
-    },
-    {
-      "CommandToken": "D1C3",
       "FlowScriptToken": "DragonFlye",
-      "Command": "conda run -n dragonflye dragonflye --force  --cpus 4 --assembler flye  --nanohq --medaka 1 --model r103_fast_g507 --racon 1 --reads /mnt/c/BioSeqDB/WSLProxyRoot/DHP565/Work/DragonFlye_Assembly/D1C1/fastq_pass.fastq* --outdir /mnt/c/BioSeqDB/WSLProxyRoot/DHP565/Work/DragonFlye_Assembly/D1C3/ 0",
+      "Command": "conda run -n dragonflye dragonflye --force  --cpus  --ram   --assembler flye --nopolish --nanohq --medaka 1 --model r941_e81_hac_g514 --racon 1 --reads /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C1/barcode01.fastq* --outdir /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C2/ --gsize 3M \n",
       "IsNoop": false,
       "CondaPrefix": "dragonflye",
       "Parms": [],
       "IncludeStandardOutput": true,
       "IsParallel": true,
-      "IsSlurm": false,
-      "IsDocker": false,
-      "IsLinux": false,
+      "IsSlurm": true,
+      "IsDocker": true,
+      "IsLinux": true,
       "LinuxJobRunning": false,
       "SlurmJobID": null,
       "SlurmParms": null,
-      "WindowsWorkPath": null,
+      "WindowsWorkPath": "",
       "IgnoreExitCode": false,
       "WSLResponse": {
         "ExitCode": 0,
@@ -3793,7 +3774,353 @@
       ],
       "Thread": 0,
       "StandardOutputBypass": "",
-      "WDL": null
+      "WDL": "  call DragonFlye as D1C2 {\r\n    input:\r\n      SampleName = D1C1.SampleName\r\n   }\r\n"
+    },
+    {
+      "CommandToken": "D1C3",
+      "FlowScriptToken": "Abricate",
+      "Command": "conda run -n abricate abricate --db ncbi /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C2/contigs.fa \u003E /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C3/barcode01_Abricate_Output.tsv\n",
+      "IsNoop": false,
+      "CondaPrefix": "",
+      "Parms": [],
+      "IncludeStandardOutput": true,
+      "IsParallel": true,
+      "IsSlurm": true,
+      "IsDocker": true,
+      "IsLinux": true,
+      "LinuxJobRunning": false,
+      "SlurmJobID": null,
+      "SlurmParms": null,
+      "WindowsWorkPath": "",
+      "IgnoreExitCode": false,
+      "WSLResponse": {
+        "ExitCode": 0,
+        "StandardOutput": null,
+        "StandardError": null,
+        "LastCommand": null,
+        "RestartCount": 0
+      },
+      "ConditionRun": null,
+      "ExitCodeConditionGoto": "",
+      "Preprocess": null,
+      "StandardOutputConditionGoto": "",
+      "HDF_Command": {
+        "Command": 0,
+        "DBFileName": null,
+        "DBPath": null,
+        "Dataset": {
+          "SequenceList": [],
+          "Standard_Reference_Sequence": "",
+          "Standard_Reference_Name": ""
+        },
+        "DatasetName": "",
+        "FindIn": "",
+        "FindOut": "",
+        "Sample": {
+          "SampleName": "",
+          "SampleDetail": null,
+          "LIMSCaseNumber": null,
+          "LIMSTestID": null,
+          "LIMSSampleID": null,
+          "Sequence": null,
+          "SampleFileName": null
+        }
+      },
+      "Prereqs": [
+        "D1C2"
+      ],
+      "Thread": 0,
+      "StandardOutputBypass": "",
+      "WDL": "  call Abricate as D1C3 {\r\n    input:\r\n      SampleName = D1C2.SampleName\r\n   }\r\n"
+    },
+    {
+      "CommandToken": "D1C4",
+      "FlowScriptToken": "Busco",
+      "Command": "conda run -n busco busco -m genome -f -i /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C2/contigs.fa --out_path /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C4/ -o barcode01 -l bacteria_odb10\nrm -rf /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C4/barcode01/logs\nrm -rf /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C4/barcode01/prodigal_output\nrm -rf /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C4/barcode01/run_bacteria_odb10\nrm -rf /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C4//busco_downloads\n",
+      "IsNoop": false,
+      "CondaPrefix": "busco",
+      "Parms": [],
+      "IncludeStandardOutput": true,
+      "IsParallel": true,
+      "IsSlurm": true,
+      "IsDocker": true,
+      "IsLinux": true,
+      "LinuxJobRunning": false,
+      "SlurmJobID": null,
+      "SlurmParms": null,
+      "WindowsWorkPath": "",
+      "IgnoreExitCode": false,
+      "WSLResponse": {
+        "ExitCode": 0,
+        "StandardOutput": null,
+        "StandardError": null,
+        "LastCommand": null,
+        "RestartCount": 0
+      },
+      "ConditionRun": null,
+      "ExitCodeConditionGoto": "",
+      "Preprocess": null,
+      "StandardOutputConditionGoto": "",
+      "HDF_Command": {
+        "Command": 0,
+        "DBFileName": null,
+        "DBPath": null,
+        "Dataset": {
+          "SequenceList": [],
+          "Standard_Reference_Sequence": "",
+          "Standard_Reference_Name": ""
+        },
+        "DatasetName": "",
+        "FindIn": "",
+        "FindOut": "",
+        "Sample": {
+          "SampleName": "",
+          "SampleDetail": null,
+          "LIMSCaseNumber": null,
+          "LIMSTestID": null,
+          "LIMSSampleID": null,
+          "Sequence": null,
+          "SampleFileName": null
+        }
+      },
+      "Prereqs": [
+        "D1C2"
+      ],
+      "Thread": 0,
+      "StandardOutputBypass": "",
+      "WDL": "  call Busco as D1C4 {\r\n    input:\r\n      SampleName = D1C2.SampleName\r\n   }\r\n"
+    },
+    {
+      "CommandToken": "D1C5",
+      "FlowScriptToken": "Quast",
+      "Command": "cmd=\u0027/usr/local/quast-5.0.2/quast.py -o /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C5/barcode01/Quast/ --glimmer /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C2/contigs.fa\u0027\n#FS IsDocker\ncmd=\u0027conda run -n quast quast.py -o /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C5/barcode01/Quast/ --glimmer /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C2/contigs.fa\u0027\n#FS End\neval \u0022$cmd\u0022\n",
+      "IsNoop": false,
+      "CondaPrefix": "phame",
+      "Parms": [],
+      "IncludeStandardOutput": true,
+      "IsParallel": true,
+      "IsSlurm": true,
+      "IsDocker": true,
+      "IsLinux": true,
+      "LinuxJobRunning": false,
+      "SlurmJobID": null,
+      "SlurmParms": null,
+      "WindowsWorkPath": "",
+      "IgnoreExitCode": false,
+      "WSLResponse": {
+        "ExitCode": 0,
+        "StandardOutput": null,
+        "StandardError": null,
+        "LastCommand": null,
+        "RestartCount": 0
+      },
+      "ConditionRun": null,
+      "ExitCodeConditionGoto": "",
+      "Preprocess": null,
+      "StandardOutputConditionGoto": "",
+      "HDF_Command": {
+        "Command": 0,
+        "DBFileName": null,
+        "DBPath": null,
+        "Dataset": {
+          "SequenceList": [],
+          "Standard_Reference_Sequence": "",
+          "Standard_Reference_Name": ""
+        },
+        "DatasetName": "",
+        "FindIn": "",
+        "FindOut": "",
+        "Sample": {
+          "SampleName": "",
+          "SampleDetail": null,
+          "LIMSCaseNumber": null,
+          "LIMSTestID": null,
+          "LIMSSampleID": null,
+          "Sequence": null,
+          "SampleFileName": null
+        }
+      },
+      "Prereqs": [
+        "D1C2"
+      ],
+      "Thread": 0,
+      "StandardOutputBypass": "",
+      "WDL": "  call Quast as D1C5 {\r\n    input:\r\n      SampleName = D1C2.SampleName\r\n   }\r\n"
+    },
+    {
+      "CommandToken": "D1C6",
+      "FlowScriptToken": "Kraken2",
+      "Command": "mkdir /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C6/barcode01\ncmd=\u0027/usr/local/kraken2/kraken2 --db /mnt/e/data/reference/databases/minikraken2_v1_8GB/ --threads 20 --report /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C6/barcode01/kraken.aggregates.txt --use-names --output /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C6/barcode01/kraken.txt /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C2//contigs.fa\u0027\n#FS IsDocker\n#FS DockerMap /mnt/e/data/reference/databases/\ncmd=\u0027conda run -n kraken2 kraken2 --db /mnt/e/data/reference/databases/minikraken2_v1_8GB/ --threads 20 --report /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C6/barcode01/kraken.aggregates.txt --use-names --output /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C6/barcode01/kraken.txt /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C2//contigs.fa\u0027\n#FS End\neval \u0022$cmd\u0022\n",
+      "IsNoop": false,
+      "CondaPrefix": "phame",
+      "Parms": [],
+      "IncludeStandardOutput": true,
+      "IsParallel": true,
+      "IsSlurm": true,
+      "IsDocker": true,
+      "IsLinux": true,
+      "LinuxJobRunning": false,
+      "SlurmJobID": null,
+      "SlurmParms": null,
+      "WindowsWorkPath": "",
+      "IgnoreExitCode": false,
+      "WSLResponse": {
+        "ExitCode": 0,
+        "StandardOutput": null,
+        "StandardError": null,
+        "LastCommand": null,
+        "RestartCount": 0
+      },
+      "ConditionRun": null,
+      "ExitCodeConditionGoto": "",
+      "Preprocess": null,
+      "StandardOutputConditionGoto": "",
+      "HDF_Command": {
+        "Command": 0,
+        "DBFileName": null,
+        "DBPath": null,
+        "Dataset": {
+          "SequenceList": [],
+          "Standard_Reference_Sequence": "",
+          "Standard_Reference_Name": ""
+        },
+        "DatasetName": "",
+        "FindIn": "",
+        "FindOut": "",
+        "Sample": {
+          "SampleName": "",
+          "SampleDetail": null,
+          "LIMSCaseNumber": null,
+          "LIMSTestID": null,
+          "LIMSSampleID": null,
+          "Sequence": null,
+          "SampleFileName": null
+        }
+      },
+      "Prereqs": [
+        "D1C2"
+      ],
+      "Thread": 0,
+      "StandardOutputBypass": "",
+      "WDL": "  call Kraken2 as D1C6 {\r\n    input:\r\n      SampleName = D1C2.SampleName\r\n   }\r\n"
+    },
+    {
+      "CommandToken": "D1C7",
+      "FlowScriptToken": "Rename_Contigs",
+      "Command": "mkdir /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C7/barcode01\ncp /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C2/contigs.fa /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C7/barcode01/barcode01_contigs.fasta\ncp /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C2/flye.fasta /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C7/barcode01/barcode01_flye.fa\ncp /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C2/flye-info.txt /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C7/barcode01/barcode01_flye-info.txt\ncp /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C2/dragonflye.log /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C7/barcode01/barcode01_dragonflye.log\nif [ -f \u0022/mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C3/barcode01_Abricate_Output.tsv\u0022 ]; then\n   cp /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C3/barcode01_Abricate_Output.tsv /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C7/barcode01/barcode01_Abricate_Output.tsv\nfi\n# Create a temporary file for writing the modified content\ntempfile=/mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C7/tmp_barcode01\ntouch \u0022$tempfile\u0022\n# This script changes the text of a file for each line that starts with \u0027\u003E\u0027\n# Replace the word that follows the \u0027\u003E\u0027 with \u0027SAMPLE\u0027, followed by space and then everything that was originally on the line after the \u0027\u003E\u0027\nfilename=/mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C7/barcode01/barcode01_contigs.fasta\n# Loop through each line of the file\nwhile read -r line; do\n  # Check if the line starts with \u0027\u003E\u0027\n  if [[ $line == \u0027\u003E\u0027* ]]; then\n    # Extract the word that follows the \u0027\u003E\u0027\n    word=$(echo $line | cut -d\u0027 \u0027 -f1 | cut -c2-)\n    # Replace the word with SAMPLENAME\n    line=${line/$word/barcode01 $word}\n    echo $line\n  fi\n  # Print the modified line\n  echo \u0022$line\u0022 \u003E\u003E \u0022$tempfile\u0022\ndone \u003C $filename\n# Replace the original file with the modified content\nmv \u0022$tempfile\u0022 $filename\ntouch \u0022$tempfile\u0022\n# Do the same with the second file.\nfilename=/mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C7/barcode01/barcode01_flye.fa\n# Loop through each line of the file\nwhile read -r line; do\n  # Check if the line starts with \u0027\u003E\u0027\n  if [[ $line == \u0027\u003E\u0027* ]]; then\n    # Extract the word that follows the \u0027\u003E\u0027\n    word=$(echo $line | cut -d\u0027 \u0027 -f1 | cut -c2-)\n    # Replace the word with SAMPLENAME\n    line=${line/$word/barcode01 $word}\n    echo $line\n  fi\n  # Print the modified line\n  echo \u0022$line\u0022 \u003E\u003E \u0022$tempfile\u0022\ndone \u003C $filename\n# Replace the original file with the modified content\nmv \u0022$tempfile\u0022 $filename\n# Copy fasta files but add \u0027 sample_id=\u0027\u003CsampleID\u003E\u0027 to headers\ncp /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C2/contigs.fa /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C7/barcode01/contigs.fasta\ntouch \u0022$tempfile\u0022\nawk \u0027/^\u003E/ {print $0\u0022 sample_id=barcode01\u0022} !/^\u003E/ {print $0}\u0027 /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C7/barcode01/contigs.fasta \u003E \u0022$tempfile\u0022\nmv \u0022$tempfile\u0022 /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C7/barcode01/contigs.fasta\ncp /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C2/flye.fasta /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C7/barcode01/flye.fa\ntouch \u0022$tempfile\u0022\nawk \u0027/^\u003E/ {print $0\u0022 sample_id=barcode01\u0022} !/^\u003E/ {print $0}\u0027 /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C7/barcode01/flye.fa \u003E \u0022$tempfile\u0022\nmv \u0022$tempfile\u0022 /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C7/barcode01/flye.fa\n",
+      "IsNoop": false,
+      "CondaPrefix": "",
+      "Parms": [],
+      "IncludeStandardOutput": false,
+      "IsParallel": true,
+      "IsSlurm": true,
+      "IsDocker": false,
+      "IsLinux": true,
+      "LinuxJobRunning": false,
+      "SlurmJobID": null,
+      "SlurmParms": null,
+      "WindowsWorkPath": "",
+      "IgnoreExitCode": false,
+      "WSLResponse": {
+        "ExitCode": 0,
+        "StandardOutput": null,
+        "StandardError": null,
+        "LastCommand": null,
+        "RestartCount": 0
+      },
+      "ConditionRun": null,
+      "ExitCodeConditionGoto": "",
+      "Preprocess": null,
+      "StandardOutputConditionGoto": "",
+      "HDF_Command": {
+        "Command": 0,
+        "DBFileName": null,
+        "DBPath": null,
+        "Dataset": {
+          "SequenceList": [],
+          "Standard_Reference_Sequence": "",
+          "Standard_Reference_Name": ""
+        },
+        "DatasetName": "",
+        "FindIn": "",
+        "FindOut": "",
+        "Sample": {
+          "SampleName": "",
+          "SampleDetail": null,
+          "LIMSCaseNumber": null,
+          "LIMSTestID": null,
+          "LIMSSampleID": null,
+          "Sequence": null,
+          "SampleFileName": null
+        }
+      },
+      "Prereqs": [
+        "D1C3",
+        "D1C4",
+        "D1C2",
+        "D1C6",
+        "D1C5"
+      ],
+      "Thread": 0,
+      "StandardOutputBypass": "",
+      "WDL": "  call Rename_Contigs as D1C7 {\r\n    input:\r\n      SampleName = D1C3.SampleName,\r\n      SampleName = D1C4.SampleName,\r\n      SampleName = D1C2.SampleName,\r\n      SampleName = D1C6.SampleName,\r\n      SampleName = D1C5.SampleName\r\n   }\r\n"
+    },
+    {
+      "CommandToken": "D1C8",
+      "FlowScriptToken": "Refseq_Masher",
+      "Command": "# Refseq_masher does not play well with the raven assembler. Recommend use flye.\nmkdir /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C8/barcode01\n#FS IsDocker\n#FS End\nconda run -n refseq_masher refseq_masher matches --output-type csv -o /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C8/barcode01/RefseqIdent.csv /mnt/c/BioSeqDB/WSLProxyRoot/AMT870/Work/DragonFlye_Assembly_0205081210/D1C7/barcode01/\n",
+      "IsNoop": false,
+      "CondaPrefix": "",
+      "Parms": [],
+      "IncludeStandardOutput": true,
+      "IsParallel": true,
+      "IsSlurm": true,
+      "IsDocker": true,
+      "IsLinux": true,
+      "LinuxJobRunning": false,
+      "SlurmJobID": null,
+      "SlurmParms": null,
+      "WindowsWorkPath": "",
+      "IgnoreExitCode": false,
+      "WSLResponse": {
+        "ExitCode": 0,
+        "StandardOutput": null,
+        "StandardError": null,
+        "LastCommand": null,
+        "RestartCount": 0
+      },
+      "ConditionRun": null,
+      "ExitCodeConditionGoto": "",
+      "Preprocess": null,
+      "StandardOutputConditionGoto": "",
+      "HDF_Command": {
+        "Command": 0,
+        "DBFileName": null,
+        "DBPath": null,
+        "Dataset": {
+          "SequenceList": [],
+          "Standard_Reference_Sequence": "",
+          "Standard_Reference_Name": ""
+        },
+        "DatasetName": "",
+        "FindIn": "",
+        "FindOut": "",
+        "Sample": {
+          "SampleName": "",
+          "SampleDetail": null,
+          "LIMSCaseNumber": null,
+          "LIMSTestID": null,
+          "LIMSSampleID": null,
+          "Sequence": null,
+          "SampleFileName": null
+        }
+      },
+      "Prereqs": [
+        "D1C7"
+      ],
+      "Thread": 0,
+      "StandardOutputBypass": "",
+      "WDL": "  call Refseq_Masher as D1C8 {\r\n    input:\r\n      SampleName = D1C7.SampleName\r\n   }\r\n"
     }
   ],
   "RemoveReads": false,
