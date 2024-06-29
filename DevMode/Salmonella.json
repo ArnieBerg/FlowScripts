@@ -54,7 +54,7 @@
   "IsLinux": true,
   "CanRunInLinux": true,
   "DockerBaseImage": "bioseqenv.0.3",
-  "Parameters": "BuscoConsolidate@[lineage=bacteria_odb10]\r\nBuscoConsolidate@[OmitStep=False]\r\nBuscoConsolidate@[PublishOutput=True]\r\nBuscoConsolidate@[IgnoreError=False]\r\nBuscoConsolidate@[IncludeOutput=True]\r\nBuscoConsolidate@[IsDocker=True]\r\nBuscoConsolidate@[IsSlurm=True]\r\nBuscoConsolidate@[\u003CIsSLURM\u003E=1]\r\nBuscoConsolidate@[\u003CSLURM_CPUs\u003E=2]\r\nBuscoConsolidate@[\u003CSLURM_GBs\u003E=4]\r\nBuscoConsolidate@[\u003CSLURM_Minutes\u003E=120]\r\nSamnSero@[\u003CSLURM_Minutes\u003E=45]\r\nSamnSero@[\u003CSLURM_GBs\u003E=16]\r\nSamnSero@[\u003CSLURM_CPUs\u003E=6]\r\nSamnSero@[\u003CIsSLURM\u003E=1]\r\nSamnSero@[Platform=nanopore]\r\nSamnSero@[Trim=]\r\nSamnSero@[Metagenomics=on]\r\nSamnSero@[GPU=]\r\nSamnSero@[TaxonLevel=species]\r\nSamnSero@[TaxonName=Salmonella enterica]\r\nSamnSero@[NanoHQ=]\r\nSamnSero@[QC=--qc]\r\nSamnSero@[Annot=--annot]\r\nSamnSero@[NoReport=]\r\nSamnSero@[Resume=-resume]\r\nSamnSero@[DisableBinning=--disable_binning]\r\nSamnSero@[OmitStep=False]\r\nSamnSero@[PublishOutput=False]\r\nSamnSero@[IgnoreError=False]\r\nSamnSero@[IncludeOutput=True]\r\nSamnSero@[IsDocker=False]\r\nSamnSero@[IsSlurm=True]\r\nSamnSero_Publish@[OmitStep=False]\r\nSamnSero_Publish@[PublishOutput=True]\r\nSamnSero_Publish@[IgnoreError=False]\r\nSamnSero_Publish@[IncludeOutput=False]\r\nSamnSero_Publish@[IsDocker=False]\r\nSamnSero_Publish@[\u003CIsSLURM\u003E=1]\r\nSamnSero_Publish@[\u003CSLURM_CPUs\u003E=6]\r\nSamnSero_Publish@[\u003CSLURM_GBs\u003E=16]\r\nSamnSero_Publish@[\u003CSLURM_Minutes\u003E=45]\r\nSamnSero_Publish@[IsSlurm=True]\r\n",
+  "Parameters": "BuscoConsolidate@[lineage=bacteria_odb10]\r\nBuscoConsolidate@[OmitStep=False]\r\nBuscoConsolidate@[PublishOutput=True]\r\nBuscoConsolidate@[IgnoreError=False]\r\nBuscoConsolidate@[IncludeOutput=True]\r\nBuscoConsolidate@[IsDocker=True]\r\nBuscoConsolidate@[IsSlurm=True]\r\nBuscoConsolidate@[\u003CIsSLURM\u003E=1]\r\nBuscoConsolidate@[\u003CSLURM_CPUs\u003E=2]\r\nBuscoConsolidate@[\u003CSLURM_GBs\u003E=4]\r\nBuscoConsolidate@[\u003CSLURM_Minutes\u003E=120]\r\nSamnSero@[\u003CSLURM_Minutes\u003E=180]\r\nSamnSero@[\u003CSLURM_GBs\u003E=16]\r\nSamnSero@[\u003CSLURM_CPUs\u003E=6]\r\nSamnSero@[\u003CIsSLURM\u003E=1]\r\nSamnSero@[Platform=nanopore]\r\nSamnSero@[Trim=]\r\nSamnSero@[Metagenomics=on]\r\nSamnSero@[GPU=]\r\nSamnSero@[TaxonLevel=species]\r\nSamnSero@[TaxonName=Salmonella enterica]\r\nSamnSero@[NanoHQ=]\r\nSamnSero@[QC=--qc]\r\nSamnSero@[Annot=--annot]\r\nSamnSero@[NoReport=]\r\nSamnSero@[Resume=]\r\nSamnSero@[DisableBinning=--disable_binning]\r\nSamnSero@[OmitStep=False]\r\nSamnSero@[PublishOutput=False]\r\nSamnSero@[IgnoreError=False]\r\nSamnSero@[IncludeOutput=True]\r\nSamnSero@[IsDocker=False]\r\nSamnSero@[IsSlurm=True]\r\nSamnSero_Publish@[OmitStep=False]\r\nSamnSero_Publish@[PublishOutput=True]\r\nSamnSero_Publish@[IgnoreError=False]\r\nSamnSero_Publish@[IncludeOutput=False]\r\nSamnSero_Publish@[IsDocker=False]\r\nSamnSero_Publish@[\u003CIsSLURM\u003E=1]\r\nSamnSero_Publish@[\u003CSLURM_CPUs\u003E=6]\r\nSamnSero_Publish@[\u003CSLURM_GBs\u003E=16]\r\nSamnSero_Publish@[\u003CSLURM_Minutes\u003E=45]\r\nSamnSero_Publish@[IsSlurm=True]\r\n",
   "OutputPath": "E:\\data\\results\\AGB465\\Salmonella_0629062210",
   "StartWithScript": "Data",
   "ScriptModulesInFlowScript": {
@@ -368,8 +368,8 @@
           {
             "ModuleName": "SamnSero",
             "ParmName": "\u003CSLURM_Minutes\u003E",
-            "DefaultValue": "45",
-            "UserValue": "45",
+            "DefaultValue": "180",
+            "UserValue": "180",
             "Description": "",
             "ComboValues": null,
             "Optional": false,
@@ -607,7 +607,7 @@
             "ModuleName": "SamnSero",
             "ParmName": "Resume",
             "DefaultValue": "-resume",
-            "UserValue": "-resume",
+            "UserValue": "",
             "Description": "Resume from the previous run.",
             "ComboValues": "-resume",
             "Optional": true,
@@ -1012,11 +1012,11 @@
       }
     ]
   },
-  "LastUpdate": "2024-06-29T06:22:10.6657716-06:00",
+  "LastUpdate": "2024-06-29T06:22:22.0250309-06:00",
   "LastAuthor": "AGB465",
   "FindFolders": true,
   "InterfaceAdaptive": false,
   "CommandList": [],
   "RemoveReads": false,
-  "SLURM_IsAvailable": false
+  "SLURM_IsAvailable": true
 }
