@@ -754,7 +754,7 @@
         "Slurm_Moderate_Resources": {
           "CPUs": 6,
           "MemoryGB": 16,
-          "Hours": 0.75
+          "Hours": 3
         },
         "Slurm_Max_Resources": {
           "CPUs": 16,
@@ -787,7 +787,7 @@
           "SlurmJobID": null,
           "SlurmParms": null,
           "WindowsWorkPath": null,
-          "IgnoreExitCode": false,
+          "IgnoreExitCode": true,
           "WSLResponse": null,
           "ConditionRun": null,
           "ExitCodeConditionGoto": "",
@@ -850,7 +850,7 @@
             "ModuleName": "SamnSero_Publish",
             "ParmName": "IgnoreError",
             "DefaultValue": null,
-            "UserValue": "False",
+            "UserValue": "True",
             "Description": null,
             "ComboValues": "True|False",
             "Optional": false,
@@ -1012,7 +1012,7 @@
       }
     ]
   },
-  "LastUpdate": "2024-06-29T06:00:57.9365424-06:00",
+  "LastUpdate": "2024-06-29T06:02:36.7228673-06:00",
   "LastAuthor": "AGB465",
   "FindFolders": true,
   "InterfaceAdaptive": false,
