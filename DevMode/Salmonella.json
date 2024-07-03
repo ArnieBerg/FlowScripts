@@ -22,7 +22,7 @@
       "TestIsRunning": false
     }
   },
-  "SubmissionTimeStamp": "0702205614",
+  "SubmissionTimeStamp": "0702210839",
   "LockUsername": null,
   "Comment": "The Salmonella FlowScript functions to predict Salmonella serotypes from raw Nanopore sequencing data. The pipeline uses flye to assemble the long reads, medaka for genome polishing, and SISTR for in-silico serotyping. When complete, the pipeline produces a single \u0027sistr_res_aggregate\u0027 file that aggregates the results from all the included samples.",
   "DataSourceType": 1,
@@ -47,7 +47,7 @@
   "CanRunInLinux": true,
   "DockerBaseImage": "bioseqenv.0.3",
   "Parameters": "BuscoConsolidate@[lineage=bacteria_odb10]\r\nBuscoConsolidate@[OmitStep=False]\r\nBuscoConsolidate@[PublishOutput=True]\r\nBuscoConsolidate@[IgnoreError=False]\r\nBuscoConsolidate@[IncludeOutput=True]\r\nBuscoConsolidate@[IsDocker=True]\r\nBuscoConsolidate@[IsSlurm=True]\r\nBuscoConsolidate@[\u003CIsSLURM\u003E=0]\r\nBuscoConsolidate@[\u003CSLURM_CPUs\u003E=2]\r\nBuscoConsolidate@[\u003CSLURM_GBs\u003E=4]\r\nBuscoConsolidate@[\u003CSLURM_Minutes\u003E=120]\r\nSamnSero@[\u003CSLURM_Minutes\u003E=180]\r\nSamnSero@[\u003CSLURM_GBs\u003E=16]\r\nSamnSero@[\u003CSLURM_CPUs\u003E=6]\r\nSamnSero@[\u003CIsSLURM\u003E=0]\r\nSamnSero@[Platform=nanopore]\r\nSamnSero@[Trim=]\r\nSamnSero@[Metagenomics=on]\r\nSamnSero@[GPU=]\r\nSamnSero@[TaxonLevel=species]\r\nSamnSero@[TaxonName=Salmonella enterica]\r\nSamnSero@[NanoHQ=]\r\nSamnSero@[QC=--qc]\r\nSamnSero@[Annot=]\r\nSamnSero@[NoReport=]\r\nSamnSero@[Resume=]\r\nSamnSero@[DisableBinning=--disable_binning]\r\nSamnSero@[OmitStep=False]\r\nSamnSero@[PublishOutput=False]\r\nSamnSero@[IgnoreError=False]\r\nSamnSero@[IncludeOutput=True]\r\nSamnSero@[IsDocker=False]\r\nSamnSero@[IsSlurm=True]\r\nSamnSero_Publish@[OmitStep=False]\r\nSamnSero_Publish@[PublishOutput=True]\r\nSamnSero_Publish@[IgnoreError=False]\r\nSamnSero_Publish@[IncludeOutput=False]\r\nSamnSero_Publish@[IsDocker=False]\r\nSamnSero_Publish@[\u003CIsSLURM\u003E=0]\r\nSamnSero_Publish@[\u003CSLURM_CPUs\u003E=6]\r\nSamnSero_Publish@[\u003CSLURM_GBs\u003E=16]\r\nSamnSero_Publish@[\u003CSLURM_Minutes\u003E=45]\r\nSamnSero_Publish@[IsSlurm=True]\r\n",
-  "OutputPath": "E:\\data\\results\\SQA032\\Salmonella_0702205614",
+  "OutputPath": "E:\\data\\results\\SQA032\\Salmonella_0702210839",
   "StartWithScript": "Data",
   "ScriptModulesInFlowScript": {
     "GlobalScriptModules": [
@@ -66,7 +66,7 @@
           "IsParallel": false,
           "IsSlurm": true,
           "IsDocker": true,
-          "IsLinux": true,
+          "IsLinux": false,
           "LinuxJobRunning": false,
           "SlurmJobID": null,
           "SlurmParms": null,
@@ -328,7 +328,7 @@
           "IsParallel": false,
           "IsSlurm": true,
           "IsDocker": false,
-          "IsLinux": true,
+          "IsLinux": false,
           "LinuxJobRunning": false,
           "SlurmJobID": null,
           "SlurmParms": null,
@@ -774,7 +774,7 @@
           "IsParallel": false,
           "IsSlurm": true,
           "IsDocker": false,
-          "IsLinux": true,
+          "IsLinux": false,
           "LinuxJobRunning": false,
           "SlurmJobID": null,
           "SlurmParms": null,
@@ -1004,7 +1004,7 @@
       }
     ]
   },
-  "LastUpdate": "2024-07-02T20:56:17.794349-06:00",
+  "LastUpdate": "2024-07-02T21:08:40.040571-06:00",
   "LastAuthor": "SQA032",
   "FindFolders": true,
   "InterfaceAdaptive": false,
