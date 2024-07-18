@@ -59,7 +59,7 @@
   "IsLinux": true,
   "CanRunInLinux": true,
   "DockerBaseImage": "bioseqenv.0.3",
-  "Parameters": "BuscoConsolidate@[lineage=bacteria_odb10]\r\nBuscoConsolidate@[OmitStep=False]\r\nBuscoConsolidate@[PublishOutput=True]\r\nBuscoConsolidate@[IgnoreError=False]\r\nBuscoConsolidate@[IncludeOutput=True]\r\nBuscoConsolidate@[IsDocker=True]\r\nBuscoConsolidate@[IsSlurm=True]\r\nBuscoConsolidate@[\u003CIsSLURM\u003E=1]\r\nBuscoConsolidate@[\u003CSLURM_CPUs\u003E=2]\r\nBuscoConsolidate@[\u003CSLURM_GBs\u003E=4]\r\nBuscoConsolidate@[\u003CSLURM_Minutes\u003E=120]\r\nSamnSero@[DisableBinning=--disable_binning]\r\nSamnSero@[Resume=-resume]\r\nSamnSero@[NoReport=]\r\nSamnSero@[Annot=--annot]\r\nSamnSero@[QC=--qc]\r\nSamnSero@[NanoHQ=]\r\nSamnSero@[TaxonName=Salmonella enterica]\r\nSamnSero@[TaxonLevel=species]\r\nSamnSero@[GPU=]\r\nSamnSero@[Metagenomics=on]\r\nSamnSero@[Trim=]\r\nSamnSero@[Platform=nanopore]\r\nSamnSero@[\u003CIsSLURM\u003E=1]\r\nSamnSero@[\u003CSLURM_CPUs\u003E=6]\r\nSamnSero@[\u003CSLURM_GBs\u003E=16]\r\nSamnSero@[\u003CSLURM_Minutes\u003E=240]\r\nSamnSero@[OmitStep=False]\r\nSamnSero@[PublishOutput=False]\r\nSamnSero@[IgnoreError=False]\r\nSamnSero@[IncludeOutput=True]\r\nSamnSero@[IsDocker=False]\r\nSamnSero@[IsSlurm=True]\r\nSamnSero_Publish@[OmitStep=False]\r\nSamnSero_Publish@[PublishOutput=True]\r\nSamnSero_Publish@[IgnoreError=False]\r\nSamnSero_Publish@[IncludeOutput=False]\r\nSamnSero_Publish@[IsDocker=False]\r\nSamnSero_Publish@[\u003CIsSLURM\u003E=1]\r\nSamnSero_Publish@[\u003CSLURM_CPUs\u003E=6]\r\nSamnSero_Publish@[\u003CSLURM_GBs\u003E=16]\r\nSamnSero_Publish@[\u003CSLURM_Minutes\u003E=45]\r\nSamnSero_Publish@[IsSlurm=True]\r\n",
+  "Parameters": "BuscoConsolidate@[lineage=bacteria_odb10]\r\nBuscoConsolidate@[OmitStep=False]\r\nBuscoConsolidate@[PublishOutput=True]\r\nBuscoConsolidate@[IgnoreError=False]\r\nBuscoConsolidate@[IncludeOutput=True]\r\nBuscoConsolidate@[IsDocker=True]\r\nBuscoConsolidate@[IsSlurm=True]\r\nBuscoConsolidate@[\u003CIsSLURM\u003E=1]\r\nBuscoConsolidate@[\u003CSLURM_CPUs\u003E=2]\r\nBuscoConsolidate@[\u003CSLURM_GBs\u003E=4]\r\nBuscoConsolidate@[\u003CSLURM_Minutes\u003E=120]\r\nSamnSero@[DisableBinning=--disable_binning]\r\nSamnSero@[Resume=-resume]\r\nSamnSero@[NoReport=]\r\nSamnSero@[Annot=--annot]\r\nSamnSero@[QC=--qc]\r\nSamnSero@[NanoHQ=]\r\nSamnSero@[TaxonName=Salmonella enterica]\r\nSamnSero@[TaxonLevel=species]\r\nSamnSero@[GPU=]\r\nSamnSero@[Metagenomics=off]\r\nSamnSero@[Trim=]\r\nSamnSero@[Platform=nanopore]\r\nSamnSero@[\u003CIsSLURM\u003E=1]\r\nSamnSero@[\u003CSLURM_CPUs\u003E=6]\r\nSamnSero@[\u003CSLURM_GBs\u003E=16]\r\nSamnSero@[\u003CSLURM_Minutes\u003E=45]\r\nSamnSero@[OmitStep=False]\r\nSamnSero@[PublishOutput=False]\r\nSamnSero@[IgnoreError=False]\r\nSamnSero@[IncludeOutput=True]\r\nSamnSero@[IsDocker=False]\r\nSamnSero@[IsSlurm=True]\r\nSamnSero_Publish@[OmitStep=False]\r\nSamnSero_Publish@[PublishOutput=True]\r\nSamnSero_Publish@[IgnoreError=False]\r\nSamnSero_Publish@[IncludeOutput=False]\r\nSamnSero_Publish@[IsDocker=False]\r\nSamnSero_Publish@[\u003CIsSLURM\u003E=1]\r\nSamnSero_Publish@[\u003CSLURM_CPUs\u003E=6]\r\nSamnSero_Publish@[\u003CSLURM_GBs\u003E=16]\r\nSamnSero_Publish@[\u003CSLURM_Minutes\u003E=45]\r\nSamnSero_Publish@[IsSlurm=True]\r\n",
   "OutputPath": "E:\\data\\results\\RNK773\\Salmonella_0718104939",
   "StartWithScript": "Data",
   "ScriptModulesInFlowScript": {
@@ -298,7 +298,7 @@
           }
         ],
         "DockerMountMap": [
-          "/mnt/c/BioSeqDB/WSLProxyRoot/SQA032/Work/"
+          "/mnt/c/BioSeqDB/WSLProxyRoot/RNK773/Work/"
         ],
         "DockerImage": "bioseqenv.0.3",
         "UserVariableList": {},
@@ -527,7 +527,7 @@
             "ModuleName": "SamnSero",
             "ParmName": "Metagenomics",
             "DefaultValue": "off",
-            "UserValue": "on",
+            "UserValue": "off",
             "Description": "Indicate the samples are metagenomic samples.",
             "ComboValues": "off|targeted|untargeted",
             "Optional": true,
@@ -629,7 +629,7 @@
             "ModuleName": "SamnSero",
             "ParmName": "\u003CSLURM_Minutes\u003E",
             "DefaultValue": "45",
-            "UserValue": "240",
+            "UserValue": "45",
             "Description": "",
             "ComboValues": null,
             "Optional": false,
@@ -1017,7 +1017,7 @@
       }
     ]
   },
-  "LastUpdate": "2024-07-18T10:49:37.7114486-06:00",
+  "LastUpdate": "2024-07-18T10:50:31.9598118-06:00",
   "LastAuthor": "RNK773",
   "FindFolders": true,
   "InterfaceAdaptive": false,
