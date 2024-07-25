@@ -616,8 +616,8 @@
           {
             "ModuleName": "SamnSero",
             "ParmName": "\u003CSLURM_Minutes\u003E",
-            "DefaultValue": "180",
-            "UserValue": "180",
+            "DefaultValue": "720",
+            "UserValue": "720",
             "Description": "",
             "ComboValues": null,
             "Optional": false,
@@ -747,7 +747,7 @@
         "Slurm_Moderate_Resources": {
           "CPUs": 6,
           "MemoryGB": 16,
-          "Hours": 3
+          "Hours": 12
         },
         "Slurm_Max_Resources": {
           "CPUs": 16,
@@ -1005,7 +1005,7 @@
       }
     ]
   },
-  "LastUpdate": "2024-07-24T16:57:52.7044082-06:00",
+  "LastUpdate": "2024-07-25T13:13:46.9163853-06:00",
   "LastAuthor": "RNK773",
   "FindFolders": true,
   "InterfaceAdaptive": false,
