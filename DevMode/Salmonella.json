@@ -22,42 +22,14 @@
       "TestIsRunning": false
     }
   },
-  "SubmissionTimeStamp": "1007114326",
+  "SubmissionTimeStamp": "1018094541",
   "LockUsername": null,
   "Comment": "The Salmonella FlowScript functions to predict Salmonella serotypes from raw Nanopore sequencing data. The pipeline uses flye to assemble the long reads, medaka for genome polishing, and SISTR for in-silico serotyping. When complete, the pipeline produces a single \u0027sistr_res_aggregate\u0027 file that aggregates the results from all the included samples.",
   "DataSourceType": 1,
   "SerializeDataSteps": false,
   "SampleList": {
-    "PDS24255797-16": "1[S]/mnt/e/data/Ruwani_Salmonella_Project/2024/Salm_PDS2425797_S16-S30_25Sept24_PC/Salm_PDS2425797_S16-S30_25Sept24_PC/20240925_1146_X4_FBA02973_d1237358/fastq_pass/PDS24255797-16/",
-    "PDS24255797-17": "1[S]/mnt/e/data/Ruwani_Salmonella_Project/2024/Salm_PDS2425797_S16-S30_25Sept24_PC/Salm_PDS2425797_S16-S30_25Sept24_PC/20240925_1146_X4_FBA02973_d1237358/fastq_pass/PDS24255797-17/",
-    "PDS24255797-18": "1[S]/mnt/e/data/Ruwani_Salmonella_Project/2024/Salm_PDS2425797_S16-S30_25Sept24_PC/Salm_PDS2425797_S16-S30_25Sept24_PC/20240925_1146_X4_FBA02973_d1237358/fastq_pass/PDS24255797-18/",
-    "PDS24255797-19": "1[S]/mnt/e/data/Ruwani_Salmonella_Project/2024/Salm_PDS2425797_S16-S30_25Sept24_PC/Salm_PDS2425797_S16-S30_25Sept24_PC/20240925_1146_X4_FBA02973_d1237358/fastq_pass/PDS24255797-19/",
-    "PDS24255797-20": "1[S]/mnt/e/data/Ruwani_Salmonella_Project/2024/Salm_PDS2425797_S16-S30_25Sept24_PC/Salm_PDS2425797_S16-S30_25Sept24_PC/20240925_1146_X4_FBA02973_d1237358/fastq_pass/PDS24255797-20/",
-    "PDS24255797-21": "1[S]/mnt/e/data/Ruwani_Salmonella_Project/2024/Salm_PDS2425797_S16-S30_25Sept24_PC/Salm_PDS2425797_S16-S30_25Sept24_PC/20240925_1146_X4_FBA02973_d1237358/fastq_pass/PDS24255797-21/",
-    "PDS24255797-22": "1[S]/mnt/e/data/Ruwani_Salmonella_Project/2024/Salm_PDS2425797_S16-S30_25Sept24_PC/Salm_PDS2425797_S16-S30_25Sept24_PC/20240925_1146_X4_FBA02973_d1237358/fastq_pass/PDS24255797-22/",
-    "PDS24255797-23": "1[S]/mnt/e/data/Ruwani_Salmonella_Project/2024/Salm_PDS2425797_S16-S30_25Sept24_PC/Salm_PDS2425797_S16-S30_25Sept24_PC/20240925_1146_X4_FBA02973_d1237358/fastq_pass/PDS24255797-23/",
-    "PDS24255797-24": "1[S]/mnt/e/data/Ruwani_Salmonella_Project/2024/Salm_PDS2425797_S16-S30_25Sept24_PC/Salm_PDS2425797_S16-S30_25Sept24_PC/20240925_1146_X4_FBA02973_d1237358/fastq_pass/PDS24255797-24/",
-    "PDS24255797-25": "1[S]/mnt/e/data/Ruwani_Salmonella_Project/2024/Salm_PDS2425797_S16-S30_25Sept24_PC/Salm_PDS2425797_S16-S30_25Sept24_PC/20240925_1146_X4_FBA02973_d1237358/fastq_pass/PDS24255797-25/",
-    "PDS24255797-26": "1[S]/mnt/e/data/Ruwani_Salmonella_Project/2024/Salm_PDS2425797_S16-S30_25Sept24_PC/Salm_PDS2425797_S16-S30_25Sept24_PC/20240925_1146_X4_FBA02973_d1237358/fastq_pass/PDS24255797-26/",
-    "PDS24255797-27": "1[S]/mnt/e/data/Ruwani_Salmonella_Project/2024/Salm_PDS2425797_S16-S30_25Sept24_PC/Salm_PDS2425797_S16-S30_25Sept24_PC/20240925_1146_X4_FBA02973_d1237358/fastq_pass/PDS24255797-27/",
-    "PDS24255797-28": "1[S]/mnt/e/data/Ruwani_Salmonella_Project/2024/Salm_PDS2425797_S16-S30_25Sept24_PC/Salm_PDS2425797_S16-S30_25Sept24_PC/20240925_1146_X4_FBA02973_d1237358/fastq_pass/PDS24255797-28/",
-    "PDS24255797-29": "1[S]/mnt/e/data/Ruwani_Salmonella_Project/2024/Salm_PDS2425797_S16-S30_25Sept24_PC/Salm_PDS2425797_S16-S30_25Sept24_PC/20240925_1146_X4_FBA02973_d1237358/fastq_pass/PDS24255797-29/",
-    "PDS24255797-30": "1[S]/mnt/e/data/Ruwani_Salmonella_Project/2024/Salm_PDS2425797_S16-S30_25Sept24_PC/Salm_PDS2425797_S16-S30_25Sept24_PC/20240925_1146_X4_FBA02973_d1237358/fastq_pass/PDS24255797-30/",
-    "PDS2425797-1": "1[S]/mnt/e/data/Ruwani_Salmonella_Project/2024/Salm_PDS2425797_S1-S15_25Sept24_PC/Salm_PDS2425797_S1-S15_25Sept24_PC/20240925_1143_X3_FBA02873_70a53ed1/fastq_pass/PDS2425797-1/",
-    "PDS2425797-10": "1[S]/mnt/e/data/Ruwani_Salmonella_Project/2024/Salm_PDS2425797_S1-S15_25Sept24_PC/Salm_PDS2425797_S1-S15_25Sept24_PC/20240925_1143_X3_FBA02873_70a53ed1/fastq_pass/PDS2425797-10/",
-    "PDS2425797-11": "1[S]/mnt/e/data/Ruwani_Salmonella_Project/2024/Salm_PDS2425797_S1-S15_25Sept24_PC/Salm_PDS2425797_S1-S15_25Sept24_PC/20240925_1143_X3_FBA02873_70a53ed1/fastq_pass/PDS2425797-11/",
-    "PDS2425797-12": "1[S]/mnt/e/data/Ruwani_Salmonella_Project/2024/Salm_PDS2425797_S1-S15_25Sept24_PC/Salm_PDS2425797_S1-S15_25Sept24_PC/20240925_1143_X3_FBA02873_70a53ed1/fastq_pass/PDS2425797-12/",
-    "PDS2425797-13": "1[S]/mnt/e/data/Ruwani_Salmonella_Project/2024/Salm_PDS2425797_S1-S15_25Sept24_PC/Salm_PDS2425797_S1-S15_25Sept24_PC/20240925_1143_X3_FBA02873_70a53ed1/fastq_pass/PDS2425797-13/",
-    "PDS2425797-14": "1[S]/mnt/e/data/Ruwani_Salmonella_Project/2024/Salm_PDS2425797_S1-S15_25Sept24_PC/Salm_PDS2425797_S1-S15_25Sept24_PC/20240925_1143_X3_FBA02873_70a53ed1/fastq_pass/PDS2425797-14/",
-    "PDS2425797-15": "1[S]/mnt/e/data/Ruwani_Salmonella_Project/2024/Salm_PDS2425797_S1-S15_25Sept24_PC/Salm_PDS2425797_S1-S15_25Sept24_PC/20240925_1143_X3_FBA02873_70a53ed1/fastq_pass/PDS2425797-15/",
-    "PDS2425797-2": "1[S]/mnt/e/data/Ruwani_Salmonella_Project/2024/Salm_PDS2425797_S1-S15_25Sept24_PC/Salm_PDS2425797_S1-S15_25Sept24_PC/20240925_1143_X3_FBA02873_70a53ed1/fastq_pass/PDS2425797-2/",
-    "PDS2425797-3": "1[S]/mnt/e/data/Ruwani_Salmonella_Project/2024/Salm_PDS2425797_S1-S15_25Sept24_PC/Salm_PDS2425797_S1-S15_25Sept24_PC/20240925_1143_X3_FBA02873_70a53ed1/fastq_pass/PDS2425797-3/",
-    "PDS2425797-4": "1[S]/mnt/e/data/Ruwani_Salmonella_Project/2024/Salm_PDS2425797_S1-S15_25Sept24_PC/Salm_PDS2425797_S1-S15_25Sept24_PC/20240925_1143_X3_FBA02873_70a53ed1/fastq_pass/PDS2425797-4/",
-    "PDS2425797-5": "1[S]/mnt/e/data/Ruwani_Salmonella_Project/2024/Salm_PDS2425797_S1-S15_25Sept24_PC/Salm_PDS2425797_S1-S15_25Sept24_PC/20240925_1143_X3_FBA02873_70a53ed1/fastq_pass/PDS2425797-5/",
-    "PDS2425797-6": "1[S]/mnt/e/data/Ruwani_Salmonella_Project/2024/Salm_PDS2425797_S1-S15_25Sept24_PC/Salm_PDS2425797_S1-S15_25Sept24_PC/20240925_1143_X3_FBA02873_70a53ed1/fastq_pass/PDS2425797-6/",
-    "PDS2425797-7": "1[S]/mnt/e/data/Ruwani_Salmonella_Project/2024/Salm_PDS2425797_S1-S15_25Sept24_PC/Salm_PDS2425797_S1-S15_25Sept24_PC/20240925_1143_X3_FBA02873_70a53ed1/fastq_pass/PDS2425797-7/",
-    "PDS2425797-8": "1[S]/mnt/e/data/Ruwani_Salmonella_Project/2024/Salm_PDS2425797_S1-S15_25Sept24_PC/Salm_PDS2425797_S1-S15_25Sept24_PC/20240925_1143_X3_FBA02873_70a53ed1/fastq_pass/PDS2425797-8/",
-    "PDS2425797-9": "1[S]/mnt/e/data/Ruwani_Salmonella_Project/2024/Salm_PDS2425797_S1-S15_25Sept24_PC/Salm_PDS2425797_S1-S15_25Sept24_PC/20240925_1143_X3_FBA02873_70a53ed1/fastq_pass/PDS2425797-9/"
+    "PDS2425122-12": "1[S]/mnt/e/data/Ruwani_Salmonella_Project/2024/Salm_PDS2425122_S1-S14_20Sept24_SPK/Salm_PDS2425122_S1-S14_20Sept24_SPK/20240920_1238_X1_FBA07903_495b8f68/fastq_pass/PDS2425122-12/",
+    "PDS2425122-9": "1[S]/mnt/e/data/Ruwani_Salmonella_Project/2024/Salm_PDS2425122_S1-S14_20Sept24_SPK/Salm_PDS2425122_S1-S14_20Sept24_SPK/20240920_1238_X1_FBA07903_495b8f68/fastq_pass/PDS2425122-9/"
   },
   "SequenceList": [],
   "SequenceListChecked": [],
@@ -72,7 +44,7 @@
   "CanRunInLinux": true,
   "DockerBaseImage": "bioseqenv.0.3",
   "Parameters": "BuscoConsolidate@[lineage=bacteria_odb10]\r\nBuscoConsolidate@[OmitStep=False]\r\nBuscoConsolidate@[PublishOutput=True]\r\nBuscoConsolidate@[IgnoreError=False]\r\nBuscoConsolidate@[IncludeOutput=True]\r\nBuscoConsolidate@[IsDocker=True]\r\nBuscoConsolidate@[IsSlurm=True]\r\nBuscoConsolidate@[\u003CIsSLURM\u003E=1]\r\nBuscoConsolidate@[\u003CSLURM_CPUs\u003E=2]\r\nBuscoConsolidate@[\u003CSLURM_GBs\u003E=4]\r\nBuscoConsolidate@[\u003CSLURM_Minutes\u003E=120]\r\nSamnSero@[DisableBinning=--disable_binning]\r\nSamnSero@[Resume=-resume]\r\nSamnSero@[NoReport=]\r\nSamnSero@[Annot=--annot]\r\nSamnSero@[QC=--qc]\r\nSamnSero@[NanoHQ=]\r\nSamnSero@[TaxonName=Salmonella enterica]\r\nSamnSero@[TaxonLevel=species]\r\nSamnSero@[GPU=]\r\nSamnSero@[Metagenomics=targeted]\r\nSamnSero@[Trim=]\r\nSamnSero@[Platform=nanopore]\r\nSamnSero@[\u003CIsSLURM\u003E=1]\r\nSamnSero@[\u003CSLURM_CPUs\u003E=6]\r\nSamnSero@[\u003CSLURM_GBs\u003E=16]\r\nSamnSero@[\u003CSLURM_Minutes\u003E=720]\r\nSamnSero@[OmitStep=False]\r\nSamnSero@[PublishOutput=False]\r\nSamnSero@[IgnoreError=False]\r\nSamnSero@[IncludeOutput=True]\r\nSamnSero@[IsDocker=False]\r\nSamnSero@[IsSlurm=True]\r\nSamnSero_Publish@[OmitStep=False]\r\nSamnSero_Publish@[PublishOutput=True]\r\nSamnSero_Publish@[IgnoreError=False]\r\nSamnSero_Publish@[IncludeOutput=False]\r\nSamnSero_Publish@[IsDocker=False]\r\nSamnSero_Publish@[\u003CIsSLURM\u003E=1]\r\nSamnSero_Publish@[\u003CSLURM_CPUs\u003E=6]\r\nSamnSero_Publish@[\u003CSLURM_GBs\u003E=16]\r\nSamnSero_Publish@[\u003CSLURM_Minutes\u003E=45]\r\nSamnSero_Publish@[IsSlurm=True]\r\n",
-  "OutputPath": "E:\\data\\results\\RNK773\\Salmonella_1007114326",
+  "OutputPath": "E:\\data\\results\\RNK773\\Salmonella_1018094541",
   "StartWithScript": "Data",
   "ScriptModulesInFlowScript": {
     "GlobalScriptModules": [
@@ -1029,7 +1001,7 @@
       }
     ]
   },
-  "LastUpdate": "2024-10-07T11:43:50.495861-06:00",
+  "LastUpdate": "2024-10-18T09:45:39.2052283-06:00",
   "LastAuthor": "RNK773",
   "FindFolders": true,
   "InterfaceAdaptive": false,
